@@ -20,3 +20,10 @@ hs static -p 8082
 ```sh
 hs backoffice/dist -p 8083
 ```
+
+# Deployment
+
+1. Generate a password file with `echo team:$(openssl passwd [some password]) > /etc/nginx/passwd`
+2. Pull and build
+3. Restart all the non-static services
+4. Serve them through nginx with a conf like [nginx.conf](./nginx.conf)
