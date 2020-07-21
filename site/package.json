@@ -1,6 +1,0 @@
-{
-  "scripts": {
-    "build/future": "rm -rf dist/future && cp -r public dist/future",
-    "build/prod": "rm -rf dist/prod && cp -r public dist/prod"
-  }
-}
