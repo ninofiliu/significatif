@@ -1,0 +1,14 @@
+@import './colors.scss';
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: $white;
+  color: $red;
+}
