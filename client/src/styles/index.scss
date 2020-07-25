@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Ogg-Italic';
+  font-family: 'Ogg Italic';
   src: url('./Ogg-Italic.otf');
 }
 @font-face {
-  font-family: 'Ogg-Roman';
+  font-family: 'Ogg Roman';
   src: url('./Ogg-Roman.otf');
 }
+@import './globals.scss';
 @import './main.scss';
-@import './colors.scss';

@@ -1,4 +1,3 @@
-@import './colors.scss';
 * {
   box-sizing: border-box;
 }
@@ -8,7 +7,7 @@ a {
 }
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  background-color: $white;
-  color: $red;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--white);
+  color: var(--red);
 }
