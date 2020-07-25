@@ -7,4 +7,5 @@ extends:
 parserOptions: 
   parser: babel-eslint
 rules:
+  no-lonely-if: off
   no-plusplus: off
