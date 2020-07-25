@@ -38,4 +38,13 @@ export default {
 a {
   margin: 0 16px;
 }
+.router-link-exact-active {
+  color: white;
+  text-shadow:
+    1px 1px 0 var(--red),
+    1px -1px 0 var(--red),
+    -1px 1px 0 var(--red),
+    -1px -1px 0 var(--red),
+  ;
+}
 </style>>
