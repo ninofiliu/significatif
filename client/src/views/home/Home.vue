@@ -54,6 +54,7 @@ export default {
   display: flex;
   img {
     margin: 0 32px;
+    filter: brightness(.5);
     &:nth-child(2n) {
       align-self: center;
     }

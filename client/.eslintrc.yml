@@ -6,4 +6,5 @@ extends:
   - '@vue/airbnb'
 parserOptions: 
   parser: babel-eslint
-rules: {}
+rules:
+  no-plusplus: off
