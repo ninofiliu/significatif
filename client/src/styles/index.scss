@@ -6,5 +6,23 @@
   font-family: 'Ogg Roman';
   src: url('./Ogg-Roman.otf');
 }
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeue.woff');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeue-Light.woff');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./HelveticaNeue-Italic.woff');
+  font-style: italic;
+  font-weight: normal;
+}
 @import './globals.scss';
 @import './main.scss';
