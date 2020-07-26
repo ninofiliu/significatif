@@ -1,72 +1,52 @@
 <template>
   <div class="center">
-    <div>
-      <span
-        v-for="(char, i) in line0"
-        :key="i"
-        :class="{ ...char.class, hidden: i > appeared }"
-        v-html="char.letter"
-      />
-    </div>
-    <div>
-      <span
-        v-for="(char, i) in line1"
-        :key="i"
-        :class="{ ...char.class, hidden: (15 - i) > appeared }"
-        v-html="char.letter"
-      />
-    </div>
+    <AppearingLine :chars="chars0"/>
+    <AppearingLine :chars="chars1" reversed/>
   </div>
 </template>
 
 <script>
+import AppearingLine from '../../components/AppearingLine.vue';
+
 export default {
+  components: {
+    AppearingLine,
+  },
   data() {
     return {
-      line0: [
-        { letter: 'S', class: { 'font-ogg-roman': true } },
-        { letter: 'i', class: {} },
-        { letter: 'g', class: {} },
-        { letter: 'n', class: {} },
-        { letter: 'i', class: {} },
-        { letter: 'f', class: {} },
-        { letter: 'i', class: {} },
-        { letter: 'c', class: {} },
-        { letter: 'a', class: {} },
-        { letter: '.', class: {} },
-        { letter: 't', class: { 'font-ogg-italic': true } },
-        { letter: 'i', class: { 'font-ogg-italic': true } },
-        { letter: 'f', class: { 'font-ogg-italic': true } },
-        { letter: '&nbsp;', class: {} },
-        { letter: 'b', class: {} },
-        { letter: 'y', class: {} },
+      chars0: [
+        { html: 'S', class: { 'font-ogg-roman': true } },
+        { html: 'i', class: {} },
+        { html: 'g', class: {} },
+        { html: 'n', class: {} },
+        { html: 'i', class: {} },
+        { html: 'f', class: {} },
+        { html: 'i', class: {} },
+        { html: 'c', class: {} },
+        { html: 'a', class: {} },
+        { html: '.', class: {} },
+        { html: 't', class: { 'font-ogg-italic': true } },
+        { html: 'i', class: { 'font-ogg-italic': true } },
+        { html: 'f', class: { 'font-ogg-italic': true } },
+        { html: '&nbsp;', class: {} },
+        { html: 'b', class: {} },
+        { html: 'y', class: {} },
       ],
-      line1: [
-        { letter: 'V', class: { underline: true } },
-        { letter: 'i', class: { underline: true, 'font-ogg-italic': true } },
-        { letter: 'c', class: { underline: true } },
-        { letter: 't', class: { underline: true } },
-        { letter: 'o', class: { underline: true } },
-        { letter: 'r', class: { underline: true } },
-        { letter: '&nbsp;', class: {} },
-        { letter: 'R', class: {} },
-        { letter: 'o', class: { 'font-ogg-italic': true } },
-        { letter: 'g', class: {} },
-        { letter: 'e', class: {} },
-        { letter: 'r', class: {} },
+      chars1: [
+        { html: 'V', class: { underline: true } },
+        { html: 'i', class: { underline: true, 'font-ogg-italic': true } },
+        { html: 'c', class: { underline: true } },
+        { html: 't', class: { underline: true } },
+        { html: 'o', class: { underline: true } },
+        { html: 'r', class: { underline: true } },
+        { html: '&nbsp;', class: {} },
+        { html: 'R', class: {} },
+        { html: 'o', class: { 'font-ogg-italic': true } },
+        { html: 'g', class: {} },
+        { html: 'e', class: {} },
+        { html: 'r', class: {} },
       ],
-      appeared: -1,
-      interval: null,
     };
-  },
-  mounted() {
-    this.interval = setInterval(() => {
-      this.appeared++;
-      if (this.appeared === 15) clearInterval(this.interval);
-    }, 50);
-  },
-  beforeDestroy() {
-    clearInterval(this.interval);
   },
 };
 </script>
@@ -91,12 +71,5 @@ export default {
 }
 div {
   overflow-y: hidden;
-}
-span {
-  display: inline-block;
-  transition: all .5s;
-  &.hidden {
-    transform: translateY(100%);
-  }
 }
 </style>
