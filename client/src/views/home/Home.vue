@@ -12,27 +12,19 @@
       </div>
     </div>
     <Center/>
-    <div class="footer">
-      <router-link to="/archives">
-        archives
-      </router-link>
-      <a href="https://www.instagram.com/victorair_/" target="_blank" rel="noreferrer noopener">
-        instagram
-      </a>
-      <div>
-        48°47'45.3"N 1°36'09.9"E
-      </div>
-    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import NavBar from '../../components/NavBar.vue';
 import Center from './Center.vue';
+import Footer from '../../components/Footer.vue';
 
 export default {
   components: {
     Center,
+    Footer,
     NavBar,
   },
 };
@@ -64,24 +56,6 @@ export default {
     &:nth-child(4n+3) {
       align-self: flex-start;
     }
-  }
-}
-.footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
-  padding: 36px 0;
-  display: flex;
-
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-
-  > * {
-    flex-basis: 0;
-    flex-grow: 1;
   }
 }
 </style>

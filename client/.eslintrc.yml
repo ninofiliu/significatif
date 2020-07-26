@@ -9,3 +9,4 @@ parserOptions:
 rules:
   no-lonely-if: off
   no-plusplus: off
+  max-len: off
