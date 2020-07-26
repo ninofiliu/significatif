@@ -7,7 +7,10 @@
         <div class="text">
           <AppearingLine :chars="letMeTell"/>
           <AppearingLine :chars="youAStory" :start="-10"/>
-          <div style="font-weight: 300">&darr;</div>
+          <div style="font-weight: 300">
+            <!-- TODO use a pretty arrow -->
+            &darr;
+          </div>
         </div>
       </div>
       <hr>
@@ -17,6 +20,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
           </div>
           <div class="star">
+            <!-- TODO use the real icon -->
             star
           </div>
         </div>
@@ -108,6 +112,10 @@ hr {
   z-index: 100;
   .left {
     width: 30%;
+    .star {
+      margin-top: 16px;
+      text-align: right;
+    }
   }
   .right {
     width: 60%;
