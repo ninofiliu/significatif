@@ -1,6 +1,5 @@
 <template>
   <div class="Manifesto">
-    <NavBar/>
     <div class="center">
       <div class="landing">
         <PicturesSnake/>
@@ -25,11 +24,12 @@
           </div>
         </div>
         <div class="right">
-          Lorem, ipsum <img src="/static/manifesto-text-1.jpg"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img src="/static/manifesto-text-2.jpg">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
+          Lorem, ipsum <img src="http://placekitten.com/160/40"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img src="http://placekitten.com/160/41">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
         </div>
       </div>
     </div>
     <Footer/>
+    <NavBar/>
   </div>
 </template>
 

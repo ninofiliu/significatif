@@ -26,6 +26,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba(white, .75);
 
   border-bottom: 1px solid var(--red);
   padding: 22px 36px;
