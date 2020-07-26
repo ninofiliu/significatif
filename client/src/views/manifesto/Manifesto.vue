@@ -1,5 +1,7 @@
 <template>
   <div class="Manifesto">
+    <div class="bubble big"/>
+    <div class="bubble small"/>
     <div class="center">
       <div class="landing">
         <PicturesSnake/>
@@ -81,6 +83,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.Manifesto {
+  // position: relative;
+  perspective: 100px;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.bubble {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  border-radius: 50%;
+  background-color: var(--orange);
+  &.big {
+    width: 1000px;
+    height: 1000px;
+    transform: translateX(-1200px) translateY(-800px) translateZ(-50px);
+  }
+  &.small {
+    width: 180px;
+    height: 180px;
+    transform: translateX(50px) translateY(50px) translateZ(30px);
+  }
+}
 .center {
   width: 90%;
   margin: auto;

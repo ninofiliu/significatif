@@ -12,7 +12,9 @@
       </div>
     </div>
     <Center/>
-    <Footer/>
+    <div class="footer-container">
+      <Footer/>
+    </div>
   </div>
 </template>
 
@@ -57,5 +59,11 @@ export default {
       align-self: flex-start;
     }
   }
+}
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 </style>

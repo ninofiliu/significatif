@@ -14,11 +14,6 @@
 
 <style lang="scss" scoped>
 .Footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-
   padding: 36px 0;
   display: flex;
 
