@@ -1,23 +1,42 @@
 <template>
   <div class="Manifesto">
     <NavBar/>
-    <div class="landing">
-      <div class="text">
-        <AppearingLine :chars="letMeTell"/>
-        <AppearingLine :chars="youAStory" :start="-10"/>
-        <div style="font-weight: 300">&darr;</div>
+    <div class="center">
+      <div class="landing">
+        <div class="text">
+          <AppearingLine :chars="letMeTell"/>
+          <AppearingLine :chars="youAStory" :start="-10"/>
+          <div style="font-weight: 300">&darr;</div>
+        </div>
+      </div>
+      <hr>
+      <div class="more">
+        <div class="left">
+          <div class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
+          </div>
+          <div class="star">
+            star
+          </div>
+        </div>
+        <div class="right">
+          Lorem, ipsum <img src="/static/manifesto-text-1.jpg"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img src="/static/manifesto-text-2.jpg">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
+        </div>
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import NavBar from '../../components/NavBar.vue';
+import Footer from '../../components/Footer.vue';
 
 export default {
   components: {
     AppearingLine,
+    Footer,
     NavBar,
   },
   data() {
@@ -55,15 +74,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.center {
+  width: 90%;
+  margin: auto;
+}
 .landing {
   display: flex;
   height: 100vh;
-  justify-content: center;
   align-items: center;
   .text {
-    width: 80%;
     font-size: 110px;
     text-transform: uppercase;
+  }
+}
+hr {
+  border: 3px solid var(--red);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.more {
+  margin-bottom: 230px;
+  display: flex;
+  justify-content: space-between;
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 60%;
+    font-size: 40px;
+    text-transform: uppercase;
+    img {
+      height: 1em;
+      transform: translateY(.1em);
+    }
   }
 }
 </style>
