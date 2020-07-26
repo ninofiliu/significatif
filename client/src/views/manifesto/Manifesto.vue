@@ -3,8 +3,8 @@
     <NavBar/>
     <div class="landing">
       <div class="text">
-        <div>Let me <u>tell</u></div>
-        <div>You a s<span class="font-ogg-italic">t</span>ory.</div>
+        <AppearingLine :chars="letMeTell"/>
+        <AppearingLine :chars="youAStory" :start="-10"/>
         <div style="font-weight: 300">&darr;</div>
       </div>
     </div>
@@ -12,11 +12,44 @@
 </template>
 
 <script>
+import AppearingLine from '../../components/AppearingLine.vue';
 import NavBar from '../../components/NavBar.vue';
 
 export default {
   components: {
+    AppearingLine,
     NavBar,
+  },
+  data() {
+    return {
+      letMeTell: [
+        { html: 'L', class: {} },
+        { html: 'e', class: {} },
+        { html: 't', class: {} },
+        { html: '&nbsp;', class: {} },
+        { html: 'm', class: {} },
+        { html: 'e', class: {} },
+        { html: '&nbsp;', class: {} },
+        { html: 't', class: { underline: true } },
+        { html: 'e', class: { underline: true } },
+        { html: 'l', class: { underline: true } },
+        { html: 'l', class: { underline: true } },
+      ],
+      youAStory: [
+        { html: 'y', class: {} },
+        { html: 'o', class: {} },
+        { html: 'u', class: {} },
+        { html: '&nbsp;', class: {} },
+        { html: 'a', class: {} },
+        { html: '&nbsp;', class: {} },
+        { html: 's', class: {} },
+        { html: 't', class: { 'font-ogg-italic': true } },
+        { html: 'o', class: {} },
+        { html: 'r', class: {} },
+        { html: 'y', class: {} },
+        { html: '.', class: {} },
+      ],
+    };
   },
 };
 </script>
