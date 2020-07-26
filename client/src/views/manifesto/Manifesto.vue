@@ -3,6 +3,7 @@
     <NavBar/>
     <div class="center">
       <div class="landing">
+        <PicturesSnake/>
         <div class="text">
           <AppearingLine :chars="letMeTell"/>
           <AppearingLine :chars="youAStory" :start="-10"/>
@@ -32,12 +33,14 @@
 import AppearingLine from '../../components/AppearingLine.vue';
 import NavBar from '../../components/NavBar.vue';
 import Footer from '../../components/Footer.vue';
+import PicturesSnake from './PicturesSnake.vue';
 
 export default {
   components: {
     AppearingLine,
     Footer,
     NavBar,
+    PicturesSnake,
   },
   data() {
     return {
@@ -82,20 +85,27 @@ export default {
   display: flex;
   height: 100vh;
   align-items: center;
+  position: relative;
   .text {
     font-size: 110px;
     text-transform: uppercase;
+    pointer-events: none;
+    z-index: 100;
   }
 }
 hr {
   border: 3px solid var(--red);
   margin-top: 0;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 100;
 }
 .more {
   margin-bottom: 230px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 100;
   .left {
     width: 30%;
   }
