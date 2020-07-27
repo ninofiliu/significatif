@@ -7,7 +7,7 @@ import Manifesto from './views/manifesto/Manifesto.vue';
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes: [
     { path: '/', component: Home },
     { path: '/manifesto', component: Manifesto },
