@@ -84,7 +84,6 @@ export default {
 
 <style lang="scss" scoped>
 .Manifesto {
-  // position: relative;
   perspective: 100px;
   height: 100vh;
   width: 100vw;
@@ -125,7 +124,6 @@ export default {
   }
 }
 hr {
-  border: 3px solid var(--red);
   margin-top: 0;
   margin-bottom: 50px;
   position: relative;
