@@ -24,5 +24,9 @@
   font-style: italic;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Good Glyphs';
+  src: url('./GoodGlyphs.woff');
+}
 @import './globals.scss';
 @import './main.scss';
