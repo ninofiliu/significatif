@@ -26,4 +26,13 @@
     flex-grow: 1;
   }
 }
+.router-link-exact-active {
+  color: var(--white);
+  text-shadow:
+    1px 1px 0 var(--red),
+    1px -1px 0 var(--red),
+    -1px 1px 0 var(--red),
+    -1px -1px 0 var(--red),
+  ;
+}
 </style>

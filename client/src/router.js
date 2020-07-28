@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import About from './views/about/About.vue';
-import Archive from './views/archive/Archive.vue';
+import Archives from './views/archives/Archives.vue';
 import Home from './views/home/Home.vue';
 import Manifesto from './views/manifesto/Manifesto.vue';
 
@@ -12,7 +12,7 @@ const router = new VueRouter({
   routes: [
     { path: '/', component: Home },
     { path: '/about', component: About },
-    { path: '/archive', component: Archive },
+    { path: '/archives', component: Archives },
     { path: '/manifesto', component: Manifesto },
     { path: '*', redirect: '/' },
   ],
