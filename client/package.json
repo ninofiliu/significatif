@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build/future": "vue-cli-service build --dest build-future",
-    "build/prod": "vue-cli-service build --dest build-prod",
-    "dev": "vue-cli-service serve"
+    "build/future": "NODE_ENV=future vue-cli-service build --dest build-future",
+    "build/prod": "NODE_ENV=prod vue-cli-service build --dest build-prod",
+    "dev": "NODE_ENV=dev vue-cli-service serve"
   },
   "dependencies": {
     "core-js": "^3.6.5",
