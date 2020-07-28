@@ -8,8 +8,8 @@
         <div class="year">2018</div>
         <div class="year">2017</div>
       </div>
-      <div class="data">
-        <img src="//placekitten.com/300/200">
+      <div class="data" ref="data">
+        <img src="//placekitten.com/300/200" :style="{ left: `${left}px`, top: `${top}px` }" v-show="show">
         <table>
           <tr>
             <td>Date</td>
@@ -41,6 +41,31 @@ export default {
   components: {
     Footer,
     NavBar,
+  },
+  data() {
+    return {
+      left: 0,
+      top: 0,
+      show: false,
+    };
+  },
+  methods: {
+    onMouseMove(evt) {
+      this.show = true;
+      this.left = evt.clientX;
+      this.top = evt.clientY;
+    },
+    onMouseOut() {
+      this.show = false;
+    },
+  },
+  mounted() {
+    this.$refs.data.addEventListener('mousemove', this.onMouseMove);
+    this.$refs.data.addEventListener('mouseout', this.onMouseOut);
+  },
+  beforeDestroy() {
+    this.$refs.data.removeEventListener('mousemove', this.onMouseMove);
+    this.$refs.data.removeEventListener('mouseout', this.onMouseOut);
   },
 };
 </script>
@@ -79,6 +104,8 @@ export default {
   }
   img {
     position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
   }
 }
 table {
