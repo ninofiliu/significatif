@@ -12,24 +12,28 @@
           {{ year }}
         </div>
       </div>
-      <div class="data" ref="data">
+      <div class="data">
         <img v-show="show" :src="src" :style="{ left: `${left}px`, top: `${top}px` }">
         <table>
-          <tr>
-            <td>Date</td>
-            <td>Name</td>
-            <td>Location</td>
-          </tr>
-          <tr>
-            <td><input v-model="searchedDate" placeholder="Filter by date"></td>
-            <td><input v-model="searchedName" placeholder="Filter by name"></td>
-            <td><input v-model="searchedLocation" placeholder="Filter by location"></td>
-          </tr>
-          <tr v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
-            <td>{{ image.date.toDateString() }}</td>
-            <td>{{ image.name }}</td>
-            <td>{{ image.location }}</td>
-          </tr>
+          <thead>
+            <tr>
+              <td>Date</td>
+              <td>Name</td>
+              <td>Location</td>
+            </tr>
+            <tr>
+              <td><input v-model="searchedDate" placeholder="Filter by date"></td>
+              <td><input v-model="searchedName" placeholder="Filter by name"></td>
+              <td><input v-model="searchedLocation" placeholder="Filter by location"></td>
+            </tr>
+          </thead>
+          <tbody ref="tbody">
+            <tr v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
+              <td>{{ image.date.toDateString() }}</td>
+              <td>{{ image.name }}</td>
+              <td>{{ image.location }}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -102,12 +106,12 @@ export default {
     }
   },
   mounted() {
-    this.$refs.data.addEventListener('mousemove', this.onMouseMove);
-    this.$refs.data.addEventListener('mouseout', this.onMouseOut);
+    this.$refs.tbody.addEventListener('mousemove', this.onMouseMove);
+    this.$refs.tbody.addEventListener('mouseout', this.onMouseOut);
   },
   beforeDestroy() {
-    this.$refs.data.removeEventListener('mousemove', this.onMouseMove);
-    this.$refs.data.removeEventListener('mouseout', this.onMouseOut);
+    this.$refs.tbody.removeEventListener('mousemove', this.onMouseMove);
+    this.$refs.tbody.removeEventListener('mouseout', this.onMouseOut);
   },
 };
 </script>
