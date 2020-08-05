@@ -8,7 +8,9 @@
           <div>Th<span class="font-good-glyphs">h</span>nks for</div>
           <div>your visit!</div>
         </div>
-        <div>star</div>
+        <div>
+          <img src="../../assets/star.svg">
+        </div>
       </section>
       <section>
         <div class="font-ogg-italic">(&nbsp;)</div>

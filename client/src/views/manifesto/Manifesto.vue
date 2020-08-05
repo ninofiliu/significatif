@@ -21,8 +21,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
           </div>
           <div class="star">
-            <!-- TODO use the real icon -->
-            star
+            <img src="../../assets/star.svg">
           </div>
         </div>
         <div class="right">
@@ -140,6 +139,9 @@ hr {
     .star {
       margin-top: 16px;
       text-align: right;
+      img {
+        height: 38px;
+      }
     }
   }
   .right {
