@@ -3,9 +3,9 @@
     <div class="article">
       <div class="article-content">
         <div class="bubble"/>
-        <div class="cross">Cross</div>
-        <div class="the">the</div>
-        <div class="borders">borders</div>
+        <div class="cross">Cr<span class="font-good-glyphs">q</span>ss</div>
+        <div class="the underline">the</div>
+        <div class="borders"><span class="font-ogg-italic">bor</span>d<span class="font-ogg-italic">ers</span></div>
         <img src="//placekitten.com/270/100">
         <div class="desc">
           <div class="text">
@@ -63,6 +63,7 @@ export default {
 }
 .cross, .the, .borders {
   font-size: 70px;
+  font-weight: 300;
 }
 .cross {
   top: 10%;
