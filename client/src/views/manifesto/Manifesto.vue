@@ -29,8 +29,8 @@
         </div>
       </div>
     </div>
-    <Footer/>
     <NavBar/>
+    <Footer/>
   </div>
 </template>
 

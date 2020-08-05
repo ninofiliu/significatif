@@ -1,5 +1,5 @@
 <template>
-  <div class="Footer">
+  <div class="Footer" :class="{ '--fixed': fixed }">
     <router-link to="/archives">
       archives
     </router-link>
@@ -11,6 +11,17 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    fixed: {
+      default: false,
+      type: Boolean,
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .Footer {
@@ -24,6 +35,13 @@
   > * {
     flex-basis: 0;
     flex-grow: 1;
+  }
+
+  &.--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 .router-link-exact-active {

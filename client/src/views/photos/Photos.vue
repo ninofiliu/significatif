@@ -18,7 +18,7 @@
       </div>
     </div>
     <NavBar/>
-    <Footer/>
+    <Footer fixed/>
   </div>
 </template>
 
