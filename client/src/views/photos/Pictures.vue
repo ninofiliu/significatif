@@ -2,8 +2,43 @@
   <div class="Pictures">
     <img src="//placekitten.com/300/460">
     <img src="//placekitten.com/300/461">
+    <div class="hold-to-enlarge" :style="{ left: `${left}px`, top: `${top}px` }">
+      <span>h</span>
+      <span>o</span>
+      <span>l</span>
+      <span>d</span>
+      <span> </span>
+      <span>t</span>
+      <span>o</span>
+      <span> </span>
+      <span>e</span>
+      <span>n</span>
+      <span>l</span>
+      <span>a</span>
+      <span>r</span>
+      <span>g</span>
+      <span>e</span>
+      <div/>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      left: 0,
+      top: 0,
+    };
+  },
+  mounted() {
+    this.$el.addEventListener('mousemove', (evt) => {
+      this.left = evt.clientX;
+      this.top = evt.clientY;
+    });
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .Pictures {
@@ -12,11 +47,55 @@
   right: 60%;
   bottom: 0;
   left: 0;
-  position: relative;
 }
 img {
+  position: absolute;
   left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%) rotate(-20deg);
+  top: 50%;
+  max-width: 80%;
+  max-height: 80vh;
+  &:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(15deg);
+  }
+  &:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(-15deg);
+  }
+}
+.hold-to-enlarge {
+  position: fixed;
+  opacity: 0;
+  text-transform: uppercase;
+  pointer-events: none;
+  animation: rotate 4s linear infinite;
+  span {
+    position: absolute;
+    @for $i from 1 to 16 {
+      &:nth-child(#{$i}) {
+        transform: translate(-50%, -50%) rotate(#{20 * $i}deg) translateY(-40px);
+      }
+    }
+  }
+  div {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-color: var(--red);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.Pictures:hover {
+  cursor: none;
+  .hold-to-enlarge {
+    opacity: 1;
+  }
 }
 </style>
