@@ -96,6 +96,11 @@ export default {
       this.show = false;
     },
   },
+  created() {
+    for (const image of this.images) {
+      (new Image()).src = image.src;
+    }
+  },
   mounted() {
     this.$refs.data.addEventListener('mousemove', this.onMouseMove);
     this.$refs.data.addEventListener('mouseout', this.onMouseOut);
