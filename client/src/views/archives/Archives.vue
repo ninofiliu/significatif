@@ -9,7 +9,7 @@
           :class="{ '--current': year === currentYear }"
           @click="currentYear = year"
         >
-          {{year}}
+          {{ year }}
         </div>
       </div>
       <div class="data" ref="data">
@@ -21,14 +21,14 @@
             <td>Location</td>
           </tr>
           <tr>
-            <td>Search Date</td>
-            <td>Search Name</td>
-            <td>Search Location</td>
+            <td><input v-model="searchedDate" placeholder="Filter by date"></td>
+            <td><input v-model="searchedName" placeholder="Filter by name"></td>
+            <td><input v-model="searchedLocation" placeholder="Filter by location"></td>
           </tr>
           <tr v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
             <td>{{ image.date.toDateString() }}</td>
-            <td>{{image.name}}</td>
-            <td>{{image.location}}</td>
+            <td>{{ image.name }}</td>
+            <td>{{ image.location }}</td>
           </tr>
         </table>
       </div>
@@ -66,12 +66,24 @@ export default {
       images,
       years,
       currentYear,
+      searchedDate: '',
+      searchedName: '',
+      searchedLocation: '',
     };
   },
   computed: {
     displayedImages() {
       return this.images
-        .filter((image) => image.date.getFullYear() === this.currentYear);
+        .filter((image) => image.date.getFullYear() === this.currentYear)
+        .filter((image) => image.date.toDateString().toLowerCase().includes(
+          this.searchedDate.toLowerCase(),
+        ))
+        .filter((image) => image.name.toLowerCase().includes(
+          this.searchedName.toLowerCase(),
+        ))
+        .filter((image) => image.location.toLowerCase().includes(
+          this.searchedLocation.toLowerCase(),
+        ));
     },
   },
   methods: {
@@ -152,5 +164,12 @@ table {
 td {
   border-bottom: 1px solid var(--red);
   padding: 1em 0;
+}
+input {
+  border: none;
+  background-color: transparent;
+  color: var(--red);
+  font: inherit;
+  outline: none;
 }
 </style>
