@@ -3,13 +3,17 @@
     <NavBar/>
     <div class="content">
       <div class="years">
-        <div class="year">2020</div>
-        <div class="year">2019</div>
-        <div class="year">2018</div>
-        <div class="year">2017</div>
+        <div
+          v-for="year of years"
+          :key="year" class="year"
+          :class="{ '--current': year === currentYear }"
+          @click="currentYear = year"
+        >
+          {{year}}
+        </div>
       </div>
       <div class="data" ref="data">
-        <img :src="src" :style="{ left: `${left}px`, top: `${top}px` }" v-show="show">
+        <img v-show="show" :src="src" :style="{ left: `${left}px`, top: `${top}px` }">
         <table>
           <tr>
             <td>Date</td>
@@ -21,10 +25,10 @@
             <td>Search Name</td>
             <td>Search Location</td>
           </tr>
-          <tr v-for="i of 50" :key="i" @mouseenter="src = `//placekitten.com/300/${100+i}`">
-            <td>date {{ i }}</td>
-            <td>name {{ i }}</td>
-            <td>location {{ i }}</td>
+          <tr v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
+            <td>{{ image.date.toDateString() }}</td>
+            <td>{{image.name}}</td>
+            <td>{{image.location}}</td>
           </tr>
         </table>
       </div>
@@ -37,6 +41,17 @@
 import Footer from '../../components/Footer.vue';
 import NavBar from '../../components/NavBar.vue';
 
+const images = new Array(100).fill()
+  .map((_, i) => ({
+    date: new Date(1483138800000 + Math.random() * 126230400000),
+    name: Math.random().toString(16).substring(2),
+    location: Math.random().toString(16).substring(2),
+    src: `//placekitten.com/300/${100 + i}`,
+  }))
+  .sort((a, b) => a.date - b.date);
+const years = [...new Set(images.map((image) => image.date.getFullYear()))].reverse();
+const currentYear = Math.max(...years);
+
 export default {
   components: {
     Footer,
@@ -48,7 +63,16 @@ export default {
       top: 0,
       show: false,
       src: '',
+      images,
+      years,
+      currentYear,
     };
+  },
+  computed: {
+    displayedImages() {
+      return this.images
+        .filter((image) => image.date.getFullYear() === this.currentYear);
+    },
   },
   methods: {
     onMouseMove(evt) {
@@ -89,11 +113,22 @@ export default {
   text-align: center;
   font-size: 70px;
   font-weight: 300;
+  overflow-y: auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .year {
-  border: 2px solid var(--red);
+  border: 2px solid transparent;
   border-radius: 50%;
   padding: 10px 40px;
+  &.--current {
+    border-color: var(--red);
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 .data {
   width: 60%;
