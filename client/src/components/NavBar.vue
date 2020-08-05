@@ -4,7 +4,7 @@
       significa.tif
     </router-link>
     <div>
-      <router-link to="/photo">photo</router-link>
+      <router-link to="/photos">photos</router-link>
       <router-link to="/video">video</router-link>
       <router-link to="/manifesto">manifesto</router-link>
       <router-link to="/about">about</router-link>
