@@ -17,7 +17,7 @@
   padding: 36px 0;
   display: flex;
 
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   text-align: center;
 

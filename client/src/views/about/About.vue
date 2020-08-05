@@ -125,7 +125,7 @@ section:nth-child(4) {
     margin-left: 40%;
   }
   .links {
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
     a {

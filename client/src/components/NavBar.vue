@@ -32,7 +32,7 @@ export default {
   display: flex;
   justify-content: space-between;
 
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 a {
