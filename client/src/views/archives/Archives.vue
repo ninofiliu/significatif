@@ -3,14 +3,13 @@
     <NavBar/>
     <div class="content">
       <div class="years">
-        <div
+        <Year
           v-for="year of years"
-          :key="year" class="year"
-          :class="{ '--current': year === currentYear }"
+          :key="year"
+          :year="year"
+          :current="year === currentYear"
           @click="currentYear = year"
-        >
-          {{ year }}
-        </div>
+        />
       </div>
       <div class="data">
         <img v-show="show" :src="src" :style="{ left: `${left}px`, top: `${top}px` }">
@@ -44,10 +43,11 @@
 <script>
 import Footer from '../../components/Footer.vue';
 import NavBar from '../../components/NavBar.vue';
+import Year from './Year.vue';
 
 const images = new Array(100).fill()
   .map((_, i) => ({
-    date: new Date(1483138800000 + Math.random() * 126230400000),
+    date: new Date(+new Date('2014') + Math.random() * (new Date('2020') - new Date('2014'))),
     name: Math.random().toString(16).substring(2),
     location: Math.random().toString(16).substring(2),
     src: `//placekitten.com/300/${100 + i}`,
@@ -60,6 +60,7 @@ export default {
   components: {
     Footer,
     NavBar,
+    Year,
   },
   data() {
     return {
@@ -131,28 +132,15 @@ export default {
   justify-content: space-around;
 }
 .years {
-  text-align: center;
-  font-size: 70px;
-  font-weight: 300;
+  width: 400px;
   overflow-y: auto;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
   }
 }
-.year {
-  border: 2px solid transparent;
-  border-radius: 50%;
-  padding: 10px 40px;
-  &.--current {
-    border-color: var(--red);
-  }
-  &:hover {
-    cursor: pointer;
-  }
-}
 .data {
-  width: 60%;
+  width: calc(100% - 400px);
   position: relative;
   overflow-y: auto;
   scrollbar-width: none;
