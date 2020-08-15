@@ -1,5 +1,5 @@
 <template>
-  <svg width="240" height="110" @click="$emit('click')">
+  <svg width="240" height="110">
     <text x="120" y="55" text-anchor="middle" dominant-baseline="middle">
       {{ year }}
     </text>

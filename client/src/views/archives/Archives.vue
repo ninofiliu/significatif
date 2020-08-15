@@ -3,13 +3,17 @@
     <NavBar/>
     <div class="content">
       <div class="years">
-        <Year
+        <div
+          class="year-container"
           v-for="year of years"
           :key="year"
-          :year="year"
-          :current="year === currentYear"
           @click="currentYear = year"
-        />
+        >
+          <Year
+            :year="year"
+            :current="year === currentYear"
+          />
+        </div>
       </div>
       <div class="data">
         <img v-show="show" :src="src" :style="{ left: `${left}px`, top: `${top}px` }">
@@ -137,6 +141,26 @@ export default {
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+.year-container {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes appear {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@for $i from 0 to 10 {
+  .year-container:nth-child(#{$i+1}) {
+    animation-delay: #{0.3 * $i}s;
   }
 }
 .data {
