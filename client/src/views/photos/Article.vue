@@ -2,10 +2,18 @@
   <div class="Article">
     <div class="content">
       <div class="bubble"/>
-      <div class="cross">Cr<span class="font-good-glyphs">q</span>ss</div>
-      <div class="the underline">the</div>
-      <div class="borders"><span class="font-ogg-italic">bor</span>d<span class="font-ogg-italic">ers</span></div>
-      <img src="//placekitten.com/270/100">
+      <div class="cross">
+        <AppearingLine :chars="cross" :start="-30" />
+      </div>
+      <div class="the">
+        <AppearingLine :chars="the" :start="-35" />
+      </div>
+      <div class="borders">
+        <AppearingLine :chars="borders" :start="-40" />
+      </div>
+      <div class="image-container">
+        <img src="//placekitten.com/270/100">
+      </div>
       <div class="desc">
         <div class="text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit itaque reprehenderit molestias? Fugiat porro architecto labore, doloribus aliquid voluptatibus vitae velit provident, itaque consectetur expedita soluta assumenda, magnam asperiores molestias!
@@ -17,6 +25,41 @@
     </div>
   </div>
 </template>
+
+<script>
+import AppearingLine from '../../components/AppearingLine.vue';
+
+export default {
+  components: {
+    AppearingLine,
+  },
+  data() {
+    return {
+      cross: [
+        { html: 'C', class: {} },
+        { html: 'r', class: {} },
+        { html: 'q', class: { 'font-good-glyphs': true } },
+        { html: 's', class: {} },
+        { html: 's', class: {} },
+      ],
+      the: [
+        { html: 't', class: {} },
+        { html: 'h', class: {} },
+        { html: 'e', class: {} },
+      ],
+      borders: [
+        { html: 'b', class: { 'font-ogg-italic': true } },
+        { html: 'o', class: { 'font-ogg-italic': true } },
+        { html: 'r', class: { 'font-ogg-italic': true } },
+        { html: 'd', class: {} },
+        { html: 'e', class: { 'font-ogg-italic': true } },
+        { html: 'r', class: { 'font-ogg-italic': true } },
+        { html: 's', class: { 'font-ogg-italic': true } },
+      ],
+    };
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 .Article {
@@ -44,6 +87,18 @@
   height: 300px;
   border-radius: 50%;
   left: 10%;
+  animation-name: appear-bubble;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+@keyframes appear-bubble {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 .cross, .the, .borders {
   font-size: 70px;
@@ -60,19 +115,43 @@
 .borders {
   top: 40%;
 }
-img {
+.image-container {
   top: 40%;
   right: 0;
+  overflow: hidden;
+}
+img {
+  animation-name: appear-up;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
 }
 .desc {
   bottom: 0;
   display: flex;
+  overflow: hidden;
   .text {
     width: 70%;
+    animation-name: appear-up;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
   }
   .number {
     width: 30%;
     text-align: right;
+    animation-name: appear-up;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+  }
+}
+@keyframes appear-up {
+  from {
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0%)s;
   }
 }
 </style>

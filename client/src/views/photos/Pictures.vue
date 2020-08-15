@@ -50,15 +50,27 @@ export default {
 }
 img {
   position: absolute;
-  left: 50%;
   top: 50%;
   max-width: 80%;
   max-height: 80vh;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-fill-mode: both;
   &:nth-child(1) {
     transform: translate(-50%, -50%) rotate(15deg);
+    animation-delay: .5s;
   }
   &:nth-child(2) {
     transform: translate(-50%, -50%) rotate(-15deg);
+    animation-delay: 0s;
+  }
+}
+@keyframes appear {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 50%;
   }
 }
 .hold-to-enlarge {
