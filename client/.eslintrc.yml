@@ -6,6 +6,8 @@ extends:
   - '@vue/airbnb'
 parserOptions: 
   parser: babel-eslint
+globals:
+  STATIC_BASE: readonly
 rules:
   no-lonely-if: off
   no-plusplus: off
