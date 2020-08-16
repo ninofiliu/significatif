@@ -4,11 +4,8 @@ Website for my dear friend Victor
 
 # Local dev
 
-```sh
-cd client
-npm run dev
-# backoffice and static assets are not setup yet
-```
+- start the client: `cd client; npm run dev`
+- serve static assets: `cd static; http-server . -c-1 -p 8081`
 
 # Deployment
 
