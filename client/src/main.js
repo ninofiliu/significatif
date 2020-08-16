@@ -5,6 +5,7 @@ import store from './store';
 import './styles/index.scss';
 
 Vue.config.productionTip = false;
+Vue.prototype.$s = 'http://localhost:8081/';
 
 new Vue({
   render: (h) => h(App),

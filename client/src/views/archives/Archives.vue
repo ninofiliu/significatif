@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="data">
-        <img v-show="show" :src="src" :style="{ left: `${left}px`, top: `${top}px` }">
+        <img v-show="show" :src="`${$s}${src}`" :style="{ left: `${left}px`, top: `${top}px` }">
         <table>
           <thead>
             <tr>
@@ -49,15 +49,51 @@ import Footer from '../../components/Footer.vue';
 import NavBar from '../../components/NavBar.vue';
 import Year from './Year.vue';
 
-const images = new Array(100).fill()
-  .map((_, i) => ({
-    date: new Date(+new Date('2014') + Math.random() * (new Date('2020') - new Date('2014'))),
-    name: Math.random().toString(16).substring(2),
-    location: Math.random().toString(16).substring(2),
-    src: `//placekitten.com/300/${100 + i}`,
-  }))
-  .sort((a, b) => a.date - b.date);
-const years = [...new Set(images.map((image) => image.date.getFullYear()))].reverse();
+const images = [
+  {
+    date: new Date('2020-06-16'),
+    name: 'Je bronzee',
+    location: 'soleile',
+    src: '0.jpg',
+  },
+  {
+    date: new Date('2020-10-15'),
+    name: 'Pakpakfleur',
+    location: 'Paris',
+    src: '1.jpg',
+  },
+  {
+    date: new Date('2017-08-08'),
+    name: 'Je fer des doi donneur mdr',
+    location: 'Fauteille',
+    src: '2.jpg',
+  },
+  {
+    date: new Date('2020-01-01'),
+    name: 'Ophélieeee',
+    location: 'Chez Ophélieeee',
+    src: '3.jpg',
+  },
+  {
+    date: new Date('2019-01-01'),
+    name: 'Mh la sexy madame',
+    location: 'Sur 1 lit',
+    src: '4.jpg',
+  },
+  {
+    date: new Date('2020-06-06'),
+    name: 'Orange',
+    location: 'Bathtubbe',
+    src: '5.jpg',
+  },
+  {
+    date: new Date('2018-10-10'),
+    name: 'Voitur',
+    location: 'Devant là voitur',
+    src: '6.jpg',
+  },
+];
+const years = [...new Set(images.map((image) => image.date.getFullYear()))].sort().reverse();
 const currentYear = Math.max(...years);
 
 export default {
@@ -175,6 +211,8 @@ export default {
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 table {

@@ -1,7 +1,7 @@
 <template>
   <div class="Pictures">
-    <img src="//placekitten.com/300/460">
-    <img src="//placekitten.com/300/461">
+    <img :src="`${$s}10.jpg`">
+    <img :src="`${$s}3.jpg`">
     <div class="hold-to-enlarge" :style="{ left: `${left}px`, top: `${top}px` }">
       <span>h</span>
       <span>o</span>

@@ -3,7 +3,7 @@
     <img
       v-for="image of images"
       :key="image.key"
-      :src="image.src"
+      :src="$s + image.src"
       :style="{
         left: `${image.left}px`,
         top: `${image.top}px`,
@@ -23,14 +23,7 @@ export default {
   },
   methods: {
     onMouseMove(evt) {
-      const srcs = [
-        'https://placekitten.com/200/300',
-        'https://placekitten.com/200/301',
-        'https://placekitten.com/200/302',
-        'https://placekitten.com/200/303',
-        'https://placekitten.com/200/304',
-        'https://placekitten.com/200/305',
-      ];
+      const srcs = (new Array(19)).fill().map((elt, i) => `${i}.jpg`);
       if (this.step % 5 === 0) {
         const index = this.images.length;
         this.images.push({
@@ -67,5 +60,7 @@ img {
   position: fixed;
   transition: all 1s;
   pointer-events: none;
+  max-width: 250px;
+  max-height: 250px;
 }
 </style>

@@ -12,7 +12,7 @@
         <AppearingLine :chars="borders" :start="-40" />
       </div>
       <div class="image-container">
-        <img src="//placekitten.com/270/100">
+        <img :src="`${$s}1.jpg`">
       </div>
       <div class="desc">
         <div class="text">
@@ -121,6 +121,9 @@ export default {
   overflow: hidden;
 }
 img {
+  width: 250px;
+  height: 100px;
+  object-fit: cover;
   animation-name: appear-up;
   animation-duration: 1s;
   animation-delay: 2.5s;

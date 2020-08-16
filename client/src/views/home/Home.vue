@@ -3,12 +3,15 @@
     <NavBar/>
     <div class="scroll">
       <div class="scroll-content">
-        <img src="https://placekitten.com/300/370">
-        <img src="https://placekitten.com/300/370">
-        <img src="https://placekitten.com/300/370">
-        <img src="https://placekitten.com/300/370">
-        <img src="https://placekitten.com/300/370">
-        <img src="https://placekitten.com/300/370">
+        <div class="img-container"><img :src="`${$s}18.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}14.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}12.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}7.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}1.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}2.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}6.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}13.jpg`"></div>
+        <div class="img-container"><img :src="`${$s}11.jpg`"></div>
       </div>
     </div>
     <Center/>
@@ -37,25 +40,29 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
-  display: flex;
-  align-items: center;
   overflow-x: auto;
 }
 .scroll-content {
-  height: 80vh;
   display: flex;
-  img {
-    margin: 0 32px;
-    filter: brightness(.5);
-    &:nth-child(2n) {
-      align-self: center;
-    }
-    &:nth-child(4n+1) {
-      align-self: flex-end;
-    }
-    &:nth-child(4n+3) {
-      align-self: flex-start;
-    }
+  width: calc(30vw * 8);
+}
+.img-container {
+  box-sizing: border-box;
+  width: 30vw;
+  height: 100vh;
+  padding: 3vw;
+  display: flex;
+  &:nth-child(4n+1) {
+    align-items: flex-end;
   }
+  &:nth-child(2n) {
+    align-items: center;
+  }
+  &:nth-child(4n+3) {
+    align-items: flex-start;
+  }
+}
+img {
+  width: 100%;
 }
 </style>
