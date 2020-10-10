@@ -1,5 +1,5 @@
 <template>
-  <div class="Photos">
+  <div>
     <Article/>
     <Pictures/>
     <NavBar/>
@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Footer from '../../components/Footer.vue';
-import NavBar from '../../components/NavBar.vue';
+import Footer from '../../../components/Footer.vue';
+import NavBar from '../../../components/NavBar.vue';
 import Article from './Article.vue';
 import Pictures from './Pictures.vue';
 
