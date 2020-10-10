@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="right">
-          Lorem, ipsum <img :src="`${$s}17.jpg`"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img :src="`${$s}15.jpg`">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
+          Lorem, ipsum <img :src="`${$s}17.jpg`" class="text-img"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img :src="`${$s}15.jpg`" class="text-img">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
         </div>
       </div>
     </div>
@@ -148,12 +148,6 @@ hr {
     width: 60%;
     font-size: 40px;
     text-transform: uppercase;
-    img {
-      height: 1em;
-      width: 4em;
-      object-fit: cover;
-      transform: translateY(.1em);
-    }
   }
 }
 </style>

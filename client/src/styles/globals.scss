@@ -18,3 +18,9 @@
 .underline {
   text-decoration: underline;
 }
+.text-img {
+  height: 1em;
+  width: 4em;
+  object-fit: cover;
+  transform: translateY(.1em);
+}
