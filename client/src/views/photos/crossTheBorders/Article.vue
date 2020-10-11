@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
+import AppearingLine from '../../../components/AppearingLine.vue';
 
 export default {
   components: {

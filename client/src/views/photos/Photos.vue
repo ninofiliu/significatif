@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="pictures">
-      <img v-for="i of 10" :key="i" :src="`${$s}${i}.jpg`">
+      <RouterLink to="/photos/cross-the-borders">
+        <img v-for="i of 10" :key="i" :src="`${$s}${i}.jpg`">
+      </RouterLink>
     </div>
     <div class="text">
       <span style="font-weight: bold">
