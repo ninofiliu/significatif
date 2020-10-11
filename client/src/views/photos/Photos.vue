@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="pictures">
+      <img v-for="i of 10" :key="i" :src="`${$s}${i}.jpg`">
+    </div>
     <div class="text">
       <span style="font-weight: bold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -42,5 +45,33 @@ export default {
   right: 40%;
   left: 10%;
   font-size: 30px;
+}
+.pictures {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  img {
+    display: block;
+    width: 40%;
+    margin: 0 15% 0 45%;
+    &:first-child {
+      margin-top: 5%;
+    }
+    &:last-child {
+      margin-bottom: 5%;
+    }
+    &:nth-child(3n+1) {
+      transform: rotate(-10deg);
+    }
+    &:nth-child(3n+2) {
+      transform: rotate(5deg);
+    }
+    &:nth-child(3n+3) {
+      transform: rotate(15deg);
+    }
+  }
 }
 </style>
