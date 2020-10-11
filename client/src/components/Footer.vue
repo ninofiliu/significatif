@@ -1,8 +1,8 @@
 <template>
   <div class="Footer" :class="{ '--fixed': fixed }">
-    <router-link to="/archives">
+    <RouterLink to="/archives">
       archives
-    </router-link>
+    </RouterLink>
     <a href="https://www.instagram.com/victorair_/" target="_blank" rel="noreferrer noopener">
       instagram
     </a>
@@ -44,7 +44,7 @@ export default {
     right: 0;
   }
 }
-.router-link-exact-active {
+.RouterLink-exact-active {
   color: var(--white);
   text-shadow:
     1px 1px 0 var(--red),

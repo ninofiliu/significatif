@@ -1,13 +1,13 @@
 <template>
   <div class="NavBar">
-    <router-link to="/">
+    <RouterLink to="/">
       significa.tif
-    </router-link>
+    </RouterLink>
     <div>
-      <router-link to="/photos">photos</router-link>
-      <router-link to="/video">video</router-link>
-      <router-link to="/manifesto">manifesto</router-link>
-      <router-link to="/about">about</router-link>
+      <RouterLink to="/photos">photos</RouterLink>
+      <RouterLink to="/video">video</RouterLink>
+      <RouterLink to="/manifesto">manifesto</RouterLink>
+      <RouterLink to="/about">about</RouterLink>
       <a href="#" class="close">&Cross;</a>
     </div>
   </div>
@@ -38,7 +38,7 @@ export default {
 a {
   margin: 0 16px;
 }
-.router-link-exact-active {
+.RouterLink-exact-active {
   color: var(--white);
   text-shadow:
     1px 1px 0 var(--red),
