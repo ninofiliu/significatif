@@ -41,6 +41,7 @@ export default {
   bottom: 0;
   left: 0;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 .scroll-content {
   display: flex;
