@@ -8,7 +8,7 @@
       <RouterLink to="/video">video</RouterLink>
       <RouterLink to="/manifesto">manifesto</RouterLink>
       <RouterLink to="/about">about</RouterLink>
-      <a href="#" class="close">&Cross;</a>
+      <RouterLink to="/" class="close">&Cross;</RouterLink>
     </div>
   </div>
 </template>
@@ -38,7 +38,7 @@ export default {
 a {
   margin: 0 16px;
 }
-.RouterLink-exact-active {
+.router-link-exact-active:not(.close) {
   color: var(--white);
   text-shadow:
     1px 1px 0 var(--red),
