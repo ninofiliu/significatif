@@ -8,7 +8,10 @@
       <RouterLink to="/video">video</RouterLink>
       <RouterLink to="/manifesto">manifesto</RouterLink>
       <RouterLink to="/about">about</RouterLink>
-      <RouterLink to="/" class="close">&Cross;</RouterLink>
+      <RouterLink to="/" class="close">
+        <span/>
+        <span/>
+      </RouterLink>
     </div>
   </div>
 </template>
@@ -36,6 +39,7 @@ export default {
   text-transform: uppercase;
 }
 a {
+  vertical-align: middle;
   margin: 0 16px;
   &:hover {
     opacity: .5;
@@ -43,5 +47,28 @@ a {
 }
 .router-link-exact-active:not(.close) {
   text-decoration: underline;
+}
+.close {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+  span {
+    height: 1px;
+    position: absolute;
+    background-color: var(--red);
+  }
+  span:nth-child(1) {
+    width: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  span:nth-child(2) {
+    width: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
 }
 </style>>
