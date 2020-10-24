@@ -1,5 +1,5 @@
 <template>
-  <div class="NavBar">
+  <div class="NavBar" :style="{ 'background-color': `rgba(255, 255, 255, ${$features.navBarOpacity}` }">
     <RouterLink to="/">
       significa.tif
     </RouterLink>
