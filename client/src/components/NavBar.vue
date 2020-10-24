@@ -37,14 +37,11 @@ export default {
 }
 a {
   margin: 0 16px;
+  &:hover {
+    opacity: .5;
+  }
 }
 .router-link-exact-active:not(.close) {
-  color: var(--white);
-  text-shadow:
-    1px 1px 0 var(--red),
-    1px -1px 0 var(--red),
-    -1px 1px 0 var(--red),
-    -1px -1px 0 var(--red),
-  ;
+  text-decoration: underline;
 }
 </style>>
