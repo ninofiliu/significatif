@@ -10,7 +10,7 @@ import CrossTheBorders from './views/photos/crossTheBorders/CrossTheBorders.vue'
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   routes: [
     { path: '/', component: Home },
     { path: '/about', component: About },
