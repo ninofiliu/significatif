@@ -83,7 +83,7 @@ img {
     position: absolute;
     @for $i from 1 to 16 {
       &:nth-child(#{$i}) {
-        transform: translate(-50%, -50%) rotate(#{20 * $i}deg) translateY(-40px);
+        transform: translate(-50%, -50%) rotate(#{20 * $i}deg) translateY(-35px);
       }
     }
   }
