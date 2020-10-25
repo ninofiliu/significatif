@@ -162,6 +162,7 @@ export default {
 
 <style lang="scss" scoped>
 .Archives {
+  --years-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,7 +176,7 @@ export default {
   justify-content: space-around;
 }
 .years {
-  width: 400px;
+  width: var(--years-width);
   overflow-y: auto;
   scrollbar-width: none;
   align-self: center;
@@ -204,7 +205,7 @@ export default {
   }
 }
 .data {
-  width: calc(100% - 400px);
+  width: calc(90vw - var(--years-width));
   position: relative;
   overflow-y: auto;
   scrollbar-width: none;
