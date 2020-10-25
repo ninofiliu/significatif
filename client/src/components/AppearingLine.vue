@@ -5,6 +5,7 @@
       :key="i"
       :class="{
         ...char.class,
+        underline: char.underline,
         hidden: (reversed ? (chars.length - i) : i) > appeared
       }"
       v-html="char.html"
@@ -54,17 +55,21 @@ div {
   overflow-y: hidden;
 }
 span {
+  position: relative;
   display: inline-block;
   transition: all .5s;
+  vertical-align: top;
   &.hidden {
     transform: translateY(200%);
   }
-  // HACK ogg font underline is not at the same height as hevetica
-  &.u-underline.u-font-ogg {
-    transform: translateY(0.025em);
-    &.hidden {
-      transform: translateY(calc(200% + 0.025em));
-    }
+  &.underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .04em;
+    top: 1.1em;
+    background-color: var(--red);
+    vertical-align: top;
   }
 }
 </style>
