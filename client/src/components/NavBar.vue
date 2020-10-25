@@ -7,7 +7,7 @@
       <RouterLink to="/photos">photos</RouterLink>
       <RouterLink to="/video">video</RouterLink>
       <RouterLink to="/manifesto">manifesto</RouterLink>
-      <RouterLink to="/about">about</RouterLink>
+      <RouterLink to="/contact">contact</RouterLink>
       <RouterLink to="/" class="close">
         <span/>
         <span/>

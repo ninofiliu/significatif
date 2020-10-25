@@ -1,5 +1,5 @@
 <template>
-  <div class="About">
+  <div class="Contact">
     <div class="bubble left"/>
     <div class="bubble right"/>
     <div class="center">
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.About {
+.Contact {
   background-color: var(--orange);
   perspective: 100px;
   height: 100vh;
