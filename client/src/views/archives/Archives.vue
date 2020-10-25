@@ -215,8 +215,8 @@ export default {
     position: fixed;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 40vh;
+    max-height: 40vh;
   }
 }
 table {
