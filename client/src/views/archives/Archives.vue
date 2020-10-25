@@ -32,7 +32,7 @@
           </thead>
           <tbody ref="tbody">
             <tr v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
-              <td>{{ image.date.toDateString() }}</td>
+              <td>{{ image.readableDate }}</td>
               <td>{{ image.name }}</td>
               <td>{{ image.location }}</td>
             </tr>
@@ -121,17 +121,16 @@ export default {
   },
   computed: {
     displayedImages() {
+      const matches = (str1, str2) => str1.toLowerCase().includes(str2.toLowerCase());
       return this.images
         .filter((image) => image.date.getFullYear() === this.currentYear)
-        .filter((image) => image.date.toDateString().toLowerCase().includes(
-          this.searchedDate.toLowerCase(),
-        ))
-        .filter((image) => image.name.toLowerCase().includes(
-          this.searchedName.toLowerCase(),
-        ))
-        .filter((image) => image.location.toLowerCase().includes(
-          this.searchedLocation.toLowerCase(),
-        ));
+        .map((image) => ({
+          ...image,
+          readableDate: Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(image.date),
+        }))
+        .filter((image) => matches(image.readableDate, this.searchedDate))
+        .filter((image) => matches(image.name, this.searchedName))
+        .filter((image) => matches(image.location, this.searchedLocation));
     },
   },
   methods: {
