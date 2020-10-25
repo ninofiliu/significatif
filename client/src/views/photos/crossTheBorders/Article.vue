@@ -38,7 +38,7 @@ export default {
       cross: [
         { html: 'C', class: {} },
         { html: 'r', class: {} },
-        { html: 'q', class: { 'font-good-glyphs': true } },
+        { html: 'q', class: { 'u-font-good-glyphs': true } },
         { html: 's', class: {} },
         { html: 's', class: {} },
       ],
@@ -48,13 +48,13 @@ export default {
         { html: 'e', class: {} },
       ],
       borders: [
-        { html: 'b', class: { 'font-ogg-italic': true } },
-        { html: 'o', class: { 'font-ogg-italic': true } },
-        { html: 'r', class: { 'font-ogg-italic': true } },
+        { html: 'b', class: { 'u-font-ogg-italic': true } },
+        { html: 'o', class: { 'u-font-ogg-italic': true } },
+        { html: 'r', class: { 'u-font-ogg-italic': true } },
         { html: 'd', class: {} },
-        { html: 'e', class: { 'font-ogg-italic': true } },
-        { html: 'r', class: { 'font-ogg-italic': true } },
-        { html: 's', class: { 'font-ogg-italic': true } },
+        { html: 'e', class: { 'u-font-ogg-italic': true } },
+        { html: 'r', class: { 'u-font-ogg-italic': true } },
+        { html: 's', class: { 'u-font-ogg-italic': true } },
       ],
     };
   },

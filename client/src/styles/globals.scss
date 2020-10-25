@@ -3,24 +3,35 @@
   --orange: #f0cea8;
   --white: #f6f6f6;
 }
-.font-good-glyphs {
+.u-font-good-glyphs {
   font-family: 'Good Glyphs';
 }
-.font-ogg-roman {
+.u-font-ogg-roman {
   font-family: 'Ogg Roman', 'Times New Roman', Times, serif;
 }
-.font-ogg-italic {
+.u-font-ogg-italic {
   font-family: 'Ogg Italic', 'Times New Roman', Times, serif;
 }
 .italic {
   font-style: italic;
 }
-.underline {
+.u-underline {
   text-decoration: underline;
 }
-.text-img {
+.u-text-img {
   height: 1em;
   width: 4em;
   object-fit: cover;
   transform: translateY(.1em);
+}
+.u-rotate {
+  animation: 5s linear infinite rotate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }

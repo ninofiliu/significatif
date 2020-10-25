@@ -2,7 +2,7 @@
   <div class="Pictures">
     <img :src="`${$s}10.jpg`">
     <img :src="`${$s}3.jpg`">
-    <div class="hold-to-enlarge" :style="{ left: `${left}px`, top: `${top}px` }">
+    <div class="hold-to-enlarge u-rotate" :style="{ left: `${left}px`, top: `${top}px` }">
       <span>h</span>
       <span>o</span>
       <span>l</span>
@@ -78,7 +78,6 @@ img {
   opacity: 0;
   text-transform: uppercase;
   pointer-events: none;
-  animation: rotate 4s linear infinite;
   font-size: 15px;
   span {
     position: absolute;
@@ -95,14 +94,6 @@ img {
     background-color: var(--red);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
   }
 }
 .Pictures:hover {

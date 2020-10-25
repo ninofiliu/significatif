@@ -12,13 +12,13 @@
       <span>
         In sequi similique tenetur facere ratione sapien tenatus dolor illum nesciunt dolorum
       </span>
-      <span class="font-ogg-roman">
+      <span class="u-font-ogg-roman">
         non at ab laboriosam pariatur quaerat dolores maxime!
       </span>
       <span>
         impedit tempora numquam necessitatibus corrupti
       </span>
-      <img :src="`${$s}6.jpg`" class="text-img">
+      <img :src="`${$s}6.jpg`" class="u-text-img">
       <span>
         numquam necessitatibus cupiditate?
       </span>

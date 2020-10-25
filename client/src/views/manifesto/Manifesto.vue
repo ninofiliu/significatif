@@ -21,11 +21,11 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
           </div>
           <div class="star">
-            <img :src="`${$s}star.svg`">
+            <img class="u-rotate" :src="`${$s}star.svg`">
           </div>
         </div>
         <div class="right">
-          Lorem, ipsum <img :src="`${$s}17.jpg`" class="text-img"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img :src="`${$s}15.jpg`" class="text-img">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
+          Lorem, ipsum <img :src="`${$s}17.jpg`" class="u-text-img"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img :src="`${$s}15.jpg`" class="u-text-img">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
         </div>
       </div>
     </div>
@@ -57,10 +57,10 @@ export default {
         { html: 'm', class: {} },
         { html: 'e', class: {} },
         { html: '&nbsp;', class: {} },
-        { html: 't', class: { underline: true } },
-        { html: 'e', class: { underline: true } },
-        { html: 'l', class: { underline: true } },
-        { html: 'l', class: { underline: true } },
+        { html: 't', class: { 'u-underline': true } },
+        { html: 'e', class: { 'u-underline': true } },
+        { html: 'l', class: { 'u-underline': true } },
+        { html: 'l', class: { 'u-underline': true } },
       ],
       youAStory: [
         { html: 'y', class: {} },
@@ -70,7 +70,7 @@ export default {
         { html: 'a', class: {} },
         { html: '&nbsp;', class: {} },
         { html: 's', class: {} },
-        { html: 't', class: { 'font-ogg-italic': true } },
+        { html: 't', class: { 'u-font-ogg-italic': true } },
         { html: 'o', class: {} },
         { html: 'r', class: {} },
         { html: 'y', class: {} },
@@ -141,7 +141,6 @@ hr {
       text-align: right;
       img {
         height: 4vh;
-        animation: 5s linear infinite rotate;
       }
     }
   }
@@ -149,14 +148,6 @@ hr {
     width: 60%;
     font-size: 2rem;
     text-transform: uppercase;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 </style>

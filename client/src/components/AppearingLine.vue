@@ -60,7 +60,7 @@ span {
     transform: translateY(200%);
   }
   // HACK ogg font underline is not at the same height as hevetica
-  &.underline.font-ogg-italic {
+  &.u-underline.u-font-ogg-italic {
     transform: translateY(0.025em);
     &.hidden {
       transform: translateY(calc(200% + 0.025em));

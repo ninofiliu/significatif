@@ -5,15 +5,15 @@
     <div class="center">
       <section>
         <div class="big-text">
-          <div>Th<span class="font-good-glyphs">h</span>nks for</div>
+          <div>Th<span class="u-font-good-glyphs">h</span>nks for</div>
           <div>your visit!</div>
         </div>
         <div>
-          <img :src="`${$s}star.svg`">
+          <img class="u-rotate" :src="`${$s}star.svg`">
         </div>
       </section>
       <section>
-        <div class="font-ogg-italic">(&nbsp;)</div>
+        <div class="u-font-ogg-italic">(&nbsp;)</div>
         <div>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium obcaecati recusandae facilis architecto optio soluta itaque nobis, nemo asperiores odit porro fugit? Soluta accusantium iste libero pariatur suscipit voluptas? Incidunt!
         </div>
@@ -28,9 +28,9 @@
           <hr>
           <div class="big-text">
             <div>Let's</div>
-            <div>reach <span class="font-good-glyphs">j</span>ut!</div>
+            <div>reach <span class="u-font-good-glyphs">j</span>ut!</div>
           </div>
-          <div class="links">
+          <div class="links u-underline">
             <a href="mailto:significatif@gmail.com">significatif@gmail.com</a>
             <a href="tel:+33679131441">+33 6 79 13 14 41</a>
           </div>
@@ -100,17 +100,6 @@ section {
 }
 section:nth-child(1) {
   padding-top: 15vh;
-  img {
-    animation: 5s linear infinite rotate;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 section:nth-child(2) {
   margin-top: 2vh;
