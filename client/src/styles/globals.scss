@@ -32,3 +32,17 @@
     transform: rotate(-360deg);
   }
 }
+.u-oscillate-x {
+  animation: 4s ease-in-out infinite oscillate-x;
+}
+@keyframes oscillate-x {
+  from {
+    transform: translateX(-.2em);
+  }
+  50% {
+    transform: translateX(.2em);
+  }
+  to {
+    transform: translateX(-.2em);
+  }
+}
