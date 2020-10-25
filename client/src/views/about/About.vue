@@ -99,10 +99,10 @@ section {
   font-size: 5rem;
 }
 section:nth-child(1) {
-  padding-top: 140px;
+  padding-top: 15vh;
 }
 section:nth-child(2) {
-  margin-top: 40px;
+  margin-top: 2vh;
   div:nth-child(1) {
     width: 40%;
     font-size: 5.5rem;
@@ -113,15 +113,15 @@ section:nth-child(2) {
   }
 }
 section:nth-child(3) {
-  margin-top: 70px;
+  margin-top: 7vh;
   div {
     width: 50%;
     margin-left: 20%;
   }
 }
 section:nth-child(4) {
-  margin-top: 100px;
-  margin-bottom: 130px;
+  margin-top: 10vh;
+  margin-bottom: 13vh;
   > div {
     width: 60%;
     margin-left: 40%;

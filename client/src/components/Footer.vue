@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 .Footer {
-  padding: 36px 0;
+  padding: 2rem 0;
   display: flex;
 
   font-size: 1rem;

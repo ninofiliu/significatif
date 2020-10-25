@@ -31,7 +31,7 @@ export default {
   right: 0;
 
   border-bottom: 1px solid var(--red);
-  padding: 22px 36px;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 
@@ -40,7 +40,7 @@ export default {
 }
 a {
   vertical-align: middle;
-  margin: 0 16px;
+  margin: 0 1rem;
   &:hover {
     opacity: .5;
   }
@@ -49,8 +49,8 @@ a {
   text-decoration: underline;
 }
 .close {
-  width: 25px;
-  height: 25px;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   display: inline-block;
   span {
@@ -59,13 +59,13 @@ a {
     background-color: var(--red);
   }
   span:nth-child(1) {
-    width: 30px;
+    width: 1.3rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
   }
   span:nth-child(2) {
-    width: 30px;
+    width: 1.3rem;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);

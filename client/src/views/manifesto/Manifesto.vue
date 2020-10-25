@@ -124,12 +124,12 @@ export default {
 }
 hr {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
   position: relative;
   z-index: 100;
 }
 .more {
-  margin-bottom: 230px;
+  margin-bottom: 23vh;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -137,10 +137,10 @@ hr {
   .left {
     width: 30%;
     .star {
-      margin-top: 16px;
+      margin-top: 1.5vh;
       text-align: right;
       img {
-        height: 38px;
+        height: 4vh;
       }
     }
   }

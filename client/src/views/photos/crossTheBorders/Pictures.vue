@@ -79,6 +79,7 @@ img {
   text-transform: uppercase;
   pointer-events: none;
   animation: rotate 4s linear infinite;
+  font-size: 15px;
   span {
     position: absolute;
     @for $i from 1 to 16 {
