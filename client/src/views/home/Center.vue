@@ -64,7 +64,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  font-size: 70px;
+  font-size: 3.5rem;
   font-weight: 300;
 
   pointer-events: none;

@@ -28,7 +28,7 @@ export default {
   padding: 36px 0;
   display: flex;
 
-  font-size: 20px;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
 

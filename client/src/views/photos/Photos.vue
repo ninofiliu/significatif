@@ -46,7 +46,7 @@ export default {
   top: 20%;
   right: 40%;
   left: 10%;
-  font-size: 30px;
+  font-size: 1.5rem;
 }
 .pictures {
   position: absolute;

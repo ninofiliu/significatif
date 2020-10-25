@@ -35,7 +35,7 @@ export default {
   display: flex;
   justify-content: space-between;
 
-  font-size: 20px;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 a {

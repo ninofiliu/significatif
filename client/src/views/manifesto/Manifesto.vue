@@ -116,7 +116,7 @@ export default {
   align-items: center;
   position: relative;
   .text {
-    font-size: 110px;
+    font-size: 5.5rem;
     text-transform: uppercase;
     pointer-events: none;
     z-index: 100;
@@ -146,7 +146,7 @@ hr {
   }
   .right {
     width: 60%;
-    font-size: 40px;
+    font-size: 2rem;
     text-transform: uppercase;
   }
 }

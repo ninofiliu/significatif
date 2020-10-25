@@ -90,13 +90,13 @@ section {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 1.5rem;
   div {
     z-index: 100;
   }
 }
 .big-text {
-  font-size: 100px;
+  font-size: 5rem;
 }
 section:nth-child(1) {
   padding-top: 140px;
@@ -105,7 +105,7 @@ section:nth-child(2) {
   margin-top: 40px;
   div:nth-child(1) {
     width: 40%;
-    font-size: 110px;
+    font-size: 5.5rem;
     text-align: right;
   }
   div:nth-child(2) {
@@ -127,7 +127,7 @@ section:nth-child(4) {
     margin-left: 40%;
   }
   .links {
-    font-size: 20px;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     a {
