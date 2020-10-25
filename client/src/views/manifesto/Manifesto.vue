@@ -70,7 +70,7 @@ export default {
         { html: 'a', class: {} },
         { html: '&nbsp;', class: {} },
         { html: 's', class: {} },
-        { html: 't', class: { 'u-font-ogg-italic': true } },
+        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
         { html: 'o', class: {} },
         { html: 'r', class: {} },
         { html: 'y', class: {} },

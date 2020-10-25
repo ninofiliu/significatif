@@ -12,7 +12,7 @@
       <span>
         In sequi similique tenetur facere ratione sapien tenatus dolor illum nesciunt dolorum
       </span>
-      <span class="u-font-ogg-roman">
+      <span class="u-font-ogg">
         non at ab laboriosam pariatur quaerat dolores maxime!
       </span>
       <span>

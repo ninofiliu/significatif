@@ -1,10 +1,15 @@
+@import './globals.scss';
+@import './main.scss';
+
 @font-face {
-  font-family: 'Ogg Italic';
-  src: url('./Ogg-Italic.otf');
+  font-family: 'Ogg';
+  src: url('./Ogg-Roman.otf');
+  font-style: normal;
 }
 @font-face {
-  font-family: 'Ogg Roman';
-  src: url('./Ogg-Roman.otf');
+  font-family: 'Ogg';
+  src: url('./Ogg-Italic.otf');
+  font-style: italic;
 }
 @font-face {
   font-family: 'Helvetica Neue';
@@ -28,5 +33,3 @@
   font-family: 'Good Glyphs';
   src: url('./GoodGlyphs.woff');
 }
-@import './globals.scss';
-@import './main.scss';

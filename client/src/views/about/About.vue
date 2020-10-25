@@ -13,7 +13,7 @@
         </div>
       </section>
       <section>
-        <div class="u-font-ogg-italic">(&nbsp;)</div>
+        <div class="u-font-ogg u-italic">(&nbsp;)</div>
         <div>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium obcaecati recusandae facilis architecto optio soluta itaque nobis, nemo asperiores odit porro fugit? Soluta accusantium iste libero pariatur suscipit voluptas? Incidunt!
         </div>
