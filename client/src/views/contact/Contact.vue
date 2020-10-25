@@ -26,7 +26,7 @@
       <section>
         <div>
           <hr>
-          <div class="big-text">
+          <div class="big-text let-s-reach-out">
             <div>Let's</div>
             <div>reach <span class="u-font-good-glyphs">j</span>ut!</div>
           </div>
@@ -134,5 +134,8 @@ section:nth-child(4) {
       text-decoration: underline;
     }
   }
+}
+.let-s-reach-out {
+  margin-bottom: 3vh;
 }
 </style>
