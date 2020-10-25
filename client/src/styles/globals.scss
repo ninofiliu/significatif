@@ -32,9 +32,9 @@
 
 // animations
 .u-rotate {
-  animation: 5s linear infinite rotate;
+  animation: 5s linear infinite u-rotate;
 }
-@keyframes rotate {
+@keyframes u-rotate {
   from {
     transform: rotate(0deg);
   }
@@ -43,9 +43,9 @@
   }
 }
 .u-oscillate-x {
-  animation: 4s ease-in-out infinite oscillate-x;
+  animation: 4s ease-in-out infinite u-oscillate-x;
 }
-@keyframes oscillate-x {
+@keyframes u-oscillate-x {
   from {
     transform: translateX(-.2em);
   }
@@ -54,5 +54,18 @@
   }
   to {
     transform: translateX(-.2em);
+  }
+}
+.u-appear-scaleup {
+  animation-name: u-appear-scaleup;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes u-appear-scaleup {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }

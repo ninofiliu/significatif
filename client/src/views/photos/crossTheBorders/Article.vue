@@ -1,7 +1,7 @@
 <template>
   <div class="Article">
     <div class="content">
-      <div class="bubble"/>
+      <div class="bubble u-appear-scaleup"/>
       <div class="cross">
         <AppearingLine :chars="cross" :start="-30" />
       </div>
@@ -87,18 +87,7 @@ export default {
   height: 300px;
   border-radius: 50%;
   left: 10%;
-  animation-name: appear-bubble;
-  animation-duration: 1s;
   animation-delay: 1s;
-  animation-fill-mode: both;
-}
-@keyframes appear-bubble {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
 }
 .cross, .the, .borders {
   font-size: 3.5rem;
