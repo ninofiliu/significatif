@@ -3,6 +3,8 @@
   --orange: #f0cea8;
   --white: #f6f6f6;
 }
+
+// text
 .u-font-good-glyphs {
   font-family: 'Good Glyphs';
 }
@@ -21,6 +23,14 @@
   object-fit: cover;
   transform: translateY(.1em);
 }
+.u-comfort {
+  line-height: 1.4;
+}
+.u-extracomfort {
+  line-height: 2;
+}
+
+// animations
 .u-rotate {
   animation: 5s linear infinite rotate;
 }

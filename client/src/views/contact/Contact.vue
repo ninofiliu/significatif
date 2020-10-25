@@ -14,12 +14,12 @@
       </section>
       <section>
         <div class="u-font-ogg u-italic u-oscillate-x">(&nbsp;)</div>
-        <div>
+        <div class="u-comfort">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium obcaecati recusandae facilis architecto optio soluta itaque nobis, nemo asperiores odit porro fugit? Soluta accusantium iste libero pariatur suscipit voluptas? Incidunt!
         </div>
       </section>
       <section>
-        <div>
+        <div class="u-comfort">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatem, voluptates rerum asperiores pariatur earum illum sapiente molestias vero eaque reiciendis.
         </div>
       </section>

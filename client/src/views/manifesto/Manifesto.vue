@@ -17,14 +17,14 @@
       <hr>
       <div class="more">
         <div class="left">
-          <div class="text">
+          <div class="text u-extracomfort">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
           </div>
           <div class="star">
             <img class="u-rotate" :src="`${$s}star.svg`">
           </div>
         </div>
-        <div class="right">
+        <div class="right u-comfort">
           Lorem, ipsum <img :src="`${$s}17.jpg`" class="u-text-img"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img :src="`${$s}15.jpg`" class="u-text-img">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
         </div>
       </div>
