@@ -93,6 +93,9 @@ const images = [
     src: '6.jpg',
   },
 ];
+const moreImages = (new Array(10)).fill()
+  .map((_, i) => images.map((image) => ({ ...image, src: `${image.src}?key=${i}` })))
+  .flat();
 const years = [...new Set(images.map((image) => image.date.getFullYear()))].sort().reverse();
 const currentYear = Math.max(...years);
 
@@ -108,7 +111,7 @@ export default {
       top: 0,
       show: false,
       src: '',
-      images,
+      images: moreImages,
       years,
       currentYear,
       searchedDate: '',
@@ -166,8 +169,8 @@ export default {
   height: 100vh;
 }
 .content {
-  margin-top: 90px;
-  height: calc(100vh - 190px);
+  margin-top: 10vh;
+  height: 80vh;
   display: flex;
   justify-content: space-around;
 }
@@ -175,6 +178,7 @@ export default {
   width: 400px;
   overflow-y: auto;
   scrollbar-width: none;
+  align-self: center;
   &::-webkit-scrollbar {
     display: none;
   }
