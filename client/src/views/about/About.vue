@@ -9,7 +9,7 @@
           <div>your visit!</div>
         </div>
         <div>
-          <img src="../../assets/star.svg">
+          <img :src="`${$s}star.svg`">
         </div>
       </section>
       <section>

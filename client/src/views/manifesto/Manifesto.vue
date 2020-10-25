@@ -21,7 +21,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
           </div>
           <div class="star">
-            <img src="../../assets/star.svg">
+            <img :src="`${$s}star.svg`">
           </div>
         </div>
         <div class="right">
