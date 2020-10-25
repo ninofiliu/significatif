@@ -100,6 +100,17 @@ section {
 }
 section:nth-child(1) {
   padding-top: 15vh;
+  img {
+    animation: 5s linear infinite rotate;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 section:nth-child(2) {
   margin-top: 2vh;

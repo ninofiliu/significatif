@@ -141,6 +141,7 @@ hr {
       text-align: right;
       img {
         height: 4vh;
+        animation: 5s linear infinite rotate;
       }
     }
   }
@@ -148,6 +149,14 @@ hr {
     width: 60%;
     font-size: 2rem;
     text-transform: uppercase;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 </style>
