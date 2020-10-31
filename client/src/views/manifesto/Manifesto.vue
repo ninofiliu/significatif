@@ -98,12 +98,34 @@ export default {
   &.big {
     width: 1000px;
     height: 1000px;
-    transform: translateX(-1200px) translateY(-800px) translateZ(-50px);
+    animation: scaleup-big;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
   }
   &.small {
     width: 180px;
     height: 180px;
-    transform: translateX(50px) translateY(50px) translateZ(30px);
+    animation: scaleup-small;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+  }
+}
+@keyframes scaleup-big {
+  from {
+    transform: translateX(-1200px) translateY(-800px) translateZ(-50px) scale(0);
+  }
+  to {
+    transform: translateX(-1200px) translateY(-800px) translateZ(-50px) scale(1);
+  }
+}
+@keyframes scaleup-small {
+  from {
+    transform: translateX(50px) translateY(50px) translateZ(30px) scale(0)
+  }
+  to {
+    transform: translateX(50px) translateY(50px) translateZ(30px) scale(1);
   }
 }
 .center {
