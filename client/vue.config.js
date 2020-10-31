@@ -11,6 +11,7 @@ module.exports = (() => {
           plugins: [
             new webpack.DefinePlugin({
               STATIC_BASE: JSON.stringify('https://storage.googleapis.com/significatif/'),
+              ROUTER_BASE: JSON.stringify('/future/'),
             }),
           ],
         },
@@ -22,6 +23,7 @@ module.exports = (() => {
           plugins: [
             new webpack.DefinePlugin({
               STATIC_BASE: JSON.stringify('https://storage.googleapis.com/significatif/'),
+              ROUTER_BASE: JSON.stringify('/'),
             }),
           ],
         },
@@ -32,6 +34,7 @@ module.exports = (() => {
           plugins: [
             new webpack.DefinePlugin({
               STATIC_BASE: JSON.stringify('http://localhost:8081/'),
+              ROUTER_BASE: JSON.stringify('/'),
             }),
           ],
         },

@@ -11,6 +11,7 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({
   mode: 'history',
+  base: ROUTER_BASE,
   routes: [
     { path: '/', component: Home },
     { path: '/contact', component: Contact },
