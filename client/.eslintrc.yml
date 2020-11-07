@@ -11,6 +11,7 @@ globals:
   ROUTER_BASE: readonly
 rules:
   no-lonely-if: off
+  no-nested-ternary: off
   no-plusplus: off
   no-restricted-syntax: off
   max-len: off

@@ -16,12 +16,6 @@
   </div>
 </template>
 
-<script>
-export default {
-
-};
-</script>
-
 <style lang="scss" scoped>
 .NavBar {
   z-index: 100;
