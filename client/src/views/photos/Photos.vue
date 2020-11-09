@@ -198,10 +198,10 @@ export default {
   background-color: var(--orange);
 }
 .taste-of-farniente {
-  background-color: #fff78c;
+  background-color: var(--yellow);
 }
 .photo-seduction {
-  background-color: #ded8e0;
+  background-color: var(--purple);
 }
 .vous-etes-des-animaux {
   background-color: var(--orange);
@@ -210,7 +210,7 @@ export default {
   background-color: var(--white);
 }
 .pedal-to-the-metal {
-  background-color: #dbdbdb;
+  background-color: var(--grey);
   width: 90vw;
 }
 </style>

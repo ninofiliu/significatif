@@ -1,5 +1,11 @@
 <template>
-  <div class="Article">
+  <Story
+    color="var(--orange)"
+    :backgroundPosition="{ left: '40vw' }"
+    :picturesPosition="{ right: '55vw', left: '5vw' }"
+    :pictures="pictures"
+  >
+  <div class="article">
     <div class="content">
       <div class="bubble u-appear-scaleup"/>
       <div class="cross">
@@ -24,17 +30,46 @@
       </div>
     </div>
   </div>
+  </Story>
 </template>
 
 <script>
-import AppearingLine from '../../../components/AppearingLine.vue';
+import AppearingLine from '../../components/AppearingLine.vue';
+import Story from '../../components/story/Story.vue';
 
 export default {
   components: {
     AppearingLine,
+    Story,
   },
   data() {
     return {
+      pictures: [
+        {
+          src: '3.jpg',
+          title: 'Ophélie',
+          date: new Date('2018-06-12'),
+          place: 'Dans une cave',
+        },
+        {
+          src: '0.jpg',
+          title: 'Blaise sur sa chaise',
+          date: new Date('2018-07-05'),
+          place: 'Au soleil',
+        },
+        {
+          src: '1.jpg',
+          title: 'Les roses c\'est cool',
+          date: new Date('2018-08-05'),
+          place: 'Paris',
+        },
+        {
+          src: '2.jpg',
+          title: 'Ooooh yeah',
+          date: new Date('2020-01-01'),
+          place: 'Encore dans une cave',
+        },
+      ],
       cross: [
         { html: 'C', class: {} },
         { html: 'r', class: {} },
@@ -62,13 +97,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.Article {
+.article {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 40%;
-  background-color: var(--orange);
   display: flex;
   justify-content: center;
   align-items: center;
