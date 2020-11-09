@@ -26,9 +26,11 @@
 
   background-color: var(--white);
   border-bottom: 1px solid var(--red);
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 3rem;
 
   font-size: 1rem;
   text-transform: uppercase;
