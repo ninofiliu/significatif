@@ -73,7 +73,7 @@
       @click="current = 2"
     >
       <div>
-        <RouterLink to="/photos/cross-the-borders">
+        <RouterLink to="/photos/taste-of-farniente">
           <img :src="`${$s}0.jpg`">
         </RouterLink>
         <div style="font-size: 2rem; text-transform: uppercase; margin-top: 1rem;">Taste of farniente</div>

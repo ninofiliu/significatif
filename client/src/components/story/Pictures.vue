@@ -5,6 +5,7 @@
     :class="{
       '--spread': mode === 'spread',
       '--hidden': mode === 'hidden',
+      '--horizontal': mode === 'horizontal',
     }"
     @click="$emit('click')"
   >
@@ -61,6 +62,24 @@ img {
     }
     img:nth-child(2n+1) {
       transform: rotate(-8deg);
+    }
+  }
+}
+.--horizontal {
+  img {
+    object-position: right;
+  }
+  @for $i from 1 through 10 {
+    img:nth-child(#{$i}) {
+      transform: translate(-3% * ($i - 1));
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    @for $i from 1 through 10 {
+      img:nth-child(#{$i}) {
+        transform: translate(-5% * ($i - 1));
+      }
     }
   }
 }

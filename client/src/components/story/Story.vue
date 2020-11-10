@@ -3,7 +3,7 @@
     <NavBar/>
     <div class="background" :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"/>
     <Pictures
-      :mode="home ? 'spread' : 'hidden'"
+      :mode="home ? picturesMode : 'hidden'"
       :position="home ? picturesPosition : {}"
       :pictures="pictures"
       :current="current"
@@ -47,6 +47,7 @@ export default {
     'backgroundPosition',
     'picturesPosition',
     'pictures',
+    'picturesMode',
   ],
   data() {
     return {

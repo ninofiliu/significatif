@@ -4,6 +4,7 @@
     :backgroundPosition="{ left: '40vw' }"
     :picturesPosition="{ right: '55vw', left: '5vw' }"
     :pictures="pictures"
+    picturesMode="spread"
   >
   <div class="article">
     <div class="content">
@@ -36,6 +37,7 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
+import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -44,32 +46,7 @@ export default {
   },
   data() {
     return {
-      pictures: [
-        {
-          src: '3.jpg',
-          title: 'Ophélie',
-          date: new Date('2018-06-12'),
-          place: 'Dans une cave',
-        },
-        {
-          src: '0.jpg',
-          title: 'Blaise sur sa chaise',
-          date: new Date('2018-07-05'),
-          place: 'Au soleil',
-        },
-        {
-          src: '1.jpg',
-          title: 'Les roses c\'est cool',
-          date: new Date('2018-08-05'),
-          place: 'Paris',
-        },
-        {
-          src: '2.jpg',
-          title: 'Ooooh yeah',
-          date: new Date('2020-01-01'),
-          place: 'Encore dans une cave',
-        },
-      ],
+      pictures: dummyPictures,
       cross: [
         { html: 'C', class: {} },
         { html: 'r', class: {} },

@@ -6,6 +6,7 @@ import Home from './views/home/Home.vue';
 import Manifesto from './views/manifesto/Manifesto.vue';
 import Photos from './views/photos/Photos.vue';
 import CrossTheBorders from './views/photos/CrossTheBorders.vue';
+import TasteOfFarniente from './views/photos/TasteOfFarniente.vue';
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,7 @@ const router = new VueRouter({
     { path: '/manifesto', component: Manifesto },
     { path: '/photos', component: Photos },
     { path: '/photos/cross-the-borders', component: CrossTheBorders },
+    { path: '/photos/taste-of-farniente', component: TasteOfFarniente },
     { path: '*', redirect: '/' },
   ],
 });
