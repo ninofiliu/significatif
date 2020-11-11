@@ -11,7 +11,7 @@
           <span class="u-italic" style="text-transform: uppercase; font-size: 2rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--red);">Pedal</span>
           <span class="u-font-good-glyphs" style="font-size: 4rem;">Y</span>
         </div>
-        <RouterLink to="/photos/cross-the-borders">
+        <RouterLink to="/photos/pedal-to-the-metal">
           <img :src="`${$s}8.jpg`" style="height: 25rem;">
         </RouterLink>
         <div style="display: flex; justify-content: space-between; align-items: center;">
