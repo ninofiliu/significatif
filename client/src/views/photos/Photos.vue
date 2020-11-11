@@ -59,11 +59,11 @@
     >
       <div style="display: flex;">
         <img :src="`${$s}star.svg`" class="u-rotate" style="width: 3rem; align-self: flex-end;">
-        <img :src="`${$s}4.jpg`" style="height: 30rem; margin: 0 1rem;">
-        <div style="font-size: 2rem; text-transform: uppercase; writing-mode: vertical-lr;">
-        <RouterLink to="/photos/cross-the-borders">
-          Photo Seduction
+        <RouterLink to="/photos/photo-seduction">
+          <img :src="`${$s}4.jpg`" style="height: 30rem; margin: 0 1rem;">
         </RouterLink>
+        <div style="font-size: 2rem; text-transform: uppercase; writing-mode: vertical-lr;">
+          Photo Seduction
         </div>
       </div>
     </div>
