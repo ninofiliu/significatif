@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .scroll {
   position: fixed;
-  top: 0;
+  top: 3rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -50,7 +50,7 @@ export default {
 .img-container {
   box-sizing: border-box;
   width: 30vw;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   padding: 3vw;
   display: flex;
   &:nth-child(4n+1) {
