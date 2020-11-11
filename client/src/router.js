@@ -5,6 +5,7 @@ import Contact from './views/contact/Contact.vue';
 import CrossTheBorders from './views/photos/CrossTheBorders.vue';
 import Home from './views/home/Home.vue';
 import Manifesto from './views/manifesto/Manifesto.vue';
+import ArchitectureSilence from './views/photos/ArchitectureSilence.vue';
 import PhotoSeduction from './views/photos/PhotoSeduction.vue';
 import Photos from './views/photos/Photos.vue';
 import TasteOfFarniente from './views/photos/TasteOfFarniente.vue';
@@ -21,9 +22,10 @@ const router = new VueRouter({
     { path: '/archives', component: Archives },
     { path: '/manifesto', component: Manifesto },
     { path: '/photos', component: Photos },
+    { path: '/photos/architecture-silence', component: ArchitectureSilence },
     { path: '/photos/cross-the-borders', component: CrossTheBorders },
-    { path: '/photos/taste-of-farniente', component: TasteOfFarniente },
     { path: '/photos/photo-seduction', component: PhotoSeduction },
+    { path: '/photos/taste-of-farniente', component: TasteOfFarniente },
     { path: '/photos/vous-etes-des-animaux', component: VousEtesDesAnimaux },
     { path: '*', redirect: '/' },
   ],

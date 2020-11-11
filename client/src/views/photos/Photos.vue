@@ -27,7 +27,7 @@
     >
       <div style="text-align: center">
         <div class="u-font-good-glyphs" style="font-size: 3rem">L</div>
-        <RouterLink to="/photos/cross-the-borders">
+        <RouterLink to="/photos/architecture-silence">
           <img :src="`${$s}septembre2019_rebirth_berlinairport.jpg`" style="height: 30rem;">
         </RouterLink>
         <div>
