@@ -44,7 +44,7 @@
         <div>vous</div>
         <div style="display: flex;">
           <div style="writing-mode: vertical-rl; transform: rotate(180deg);">animaux</div>
-          <RouterLink to="/photos/cross-the-borders">
+          <RouterLink to="/photos/vous-etes-des-animaux">
             <img :src="`${$s}7.jpg`" style="margin: 2rem; width: 25rem; height: 25rem; object-fit: cover;">
           </RouterLink>
           <div style="writing-mode: vertical-rl;">êtes</div>

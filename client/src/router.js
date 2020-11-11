@@ -8,6 +8,7 @@ import Manifesto from './views/manifesto/Manifesto.vue';
 import PhotoSeduction from './views/photos/PhotoSeduction.vue';
 import Photos from './views/photos/Photos.vue';
 import TasteOfFarniente from './views/photos/TasteOfFarniente.vue';
+import VousEtesDesAnimaux from './views/photos/VousEtesDesAnimaux.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,7 @@ const router = new VueRouter({
     { path: '/photos/cross-the-borders', component: CrossTheBorders },
     { path: '/photos/taste-of-farniente', component: TasteOfFarniente },
     { path: '/photos/photo-seduction', component: PhotoSeduction },
+    { path: '/photos/vous-etes-des-animaux', component: VousEtesDesAnimaux },
     { path: '*', redirect: '/' },
   ],
 });

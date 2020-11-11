@@ -2,7 +2,7 @@
   <Story
     color="var(--purple)"
     :backgroundPosition="{ left: '5vw' }"
-    :picturesPosition="{ top: '3rem', right: 0, bottom: '20vh', left: '55vw' }"
+    :picturesPosition="{ top: '3rem', right: 0, bottom: '40vh', left: '55vw' }"
     :pictures="pictures"
     picturesMode="horizontal"
   >
