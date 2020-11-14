@@ -17,27 +17,27 @@
       </div>
       <div class="data">
         <img v-show="show" :src="`${$s}${src}`" :style="{ left: `${left}px`, top: `${top}px` }">
-        <table>
-          <thead>
-            <tr>
-              <td>Date</td>
-              <td>Name</td>
-              <td>Location</td>
-            </tr>
-            <tr>
-              <td><input v-model="searchedDate" placeholder="Filter by date"></td>
-              <td><input v-model="searchedName" placeholder="Filter by name"></td>
-              <td><input v-model="searchedLocation" placeholder="Filter by location"></td>
-            </tr>
-          </thead>
-          <tbody ref="tbody">
-            <tr v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
-              <td>{{ image.readableDate }}</td>
-              <td>{{ image.name }}</td>
-              <td>{{ image.location }}</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table">
+          <div class="row">
+            <div>Date</div>
+            <div>Name</div>
+            <div>Location</div>
+          </div>
+          <div class="row">
+            <div><input v-model="searchedDate" placeholder="Filter by date"></div>
+            <div><input v-model="searchedName" placeholder="Filter by name"></div>
+            <div><input v-model="searchedLocation" placeholder="Filter by location"></div>
+          </div>
+          <div ref="tbody">
+            <div class="row" v-for="image of displayedImages" :key="image.name" @mouseenter="src = image.src">
+              <RouterLink :to="{ path: `/photos/${image.serie}`, query: { current: image.seriePosition } }">
+                <div>{{ image.readableDate }}</div>
+                <div>{{ image.name }}</div>
+                <div>{{ image.location }}</div>
+              </RouterLink>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <Footer/>
@@ -48,54 +48,8 @@
 import Footer from '../../components/Footer.vue';
 import NavBar from '../../components/NavBar.vue';
 import Year from './Year.vue';
+import images from './dummyImages';
 
-const images = [
-  {
-    date: new Date('2020-06-16'),
-    name: 'Je bronzee',
-    location: 'soleile',
-    src: '0.jpg',
-  },
-  {
-    date: new Date('2020-10-15'),
-    name: 'Pakpakfleur',
-    location: 'Paris',
-    src: '1.jpg',
-  },
-  {
-    date: new Date('2017-08-08'),
-    name: 'Je fer des doi donneur mdr',
-    location: 'Fauteille',
-    src: '2.jpg',
-  },
-  {
-    date: new Date('2020-01-01'),
-    name: 'Ophélieeee',
-    location: 'Chez Ophélieeee',
-    src: '3.jpg',
-  },
-  {
-    date: new Date('2019-01-01'),
-    name: 'Mh la sexy madame',
-    location: 'Sur 1 lit',
-    src: '4.jpg',
-  },
-  {
-    date: new Date('2020-06-06'),
-    name: 'Orange',
-    location: 'Bathtubbe',
-    src: '5.jpg',
-  },
-  {
-    date: new Date('2018-10-10'),
-    name: 'Voitur',
-    location: 'Devant là voitur',
-    src: '6.jpg',
-  },
-];
-const moreImages = (new Array(10)).fill()
-  .map((_, i) => images.map((image) => ({ ...image, src: `${image.src}?key=${i}` })))
-  .flat();
 const years = [...new Set(images.map((image) => image.date.getFullYear()))].sort().reverse();
 const currentYear = Math.max(...years);
 
@@ -111,7 +65,7 @@ export default {
       top: 0,
       show: false,
       src: '',
-      images: moreImages,
+      images,
       years,
       currentYear,
       searchedDate: '',
@@ -219,14 +173,21 @@ export default {
     max-height: 40vh;
   }
 }
-table {
+.table {
   width: 100%;
-  border-collapse: collapse;
   position: absolute;
 }
-td {
-  border-bottom: 1px solid var(--red);
+.row {
   padding: 1em 0;
+  border-bottom: 1px solid var(--red);
+  display: flex;
+  a {
+    display: flex;
+    width: 100%;
+  }
+  div {
+    width: 33%;
+  }
 }
 input {
   border: none;

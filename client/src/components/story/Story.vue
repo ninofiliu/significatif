@@ -7,13 +7,13 @@
       :position="home ? picturesPosition : {}"
       :pictures="pictures"
       :current="current"
-      @click="current = 0; home = false"
+      @click="goPictures"
     />
     <div class="article">
       <slot/>
     </div>
     <div class="details">
-      <div class="back" @click="home = true">
+      <div class="back" @click="goHome">
         &larr;
       </div>
       <div class="title u-italic u-font-ogg">
@@ -59,30 +59,46 @@ export default {
   created() {
     document.addEventListener('keyup', this.onkeyup);
     document.addEventListener('wheel', this.onwheel);
+    if (this.$route.query.current) {
+      this.current = +this.$route.query.current;
+      this.home = false;
+    }
   },
   destroyed() {
     document.removeEventListener('keyup', this.onkeyup);
     document.removeEventListener('wheel', this.onwheel);
   },
   methods: {
+    goPictures() {
+      this.home = false;
+      this.current = 0;
+      this.$router.replace({ path: this.$route.path, query: { current: 0 } });
+    },
+    goHome() {
+      this.home = true;
+      this.$router.replace({ path: this.$route.path, query: {} });
+    },
     onkeyup(evt) {
-      if (evt.key === ' ') this.home = !this.home;
-      if (evt.key === 'ArrowRight') this.current = (this.current + 1) % this.pictures.length;
-      if (evt.key === 'ArrowLeft') this.current = (this.pictures.length + this.current - 1) % this.pictures.length;
+      if (evt.key === 'ArrowRight') this.scrollNext();
+      if (evt.key === 'ArrowLeft') this.scrollPrev();
     },
     onwheel(evt) {
       if (this.home) return;
+      if (evt.deltaX > 0) this.scrollNext();
+      if (evt.deltaX < 0) this.scrollPrev();
+    },
+    scrollNext() {
+      this.scrollTo((this.current + 1) % this.pictures.length);
+    },
+    scrollPrev() {
+      this.scrollTo((this.pictures.length + this.current - 1) % this.pictures.length);
+    },
+    scrollTo(index) {
       if (this.scrolling) return;
-      if (evt.deltaX > 0) {
-        this.scrolling = true;
-        setTimeout(() => { this.scrolling = false; }, 500);
-        this.current = (this.current + 1) % this.pictures.length;
-      }
-      if (evt.deltaX < 0) {
-        this.scrolling = true;
-        setTimeout(() => { this.scrolling = false; }, 500);
-        this.current = (this.pictures.length + this.current - 1) % this.pictures.length;
-      }
+      this.scrolling = true;
+      setTimeout(() => { this.scrolling = false; }, 500);
+      this.current = index;
+      this.$router.replace({ path: this.$route.path, query: { current: index } });
     },
   },
 };
