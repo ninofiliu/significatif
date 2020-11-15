@@ -1,9 +1,9 @@
 <template>
   <Story
+    id="pedal-to-the-metal"
     color="var(--grey)"
     :backgroundPosition="{ left: '40vw' }"
     :picturesPosition="{ top: '15vh', right: '50vw', bottom: '15vh', left: '5vw' }"
-    :pictures="pictures"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -21,7 +21,6 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
-import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -30,7 +29,6 @@ export default {
   },
   data() {
     return {
-      pictures: dummyPictures,
       pedal: [
         { html: 'P', class: {}, underline: true },
         { html: 'e', class: {}, underline: true },

@@ -1,9 +1,9 @@
 <template>
   <Story
+    id="architecture-silence"
     color="var(--grey)"
     :backgroundPosition="{ right: '50vw' }"
     :picturesPosition="{ top: '15vh', bottom: '15vh', left: '50vw' }"
-    :pictures="pictures"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -24,7 +24,6 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
-import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -33,7 +32,6 @@ export default {
   },
   data() {
     return {
-      pictures: dummyPictures,
       architecture: [
         { html: 'A', class: {}, underline: true },
         { html: 'r', class: {}, underline: true },

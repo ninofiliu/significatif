@@ -1,9 +1,9 @@
 <template>
   <Story
+    id="vous-etes-des-animaux"
     color="var(--orange)"
     :backgroundPosition="{ right: '20vw' }"
     :picturesPosition="{ right: '55vw', bottom: '30vh', left: '5vw' }"
-    :pictures="pictures"
     picturesMode="horizontal"
   >
     <div class="text-container">
@@ -20,7 +20,6 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
-import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -29,7 +28,6 @@ export default {
   },
   data() {
     return {
-      pictures: dummyPictures,
       title: [
         { html: 'V', class: {} },
         { html: 'o', class: {} },

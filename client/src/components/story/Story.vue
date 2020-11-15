@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import stories from '../../content/stories.json';
+import pictures from '../../content/pictures.json';
 import Footer from '../Footer.vue';
 import NavBar from '../NavBar.vue';
 import Pictures from './Pictures.vue';
@@ -43,14 +45,20 @@ export default {
     Pictures,
   },
   props: [
+    'id',
     'color',
     'backgroundPosition',
     'picturesPosition',
-    'pictures',
     'picturesMode',
   ],
   data() {
+    const story = stories.find(({ id }) => id === this.id);
+    const srcs = new Set(story.pictures);
+    const storyPictures = pictures
+      .filter(({ src }) => srcs.has(src))
+      .map((s) => ({ ...s, date: new Date(s.date) }));
     return {
+      pictures: storyPictures,
       home: true,
       current: 0,
       scrolling: false,

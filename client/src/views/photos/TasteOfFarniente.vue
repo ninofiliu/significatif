@@ -1,9 +1,9 @@
 <template>
   <Story
+    id="taste-of-farniente"
     color="var(--yellow)"
     :backgroundPosition="{ right: '30vh' }"
     :picturesPosition="{ top: '4rem', right: '0', bottom: '35vh', left: '50vw' }"
-    :pictures="pictures"
     picturesMode="horizontal"
   >
     <div class="text-container">
@@ -20,7 +20,6 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
-import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -29,7 +28,6 @@ export default {
   },
   data() {
     return {
-      pictures: dummyPictures,
       tasteOfFarniente: [
         { html: 'T', class: { 'u-underline': true } },
         { html: 'a', class: { 'u-underline': true } },

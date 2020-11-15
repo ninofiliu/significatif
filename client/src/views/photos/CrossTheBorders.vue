@@ -1,9 +1,9 @@
 <template>
   <Story
+    id="cross-the-borders"
     color="var(--orange)"
     :backgroundPosition="{ left: '40vw' }"
     :picturesPosition="{ right: '55vw', left: '5vw' }"
-    :pictures="pictures"
     picturesMode="spread"
   >
   <div class="article">
@@ -37,7 +37,6 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
-import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -46,7 +45,6 @@ export default {
   },
   data() {
     return {
-      pictures: dummyPictures,
       cross: [
         { html: 'C', class: {} },
         { html: 'r', class: {} },

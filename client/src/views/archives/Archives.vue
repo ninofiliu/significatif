@@ -30,7 +30,7 @@
           </div>
           <div ref="tbody">
             <div class="row" v-for="image of displayedImages" :key="image.name" @mouseenter="src = image.src">
-              <RouterLink :to="{ path: `/photos/${image.serie}`, query: { current: image.seriePosition } }">
+              <RouterLink :to="{ path: `/photos/${image.storyId}`, query: { current: image.storyIndex } }">
                 <div>{{ image.readableDate }}</div>
                 <div>{{ image.name }}</div>
                 <div>{{ image.location }}</div>
@@ -45,11 +45,23 @@
 </template>
 
 <script>
+import pictures from '../../content/pictures.json';
+import stories from '../../content/stories.json';
 import Footer from '../../components/Footer.vue';
 import NavBar from '../../components/NavBar.vue';
 import Year from './Year.vue';
-import images from './dummyImages';
 
+const images = pictures.map((picture) => {
+  const story = stories.find((s) => s.pictures.includes(picture.src));
+  return {
+    src: picture.src,
+    date: new Date(picture.date),
+    name: picture.title,
+    location: picture.place,
+    storyId: story.id,
+    storyIndex: story.pictures.indexOf(picture.src),
+  };
+});
 const years = [...new Set(images.map((image) => image.date.getFullYear()))].sort().reverse();
 const currentYear = Math.max(...years);
 

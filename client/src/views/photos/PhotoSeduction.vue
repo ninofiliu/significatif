@@ -1,9 +1,9 @@
 <template>
   <Story
+    id="photo-seduction"
     color="var(--purple)"
     :backgroundPosition="{ left: '5vw' }"
     :picturesPosition="{ top: '3rem', right: 0, bottom: '40vh', left: '55vw' }"
-    :pictures="pictures"
     picturesMode="horizontal"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -24,7 +24,6 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
-import dummyPictures from './dummyPictures';
 
 export default {
   components: {
@@ -33,7 +32,6 @@ export default {
   },
   data() {
     return {
-      pictures: dummyPictures,
       photo: [
         { html: 'P', class: {}, underline: true },
         { html: 'h', class: {}, underline: true },
