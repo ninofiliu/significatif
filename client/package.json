@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build/content": "node src/build-content.script.js",
     "build/future": "NODE_ENV=future vue-cli-service build --dest dist-future",
     "build/prod": "NODE_ENV=prod vue-cli-service build --dest dist-prod",
     "dev": "NODE_ENV=dev vue-cli-service serve"
