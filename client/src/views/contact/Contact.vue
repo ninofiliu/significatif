@@ -9,18 +9,18 @@
           <div>your visit!</div>
         </div>
         <div>
-          <img class="u-rotate" :src="`${$s}star.svg`">
+          <img class="u-rotate" :src="`${$s}assets/star.svg`">
         </div>
       </section>
       <section>
         <div class="u-font-ogg u-italic u-oscillate-x">(&nbsp;)</div>
         <div class="u-comfort">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium obcaecati recusandae facilis architecto optio soluta itaque nobis, nemo asperiores odit porro fugit? Soluta accusantium iste libero pariatur suscipit voluptas? Incidunt!
+          {{ contact.text1 }}
         </div>
       </section>
       <section>
         <div class="u-comfort">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatem, voluptates rerum asperiores pariatur earum illum sapiente molestias vero eaque reiciendis.
+          {{ contact.text2 }}
         </div>
       </section>
       <section>
@@ -31,8 +31,8 @@
             <div>reach <span class="u-font-good-glyphs">j</span>ut!</div>
           </div>
           <div class="links u-underline">
-            <a href="mailto:significatif@gmail.com">significatif@gmail.com</a>
-            <a href="tel:+33679131441">+33 6 79 13 14 41</a>
+            <a :href="`mailto:${contact.email}`">{{contact.email}}</a>
+            <a :href="`tel:${contact.tel.replace(/\s/g, '')}`">{{contact.tel}}</a>
           </div>
         </div>
       </section>
@@ -45,11 +45,17 @@
 <script>
 import Footer from '../../components/Footer.vue';
 import NavBar from '../../components/NavBar.vue';
+import contact from '../../content/contact.json';
 
 export default {
   components: {
     Footer,
     NavBar,
+  },
+  data() {
+    return {
+      contact,
+    };
   },
 };
 </script>

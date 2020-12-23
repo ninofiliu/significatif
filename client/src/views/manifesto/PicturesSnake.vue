@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import manifestoContent from '../../content/manifesto.json';
+
 export default {
   data() {
     return {
@@ -23,11 +25,10 @@ export default {
   },
   methods: {
     onMouseMove(evt) {
-      const srcs = (new Array(19)).fill().map((elt, i) => `${i}.jpg`);
       if (this.step % 5 === 0) {
         const index = this.images.length;
         this.images.push({
-          src: srcs[index % srcs.length],
+          src: manifestoContent.snake[index % manifestoContent.snake.length],
           left: evt.clientX,
           top: evt.clientY,
           key: this.step,

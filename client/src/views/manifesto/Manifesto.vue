@@ -18,14 +18,21 @@
       <div class="more">
         <div class="left">
           <div class="text u-extracomfort">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sunt laborum facere id ut aut repudiandae unde quas excepturi impedit. Natus vitae ea, aut ab quod fugit praesentium sequi officiis!
+            {{ manifestoContent.leftText }}
           </div>
           <div class="star">
-            <img class="u-rotate" :src="`${$s}star.svg`">
+            <img class="u-rotate" :src="`${$s}assets/star.svg`">
           </div>
         </div>
         <div class="right u-comfort">
-          Lorem, ipsum <img :src="`${$s}17.jpg`" class="u-text-img"> sit amet consectetur adipisicing elit. Maiores perferendis inventore hic, quo doloribus a veniam, quisquam vel aut voluptatum <img :src="`${$s}15.jpg`" class="u-text-img">, corporis sequi exercitationem explicabo illum! Hic saepe necessitatibus beatae!
+          <span v-for="(fragment, i) of manifestoContent.rightText" :key="i">
+            <span v-if="fragment.type==='text'">
+              {{fragment.content}}
+            </span>
+            <span v-if="fragment.type==='image'">
+              <img :src="`${$s}${fragment.content}`" class="u-text-img">
+            </span>
+          </span>
         </div>
       </div>
     </div>
@@ -39,6 +46,7 @@ import AppearingLine from '../../components/AppearingLine.vue';
 import NavBar from '../../components/NavBar.vue';
 import Footer from '../../components/Footer.vue';
 import PicturesSnake from './PicturesSnake.vue';
+import manifestoContent from '../../content/manifesto.json';
 
 export default {
   components: {
@@ -49,6 +57,7 @@ export default {
   },
   data() {
     return {
+      manifestoContent,
       letMeTell: [
         { html: 'L', class: {} },
         { html: 'e', class: {} },

@@ -3,15 +3,13 @@
     <NavBar/>
     <div class="scroll">
       <div class="scroll-content">
-        <div class="img-container"><img :src="`${$s}18.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}14.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}12.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}7.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}1.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}2.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}6.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}13.jpg`"></div>
-        <div class="img-container"><img :src="`${$s}11.jpg`"></div>
+        <div
+          v-for="src of srcs"
+          :key="src"
+          class="img-container"
+        >
+          <img :src="`${$s}${src}`">
+        </div>
       </div>
     </div>
     <Center/>
@@ -23,12 +21,18 @@
 import NavBar from '../../components/NavBar.vue';
 import Center from './Center.vue';
 import Footer from '../../components/Footer.vue';
+import srcs from '../../content/home.json';
 
 export default {
   components: {
     Center,
     Footer,
     NavBar,
+  },
+  data() {
+    return {
+      srcs,
+    };
   },
 };
 </script>

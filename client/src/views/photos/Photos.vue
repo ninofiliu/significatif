@@ -12,7 +12,10 @@
           <span class="u-font-good-glyphs" style="font-size: 4rem;">Y</span>
         </div>
         <RouterLink to="/photos/pedal-to-the-metal">
-          <img :src="`${$s}8.jpg`" style="height: 25rem;">
+          <img
+            :src="`${$s}${covers['pedal-to-the-metal']}`"
+            style="height: 25rem;"
+          >
         </RouterLink>
         <div style="display: flex; justify-content: space-between; align-items: center;">
           <span class="u-font-good-glyphs" style="font-size: 4rem;">A</span>
@@ -28,7 +31,10 @@
       <div style="text-align: center">
         <div class="u-font-good-glyphs" style="font-size: 3rem">L</div>
         <RouterLink to="/photos/architecture-silence">
-          <img :src="`${$s}septembre2019_rebirth_berlinairport.jpg`" style="height: 30rem;">
+          <img
+            :src="`${$s}${covers['architecture-silence']}`"
+            style="height: 30rem;"
+          >
         </RouterLink>
         <div>
           Architecture <span class="u-font-ogg">Silence</span>
@@ -45,7 +51,10 @@
         <div style="display: flex;">
           <div style="writing-mode: vertical-rl; transform: rotate(180deg);">animaux</div>
           <RouterLink to="/photos/vous-etes-des-animaux">
-            <img :src="`${$s}7.jpg`" style="margin: 2rem; width: 25rem; height: 25rem; object-fit: cover;">
+          <img
+            :src="`${$s}${covers['vous-etes-des-animaux']}`"
+            style="margin: 2rem; width: 25rem; height: 25rem; object-fit: cover;"
+          >
           </RouterLink>
           <div style="writing-mode: vertical-rl;">êtes</div>
         </div>
@@ -58,9 +67,12 @@
       @click="current = 3"
     >
       <div style="display: flex;">
-        <img :src="`${$s}star.svg`" class="u-rotate" style="width: 3rem; align-self: flex-end;">
+        <img :src="`${$s}assets/star.svg`" class="u-rotate" style="width: 3rem; align-self: flex-end;">
         <RouterLink to="/photos/photo-seduction">
-          <img :src="`${$s}4.jpg`" style="height: 30rem; margin: 0 1rem;">
+          <img
+            :src="`${$s}${covers['photo-seduction']}`"
+            style="height: 30rem; margin: 0 1rem;"
+          >
         </RouterLink>
         <div style="font-size: 2rem; text-transform: uppercase; writing-mode: vertical-lr;">
           Photo Seduction
@@ -74,7 +86,10 @@
     >
       <div>
         <RouterLink to="/photos/taste-of-farniente">
-          <img :src="`${$s}0.jpg`">
+          <img
+            :src="`${$s}${covers['taste-of-farniente']}`"
+            style="height: 25rem;"
+          >
         </RouterLink>
         <div style="font-size: 2rem; text-transform: uppercase; margin-top: 1rem;">Taste of farniente</div>
         <hr style="margin: 1rem 0;">
@@ -94,7 +109,10 @@
         </div>
         <hr style="margin: 1rem 0;">
         <RouterLink to="/photos/cross-the-borders">
-          <img :src="`${$s}1.jpg`">
+          <img
+            :src="`${$s}${covers['cross-the-borders']}`"
+            style="height: 20rem;"
+          >
         </RouterLink>
         <div class="u-font-good-glyphs u-oscillate-x" style="text-align: right; font-size: 7rem;">w</div>
       </div>
@@ -115,6 +133,7 @@
 
 <script>
 import NavBar from '../../components/NavBar.vue';
+import covers from '../../content/covers.json';
 
 export default {
   components: {
@@ -122,6 +141,7 @@ export default {
   },
   data() {
     return {
+      covers,
       current: 0,
       scrolling: false,
     };
