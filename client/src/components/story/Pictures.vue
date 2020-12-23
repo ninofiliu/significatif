@@ -69,15 +69,15 @@ img {
   img {
     object-position: right;
   }
-  @for $i from 1 through 10 {
-    img:nth-child(#{$i}) {
+  @for $i from 1 through 100 {
+    img:nth-last-child(#{$i}) {
       transform: translate(-3% * ($i - 1));
     }
   }
   &:hover {
     cursor: pointer;
-    @for $i from 1 through 10 {
-      img:nth-child(#{$i}) {
+    @for $i from 1 through 100 {
+      img:nth-last-child(#{$i}) {
         transform: translate(-5% * ($i - 1));
       }
     }

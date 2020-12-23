@@ -3,7 +3,7 @@
     id="cross-the-borders"
     color="var(--orange)"
     :backgroundPosition="{ left: '40vw' }"
-    :picturesPosition="{ right: '55vw', left: '5vw' }"
+    :picturesPosition="{ top: '15vh', right: '55vw', left: '5vw' }"
     picturesMode="spread"
   >
   <div class="article">
