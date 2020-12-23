@@ -165,14 +165,14 @@ export default {
   methods: {
     onWheel(evt) {
       if (this.scrolling) return;
-      if (evt.deltaX > 0) {
+      if (evt.deltaY > 0) {
         this.scrolling = true;
         setTimeout(() => {
           this.scrolling = false;
         }, 300);
         this.current = Math.min(6, this.current + 1);
       }
-      if (evt.deltaX < 1) {
+      if (evt.deltaY < 1) {
         this.scrolling = true;
         setTimeout(() => {
           this.scrolling = false;
