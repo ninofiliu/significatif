@@ -1,2 +1,6 @@
-.notes
+api/node_modules
+client/dist-future
+client/node_modules
+client/src/content/pictures.json
+client/src/content/stories.json
 static
