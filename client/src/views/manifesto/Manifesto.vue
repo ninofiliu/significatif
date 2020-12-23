@@ -8,10 +8,7 @@
         <div class="text">
           <AppearingLine :chars="letMeTell"/>
           <AppearingLine :chars="youAStory" :start="-10"/>
-          <div style="font-weight: 300">
-            <!-- TODO use a pretty arrow -->
-            &darr;
-          </div>
+          <img :src="`${$s}assets/arrow.svg`"/>
         </div>
       </div>
       <hr>

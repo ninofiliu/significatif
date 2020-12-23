@@ -13,9 +13,7 @@
       <slot/>
     </div>
     <div class="details">
-      <div class="back" @click="goHome">
-        &larr;
-      </div>
+      <img class="back" @click="goHome" :src="`${$s}assets/arrow.svg`"/>
       <div class="title u-italic u-font-ogg">
         {{ pictures[current].title }}
       </div>
@@ -132,7 +130,8 @@ export default {
     position: fixed;
     top: 10vh;
     left: 10vw;
-    font-size: 3rem;
+    transform: rotate(90deg);
+    width: 2rem;
     &:hover {
       cursor: pointer;
       opacity: 0.5;
