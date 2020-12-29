@@ -125,7 +125,9 @@
       <div class="container">
         <div class="what">What's your mood today?</div>
         <div class="pick">Pick <span class="u-italic">one</span></div>
-        <div class="arrow u-oscillate-x">&rarr;</div>
+        <div class="arrow u-oscillate-x">
+          <img :src="`${$s}assets/arrow.svg`" style="transform: rotate(-90deg)">
+        </div>
       </div>
     </div>
   </div>
@@ -211,7 +213,7 @@ export default {
     font-size: 2rem;
   }
   .arrow {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 .cross-the-borders {
