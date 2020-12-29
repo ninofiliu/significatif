@@ -30,8 +30,14 @@
     "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2019.Jane&Alexisshells.Lisbon.jpg",
-    "title": "Jane&Alexisshells",
+    "src": "cross-the-borders/aout2019.Florent-and-Kira-lamp.Portugal.jpg",
+    "title": "Florent and Kira lamp",
+    "date": "2019-08-01",
+    "place": "Portugal"
+  },
+  {
+    "src": "cross-the-borders/aout2019.Jane-and-Alexisshells.Lisbon.jpg",
+    "title": "Jane and Alexisshells",
     "date": "2019-08-01",
     "place": "Lisbon"
   },
@@ -74,12 +80,6 @@
   {
     "src": "cross-the-borders/aout2019.Waking-life.Portugal.jpg",
     "title": "Waking life",
-    "date": "2019-08-01",
-    "place": "Portugal"
-  },
-  {
-    "src": "cross-the-borders/aout2019.florent&kiralamp.Portugal.jpg",
-    "title": "florent&kiralamp",
     "date": "2019-08-01",
     "place": "Portugal"
   },
@@ -156,22 +156,22 @@
     "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2020.Sagres-sunset.sagres.jpg",
+    "src": "cross-the-borders/aout2020.Sagres-sunset.Sagres.jpg",
     "title": "Sagres sunset",
     "date": "2020-08-01",
-    "place": "sagres"
+    "place": "Sagres"
   },
   {
-    "src": "cross-the-borders/aout2020.mathilde-thomas&dexy.portugal.jpg",
-    "title": "mathilde thomas&dexy",
+    "src": "cross-the-borders/aout2020.mathilde-thomas-and-dexy.Portugal.jpg",
+    "title": "mathilde thomas and dexy",
     "date": "2020-08-01",
-    "place": "portugal"
+    "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2020.sunset-painting.trouville.jpg",
+    "src": "cross-the-borders/aout2020.sunset-painting.Trouville.jpg",
     "title": "sunset painting",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
     "src": "cross-the-borders/aout2020.sunset.Portugal.jpg",
@@ -180,16 +180,16 @@
     "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2020.tent-view.sagres.jpg",
+    "src": "cross-the-borders/aout2020.tent-view.Sagres.jpg",
     "title": "tent view",
     "date": "2020-08-01",
-    "place": "sagres"
+    "place": "Sagres"
   },
   {
-    "src": "cross-the-borders/aout2020.thomas&a-girl.portugal.jpg",
-    "title": "thomas&a girl",
+    "src": "cross-the-borders/aout2020.thomas-and-a-girl.Portugal.jpg",
+    "title": "thomas and a girl",
     "date": "2020-08-01",
-    "place": "portugal"
+    "place": "Portugal"
   },
   {
     "src": "cross-the-borders/aout2020.thomas-fuelin-dexy.Portugal.jpg",
@@ -198,16 +198,16 @@
     "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2020.thomas-to-the-moon.sagres.tif",
+    "src": "cross-the-borders/aout2020.thomas-to-the-moon.Sagres.tif",
     "title": "thomas to the moon",
     "date": "2020-08-01",
-    "place": "sagres"
+    "place": "Sagres"
   },
   {
-    "src": "cross-the-borders/aout2020.thomas-to-the-moon1.sagres.tif",
+    "src": "cross-the-borders/aout2020.thomas-to-the-moon1.Sagres.tif",
     "title": "thomas to the moon1",
     "date": "2020-08-01",
-    "place": "sagres"
+    "place": "Sagres"
   },
   {
     "src": "cross-the-borders/aout2020.thomasmathilde-apero.Portugal.jpg",
@@ -216,10 +216,10 @@
     "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2020.white-flowers.normandie.jpg",
+    "src": "cross-the-borders/aout2020.white-flowers.Normandie.jpg",
     "title": "white flowers",
     "date": "2020-08-01",
-    "place": "normandie"
+    "place": "Normandie"
   },
   {
     "src": "cross-the-borders/avril2018.Jane-in-NY.New-York.jpg",
@@ -234,8 +234,8 @@
     "place": "New York"
   },
   {
-    "src": "cross-the-borders/decembre2018.Julien&Anaborddeseine.Yvelines.jpg",
-    "title": "Julien&Anaborddeseine",
+    "src": "cross-the-borders/decembre2018.Julien-and-Anaborddeseine.Yvelines.jpg",
+    "title": "Julien and Anaborddeseine",
     "date": "2018-12-01",
     "place": "Yvelines"
   },
@@ -246,28 +246,28 @@
     "place": "Rostov, Russia"
   },
   {
-    "src": "cross-the-borders/decembre2019.carroussel.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.carroussel.Moscou.jpg",
     "title": "carroussel",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "cross-the-borders/decembre2019.deep-metro.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.deep-metro.Moscou.jpg",
     "title": "deep metro",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "cross-the-borders/decembre2019.emmie's-flat-view-day.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.emmie's-flat-view-day.Moscou.jpg",
     "title": "emmie's flat view day",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "cross-the-borders/decembre2019.emmie's-flat-view.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.emmie's-flat-view.Moscou.jpg",
     "title": "emmie's flat view",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
     "src": "cross-the-borders/decembre2019.fish-market.Rostov,-Russia.jpg",
@@ -288,28 +288,28 @@
     "place": "Rostov, Russia"
   },
   {
-    "src": "cross-the-borders/decembre2019.gum-market.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.gum-market.Moscou.jpg",
     "title": "gum market",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "cross-the-borders/decembre2019.jana&jet.trouville.jpg",
-    "title": "jana&jet",
+    "src": "cross-the-borders/decembre2019.jana-and-jet.Trouville.jpg",
+    "title": "jana and jet",
     "date": "2019-12-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "cross-the-borders/decembre2019.matrix-metro.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.matrix-metro.Moscou.jpg",
     "title": "matrix metro",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "cross-the-borders/decembre2019.moscow-metro.moscou.jpg",
+    "src": "cross-the-borders/decembre2019.moscow-metro.Moscou.jpg",
     "title": "moscow metro",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
     "src": "cross-the-borders/decembre2019.rostov-sunset.Rostov,-Russia.jpg",
@@ -324,22 +324,22 @@
     "place": "Rostov, Russia"
   },
   {
-    "src": "cross-the-borders/decembre2019.souvenirnormand.trouville.jpg",
+    "src": "cross-the-borders/decembre2019.souvenirnormand.Trouville.jpg",
     "title": "souvenirnormand",
     "date": "2019-12-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "cross-the-borders/decembre2019.souvenirnormand1.trouville.jpg",
+    "src": "cross-the-borders/decembre2019.souvenirnormand1.Trouville.jpg",
     "title": "souvenirnormand1",
     "date": "2019-12-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "cross-the-borders/juillet2018.julieninchristineeating.slovenia.jpg",
+    "src": "cross-the-borders/juillet2018.julieninchristineeating.Slovenia.jpg",
     "title": "julieninchristineeating",
     "date": "2018-07-01",
-    "place": "slovenia"
+    "place": "Slovenia"
   },
   {
     "src": "cross-the-borders/juillet2020.Acidfrenchfields.Letrain.jpg",
@@ -354,28 +354,28 @@
     "place": "Letrain"
   },
   {
-    "src": "cross-the-borders/juillet2020.jiraisrevoirmanormandie.trouville.jpg",
+    "src": "cross-the-borders/juillet2020.jiraisrevoirmanormandie.Trouville.jpg",
     "title": "jiraisrevoirmanormandie",
     "date": "2020-07-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "cross-the-borders/juillet2020.jiraisrevoirmanormandie1.trouville.jpg",
+    "src": "cross-the-borders/juillet2020.jiraisrevoirmanormandie1.Trouville.jpg",
     "title": "jiraisrevoirmanormandie1",
     "date": "2020-07-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "cross-the-borders/juillet2020.jiraisrevoirmanormandie2.trouville.jpg",
+    "src": "cross-the-borders/juillet2020.jiraisrevoirmanormandie2.Trouville.jpg",
     "title": "jiraisrevoirmanormandie2",
     "date": "2020-07-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "cross-the-borders/juin2020.fistsup.paris.jpg",
+    "src": "cross-the-borders/juin2020.fistsup.Paris.jpg",
     "title": "fistsup",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
     "src": "cross-the-borders/juin2020.justicepouradama.Paris.jpg",
@@ -384,16 +384,16 @@
     "place": "Paris"
   },
   {
-    "src": "cross-the-borders/juin2020.justicepouradama1.paris.jpg",
+    "src": "cross-the-borders/juin2020.justicepouradama1.Paris.jpg",
     "title": "justicepouradama1",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "cross-the-borders/juin2020.makeracismwrongagain.paris.jpg",
+    "src": "cross-the-borders/juin2020.makeracismwrongagain.Paris.jpg",
     "title": "makeracismwrongagain",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
     "src": "cross-the-borders/juin2020.stoppolicebrutality.Paris.jpg",
@@ -408,10 +408,10 @@
     "place": "Paris"
   },
   {
-    "src": "cross-the-borders/juin2020.stopracismnow1.paris.jpg",
+    "src": "cross-the-borders/juin2020.stopracismnow1.Paris.jpg",
     "title": "stopracismnow1",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
     "src": "cross-the-borders/mai2020.ontheroad.Yvelines.jpg",
@@ -420,10 +420,10 @@
     "place": "Yvelines"
   },
   {
-    "src": "cross-the-borders/mars2018.triplettebelge.brussels.jpg",
+    "src": "cross-the-borders/mars2018.triplettebelge.Brussels.jpg",
     "title": "triplettebelge",
     "date": "2018-03-01",
-    "place": "brussels"
+    "place": "Brussels"
   },
   {
     "src": "cross-the-borders/mars2020.moviescene.Leslilas.jpg",
@@ -432,16 +432,16 @@
     "place": "Leslilas"
   },
   {
-    "src": "cross-the-borders/octobre2020.corn-seller.porte-de-clignancourt.jpg",
+    "src": "cross-the-borders/octobre2020.corn-seller.Porte-de-clignancourt.jpg",
     "title": "corn seller",
     "date": "2020-10-01",
-    "place": "porte de clignancourt"
+    "place": "Porte de clignancourt"
   },
   {
-    "src": "cross-the-borders/septembre2018.randomroad.northoffrance.jpg",
+    "src": "cross-the-borders/septembre2018.randomroad.North-Of-France.jpg",
     "title": "randomroad",
     "date": "2018-09-01",
-    "place": "northoffrance"
+    "place": "North Of France"
   },
   {
     "src": "cross-the-borders/septembre2019.balladeàtrouville.Normandie.jpg",
@@ -456,52 +456,52 @@
     "place": "Normandie"
   },
   {
-    "src": "cross-the-borders/septembre2019.benerville.normandie.jpg",
+    "src": "cross-the-borders/septembre2019.benerville.Normandie.jpg",
     "title": "benerville",
     "date": "2019-09-01",
-    "place": "normandie"
+    "place": "Normandie"
   },
   {
-    "src": "taste-of-farniente/aout2018.nicolas-neny.sifnos-grèce.jpg",
+    "src": "taste-of-farniente/aout2018.nicolas-neny.Sifnos-grèce.jpg",
     "title": "nicolas neny",
     "date": "2018-08-01",
-    "place": "sifnos grèce"
+    "place": "Sifnos grèce"
   },
   {
-    "src": "taste-of-farniente/aout2019.carpe-diem.portugal.jpg",
+    "src": "taste-of-farniente/aout2019.carpe-diem.Portugal.jpg",
     "title": "carpe diem",
     "date": "2019-08-01",
-    "place": "portugal"
+    "place": "Portugal"
   },
   {
-    "src": "taste-of-farniente/aout2020.gold-sunset.normandie.jpg",
+    "src": "taste-of-farniente/aout2020.gold-sunset.Normandie.jpg",
     "title": "gold sunset",
     "date": "2020-08-01",
-    "place": "normandie"
+    "place": "Normandie"
   },
   {
-    "src": "taste-of-farniente/aout2020.hot-normandy1.trouville.jpg",
+    "src": "taste-of-farniente/aout2020.hot-normandy1.Trouville.jpg",
     "title": "hot normandy1",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/aout2020.hot-normandy3.trouville.jpg",
+    "src": "taste-of-farniente/aout2020.hot-normandy3.Trouville.jpg",
     "title": "hot normandy3",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/aout2020.hot-normandy4.trouville.jpg",
+    "src": "taste-of-farniente/aout2020.hot-normandy4.Trouville.jpg",
     "title": "hot normandy4",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/aout2020.hot-normandy5.trouville.jpg",
+    "src": "taste-of-farniente/aout2020.hot-normandy5.Trouville.jpg",
     "title": "hot normandy5",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
     "src": "taste-of-farniente/aout2020.marta-beach.Portugal.jpg",
@@ -516,22 +516,22 @@
     "place": "Portugal"
   },
   {
-    "src": "taste-of-farniente/aout2020.maya-beach.trouville.jpg",
+    "src": "taste-of-farniente/aout2020.maya-beach.Trouville.jpg",
     "title": "maya beach",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/aout2020.maya.trouville.jpg",
+    "src": "taste-of-farniente/aout2020.maya.Trouville.jpg",
     "title": "maya",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/aout2020.sagres-sunset.sagres.jpg",
+    "src": "taste-of-farniente/aout2020.sagres-sunset.Sagres.jpg",
     "title": "sagres sunset",
     "date": "2020-08-01",
-    "place": "sagres"
+    "place": "Sagres"
   },
   {
     "src": "taste-of-farniente/aout2020.sunbath-lake.Portugal.jpg",
@@ -540,136 +540,136 @@
     "place": "Portugal"
   },
   {
-    "src": "taste-of-farniente/avril2019.hyères-sunset.hyères.jpg",
+    "src": "taste-of-farniente/avril2019.hyères-sunset.Hyères.jpg",
     "title": "hyères sunset",
     "date": "2019-04-01",
-    "place": "hyères"
+    "place": "Hyères"
   },
   {
-    "src": "taste-of-farniente/avril2019.lisa.marseille.jpg",
+    "src": "taste-of-farniente/avril2019.lisa.Marseille.jpg",
     "title": "lisa",
     "date": "2019-04-01",
-    "place": "marseille"
+    "place": "Marseille"
   },
   {
-    "src": "taste-of-farniente/avril2020.lydia-sunset.yvelines.jpg",
+    "src": "taste-of-farniente/avril2020.lydia-sunset.Yvelines.jpg",
     "title": "lydia sunset",
     "date": "2020-04-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "taste-of-farniente/decembre2019.daniella&gabriella-bath.trouville.jpg",
-    "title": "daniella&gabriella bath",
+    "src": "taste-of-farniente/decembre2019.daniella-and-gabriella-bath.Trouville.jpg",
+    "title": "daniella and gabriella bath",
     "date": "2019-12-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/janvier2020.nastya.paris.jpg",
+    "src": "taste-of-farniente/janvier2020.nastya.Paris.jpg",
     "title": "nastya",
     "date": "2020-01-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juillet2017.jessy.paris.tif",
+    "src": "taste-of-farniente/juillet2017.jessy.Paris.tif",
     "title": "jessy",
     "date": "2017-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juillet2019.78.yvelines.jpg",
+    "src": "taste-of-farniente/juillet2019.78.Yvelines.jpg",
     "title": "78",
     "date": "2019-07-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "taste-of-farniente/juillet2019.benjamin-sunbath.yvelines.jpg",
+    "src": "taste-of-farniente/juillet2019.benjamin-sunbath.Yvelines.jpg",
     "title": "benjamin sunbath",
     "date": "2019-07-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "taste-of-farniente/juillet2019.girls-band.montmerle.jpg",
+    "src": "taste-of-farniente/juillet2019.girls-band.Montmerle.jpg",
     "title": "girls band",
     "date": "2019-07-01",
-    "place": "montmerle"
+    "place": "Montmerle"
   },
   {
-    "src": "taste-of-farniente/juillet2019.masha-in-the-grass.limousin.jpg",
+    "src": "taste-of-farniente/juillet2019.masha-in-the-grass.Limousin.jpg",
     "title": "masha in the grass",
     "date": "2019-07-01",
-    "place": "limousin"
+    "place": "Limousin"
   },
   {
-    "src": "taste-of-farniente/juillet2019.thomas-poolside.yvelines.jpg",
+    "src": "taste-of-farniente/juillet2019.thomas-poolside.Yvelines.jpg",
     "title": "thomas poolside",
     "date": "2019-07-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "taste-of-farniente/juillet2019.womens-sunbath.limousin.jpg",
+    "src": "taste-of-farniente/juillet2019.womens-sunbath.Limousin.jpg",
     "title": "womens sunbath",
     "date": "2019-07-01",
-    "place": "limousin"
+    "place": "Limousin"
   },
   {
-    "src": "taste-of-farniente/juillet2020.Maya&azelle.beybleu.jpg",
-    "title": "Maya&azelle",
+    "src": "taste-of-farniente/juillet2020.Maya-and-azelle.Beybleu.jpg",
+    "title": "Maya and azelle",
     "date": "2020-07-01",
-    "place": "beybleu"
+    "place": "Beybleu"
   },
   {
-    "src": "taste-of-farniente/juillet2020.alice.paris.jpg",
+    "src": "taste-of-farniente/juillet2020.alice.Paris.jpg",
     "title": "alice",
     "date": "2020-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juillet2020.jane.paris.jpg",
+    "src": "taste-of-farniente/juillet2020.jane.Paris.jpg",
     "title": "jane",
     "date": "2020-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juillet2020.lisa-mad-vintage.paris.jpg",
+    "src": "taste-of-farniente/juillet2020.lisa-mad-vintage.Paris.jpg",
     "title": "lisa mad vintage",
     "date": "2020-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juillet2020.maya.paris.jpg",
+    "src": "taste-of-farniente/juillet2020.maya.Paris.jpg",
     "title": "maya",
     "date": "2020-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juillet2020.orest-mad-vintage.paris.jpg",
+    "src": "taste-of-farniente/juillet2020.orest-mad-vintage.Paris.jpg",
     "title": "orest mad vintage",
     "date": "2020-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2018.maya.Palais-de-Tokyo,Paris.jpg",
+    "src": "taste-of-farniente/juin2018.maya.Palais-de-Tokyo,-Paris.jpg",
     "title": "maya",
     "date": "2018-06-01",
-    "place": "Palais de Tokyo,Paris"
+    "place": "Palais de Tokyo, Paris"
   },
   {
-    "src": "taste-of-farniente/juin2019.Pink-flamingo.paris.jpg",
+    "src": "taste-of-farniente/juin2019.Pink-flamingo.Paris.jpg",
     "title": "Pink flamingo",
     "date": "2019-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2019.dustine-red.paris.jpg",
+    "src": "taste-of-farniente/juin2019.dustine-red.Paris.jpg",
     "title": "dustine red",
     "date": "2019-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2019.fujimine.paris.jpg",
+    "src": "taste-of-farniente/juin2019.fujimine.Paris.jpg",
     "title": "fujimine",
     "date": "2019-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
     "src": "taste-of-farniente/juin2020.M.Paris.jpg",
@@ -678,142 +678,142 @@
     "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.acid-vanille.charentes.jpg",
+    "src": "taste-of-farniente/juin2020.acid-vanille.Charentes.jpg",
     "title": "acid vanille",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/juin2020.alice&daniella.paris.jpg",
-    "title": "alice&daniella",
+    "src": "taste-of-farniente/juin2020.alice-and-daniella.Paris.jpg",
+    "title": "alice and daniella",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.alice.paris.jpg",
+    "src": "taste-of-farniente/juin2020.alice.Paris.jpg",
     "title": "alice",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.daniella&paolo.charentes.jpg",
-    "title": "daniella&paolo",
+    "src": "taste-of-farniente/juin2020.daniella-and-paolo.Charentes.jpg",
+    "title": "daniella and paolo",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/juin2020.daniella-business.paris.jpg",
+    "src": "taste-of-farniente/juin2020.daniella-business.Paris.jpg",
     "title": "daniella business",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.elodie-gervaise.paris.jpg",
+    "src": "taste-of-farniente/juin2020.elodie-gervaise.Paris.jpg",
     "title": "elodie gervaise",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.jane-castle.charentes.jpg",
+    "src": "taste-of-farniente/juin2020.jane-castle.Charentes.jpg",
     "title": "jane castle",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/juin2020.julien-cergy.jpg",
+    "src": "taste-of-farniente/juin2020.julien-cergy.Jpg",
     "title": "julien cergy",
     "date": "2020-06-01",
-    "place": "jpg"
+    "place": "Jpg"
   },
   {
-    "src": "taste-of-farniente/juin2020.leg.paris.jpg",
+    "src": "taste-of-farniente/juin2020.leg.Paris.jpg",
     "title": "leg",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.maria-hair.paris.jpg",
+    "src": "taste-of-farniente/juin2020.maria-hair.Paris.jpg",
     "title": "maria hair",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.maya-waking-up.charentes.jpg",
+    "src": "taste-of-farniente/juin2020.maya-waking-up.Charentes.jpg",
     "title": "maya waking up",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/juin2020.maya.charentes.jpg",
+    "src": "taste-of-farniente/juin2020.maya.Charentes.jpg",
     "title": "maya",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/juin2020.paolo.charentes.jpg",
+    "src": "taste-of-farniente/juin2020.paolo.Charentes.jpg",
     "title": "paolo",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/juin2020.poolside.paris.jpg",
+    "src": "taste-of-farniente/juin2020.poolside.Paris.jpg",
     "title": "poolside",
     "date": "2020-06-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/juin2020.samuel.cergy.jpg",
+    "src": "taste-of-farniente/juin2020.samuel.Cergy.jpg",
     "title": "samuel",
     "date": "2020-06-01",
-    "place": "cergy"
+    "place": "Cergy"
   },
   {
-    "src": "taste-of-farniente/juin2020.trippin.charentes.jpg",
+    "src": "taste-of-farniente/juin2020.trippin.Charentes.jpg",
     "title": "trippin",
     "date": "2020-06-01",
-    "place": "charentes"
+    "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/mai2018.Léa.paris.jpg",
+    "src": "taste-of-farniente/mai2018.Léa.Paris.jpg",
     "title": "Léa",
     "date": "2018-05-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/mai2020.acid.paris.jpg",
+    "src": "taste-of-farniente/mai2020.acid.Paris.jpg",
     "title": "acid",
     "date": "2020-05-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/mai2020.masha-quarantine.mericourt.jpg",
+    "src": "taste-of-farniente/mai2020.masha-quarantine.Mericourt.jpg",
     "title": "masha quarantine",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "taste-of-farniente/mai2020.masha.mericourt.jpg",
+    "src": "taste-of-farniente/mai2020.masha.Mericourt.jpg",
     "title": "masha",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "taste-of-farniente/mai2020.twelve-color.paris.jpg",
+    "src": "taste-of-farniente/mai2020.twelve-color.Paris.jpg",
     "title": "twelve color",
     "date": "2020-05-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/mai2020.twelve.paris.jpg",
+    "src": "taste-of-farniente/mai2020.twelve.Paris.jpg",
     "title": "twelve",
     "date": "2020-05-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/novembre2018.alexis.houdan.jpg",
+    "src": "taste-of-farniente/novembre2018.alexis.Houdan.jpg",
     "title": "alexis",
     "date": "2018-11-01",
-    "place": "houdan"
+    "place": "Houdan"
   },
   {
     "src": "taste-of-farniente/novembre2018.wetness.Lapaix,-Paris.jpg",
@@ -822,70 +822,70 @@
     "place": "Lapaix, Paris"
   },
   {
-    "src": "taste-of-farniente/novembre2019.alexis-blurry.yvelines.jpg",
+    "src": "taste-of-farniente/novembre2019.alexis-blurry.Yvelines.jpg",
     "title": "alexis blurry",
     "date": "2019-11-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "taste-of-farniente/novembre2019.alexis-cigarette.yvelines.jpg",
+    "src": "taste-of-farniente/novembre2019.alexis-cigarette.Yvelines.jpg",
     "title": "alexis cigarette",
     "date": "2019-11-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "taste-of-farniente/novembre2019.darina.paris.jpg",
+    "src": "taste-of-farniente/novembre2019.darina.Paris.jpg",
     "title": "darina",
     "date": "2019-11-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/novembre2019.kira.barcelone.jpg",
+    "src": "taste-of-farniente/novembre2019.kira.Barcelone.jpg",
     "title": "kira",
     "date": "2019-11-01",
-    "place": "barcelone"
+    "place": "Barcelone"
   },
   {
-    "src": "taste-of-farniente/octobre2019.kira-red.paris.jpg",
+    "src": "taste-of-farniente/octobre2019.kira-red.Paris.jpg",
     "title": "kira red",
     "date": "2019-10-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/octobre2019.womens.paris-la-perle.jpg",
+    "src": "taste-of-farniente/octobre2019.womens.Paris-la-perle.jpg",
     "title": "womens",
     "date": "2019-10-01",
-    "place": "paris la perle"
+    "place": "Paris la perle"
   },
   {
-    "src": "taste-of-farniente/octobre2020.maya-télé-travaille.paris.jpg",
+    "src": "taste-of-farniente/octobre2020.maya-télé-travaille.Paris.jpg",
     "title": "maya télé travaille",
     "date": "2020-10-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/septembre2018.a-nap-in-normandy.trouville.jpg",
+    "src": "taste-of-farniente/septembre2018.a-nap-in-normandy.Trouville.jpg",
     "title": "a nap in normandy",
     "date": "2018-09-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/septembre2019.helena&kira.paris.jpg",
-    "title": "helena&kira",
+    "src": "taste-of-farniente/septembre2019.helena-and-kira.Paris.jpg",
+    "title": "helena and kira",
     "date": "2019-09-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "taste-of-farniente/septembre2019.nouvelle-vogue-cagoles.pantin.jpg",
+    "src": "taste-of-farniente/septembre2019.nouvelle-vogue-cagoles.Pantin.jpg",
     "title": "nouvelle vogue cagoles",
     "date": "2019-09-01",
-    "place": "pantin"
+    "place": "Pantin"
   },
   {
-    "src": "vous-etes-des-animaux/aout2020.dog-black&white.peniche.jpg",
-    "title": "dog black&white",
+    "src": "vous-etes-des-animaux/aout2020.dog-black-and-white.Peniche.jpg",
+    "title": "dog black and white",
     "date": "2020-08-01",
-    "place": "peniche"
+    "place": "Peniche"
   },
   {
     "src": "vous-etes-des-animaux/aout2020.dog.Portugal.jpg",
@@ -924,250 +924,250 @@
     "place": "Portugal"
   },
   {
-    "src": "vous-etes-des-animaux/avril2019.hund.berlin.jpg",
+    "src": "vous-etes-des-animaux/avril2019.hund.Berlin.jpg",
     "title": "hund",
     "date": "2019-04-01",
-    "place": "berlin"
+    "place": "Berlin"
   },
   {
-    "src": "vous-etes-des-animaux/avril2019.portrait-assis-chien-noir.beybleu.jpg",
+    "src": "vous-etes-des-animaux/avril2019.portrait-assis-chien-noir.Beybleu.jpg",
     "title": "portrait assis chien noir",
     "date": "2019-04-01",
-    "place": "beybleu"
+    "place": "Beybleu"
   },
   {
-    "src": "vous-etes-des-animaux/avril2020.gun.yvelines.jpg",
+    "src": "vous-etes-des-animaux/avril2020.gun.Yvelines.jpg",
     "title": "gun",
     "date": "2020-04-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/avril2020.igor.mericourt.jpg",
+    "src": "vous-etes-des-animaux/avril2020.igor.Mericourt.jpg",
     "title": "igor",
     "date": "2020-04-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/avril2020.paloma-sunbath.yvelines.jpg",
+    "src": "vous-etes-des-animaux/avril2020.paloma-sunbath.Yvelines.jpg",
     "title": "paloma sunbath",
     "date": "2020-04-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/avril2020.paloma.yvelines.tif",
+    "src": "vous-etes-des-animaux/avril2020.paloma.Yvelines.tif",
     "title": "paloma",
     "date": "2020-04-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/decembre2019.gaby&gun.yvelines.jpg",
-    "title": "gaby&gun",
+    "src": "vous-etes-des-animaux/decembre2019.gaby-and-gun.Yvelines.jpg",
+    "title": "gaby and gun",
     "date": "2019-12-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/decembre2019.gaby&prune-pursuit.yvelines.jpg",
-    "title": "gaby&prune pursuit",
+    "src": "vous-etes-des-animaux/decembre2019.gaby-and-prune-pursuit.Yvelines.jpg",
+    "title": "gaby and prune pursuit",
     "date": "2019-12-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/decembre2019.gaby-cold.yvelines.jpg",
+    "src": "vous-etes-des-animaux/decembre2019.gaby-cold.Yvelines.jpg",
     "title": "gaby cold",
     "date": "2019-12-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/decembre2019.puzo.moscou.jpg",
+    "src": "vous-etes-des-animaux/decembre2019.puzo.Moscou.jpg",
     "title": "puzo",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "vous-etes-des-animaux/janvier2020.agency-white-dog.milan.jpg",
+    "src": "vous-etes-des-animaux/janvier2020.agency-white-dog.Milan.jpg",
     "title": "agency white dog",
     "date": "2020-01-01",
-    "place": "milan"
+    "place": "Milan"
   },
   {
-    "src": "vous-etes-des-animaux/janvier2020.black-dog.paris.jpg",
+    "src": "vous-etes-des-animaux/janvier2020.black-dog.Paris.jpg",
     "title": "black dog",
     "date": "2020-01-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "vous-etes-des-animaux/juillet2019.toutoune.paris.jpg",
+    "src": "vous-etes-des-animaux/juillet2019.toutoune.Paris.jpg",
     "title": "toutoune",
     "date": "2019-07-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "vous-etes-des-animaux/juillet2020.chien-lunettes.deauville.jpg",
+    "src": "vous-etes-des-animaux/juillet2020.chien-lunettes.Deauville.jpg",
     "title": "chien lunettes",
     "date": "2020-07-01",
-    "place": "deauville"
+    "place": "Deauville"
   },
   {
-    "src": "vous-etes-des-animaux/juin2018.constitution-chien-noir.arle.tif",
+    "src": "vous-etes-des-animaux/juin2018.constitution-chien-noir.Arle.tif",
     "title": "constitution chien noir",
     "date": "2018-06-01",
-    "place": "arle"
+    "place": "Arle"
   },
   {
-    "src": "vous-etes-des-animaux/juin2020.daniella&jet.yvelines.jpg",
-    "title": "daniella&jet",
+    "src": "vous-etes-des-animaux/juin2020.daniella-and-jet.Yvelines.jpg",
+    "title": "daniella and jet",
     "date": "2020-06-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/juin2020.pogi.yvelines.jpg",
+    "src": "vous-etes-des-animaux/juin2020.pogi.Yvelines.jpg",
     "title": "pogi",
     "date": "2020-06-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/juin2020.prune&daniella-shower.yvelines.jpg",
-    "title": "prune&daniella shower",
+    "src": "vous-etes-des-animaux/juin2020.prune-and-daniella-shower.Yvelines.jpg",
+    "title": "prune and daniella shower",
     "date": "2020-06-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.gaby&prune.yvelines.jpg",
-    "title": "gaby&prune",
+    "src": "vous-etes-des-animaux/mai2020.gaby-and-prune.Yvelines.jpg",
+    "title": "gaby and prune",
     "date": "2020-05-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.igor-blue.mericourt.jpg",
+    "src": "vous-etes-des-animaux/mai2020.igor-blue.Mericourt.jpg",
     "title": "igor blue",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.ota-black&white.mericourt.jpg",
-    "title": "ota black&white",
+    "src": "vous-etes-des-animaux/mai2020.ota-black-and-white.Mericourt.jpg",
+    "title": "ota black and white",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.ota-sunbath.mericourt.jpg",
+    "src": "vous-etes-des-animaux/mai2020.ota-sunbath.Mericourt.jpg",
     "title": "ota sunbath",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.ota.mericourt.jpg",
+    "src": "vous-etes-des-animaux/mai2020.ota.Mericourt.jpg",
     "title": "ota",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.otis&ota-staring-outside.mericourt.jpg",
-    "title": "otis&ota staring outside",
+    "src": "vous-etes-des-animaux/mai2020.otis-and-ota-staring-outside.Mericourt.jpg",
+    "title": "otis and ota staring outside",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.otis-black&white.mericourt.jpg",
-    "title": "otis black&white",
+    "src": "vous-etes-des-animaux/mai2020.otis-black-and-white.Mericourt.jpg",
+    "title": "otis black and white",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.otis-look.mericourt.jpg",
+    "src": "vous-etes-des-animaux/mai2020.otis-look.Mericourt.jpg",
     "title": "otis look",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.otis.mericourt.jpg",
+    "src": "vous-etes-des-animaux/mai2020.otis.Mericourt.jpg",
     "title": "otis",
     "date": "2020-05-01",
-    "place": "mericourt"
+    "place": "Mericourt"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.paloma-up.yvelines.jpg",
+    "src": "vous-etes-des-animaux/mai2020.paloma-up.Yvelines.jpg",
     "title": "paloma up",
     "date": "2020-05-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.pigeon-stranger.yvelines.tif",
+    "src": "vous-etes-des-animaux/mai2020.pigeon-stranger.Yvelines.tif",
     "title": "pigeon stranger",
     "date": "2020-05-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.prune-b&w.yvelines.jpg",
-    "title": "prune b&w",
+    "src": "vous-etes-des-animaux/mai2020.prune-b-and-w.Yvelines.jpg",
+    "title": "prune b and w",
     "date": "2020-05-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/mai2020.prune-gaby&gun-door.yvelines.tif",
-    "title": "prune gaby&gun door",
+    "src": "vous-etes-des-animaux/mai2020.prune-gaby-and-gun-door.Yvelines.tif",
+    "title": "prune gaby and gun door",
     "date": "2020-05-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/novembre2018.saturday-mood.paris.jpg",
+    "src": "vous-etes-des-animaux/novembre2018.saturday-mood.Paris.jpg",
     "title": "saturday mood",
     "date": "2018-11-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "vous-etes-des-animaux/novembre2019.beauty-gun.yvelines.jpg",
+    "src": "vous-etes-des-animaux/novembre2019.beauty-gun.Yvelines.jpg",
     "title": "beauty gun",
     "date": "2019-11-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/novembre2019.bishop.pantin.jpg",
+    "src": "vous-etes-des-animaux/novembre2019.bishop.Pantin.jpg",
     "title": "bishop",
     "date": "2019-11-01",
-    "place": "pantin"
+    "place": "Pantin"
   },
   {
-    "src": "vous-etes-des-animaux/novembre2019.gun&alexis.yvelines.jpg",
-    "title": "gun&alexis",
+    "src": "vous-etes-des-animaux/novembre2019.gun-and-alexis.Yvelines.jpg",
+    "title": "gun and alexis",
     "date": "2019-11-01",
-    "place": "yvelines"
+    "place": "Yvelines"
   },
   {
-    "src": "vous-etes-des-animaux/novembre2019.paloma.saint-ouen.jpg",
+    "src": "vous-etes-des-animaux/novembre2019.paloma.Saint-ouen.jpg",
     "title": "paloma",
     "date": "2019-11-01",
-    "place": "saint ouen"
+    "place": "Saint ouen"
   },
   {
-    "src": "vous-etes-des-animaux/octobre2019.ota-blurry.paris.jpg",
+    "src": "vous-etes-des-animaux/octobre2019.ota-blurry.Paris.jpg",
     "title": "ota blurry",
     "date": "2019-10-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "vous-etes-des-animaux/octobre2020.Friendly-dog.paris.jpg",
+    "src": "vous-etes-des-animaux/octobre2020.Friendly-dog.Paris.jpg",
     "title": "Friendly dog",
     "date": "2020-10-01",
-    "place": "paris"
+    "place": "Paris"
   },
   {
-    "src": "vous-etes-des-animaux/septembre2018.blurry-dog.deauville.jpg",
+    "src": "vous-etes-des-animaux/septembre2018.blurry-dog.Deauville.jpg",
     "title": "blurry dog",
     "date": "2018-09-01",
-    "place": "deauville"
+    "place": "Deauville"
   },
   {
-    "src": "vous-etes-des-animaux/septembre2018.mouette.trouville.jpg",
+    "src": "vous-etes-des-animaux/septembre2018.mouette.Trouville.jpg",
     "title": "mouette",
     "date": "2018-09-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
-    "src": "pedal-to-the-metal/aout2020.jaguar.trouville.jpg",
+    "src": "pedal-to-the-metal/aout2020.jaguar.Trouville.jpg",
     "title": "jaguar",
     "date": "2020-08-01",
-    "place": "trouville"
+    "place": "Trouville"
   },
   {
     "src": "pedal-to-the-metal/aout2020.satellites.Porto.jpg",
@@ -1182,34 +1182,34 @@
     "place": "Portugal"
   },
   {
-    "src": "pedal-to-the-metal/avril2019.fuckthepolice.hyères.tif",
+    "src": "pedal-to-the-metal/avril2019.fuckthepolice.Hyères.tif",
     "title": "fuckthepolice",
     "date": "2019-04-01",
-    "place": "hyères"
+    "place": "Hyères"
   },
   {
-    "src": "pedal-to-the-metal/decembre2018.alexisinhisBMW.houdan.jpg",
+    "src": "pedal-to-the-metal/decembre2018.alexisinhisBMW.Houdan.jpg",
     "title": "alexisinhisBMW",
     "date": "2018-12-01",
-    "place": "houdan"
+    "place": "Houdan"
   },
   {
-    "src": "pedal-to-the-metal/decembre2018.clockworkorange.houdan.jpg",
+    "src": "pedal-to-the-metal/decembre2018.clockworkorange.Houdan.jpg",
     "title": "clockworkorange",
     "date": "2018-12-01",
-    "place": "houdan"
+    "place": "Houdan"
   },
   {
-    "src": "pedal-to-the-metal/decembre2018.upsidedown.houdan.jpg",
+    "src": "pedal-to-the-metal/decembre2018.upsidedown.Houdan.jpg",
     "title": "upsidedown",
     "date": "2018-12-01",
-    "place": "houdan"
+    "place": "Houdan"
   },
   {
-    "src": "pedal-to-the-metal/decembre2019.DP-009-CA.trouvillesurmer.jpg",
+    "src": "pedal-to-the-metal/decembre2019.DP-009-CA.Trouville.jpg",
     "title": "DP 009 CA",
     "date": "2019-12-01",
-    "place": "trouvillesurmer"
+    "place": "Trouville"
   },
   {
     "src": "pedal-to-the-metal/decembre2019.blue-car.Rostov,-Russia.jpg",
@@ -1218,21 +1218,21 @@
     "place": "Rostov, Russia"
   },
   {
-    "src": "pedal-to-the-metal/decembre2019.dusty-car.moscou.jpg",
+    "src": "pedal-to-the-metal/decembre2019.dusty-car.Moscou.jpg",
     "title": "dusty car",
     "date": "2019-12-01",
-    "place": "moscou"
+    "place": "Moscou"
   },
   {
-    "src": "pedal-to-the-metal/juin2020.fetedelapolice.parcdevincennes.jpg",
+    "src": "pedal-to-the-metal/juin2020.fetedelapolice.Parcdevincennes.jpg",
     "title": "fetedelapolice",
     "date": "2020-06-01",
-    "place": "parcdevincennes"
+    "place": "Parcdevincennes"
   },
   {
-    "src": "pedal-to-the-metal/octobre2019.wetmercedes.saintouen.jpg",
+    "src": "pedal-to-the-metal/octobre2019.wetmercedes.Saintouen.jpg",
     "title": "wetmercedes",
     "date": "2019-10-01",
-    "place": "saintouen"
+    "place": "Saintouen"
   }
 ]
