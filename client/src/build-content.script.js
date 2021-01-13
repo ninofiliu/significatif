@@ -4,9 +4,9 @@ const fs = require('fs');
 const storyIds = [
   'cross-the-borders',
   'taste-of-farniente',
-  'photo-seduction',
+  'humans',
   'vous-etes-des-animaux',
-  'architecture-silence',
+  'silent-photography',
   'pedal-to-the-metal',
 ];
 
@@ -30,15 +30,27 @@ for (const storyId of storyIds) {
   if (fs.existsSync(storyPath)) {
     for (const basename of fs.readdirSync(storyPath)) {
       const src = `${storyId}/${basename}`;
-      const [rawDate, rawTitle, rawPlace] = basename.split('.');
-      const [, rawMonth, year] = rawDate.match(/([a-z]*)([0-9]*)/);
-      const month = ['', 'janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre']
+
+      const splitBasename = basename.split('.');
+      if (splitBasename.length !== 4) throw new Error(`Invalid file ${storyId}/${basename}: should be formatted as DATE.NAME.PLACE.EXTENSION`);
+      const [rawDate, rawTitle, rawPlace] = splitBasename;
+
+      const rawDateMatch = rawDate.match(/([a-z]*)([0-9]*)/);
+      if (!rawDateMatch) throw new Error(`Invalid file ${storyId}/${basename}: DATE should look like janvier2000`);
+      const [, rawMonth, year] = rawDateMatch;
+      if (!(rawMonth && year && year.length === 4)) throw new Error(`Invalid file ${storyId}/${basename}: DATE should look like janvier2000`);
+
+      const months = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre'];
+      if (!months.includes(rawMonth)) throw new Error(`Invalid file ${storyId}/${basename}: ${rawMonth} is not a valid month`);
+      const month = ['', ...months]
         .indexOf(rawMonth)
         .toString()
         .padStart(2, '0');
+
       const date = `${year}-${month}-01`;
       const title = rawTitle.replace(/-/g, ' ');
       const place = rawPlace.replace(/-/g, ' ');
+
       pictures.push({
         src,
         title,
