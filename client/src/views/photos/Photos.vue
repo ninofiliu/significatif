@@ -24,15 +24,15 @@
       </div>
     </div>
     <div
-      class="story architecture-silence"
+      class="story silent-photography"
       :style="{ transform: `translateX(${translateX[5]}vw)` }"
       @click="current = 5"
     >
       <div style="text-align: center">
         <div class="u-font-good-glyphs" style="font-size: 3rem">L</div>
-        <RouterLink to="/photos/architecture-silence">
+        <RouterLink to="/photos/silent-photography">
           <img
-            :src="`${$s}${covers['architecture-silence']}`"
+            :src="`${$s}${covers['silent-photography']}`"
             style="height: 30rem;"
           >
         </RouterLink>
@@ -62,15 +62,15 @@
       </div>
     </div>
     <div
-      class="story photo-seduction"
+      class="story humans"
       :style="{ transform: `translateX(${translateX[3]}vw)` }"
       @click="current = 3"
     >
       <div style="display: flex;">
         <img :src="`${$s}assets/star.svg`" class="u-rotate" style="width: 3rem; align-self: flex-end;">
-        <RouterLink to="/photos/photo-seduction">
+        <RouterLink to="/photos/humans">
           <img
-            :src="`${$s}${covers['photo-seduction']}`"
+            :src="`${$s}${covers['humans']}`"
             style="height: 30rem; margin: 0 1rem;"
           >
         </RouterLink>
@@ -222,13 +222,13 @@ export default {
 .taste-of-farniente {
   background-color: var(--yellow);
 }
-.photo-seduction {
+.humans {
   background-color: var(--purple);
 }
 .vous-etes-des-animaux {
   background-color: var(--orange);
 }
-.architecture-silence {
+.silent-photography {
   background-color: var(--white);
 }
 .pedal-to-the-metal {

@@ -1,6 +1,6 @@
 <template>
   <Story
-    id="photo-seduction"
+    id="humans"
     color="var(--purple)"
     :backgroundPosition="{ left: '5vw' }"
     :picturesPosition="{ top: '3rem', right: 0, bottom: '40vh', left: '55vw' }"

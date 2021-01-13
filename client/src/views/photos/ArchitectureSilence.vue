@@ -1,6 +1,6 @@
 <template>
   <Story
-    id="architecture-silence"
+    id="silent-photography"
     color="var(--grey)"
     :backgroundPosition="{ right: '50vw' }"
     :picturesPosition="{ top: '15vh', bottom: '15vh', left: '50vw' }"
