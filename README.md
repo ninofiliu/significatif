@@ -20,5 +20,5 @@ This git repository handles the *logic* of the webite, but its *media* (images a
 
 To add or remove files, it [can be done online](https://console.cloud.google.com/storage/browser/significatif;tab=objects?project=nino-filiu), or programmatically with [gsutil](https://cloud.google.com/storage/docs/gsutil):
 
-- download files: `gsutil -m cp -n gs://significatif/* static`
-- upload files: `gsutil -m cp -n static/* gs://significatif`
+- pull files: `gsutil -m rsync -d -r gs://significatif static`
+- push files: `gsutil -m rsync -d -r static gs://significatif`
