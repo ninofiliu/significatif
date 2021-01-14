@@ -4,37 +4,51 @@
     <div class="stories">
       <div class="story pedal-to-the-metal" :style="{ 'flex-grow': flexGrows[6] }">
         <div class="story-content">
-          content
+          <img :src="`${$s}${covers['pedal-to-the-metal']}`">
+          <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
+          <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
         </div>
       </div>
       <div class="story vous-etes-des-animaux" :style="{ 'flex-grow': flexGrows[5] }">
         <div class="story-content">
-          content
+          <img :src="`${$s}${covers['vous-etes-des-animaux']}`">
+          <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
+          <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti.</div>
         </div>
       </div>
       <div class="story cross-the-borders" :style="{ 'flex-grow': flexGrows[4] }">
         <div class="story-content">
-          content
+          <img :src="`${$s}${covers['cross-the-borders']}`">
+          <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
+          <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
         </div>
       </div>
       <div class="story silent-photography" :style="{ 'flex-grow': flexGrows[3] }">
         <div class="story-content">
-          content
+          <img :src="`${$s}${covers['silent-photography']}`">
+          <div class="title">SILENT PHOTOGRAPHY</div>
+          <div class="text u-extracomfort">Architecture silence Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque ab, culpa adipisci autem voluptates reiciendis laudantium accusamus a quia dicta nulla labore eos nemo vitae cupiditate nisi ipsam nesciunt.</div>
         </div>
       </div>
       <div class="story humans" :style="{ 'flex-grow': flexGrows[2] }">
         <div class="story-content">
-          content
+          <img :src="`${$s}${covers['humans']}`">
+          <div class="title">PHOTO SEDUCTI<span class="u-font-good-glyphs">B</span>N</div>
+          <div class="text u-extracomfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté.</div>
         </div>
       </div>
       <div class="story taste-of-farniente" :style="{ 'flex-grow': flexGrows[1] }">
         <div class="story-content">
-          content
+          <img :src="`${$s}${covers['taste-of-farniente']}`">
+          <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
+          <div class="text u-extracomfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
       </div>
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
-          content
+          <div class="mood">What's your mood today?</div>
+          <div class="pick">Pick <span class="one u-font-ogg u-italic">one</span></div>
+          <div class="arrow u-oscillate-x"><img :src="`${$s}assets/arrow.svg`"></div>
         </div>
       </div>
     </div>
@@ -66,12 +80,12 @@ export default {
     flexGrows() {
       return [
         [16, 5, 3, 1, 1, 1, 1],
-        [5, 12, 5, 3, 1, 1, 1],
+        [7, 10, 5, 3, 1, 1, 1],
         [3, 5, 10, 5, 3, 1, 1],
         [1, 3, 5, 10, 5, 3, 1],
         [1, 1, 3, 5, 10, 5, 3],
-        [1, 1, 1, 3, 5, 12, 5],
-        [1, 1, 1, 1, 3, 5, 16],
+        [1, 1, 1, 3, 5, 10, 7],
+        [1, 1, 1, 1, 4, 10, 10],
       ][this.current];
     },
   },
@@ -119,16 +133,52 @@ export default {
   top: var(--unit);
   width: calc(8 * var(--unit));
   height: calc(100vh - 3rem - 2 * var(--unit));
+  img {
+    max-width: 100%;
+    max-height: 50vh;
+    margin-bottom: 1rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--red);
+    margin-bottom: 1rem;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
 }
 
 .home {
   background-color: var(--orange);
+  .mood {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  .pick {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .one {
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    padding: .15em .7em;
+  }
+  .arrow {
+    font-size: 4rem;
+    img {
+      width: 3rem;
+      transform: rotate(-90deg);
+    }
+  }
 }
 .taste-of-farniente {
   background-color: var(--yellow);
 }
 .humans {
   background-color: var(--purple);
+  text-align: center;
 }
 .cross-the-borders {
   background-color: var(--orange);
@@ -138,6 +188,7 @@ export default {
 }
 .vous-etes-des-animaux {
   background-color: var(--yellow);
+  text-align: center;
 }
 .pedal-to-the-metal {
   background-color: var(--purple);
