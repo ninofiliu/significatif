@@ -2,7 +2,41 @@
   <div>
     <NavBar/>
     <div class="stories">
-      <div v-for="i of 7" :key="i" class="story" :style="{ 'flex-grow': flexGrows[i-1] }"/>
+      <div class="story pedal-to-the-metal" :style="{ 'flex-grow': flexGrows[6] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
+      <div class="story vous-etes-des-animaux" :style="{ 'flex-grow': flexGrows[5] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
+      <div class="story cross-the-borders" :style="{ 'flex-grow': flexGrows[4] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
+      <div class="story silent-photography" :style="{ 'flex-grow': flexGrows[3] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
+      <div class="story humans" :style="{ 'flex-grow': flexGrows[2] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
+      <div class="story taste-of-farniente" :style="{ 'flex-grow': flexGrows[1] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
+      <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
+        <div class="story-content">
+          content
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -71,15 +105,41 @@ export default {
   bottom: 0;
   left: 0;
   display: flex;
+  flex-direction: row-reverse;
 }
 .story {
   flex-basis: 0;
-  background-color: black;
   transition: flex-grow .5s;
-  @for $i from 1 through 7 {
-    &:nth-child(#{$i}) {
-      opacity: $i / 7;
-    }
-  }
+  position: relative;
+}
+.story-content {
+  --unit: calc(100vw / 28); // 28 = sum of all flex grows
+  position: absolute;
+  right: var(--unit);
+  top: var(--unit);
+  width: calc(8 * var(--unit));
+  height: calc(100vh - 3rem - 2 * var(--unit));
+}
+
+.home {
+  background-color: var(--orange);
+}
+.taste-of-farniente {
+  background-color: var(--yellow);
+}
+.humans {
+  background-color: var(--purple);
+}
+.cross-the-borders {
+  background-color: var(--orange);
+}
+.silent-photography {
+  background-color: var(--white);
+}
+.vous-etes-des-animaux {
+  background-color: var(--yellow);
+}
+.pedal-to-the-metal {
+  background-color: var(--purple);
 }
 </style>
