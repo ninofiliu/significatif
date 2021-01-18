@@ -153,11 +153,11 @@ export default {
   background-color: var(--orange);
   .mood {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
   }
   .pick {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
   .one {
