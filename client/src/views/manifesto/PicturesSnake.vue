@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import manifestoContent from '../../content/manifesto.json';
+import homeContent from '../../content/home.json';
 
 export default {
   data() {
@@ -28,7 +28,7 @@ export default {
       if (this.step % 5 === 0) {
         const index = this.images.length;
         this.images.push({
-          src: manifestoContent.snake[index % manifestoContent.snake.length],
+          src: homeContent[index % homeContent.length],
           left: evt.clientX,
           top: evt.clientY,
           key: this.step,
