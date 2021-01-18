@@ -5,8 +5,8 @@
       :key="picture.src"
       :src="`${$s}${picture.src}`"
       :style="{
-        left: `${(40 * index) - ((0.5 + 0.5 * picture.speed) * scrolled)}vw`,
-        top: `${30 + 50 * picture.y}vh`,
+        left: `${(0.6 + 0.4 * picture.speed) * (50 * index - scrolled)}vw`,
+        top: `${30 + 40 * picture.y}vh`,
       }"
     />
   </div>
