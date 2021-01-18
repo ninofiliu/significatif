@@ -2,48 +2,72 @@
   <div>
     <NavBar/>
     <div class="stories">
-      <div class="story pedal-to-the-metal" :style="{ 'flex-grow': flexGrows[6] }">
+      <RouterLink
+        to="/photos/pedal-to-the-metal"
+        class="story pedal-to-the-metal"
+        :style="{ 'flex-grow': flexGrows[6] }"
+      >
         <div class="story-content">
           <img :src="`${$s}${covers['pedal-to-the-metal']}`">
           <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
           <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
         </div>
-      </div>
-      <div class="story vous-etes-des-animaux" :style="{ 'flex-grow': flexGrows[5] }">
+      </RouterLink>
+      <RouterLink
+        to="/photos/vous-etes-des-animaux"
+        class="story vous-etes-des-animaux"
+        :style="{ 'flex-grow': flexGrows[5] }"
+      >
         <div class="story-content">
           <img :src="`${$s}${covers['vous-etes-des-animaux']}`">
           <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
           <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti.</div>
         </div>
-      </div>
-      <div class="story cross-the-borders" :style="{ 'flex-grow': flexGrows[4] }">
+      </RouterLink>
+      <RouterLink
+        to="/photos/cross-the-borders"
+        class="story cross-the-borders"
+        :style="{ 'flex-grow': flexGrows[4] }"
+      >
         <div class="story-content">
           <img :src="`${$s}${covers['cross-the-borders']}`">
           <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
           <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
         </div>
-      </div>
-      <div class="story silent-photography" :style="{ 'flex-grow': flexGrows[3] }">
+      </RouterLink>
+      <RouterLink
+        to="/photos/silent-photography"
+        class="story silent-photography"
+        :style="{ 'flex-grow': flexGrows[3] }"
+      >
         <div class="story-content">
           <img :src="`${$s}${covers['silent-photography']}`">
           <div class="title">SILENT PHOTOGRAPHY</div>
           <div class="text u-extracomfort">Architecture silence Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque ab, culpa adipisci autem voluptates reiciendis laudantium accusamus a quia dicta nulla labore eos nemo vitae cupiditate nisi ipsam nesciunt.</div>
         </div>
-      </div>
-      <div class="story humans" :style="{ 'flex-grow': flexGrows[2] }">
+      </RouterLink>
+      <RouterLink
+        to="/photos/humans"
+        class="story humans"
+        :style="{ 'flex-grow': flexGrows[2] }"
+      >
         <div class="story-content">
           <img :src="`${$s}${covers['humans']}`">
           <div class="title">PHOTO SEDUCTI<span class="u-font-good-glyphs">B</span>N</div>
           <div class="text u-extracomfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté.</div>
         </div>
-      </div>
-      <div class="story taste-of-farniente" :style="{ 'flex-grow': flexGrows[1] }">
+      </RouterLink>
+      <RouterLink
+        to="/photos/taste-of-farniente"
+        class="story taste-of-farniente"
+        :style="{ 'flex-grow': flexGrows[1] }"
+      >
         <div class="story-content">
           <img :src="`${$s}${covers['taste-of-farniente']}`">
           <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
           <div class="text u-extracomfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
-      </div>
+      </RouterLink>
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
@@ -133,6 +157,7 @@ export default {
   top: var(--unit);
   width: calc(8 * var(--unit));
   height: calc(100vh - 3rem - 2 * var(--unit));
+  transition: all .5s;
   img {
     max-width: 100%;
     max-height: 50vh;
@@ -147,6 +172,9 @@ export default {
   .text {
     font-size: 0.8rem;
   }
+}
+a.story:hover .story-content {
+  transform: translateY(1rem)
 }
 
 .home {
