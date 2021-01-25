@@ -71,14 +71,14 @@ img {
   }
   @for $i from 1 through 100 {
     img:nth-last-child(#{$i}) {
-      transform: translate(-3% * ($i - 1));
+      transform: translate(-10% * (1/$i));
     }
   }
   &:hover {
     cursor: pointer;
     @for $i from 1 through 100 {
       img:nth-last-child(#{$i}) {
-        transform: translate(-5% * ($i - 1));
+        transform: translate(-20% * (1/$i));
       }
     }
   }
