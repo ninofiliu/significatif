@@ -36,9 +36,9 @@ export default {
 .pictures {
   position: fixed;
   top: 10vh;
-  right: 10vw;
+  right: 25vw;
   bottom: 10vh;
-  left: 35vw;
+  left: 25vw;
   transition: all .5s;
 }
 img {

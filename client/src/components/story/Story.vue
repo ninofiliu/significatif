@@ -2,6 +2,29 @@
   <div class="story" :class="{ '--home': home }">
     <NavBar/>
     <div class="background" :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"/>
+    <div class="article">
+      <slot/>
+    </div>
+    <div class="details">
+      <div class="prev">
+        <img @click="scrollPrev" :src="`${$s}assets/arrow.svg`"/>
+      </div>
+      <div class="title">
+        {{ pictures[current].title }}
+      </div>
+      <div class="picture-spacer"/>
+      <div class="date">
+        {{ pictures[current].date.toLocaleString('en', { month: 'long' }) }}
+        {{ pictures[current].date.getFullYear() }}
+      </div>
+      <div class="next">
+        <img @click="scrollPrev" :src="`${$s}assets/arrow.svg`"/>
+      </div>
+      <img class="back" @click="goHome" :src="`${$s}assets/arrow.svg`"/>
+      <div class="place">
+        {{ pictures[current].place }}
+      </div>
+    </div>
     <Pictures
       :mode="home ? picturesMode : 'hidden'"
       :position="home ? picturesPosition : {}"
@@ -9,22 +32,6 @@
       :current="current"
       @click="goPictures"
     />
-    <div class="article">
-      <slot/>
-    </div>
-    <div class="details">
-      <img class="back" @click="goHome" :src="`${$s}assets/arrow.svg`"/>
-      <div class="title u-italic u-font-ogg">
-        {{ pictures[current].title }}
-      </div>
-      <div class="date">
-        {{ pictures[current].date.toLocaleString('en', { month: 'long' }) }}
-        {{ pictures[current].date.getFullYear() }}
-      </div>
-      <div class="place">
-        {{ pictures[current].place }}
-      </div>
-    </div>
     <Footer fixed/>
   </div>
 </template>
@@ -126,6 +133,49 @@ export default {
 .details {
   transition: all .5s;
   opacity: 1;
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 5vw;
+  bottom: 0;
+  left: 5vw;
+  align-items: center;
+  justify-content: space-around;
+
+  .prev {
+    width: 2vw;
+    img {
+      transform: translateY(.1rem) rotate(90deg);
+      width: 1rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    }
+  }
+  .title {
+    width: 15vw;
+    text-align: center;
+  }
+  .picture-spacer {
+    width: 50vw;
+  }
+  .date {
+    width: 15vw;
+    text-align: center;
+  }
+  .next {
+    width: 2vw;
+    img {
+      transform: translateY(.1rem) rotate(-90deg);
+      width: 1rem;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+    }
+  }
+
   .back {
     position: fixed;
     top: 10vh;
@@ -137,22 +187,12 @@ export default {
       opacity: 0.5;
     }
   }
-  .title {
-    position: fixed;
-    top: 45vh;
-    left: 5vw;
-    font-size: 2rem;
-  }
-  .date {
-    position: fixed;
-    top: 55vh;
-    left: 15vw;
-  }
   .place {
     position: fixed;
-    right: 7vw;
-    bottom: 10vh;
-    writing-mode: vertical-lr;
+    text-align: right;
+    bottom: 20vh;
+    right: 5vw;
+    transform: rotate(90deg);
   }
 }
 
