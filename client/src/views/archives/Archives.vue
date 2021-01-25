@@ -133,6 +133,7 @@ export default {
   justify-content: space-between;
   overflow-y: hidden;
   height: 100vh;
+  font-size: .8rem;
 }
 .content {
   margin-top: 10vh;
