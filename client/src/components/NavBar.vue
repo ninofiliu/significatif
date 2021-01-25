@@ -24,7 +24,6 @@
   left: 0;
   right: 0;
 
-  background-color: var(--white);
   border-bottom: 1px solid var(--red);
   padding: 0 2rem;
   display: flex;

@@ -114,7 +114,7 @@ export default {
 .background {
   position: fixed;
   transition: all .5s;
-  top: 3rem;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;

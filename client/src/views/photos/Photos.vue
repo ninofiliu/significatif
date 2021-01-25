@@ -138,7 +138,7 @@ export default {
 <style lang="scss" scoped>
 .stories {
   position: fixed;
-  top: 3rem;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -154,7 +154,7 @@ export default {
   --unit: calc(100vw / 28); // 28 = sum of all flex grows
   position: absolute;
   right: var(--unit);
-  top: var(--unit);
+  top: calc(3rem + var(--unit)); // 3rem = navbar height
   width: calc(8 * var(--unit));
   height: calc(100vh - 3rem - 2 * var(--unit));
   transition: all .5s;
