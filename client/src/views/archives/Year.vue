@@ -1,6 +1,6 @@
 <template>
   <svg width="240" height="110">
-    <text x="120" y="55" text-anchor="middle" dominant-baseline="middle">
+    <text x="120" y="58" text-anchor="middle" dominant-baseline="middle">
       {{ year }}
     </text>
     <path :d="path0D" />
