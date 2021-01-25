@@ -29,7 +29,7 @@
             <div><input v-model="searchedLocation" placeholder="Filter by location"></div>
           </div>
           <div ref="tbody">
-            <div class="row" v-for="image of displayedImages" :key="image.name" @mouseenter="src = image.src">
+            <div class="row" v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
               <RouterLink :to="{ path: `/photos/${image.storyId}`, query: { current: image.storyIndex } }">
                 <div>{{ image.readableDate }}</div>
                 <div>{{ image.name }}</div>
