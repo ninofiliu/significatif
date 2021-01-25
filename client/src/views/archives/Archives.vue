@@ -207,5 +207,9 @@ input {
   color: var(--red);
   font: inherit;
   outline: none;
+  &::placeholder {
+    color: var(--red);
+    opacity: .5;
+  }
 }
 </style>
