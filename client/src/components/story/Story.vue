@@ -97,8 +97,8 @@ export default {
     },
     onwheel(evt) {
       if (this.home) return;
-      if (evt.deltaX > 0) this.scrollNext();
-      if (evt.deltaX < 0) this.scrollPrev();
+      if (evt.deltaY > 0) this.scrollNext();
+      if (evt.deltaY < 0) this.scrollPrev();
     },
     scrollNext() {
       this.scrollTo((this.current + 1) % this.pictures.length);
