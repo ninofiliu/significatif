@@ -96,7 +96,8 @@ export default {
         }))
         .filter((image) => matches(image.readableDate, this.searchedDate))
         .filter((image) => matches(image.name, this.searchedName))
-        .filter((image) => matches(image.location, this.searchedLocation));
+        .filter((image) => matches(image.location, this.searchedLocation))
+        .sort((a, b) => b.date - a.date);
     },
   },
   methods: {
