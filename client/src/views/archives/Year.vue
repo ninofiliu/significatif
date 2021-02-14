@@ -23,21 +23,35 @@ export default {
   data() {
     return {
       progress: 0,
-      interval: setInterval(() => {
-        if (this.current && this.progress < 1) this.progress += 1 / 32;
-        if (!this.current && this.progress > 0) this.progress -= 1 / 32;
-      }, 1000 / 30),
+      isDestroyed: false,
     };
   },
+  created() {
+    const update = () => {
+      if (this.isDestroyed) return;
+      if (this.current && this.progress < 1) this.progress += 1 / 50;
+      if (!this.current && this.progress > 0) this.progress -= 1 / 50;
+      requestAnimationFrame(update);
+    };
+    update();
+  },
+  destroyed() {
+    this.isDestroyed = true;
+  },
   computed: {
+    easedProgress() {
+      return this.progress < 0.5
+        ? 0.5 * (2 * this.progress) ** 4
+        : 1 - 0.5 * (2 * (1 - this.progress)) ** 4;
+    },
     endX() {
-      return 120 + 115 * Math.sin(2 * Math.PI * this.progress);
+      return 120 + 115 * Math.sin(2 * Math.PI * this.easedProgress);
     },
     endY() {
-      return 55 - 50 * Math.cos(2 * Math.PI * this.progress);
+      return 55 - 50 * Math.cos(2 * Math.PI * this.easedProgress);
     },
     path0D() {
-      return this.progress < 0.5
+      return this.easedProgress < 0.5
         ? `M 120 5 A 115 50 0 0 1 ${this.endX} ${this.endY}`
         : 'M 120 5 A 115 50 0 0 1 120 105';
     },
