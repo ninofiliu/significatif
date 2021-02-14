@@ -1,7 +1,7 @@
 <template>
   <div class="Contact">
-    <div class="bubble left"/>
-    <div class="bubble right"/>
+    <div class="left"><div class="bubble u-appear-scaleup"/></div>
+    <div class="right"><div class="bubble u-appear-scaleup"/></div>
     <div class="center">
       <section>
         <div class="big-text">
@@ -69,24 +69,32 @@ export default {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.bubble {
+.left {
   position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  left: -40%;
+  transform: translateZ(-100px);
+}
+.right {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: 0%;
+  left: 40%;
+  transform: translateZ(-20px);
+}
+.bubble {
+  height: 100%;
   border-radius: 50%;
   background-color: var(--white);
-  &.left {
-    width: 600px;
-    height: 600px;
-    top: 50%;
-    left: -40%;
-    transform: translateZ(-100px);
-  }
-  &.right {
-    width: 600px;
-    height: 600px;
-    top: 0%;
-    left: 40%;
-    transform: translateZ(-20px);
-  }
+}
+.left .bubble {
+  animation-delay: .6s;
+}
+.right .bubble {
+  animation-delay: .3s;
 }
 .center {
   width: 90%;
