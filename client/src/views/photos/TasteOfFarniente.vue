@@ -2,8 +2,8 @@
   <Story
     id="taste-of-farniente"
     color="var(--yellow)"
-    :backgroundPosition="{ right: '30vh' }"
-    :picturesPosition="{ top: '4rem', right: '0', bottom: '35vh', left: '50vw' }"
+    :backgroundPosition="{ }"
+    :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
     <div class="text-container">
@@ -61,6 +61,7 @@ export default {
   bottom: 45vh;
   left: 5vw;
   overflow: hidden;
+  font-size: .8rem;
 }
 .text {
   width: 100%;
@@ -85,5 +86,6 @@ export default {
   bottom: 15vh;
   text-align: center;
   font-size: 4rem;
+  font-weight: 300;
 }
 </style>

@@ -10,7 +10,7 @@
         <div class="story-content">
           <img :src="`${$s}${covers['pedal-to-the-metal']}`">
           <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
-          <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
+          <div class="text u-comfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
         </div>
       </RouterLink>
       <RouterLink
@@ -21,7 +21,7 @@
         <div class="story-content">
           <img :src="`${$s}${covers['vous-etes-des-animaux']}`">
           <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
-          <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti.</div>
+          <div class="text u-comfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti.</div>
         </div>
       </RouterLink>
       <RouterLink
@@ -32,7 +32,7 @@
         <div class="story-content">
           <img :src="`${$s}${covers['cross-the-borders']}`">
           <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
-          <div class="text u-extracomfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
+          <div class="text u-comfort">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sequi tenetur aliquid dignissimos autem corrupti nulla deleniti aspernatur id quod tempore commodi sint, ad eaque veritatis ut rerum unde obcaecati?</div>
         </div>
       </RouterLink>
       <RouterLink
@@ -43,7 +43,7 @@
         <div class="story-content">
           <img :src="`${$s}${covers['silent-photography']}`">
           <div class="title">SILENT PHOTOGRAPHY</div>
-          <div class="text u-extracomfort">Architecture silence Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque ab, culpa adipisci autem voluptates reiciendis laudantium accusamus a quia dicta nulla labore eos nemo vitae cupiditate nisi ipsam nesciunt.</div>
+          <div class="text u-comfort">Architecture silence Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque itaque ab, culpa adipisci autem voluptates reiciendis laudantium accusamus a quia dicta nulla labore eos nemo vitae cupiditate nisi ipsam nesciunt.</div>
         </div>
       </RouterLink>
       <RouterLink
@@ -54,7 +54,7 @@
         <div class="story-content">
           <img :src="`${$s}${covers['humans']}`">
           <div class="title">PHOTO SEDUCTI<span class="u-font-good-glyphs">B</span>N</div>
-          <div class="text u-extracomfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté.</div>
+          <div class="text u-comfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté.</div>
         </div>
       </RouterLink>
       <RouterLink
@@ -65,7 +65,7 @@
         <div class="story-content">
           <img :src="`${$s}${covers['taste-of-farniente']}`">
           <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
-          <div class="text u-extracomfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          <div class="text u-comfort">J’<i>admire</i> comme on peut <i>mentir</i> en mettant la <i>raison</i> de côté. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
         </div>
       </RouterLink>
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
@@ -103,7 +103,7 @@ export default {
   computed: {
     flexGrows() {
       return [
-        [16, 5, 3, 1, 1, 1, 1],
+        [10, 10, 4, 1, 1, 1, 1],
         [7, 10, 5, 3, 1, 1, 1],
         [3, 5, 10, 5, 3, 1, 1],
         [1, 3, 5, 10, 5, 3, 1],

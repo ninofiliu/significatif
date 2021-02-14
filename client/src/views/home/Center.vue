@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       chars0: [
-        { html: 'S', class: { 'u-font-ogg': true } },
+        { html: 'S', class: {} },
         { html: 'i', class: {} },
         { html: 'g', class: {} },
         { html: 'n', class: {} },
@@ -34,14 +34,14 @@ export default {
       ],
       chars1: [
         { html: 'V', underline: true },
-        { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
+        { html: 'i', class: {}, underline: true },
         { html: 'c', underline: true },
         { html: 't', underline: true },
         { html: 'o', underline: true },
         { html: 'r', underline: true },
         { html: '&nbsp;', class: {} },
         { html: 'R', class: {} },
-        { html: 'o', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'o', class: {} },
         { html: 'g', class: {} },
         { html: 'e', class: {} },
         { html: 'r', class: {} },

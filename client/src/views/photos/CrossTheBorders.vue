@@ -22,7 +22,7 @@
         <img :src="`${$s}1.jpg`">
       </div>
       <div class="desc">
-        <div class="text">
+        <div class="text u-comfort">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit itaque reprehenderit molestias? Fugiat porro architecto labore, doloribus aliquid voluptatibus vitae velit provident, itaque consectetur expedita soluta assumenda, magnam asperiores molestias!
         </div>
         <div class="number">
@@ -128,10 +128,11 @@ img {
   animation-fill-mode: both;
 }
 .desc {
-  bottom: 0;
+  bottom: 5rem;
   display: flex;
   overflow: hidden;
   .text {
+    font-size: .8rem;
     width: 70%;
     animation-name: appear-up;
     animation-duration: 1s;

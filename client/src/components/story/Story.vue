@@ -18,7 +18,7 @@
         {{ pictures[current].date.getFullYear() }}
       </div>
       <div class="next">
-        <img @click="scrollPrev" :src="`${$s}assets/arrow.svg`"/>
+        <img @click="scrollNext" :src="`${$s}assets/arrow.svg`"/>
       </div>
       <img class="back" @click="goHome" :src="`${$s}assets/arrow.svg`"/>
       <div class="place">

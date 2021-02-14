@@ -57,29 +57,29 @@ export default {
       manifestoContent,
       letMeTell: [
         { html: 'L', class: {} },
-        { html: 'e', class: {} },
-        { html: 't', class: {} },
+        { html: 'E', class: {} },
+        { html: 'T', class: {} },
         { html: '&nbsp;', class: {} },
-        { html: 'm', class: {} },
-        { html: 'e', class: {} },
+        { html: 'M', class: {} },
+        { html: 'E', class: {} },
         { html: '&nbsp;', class: {} },
-        { html: 't', underline: true },
-        { html: 'e', underline: true },
-        { html: 'l', underline: true },
-        { html: 'l', underline: true },
+        { html: 'T', underline: true },
+        { html: 'E', underline: true },
+        { html: 'L', underline: true },
+        { html: 'L', underline: true },
       ],
       youAStory: [
-        { html: 'y', class: {} },
-        { html: 'o', class: {} },
-        { html: 'u', class: {} },
+        { html: 'Y', class: {} },
+        { html: 'O', class: {} },
+        { html: 'U', class: {} },
         { html: '&nbsp;', class: {} },
-        { html: 'a', class: {} },
+        { html: 'A', class: {} },
         { html: '&nbsp;', class: {} },
-        { html: 's', class: {} },
-        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'o', class: {} },
-        { html: 'r', class: {} },
-        { html: 'y', class: {} },
+        { html: 'S', class: {} },
+        { html: 'T', class: {} },
+        { html: 'o', class: { 'u-font-good-glyphs': true } },
+        { html: 'R', class: {} },
+        { html: 'Y', class: {} },
         { html: '.', class: {} },
       ],
     };
@@ -145,9 +145,11 @@ export default {
   position: relative;
   .text {
     font-size: 5.5rem;
-    text-transform: uppercase;
     pointer-events: none;
     z-index: 100;
+  }
+  img {
+    transform: translateY(9rem);
   }
 }
 hr {
@@ -166,7 +168,6 @@ hr {
     width: 30%;
     .star {
       margin-top: 1.5vh;
-      text-align: right;
       img {
         height: 4vh;
       }
@@ -175,7 +176,6 @@ hr {
   .right {
     width: 60%;
     font-size: 2rem;
-    text-transform: uppercase;
   }
 }
 </style>

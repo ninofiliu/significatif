@@ -5,13 +5,8 @@
     </RouterLink>
     <div>
       <RouterLink to="/photos">photos</RouterLink>
-      <!-- <RouterLink to="/video">video</RouterLink> -->
       <RouterLink to="/manifesto">manifesto</RouterLink>
       <RouterLink to="/contact">contact</RouterLink>
-      <RouterLink to="/" class="close">
-        <span/>
-        <span/>
-      </RouterLink>
     </div>
   </div>
 </template>
@@ -43,28 +38,5 @@ a {
 }
 .router-link-exact-active:not(.close) {
   text-decoration: underline;
-}
-.close {
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  display: inline-block;
-  span {
-    height: 1px;
-    position: absolute;
-    background-color: var(--red);
-  }
-  span:nth-child(1) {
-    width: 1.3rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-  span:nth-child(2) {
-    width: 1.3rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
 }
 </style>>
