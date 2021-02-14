@@ -7,7 +7,7 @@
     </div>
     <div class="details">
       <div class="prev">
-        <img @click="scrollPrev" src="../../assets/arrow.svg"/>
+        <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
       </div>
       <div class="title">
         {{ pictures[current].title }}
@@ -18,9 +18,9 @@
         {{ pictures[current].date.getFullYear() }}
       </div>
       <div class="next">
-        <img @click="scrollNext" src="../../assets/arrow.svg"/>
+        <img @click="scrollNext" src="../../assets/arrow-small.svg"/>
       </div>
-      <img class="back" @click="goHome" src="../../assets/arrow.svg"/>
+      <img class="back" @click="goHome" src="../../assets/arrow-medium.svg"/>
       <div class="place">
         {{ pictures[current].place }}
       </div>
@@ -145,8 +145,7 @@ export default {
   .prev {
     width: 2vw;
     img {
-      transform: translateY(.1rem) rotate(90deg);
-      width: 1rem;
+      transform: translateY(.1rem) rotate(180deg);
       &:hover {
         cursor: pointer;
         opacity: 0.5;
@@ -167,8 +166,7 @@ export default {
   .next {
     width: 2vw;
     img {
-      transform: translateY(.1rem) rotate(-90deg);
-      width: 1rem;
+      transform: translateY(.1rem);
       &:hover {
         cursor: pointer;
         opacity: 0.5;
@@ -180,7 +178,7 @@ export default {
     position: fixed;
     top: 10vh;
     left: 10vw;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     width: 2rem;
     &:hover {
       cursor: pointer;

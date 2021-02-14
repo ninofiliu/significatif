@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92" height="153" viewBox="0 0 92 153">
+    <g fill="none" fill-rule="evenodd" stroke="#FF4324" stroke-width="3">
+        <path d="M0 103L45 152" transform="translate(2)"/>
+        <path d="M43 103L88 152" transform="translate(2) matrix(-1 0 0 1 131 0)"/>
+        <path d="M43.5 0L43.5 149" transform="translate(2)"/>
+    </g>
+</svg>

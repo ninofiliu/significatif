@@ -8,7 +8,7 @@
         <div class="text">
           <AppearingLine :chars="letMeTell"/>
           <AppearingLine :chars="youAStory" :start="-10"/>
-          <img src="../../assets/arrow.svg"/>
+          <img src="../../assets/arrow-large.svg"/>
         </div>
       </div>
       <hr>
