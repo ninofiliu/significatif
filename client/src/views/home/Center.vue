@@ -34,7 +34,7 @@ export default {
       ],
       chars1: [
         { html: 'V', underline: true },
-        { html: 'i', class: {}, underline: true },
+        { html: 'i', underline: true },
         { html: 'c', underline: true },
         { html: 't', underline: true },
         { html: 'o', underline: true },

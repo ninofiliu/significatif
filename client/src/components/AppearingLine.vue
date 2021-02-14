@@ -53,6 +53,8 @@ export default {
 <style lang="scss" scoped>
 div {
   overflow-y: hidden;
+  display: flex;
+  align-items: baseline;
 }
 span {
   position: relative;
