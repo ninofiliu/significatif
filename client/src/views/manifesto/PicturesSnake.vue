@@ -29,7 +29,7 @@ export default {
         const index = this.images.length;
         this.images.push({
           src: homeContent[index % homeContent.length],
-          left: evt.offsetX,
+          left: evt.clientX,
           top: evt.offsetY,
           key: this.step,
           opacity: 1,
