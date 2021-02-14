@@ -10,7 +10,7 @@
     @click="$emit('click')"
   >
     <img
-      v-for="({ src }, index) of [...pictures].reverse()"
+      v-for="({ src }, index) of [...(mode === 'hidden' ? pictures : pictures.slice(0,2))].reverse()"
       :key="src"
       :src="`${$s}${src}`"
       :class="{
@@ -49,19 +49,19 @@ img {
   transition: all .5s;
 }
 .--spread {
-  img:nth-child(2n) {
-    transform: rotate(5deg);
-  }
-  img:nth-child(2n+1) {
+  img:nth-last-child(1) {
     transform: rotate(-5deg);
+  }
+  img:nth-last-child(2) {
+    transform: rotate(5deg);
   }
   &:hover {
     cursor: pointer;
-    img:nth-child(2n) {
-      transform: rotate(8deg);
+    img:nth-last-child(1) {
+      transform: rotate(5deg);
     }
-    img:nth-child(2n+1) {
-      transform: rotate(-8deg);
+    img:nth-last-child(2) {
+      transform: rotate(-5deg);
     }
   }
 }
