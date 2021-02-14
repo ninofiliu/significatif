@@ -77,7 +77,7 @@ export default {
         { html: '&nbsp;', class: {} },
         { html: 'S', class: {} },
         { html: 'T', class: {} },
-        { html: 'o', class: { 'u-font-good-glyphs': true } },
+        { html: 'm', class: { 'u-font-good-glyphs': true } },
         { html: 'R', class: {} },
         { html: 'Y', class: {} },
         { html: '.', class: {} },
