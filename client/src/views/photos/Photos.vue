@@ -72,7 +72,7 @@
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
           <div class="pick">Pick <span class="one u-font-ogg u-italic">one</span></div>
-          <div class="arrow u-oscillate-x"><img :src="`${$s}assets/arrow.svg`"></div>
+          <div class="arrow u-oscillate-x"><img src="../../assets/arrow.svg"></div>
         </div>
       </div>
     </div>

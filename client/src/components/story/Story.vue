@@ -7,7 +7,7 @@
     </div>
     <div class="details">
       <div class="prev">
-        <img @click="scrollPrev" :src="`${$s}assets/arrow.svg`"/>
+        <img @click="scrollPrev" src="../../assets/arrow.svg"/>
       </div>
       <div class="title">
         {{ pictures[current].title }}
@@ -18,9 +18,9 @@
         {{ pictures[current].date.getFullYear() }}
       </div>
       <div class="next">
-        <img @click="scrollNext" :src="`${$s}assets/arrow.svg`"/>
+        <img @click="scrollNext" src="../../assets/arrow.svg"/>
       </div>
-      <img class="back" @click="goHome" :src="`${$s}assets/arrow.svg`"/>
+      <img class="back" @click="goHome" src="../../assets/arrow.svg"/>
       <div class="place">
         {{ pictures[current].place }}
       </div>

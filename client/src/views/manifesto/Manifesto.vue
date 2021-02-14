@@ -8,7 +8,7 @@
         <div class="text">
           <AppearingLine :chars="letMeTell"/>
           <AppearingLine :chars="youAStory" :start="-10"/>
-          <img :src="`${$s}assets/arrow.svg`"/>
+          <img src="../../assets/arrow.svg"/>
         </div>
       </div>
       <hr>
@@ -18,7 +18,7 @@
             {{ manifestoContent.leftText }}
           </div>
           <div class="star">
-            <img class="u-rotate" :src="`${$s}assets/star.svg`">
+            <img class="u-rotate" src="../../assets/star.svg">
           </div>
         </div>
         <div class="right u-comfort">

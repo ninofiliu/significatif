@@ -9,7 +9,7 @@
           <div>your visit!</div>
         </div>
         <div style="transform: translateY(1.2rem);">
-          <img class="u-rotate" :src="`${$s}assets/star.svg`">
+          <img class="u-rotate" src="../../assets/star.svg">
         </div>
       </section>
       <section>
