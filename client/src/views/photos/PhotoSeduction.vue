@@ -37,7 +37,7 @@ export default {
         { html: 'h', class: {}, underline: true },
         { html: 'o', class: {}, underline: true },
         { html: 't', class: {}, underline: true },
-        { html: 'o', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
+        { html: 'o', class: {}, underline: true },
       ],
       seduction: [
         { html: 'S', class: { 'u-font-ogg': true, 'u-italic': true } },

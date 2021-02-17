@@ -10,26 +10,26 @@
         <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
       </div>
       <div class="title">
-        {{ pictures[current].title }}
+        {{ storyPictures[current].title }}
       </div>
       <div class="picture-spacer"/>
       <div class="date">
-        {{ pictures[current].date.toLocaleString('en', { month: 'long' }) }}
-        {{ pictures[current].date.getFullYear() }}
+        {{ storyPictures[current].date.toLocaleString('en', { month: 'long' }) }}
+        {{ storyPictures[current].date.getFullYear() }}
       </div>
       <div class="next">
         <img @click="scrollNext" src="../../assets/arrow-small.svg"/>
       </div>
       <img class="back" @click="goHome" src="../../assets/arrow-medium.svg"/>
       <div class="place">
-        {{ pictures[current].place }}
+        {{ storyPictures[current].place }}
       </div>
     </div>
     <Pictures
       :mode="home ? picturesMode : 'hidden'"
       :position="home ? picturesPosition : {}"
-      :pictures="pictures"
-      :current="current"
+      :pictures="randStoryPictures"
+      :current="randCurrent"
       @click="goPictures"
     />
     <Footer fixed/>
@@ -42,6 +42,18 @@ import pictures from '../../content/pictures.json';
 import Footer from '../Footer.vue';
 import NavBar from '../NavBar.vue';
 import Pictures from './Pictures.vue';
+
+const createRandMap = (size) => {
+  const available = new Set(Array(size).fill().map((_, i) => i));
+  const randMap = {};
+  for (let i = 0; i < size; i++) {
+    const n = [...available][Math.floor(Math.random() * available.size)];
+    available.delete(n);
+    randMap[i] = n;
+  }
+  return randMap;
+};
+const invertMap = (map) => Object.fromEntries(Object.entries(map).map(([key, value]) => [value, key]));
 
 export default {
   components: {
@@ -62,10 +74,16 @@ export default {
     const storyPictures = pictures
       .filter(({ src }) => srcs.has(src))
       .map((s) => ({ ...s, date: new Date(s.date) }));
+    const randMap = createRandMap(storyPictures.length);
+    const invertedRandMap = invertMap(randMap);
+    const randStoryPictures = Array(storyPictures.length).fill().map((_, i) => storyPictures[invertedRandMap[i]]);
     return {
-      pictures: storyPictures,
+      storyPictures,
+      randStoryPictures,
+      randMap,
+      invertedRandMap,
       home: true,
-      current: 0,
+      randCurrent: 0,
       scrolling: false,
     };
   },
@@ -73,7 +91,7 @@ export default {
     document.addEventListener('keyup', this.onkeyup);
     document.addEventListener('wheel', this.onwheel);
     if (this.$route.query.current) {
-      this.current = +this.$route.query.current;
+      this.randCurrent = this.randMap[+this.$route.query.current];
       this.home = false;
     }
   },
@@ -81,11 +99,22 @@ export default {
     document.removeEventListener('keyup', this.onkeyup);
     document.removeEventListener('wheel', this.onwheel);
   },
+  computed: {
+    current() {
+      return this.invertedRandMap[this.randCurrent];
+    },
+  },
   methods: {
+    updateRoute() {
+      this.$router.replace({
+        path: this.$route.path,
+        query: { current: this.invertedRandMap[this.randCurrent] },
+      });
+    },
     goPictures() {
       this.home = false;
-      this.current = 0;
-      this.$router.replace({ path: this.$route.path, query: { current: 0 } });
+      this.randCurrent = 0;
+      this.updateRoute();
     },
     goHome() {
       this.home = true;
@@ -101,17 +130,17 @@ export default {
       if (evt.deltaY < 0) this.scrollPrev();
     },
     scrollNext() {
-      this.scrollTo((this.current + 1) % this.pictures.length);
+      this.scrollTo((this.randCurrent + 1) % this.storyPictures.length);
     },
     scrollPrev() {
-      this.scrollTo((this.pictures.length + this.current - 1) % this.pictures.length);
+      this.scrollTo((this.storyPictures.length + this.randCurrent - 1) % this.storyPictures.length);
     },
     scrollTo(index) {
       if (this.scrolling) return;
       this.scrolling = true;
       setTimeout(() => { this.scrolling = false; }, 500);
-      this.current = index;
-      this.$router.replace({ path: this.$route.path, query: { current: index } });
+      this.randCurrent = index;
+      this.updateRoute();
     },
   },
 };
