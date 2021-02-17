@@ -12,7 +12,7 @@
     <img
       v-for="({ src }, index) of [...(mode === 'hidden' ? pictures : pictures.slice(0,2))].reverse()"
       :key="src"
-      :src="`${$s}${src}`"
+      v-media="src"
       :class="{
         '--before': current > pictures.length - index - 1,
         '--after': current < pictures.length - index - 1,

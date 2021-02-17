@@ -3,7 +3,7 @@
     <img
       v-for="image of images"
       :key="image.key"
-      :src="$s + image.src"
+      :src="$s + image.src.replace(/\.[^.]*$/, ($0) => `.small${$0}`)"
       :style="{
         left: `${image.left}px`,
         top: `${image.top}px`,
@@ -57,7 +57,7 @@ export default {
   position: absolute;
 }
 img {
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.5);
   position: fixed;
   transition: all 1s;
   pointer-events: none;
