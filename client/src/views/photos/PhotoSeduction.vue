@@ -2,8 +2,8 @@
   <Story
     id="humans"
     color="var(--purple)"
-    :backgroundPosition="{ left: '5vw' }"
-    :picturesPosition="{ top: '3rem', right: 0, bottom: '40vh', left: '55vw' }"
+    :backgroundPosition="{ }"
+    :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -75,7 +75,7 @@ export default {
 .seduction {
   position: fixed;
   top: 35vh;
-  left: 20vw;
+  right: 55vw;
   font-size: 4.5rem;
   font-weight: 300;
 }

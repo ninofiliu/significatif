@@ -84,8 +84,9 @@ export default {
   right: 0;
   left: 0;
   bottom: 15vh;
-  text-align: center;
   font-size: 4rem;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
 }
 </style>

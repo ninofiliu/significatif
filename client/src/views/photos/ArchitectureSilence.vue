@@ -2,13 +2,13 @@
   <Story
     id="silent-photography"
     color="var(--grey)"
-    :backgroundPosition="{ right: '50vw' }"
-    :picturesPosition="{ top: '15vh', bottom: '15vh', left: '50vw' }"
+    :backgroundPosition="{ left: '40vw' }"
+    :picturesPosition="{ top: '15vh', right: '55vw', left: '5vw' }"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
     <div class="architecture">
-      <AppearingLine :chars="architecture" :start="-10"/>
+      <AppearingLine :chars="architecture" :start="-10" :style="{ 'align-items': 'flex-start' }"/>
     </div>
     <div class="silence">
       <AppearingLine :chars="silence" :start="-20"/>
@@ -64,7 +64,7 @@ export default {
 .bubble {
   position: fixed;
   top: 20vh;
-  left: 8vw;
+  right: 18vw;
   width: 45vh;
   height: 45vh;
   background-color: var(--white);
@@ -73,23 +73,23 @@ export default {
 .architecture {
   position: fixed;
   top: 25vh;
-  left: 5vw;
+  right: 10vw;
   font-size: 4rem;
   font-weight: 300;
 }
 .silence {
   position: fixed;
   top: 40vh;
-  left: 20vw;
+  right: 30vw;
   font-size: 4rem;
   font-weight: 300;
 }
 .text-container {
   position: fixed;
   top: 60vh;
-  right: 65vw;
+  left: 65vw;
   bottom: 10vh;
-  left: 5vw;
+  right: 10vw;
   overflow: hidden;
 }
 .text {

@@ -3,7 +3,7 @@
     id="pedal-to-the-metal"
     color="var(--grey)"
     :backgroundPosition="{ left: '40vw' }"
-    :picturesPosition="{ top: '15vh', right: '50vw', bottom: '15vh', left: '5vw' }"
+    :picturesPosition="{ top: '15vh', right: '55vw', left: '5vw' }"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -34,7 +34,7 @@ export default {
         { html: 'e', class: {}, underline: true },
         { html: 'd', class: {}, underline: true },
         { html: 'a', class: {}, underline: true },
-        { html: 'l', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
+        { html: 'l', class: { 'u-font-ogg': true, 'u-italic': true } },
         { html: '&nbsp', class: {} },
         { html: '&nbsp', class: {} },
         { html: '&nbsp', class: {} },
@@ -63,7 +63,7 @@ export default {
 .bubble {
   position: fixed;
   top: 20vh;
-  right: 8vw;
+  right: 18vw;
   width: 45vh;
   height: 45vh;
   background-color: var(--white);
@@ -72,28 +72,28 @@ export default {
 .pedal {
   position: fixed;
   top: 20vh;
-  right: 22vw;
+  right: 32vw;
   font-size: 4rem;
   font-weight: 300;
 }
 .to-the {
   position: fixed;
   top: 28vh;
-  right: 5vw;
+  right: 15vw;
   font-size: 4rem;
   font-weight: 300;
 }
 .metal {
   position: fixed;
   top: 42vh;
-  right: 20vw;
+  right: 30vw;
   font-size: 4rem;
   font-weight: 300;
 }
 .text-container {
   position: fixed;
   top: 60vh;
-  right: 5vw;
+  right: 10vw;
   bottom: 10vh;
   left: 65vw;
   overflow: hidden;

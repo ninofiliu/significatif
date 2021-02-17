@@ -67,19 +67,18 @@ img {
 }
 .--horizontal {
   img {
-    object-position: right;
+    object-position: right top;
   }
-  @for $i from 1 through 100 {
-    img:nth-last-child(#{$i}) {
-      transform: translate(-10% * (1/$i));
-    }
+  img:nth-last-child(1) {
+    transform: translate(-5vw)
   }
   &:hover {
     cursor: pointer;
-    @for $i from 1 through 100 {
-      img:nth-last-child(#{$i}) {
-        transform: translate(-20% * (1/$i));
-      }
+    img:nth-last-child(1) {
+      transform: translate(-10vw)
+    }
+    img:nth-last-child(2) {
+      transform: translate(-3vw)
     }
   }
 }

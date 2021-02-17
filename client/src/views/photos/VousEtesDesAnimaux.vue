@@ -2,8 +2,8 @@
   <Story
     id="vous-etes-des-animaux"
     color="var(--orange)"
-    :backgroundPosition="{ right: '20vw' }"
-    :picturesPosition="{ right: '55vw', bottom: '30vh', left: '5vw' }"
+    :backgroundPosition="{ }"
+    :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
     <div class="text-container">
@@ -47,9 +47,9 @@ export default {
         { html: 'n', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
         { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
         { html: 'm', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'a', class: {}, underline: true },
-        { html: 'u', class: {}, underline: true },
-        { html: 'x', class: {}, underline: true },
+        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
+        { html: 'u', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
+        { html: 'x', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
       ],
     };
   },
@@ -60,9 +60,9 @@ export default {
 .text-container {
   position: fixed;
   top: 20vh;
-  right: 10vw;
+  right: 70vw;
   bottom: 50vh;
-  left: 60vw;
+  left: 5vw;
 }
 .title {
   position: fixed;
