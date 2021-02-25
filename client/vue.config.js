@@ -33,7 +33,7 @@ module.exports = (() => {
         configureWebpack: {
           plugins: [
             new webpack.DefinePlugin({
-              STATIC_BASE: JSON.stringify('https://storage.googleapis.com/significatif/'),
+              STATIC_BASE: JSON.stringify('http://localhost:8081/'),
               ROUTER_BASE: JSON.stringify('/'),
             }),
           ],

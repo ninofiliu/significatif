@@ -15,7 +15,10 @@ for (const storyId of storyIds) {
   const story = { id: storyId, pictures: [] };
   const storyPath = `${__dirname}/../../static/${storyId}`;
   if (fs.existsSync(storyPath)) {
-    story.pictures = fs.readdirSync(storyPath).map((basename) => `${storyId}/${basename}`);
+    story.pictures = fs
+      .readdirSync(storyPath)
+      .filter((basename) => !/\.small\.[a-z]+/.test(basename))
+      .map((basename) => `${storyId}/${basename}`);
   } else {
     console.warn(`[WARN] ${storyId} does not exists, a story with no content will be created`);
   }
@@ -28,7 +31,8 @@ const pictures = [];
 for (const storyId of storyIds) {
   const storyPath = `${__dirname}/../../static/${storyId}`;
   if (fs.existsSync(storyPath)) {
-    for (const basename of fs.readdirSync(storyPath)) {
+    const basenames = fs.readdirSync(storyPath).filter((basename) => !/\.small\.[a-z]+/.test(basename));
+    for (const basename of basenames) {
       const src = `${storyId}/${basename}`;
 
       const splitBasename = basename.split('.');
