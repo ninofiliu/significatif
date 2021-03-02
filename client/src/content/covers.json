@@ -1,8 +1,67 @@
 {
-  "cross-the-borders": "cross-the-borders/juillet2018.Julien-in-Christine-eating.Slovenia.jpg",
-  "taste-of-farniente": "taste-of-farniente/juillet2019.masha-in-the-grass.Limousin.jpg",
-  "humans": "taste-of-farniente/octobre2019.kira-red.Paris.jpg",
-  "vous-etes-des-animaux": "vous-etes-des-animaux/novembre2019.beauty-gun.Yvelines.jpg",
-  "silent-photography": "silent-photography/decembre2019.architecture-cables.Moscou.jpg",
-  "pedal-to-the-metal": "pedal-to-the-metal/decembre2019.DP-009-CA.Trouville.jpg"
+  "cross-the-borders": {
+    "img": "cross-the-borders/juillet2018.Julien-in-Christine-eating.Slovenia.jpg",
+    "txt": [
+      "« Franchissant le portail // sur ce chemin // que personne n’emprunte ... »",
+      "Parce que c’est toujours bon de la faire. Franchir les frontières aussi bien physiquement que mentalement, venez-vous balader par ici..."
+    ]
+  },
+  "humans": {
+    "img": "humans/avril2020.Romain-flowers.Paris.jpg",
+    "txt": [
+      "« Tous ces visages qu’on croise // qui a raison, qui a tort, quelle importance // tous des êtres humains »",
+      "Voici des arrêts sur image d’êtres peuplant notre planète que j’ai eu la chance de rencontrer sur mon chemin de vie.",
+      "<enjoy>"
+    ]
+  },
+  "ocular-pleasure": {
+    "img": "ocular-pleasure/fevrier2020.concert.Silencio.jpg",
+    "txt": [
+      "« A travers mes paupières closes // l'éclair frappe mon rêve »",
+      "Pour le plaisir de vos rétines, de vos synapses, de votre cortex visuel. Un mélange à la fois psychédélique, doux, concentré sur la sensation optique première que provoque les photographies."
+    ]
+  },
+  "pedal-to-the-metal": {
+    "img": "pedal-to-the-metal/decembre2019.DP-009-CA.Trouville.jpg",
+    "txt": [
+      "« Auto, bolide // Gagnera la course // Si bon pilote »",
+      "Du métal, du caoutchouc, des catadioptres et des paillettes."
+    ]
+  },
+  "ride-shoot-repeat": {
+    "img": "ocular-pleasure/fevrier2020.concert.Silencio.jpg",
+    "txt": [
+      "« La nuit // les voix des gens // irriguent la rue // et mon esprit flottant »",
+      "La ride, cette sensation momentanée ou tout t’appartient, ou la vie est presque palpable. Ce que j’entends par « rider » ne fait aucune référence à quelconque outil motorisé, non. Le véhicule ici c’est ton corps, le gasoil ton sang et ton cœur le moteur."
+    ]
+  },
+  "self-portraits": {
+    "img": "ocular-pleasure/fevrier2020.concert.Silencio.jpg",
+    "txt": [
+      "« Le papillon disparu // mon âme // me revient »",
+      "L’œil miroite derrière la caméra que je doigte."
+    ]
+  },
+  "silent-photography": {
+    "img": "silent-photography/decembre2019.architecture-cables.Moscou.jpg",
+    "txt": [
+      "« Toute la journée // sans un mot // j’observe ...»",
+      "Structure, calme, architexture. De la photographie contemplative et un brin de rêverie."
+    ]
+  },
+  "taste-of-farniente": {
+    "img": "taste-of-farniente/juillet2019.masha-in-the-grass.Limousin.jpg",
+    "txt": [
+      "« Quel bonheur // de traverser la rivière en été // sandales en maille à la main. // Complètement ivre // ou m’assoupir ? // les lotus en fleur »",
+      "Sunglasses, crème solaire et tétons à l’air."
+    ]
+  },
+  "vous-etes-des-animaux": {
+    "img": "vous-etes-des-animaux/novembre2019.beauty-gun.Yvelines.jpg",
+    "txt": [
+      "« Un chien me fixe // la cataracte de ses yeux // la couleur des lunes »",
+      "« Pluie de printemps // le chien à la porte // me transmet son bâillement »",
+      "-Wouf-"
+    ]
+  }
 }

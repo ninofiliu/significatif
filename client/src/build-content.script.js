@@ -3,11 +3,14 @@ const fs = require('fs');
 
 const storyIds = [
   'cross-the-borders',
-  'taste-of-farniente',
   'humans',
-  'vous-etes-des-animaux',
-  'silent-photography',
+  'ocular-pleasure',
   'pedal-to-the-metal',
+  'ride-shoot-repeat',
+  'self-portraits',
+  'silent-photography',
+  'taste-of-farniente',
+  'vous-etes-des-animaux',
 ];
 
 const stories = [];
