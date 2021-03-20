@@ -9,6 +9,7 @@ import Photos from './views/photos/Photos.vue';
 import OcularPleasure from './views/photos/OcularPleasure.vue';
 import VousEtesDesAnimaux from './views/photos/VousEtesDesAnimaux.vue';
 import RideShootRepeat from './views/photos/RideShootRepeat.vue';
+import PedalToTheMetal from './views/photos/PedalToTheMetal.vue';
 
 Vue.use(VueRouter);
 
@@ -25,6 +26,7 @@ const router = new VueRouter({
     { path: '/photos/ocular-pleasure', component: OcularPleasure },
     { path: '/photos/vous-etes-des-animaux', component: VousEtesDesAnimaux },
     { path: '/photos/ride-shoot-repeat', component: RideShootRepeat },
+    { path: '/photos/pedal-to-the-metal', component: PedalToTheMetal },
     { path: '*', redirect: '/' },
   ],
 });

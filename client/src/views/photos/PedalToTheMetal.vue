@@ -8,8 +8,8 @@
   >
     <div class="bubble u-appear-scaleup"/>
     <div class="pedal"><AppearingLine :chars="pedal" :start="-10"/></div>
-    <div class="to-the"><AppearingLine :chars="toThe" :start="-10"/></div>
-    <div class="metal"><AppearingLine :chars="metal" :start="-10"/></div>
+    <div class="to-the"><AppearingLine :chars="toThe" :start="-15"/></div>
+    <div class="metal"><AppearingLine :chars="metal" :start="-20"/></div>
     <div class="text-container">
       <div class="text u-comfort">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, laboriosam commodi? Earum adipisci odit ducimus nemo? Quibusdam earum nam accusamus quia voluptatibus amet aperiam molestiae. Ut error obcaecati reiciendis fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
