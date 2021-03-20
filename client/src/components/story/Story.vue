@@ -20,7 +20,12 @@
       <div class="next">
         <img @click="scrollNext" src="../../assets/arrow-small.svg"/>
       </div>
-      <img class="back" @click="goHome" src="../../assets/arrow-medium.svg"/>
+      <div class="back">
+        <img @click="goHome" src="../../assets/arrow-medium.svg"/>
+        <div class="u-rotate">
+          <span v-for="(letter, index) of 'return to the album'.split('')" :key="index">{{ letter }}</span>
+        </div>
+      </div>
       <div class="place">
         {{ storyPictures[current].place }}
       </div>
@@ -205,13 +210,36 @@ export default {
 
   .back {
     position: fixed;
-    top: 10vh;
-    left: 5vw;
-    transform: rotate(180deg);
-    width: 2rem;
+    top: 15vh;
+    left: calc(5vw + 1rem);
+    img {
+      transform: translate(-50%, -50%) rotate(180deg);
+      width: 2rem;
+      transition: all .5s;
+      position: absolute;
+    }
+    span {
+      text-transform: uppercase;
+      position: absolute;
+      font-size: .6rem;
+    }
+    div {
+      opacity: 0;
+      transition: all .5s;
+    }
+    @for $i from 1 through 20 {
+      span:nth-child(#{$i}) {
+        transform: translate(-50%, -50%) rotate(#{360 / 22 * $i}deg) translateY(-2rem);
+      }
+    }
     &:hover {
       cursor: pointer;
-      opacity: 0.5;
+      img {
+        transform: translate(-50%, -50%) rotate(180deg) scale(.7);
+      }
+      div {
+        opacity: 1;
+      }
     }
   }
   .place {
