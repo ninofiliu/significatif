@@ -13,6 +13,7 @@ import PedalToTheMetal from './views/photos/PedalToTheMetal.vue';
 import TasteOfFarniente from './views/photos/TasteOfFarniente.vue';
 import CrossTheBorders from './views/photos/CrossTheBorders.vue';
 import SilentPhotography from './views/photos/SilentPhotography.vue';
+import SelfPortraits from './views/photos/SelfPortraits.vue';
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,7 @@ const router = new VueRouter({
     { path: '/photos/taste-of-farniente', component: TasteOfFarniente },
     { path: '/photos/cross-the-borders', component: CrossTheBorders },
     { path: '/photos/silent-photography', component: SilentPhotography },
+    { path: '/photos/self-portraits', component: SelfPortraits },
     { path: '*', redirect: '/' },
   ],
 });
