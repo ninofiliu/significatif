@@ -20,7 +20,7 @@
   right: 0;
 
   border-bottom: 1px solid var(--red);
-  padding: 0 2rem;
+  padding: 0 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,10 +28,12 @@
 
   font-size: 1rem;
   text-transform: uppercase;
+  > div a {
+    margin-left: 2rem;
+  }
 }
 a {
   vertical-align: middle;
-  margin: 0 1rem;
   &:hover {
     opacity: .5;
   }

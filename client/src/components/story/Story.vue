@@ -206,7 +206,7 @@ export default {
   .back {
     position: fixed;
     top: 10vh;
-    left: 10vw;
+    left: 5vw;
     transform: rotate(180deg);
     width: 2rem;
     &:hover {
