@@ -2,8 +2,8 @@
   <Story
     id="ocular-pleasure"
     color="var(--yellow)"
-    :backgroundPosition="{ left: '40vw' }"
-    :picturesPosition="{ top: '15vh', right: '55vw', left: '5vw' }"
+    :backgroundPosition="{ left: '50vw' }"
+    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw' }"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>

@@ -16,7 +16,6 @@
 <script>
 export default {
   props: {
-    /** @type {{html: string, class: { [className: string]: boolean }}[]} */
     chars: {
       required: true,
       type: Array,

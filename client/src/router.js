@@ -6,6 +6,9 @@ import Home from './views/home/Home.vue';
 import Manifesto from './views/manifesto/Manifesto.vue';
 import Humans from './views/photos/Humans.vue';
 import Photos from './views/photos/Photos.vue';
+import OcularPleasure from './views/photos/OcularPleasure.vue';
+import VousEtesDesAnimaux from './views/photos/VousEtesDesAnimaux.vue';
+import RideShootRepeat from './views/photos/RideShootRepeat.vue';
 
 Vue.use(VueRouter);
 
@@ -19,6 +22,9 @@ const router = new VueRouter({
     { path: '/manifesto', component: Manifesto },
     { path: '/photos', component: Photos },
     { path: '/photos/humans', component: Humans },
+    { path: '/photos/ocular-pleasure', component: OcularPleasure },
+    { path: '/photos/vous-etes-des-animaux', component: VousEtesDesAnimaux },
+    { path: '/photos/ride-shoot-repeat', component: RideShootRepeat },
     { path: '*', redirect: '/' },
   ],
 });
