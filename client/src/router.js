@@ -11,6 +11,7 @@ import VousEtesDesAnimaux from './views/photos/VousEtesDesAnimaux.vue';
 import RideShootRepeat from './views/photos/RideShootRepeat.vue';
 import PedalToTheMetal from './views/photos/PedalToTheMetal.vue';
 import TasteOfFarniente from './views/photos/TasteOfFarniente.vue';
+import CrossTheBorders from './views/photos/CrossTheBorders.vue';
 
 Vue.use(VueRouter);
 
@@ -29,6 +30,7 @@ const router = new VueRouter({
     { path: '/photos/ride-shoot-repeat', component: RideShootRepeat },
     { path: '/photos/pedal-to-the-metal', component: PedalToTheMetal },
     { path: '/photos/taste-of-farniente', component: TasteOfFarniente },
+    { path: '/photos/cross-the-borders', component: CrossTheBorders },
     { path: '*', redirect: '/' },
   ],
 });
