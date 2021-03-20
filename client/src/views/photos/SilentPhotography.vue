@@ -1,6 +1,6 @@
 <template>
   <Story
-    id="humans"
+    id="silent-photography"
     color="var(--yellow)"
     :backgroundPosition="{ }"
     :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"

@@ -1,6 +1,6 @@
 <template>
   <Story
-    id="silent-photography"
+    id="ride-shoot-repeat"
     color="var(--purple)"
     :backgroundPosition="{ left: '50vw' }"
     :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw' }"
