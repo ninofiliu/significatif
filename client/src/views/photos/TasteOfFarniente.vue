@@ -7,9 +7,7 @@
     picturesMode="horizontal"
   >
     <div class="text-container">
-      <div class="text u-comfort">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aut ab quam cumque, aliquid delectus eum iure, assumenda, placeat mollitia impedit deserunt? Unde placeat harum suscipit. Inventore cupiditate beatae sapiente!
-      </div>
+      <p v-for="t of txt" :key="t">{{ t }}</p>
     </div>
     <div class="title">
       <AppearingLine :chars="tasteOfFarniente"/>
@@ -20,6 +18,7 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
+import covers from '../../content/covers.json';
 
 export default {
   components: {
@@ -28,6 +27,7 @@ export default {
   },
   data() {
     return {
+      txt: covers['taste-of-farniente'].txt,
       tasteOfFarniente: [
         { html: 'T', class: { 'u-underline': true } },
         { html: 'a', class: { 'u-underline': true } },

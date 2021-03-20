@@ -11,9 +11,7 @@
     <div class="to-the"><AppearingLine :chars="toThe" :start="-15"/></div>
     <div class="metal"><AppearingLine :chars="metal" :start="-20"/></div>
     <div class="text-container">
-      <div class="text u-comfort">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, laboriosam commodi? Earum adipisci odit ducimus nemo? Quibusdam earum nam accusamus quia voluptatibus amet aperiam molestiae. Ut error obcaecati reiciendis fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </div>
+      <p v-for="t of txt" :key="t">{{ t }}</p>
     </div>
   </Story>
 </template>
@@ -21,6 +19,7 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
+import covers from '../../content/covers.json';
 
 export default {
   components: {
@@ -29,6 +28,7 @@ export default {
   },
   data() {
     return {
+      txt: covers['pedal-to-the-metal'].txt,
       pedal: [
         { html: 'P', class: {}, underline: true },
         { html: 'e', class: {}, underline: true },
