@@ -128,6 +128,13 @@ export default {
     onkeyup(evt) {
       if (evt.key === 'ArrowRight') this.scrollNext();
       if (evt.key === 'ArrowLeft') this.scrollPrev();
+      if (evt.key === 'Escape') {
+        if (this.home) {
+          this.$router.go(-1);
+        } else {
+          this.home = true;
+        }
+      }
     },
     onwheel(evt) {
       if (this.home) return;
