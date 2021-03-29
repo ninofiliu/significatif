@@ -3,7 +3,7 @@
     id="self-portraits"
     color="var(--orange)"
     :backgroundPosition="{ left: '50vw' }"
-    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw' }"
+    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw', bottom: '15vh' }"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -33,15 +33,15 @@ export default {
         { html: 'l' },
         { html: 'f' },
         { html: '&nbsp;' },
-        { html: 'P' },
-        { html: 'o' },
-        { html: 'r' },
-        { html: 't' },
-        { html: 'r' },
-        { html: 'a' },
-        { html: 'i' },
-        { html: 't' },
-        { html: 's' },
+        { html: 'P', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'o', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 's', class: { 'u-font-ogg': true, 'u-italic': true } },
       ],
     };
   },
@@ -60,9 +60,9 @@ export default {
 }
 .self-portraits {
   position: fixed;
-  top: 20vh;
+  top: 30vh;
   right: 10vw;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 .text-container {

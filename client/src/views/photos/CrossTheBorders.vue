@@ -3,13 +3,13 @@
     id="cross-the-borders"
     color="var(--orange)"
     :backgroundPosition="{ left: '50vw' }"
-    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw' }"
+    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw', bottom: '15vh' }"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="cross"><AppearingLine :chars="cross" :start="-30" /></div>
-    <div class="the"><AppearingLine :chars="the" :start="-35" /></div>
-    <div class="borders"><AppearingLine :chars="borders" :start="-40" /></div>
+    <div class="cross"><AppearingLine :chars="cross" :start="-5" /></div>
+    <div class="the"><AppearingLine :chars="the" :start="-15" /></div>
+    <div class="borders"><AppearingLine :chars="borders" :start="-20" /></div>
     <div class="text-container">
       <p v-for="t of txt" :key="t">{{ t }}</p>
     </div>
@@ -79,14 +79,15 @@ export default {
   left: 85vw;
 }
 .borders {
-  top: 40vh;
+  top: 35vh;
   left: 60vw;
 }
 .text-container {
   position: fixed;
   font-size: .8rem;
-  left: 55vw;
-  top: 70vh;
+  left: 70vw;
+  top: 55vh;
   right: 10vw;
+  text-align: justify;
 }
 </style>

@@ -3,7 +3,7 @@
     id="ride-shoot-repeat"
     color="var(--purple)"
     :backgroundPosition="{ left: '50vw' }"
-    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw' }"
+    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw', bottom: '15vh' }"
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
@@ -45,13 +45,13 @@ export default {
         { html: ',' },
       ],
       repeat: [
-        { html: 'R' },
-        { html: 'e' },
-        { html: 'p' },
-        { html: 'e' },
-        { html: 'a' },
-        { html: 't' },
-        { html: '.' },
+        { html: 'R', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'e', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'p', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'e', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: '.', class: { 'u-font-ogg': true, 'u-italic': true } },
       ],
     };
   },
@@ -73,42 +73,30 @@ export default {
   font-size: 4rem;
   font-weight: 300;
   left: 60vw;
-  top: 30vh;
+  top: 20vh;
 }
 .shoot {
   position: fixed;
   font-size: 4rem;
   font-weight: 300;
   left: 60vw;
-  top: 40vh;
+  top: 30vh;
 }
 .repeat {
   position: fixed;
   font-size: 4rem;
   font-weight: 300;
   left: 60vw;
-  top: 50vh;
+  top: 40vh;
 }
 .text-container {
   position: fixed;
-  top: 60vh;
-  left: 65vw;
+  top: 55vh;
+  left: 70vw;
   bottom: 10vh;
-  right: 5vw;
+  right: 10vw;
   overflow: hidden;
-}
-.text {
-  animation-name: appear-up;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
-  animation-fill-mode: both;
-}
-@keyframes appear-up {
-  from {
-    transform: translateY(30vh);
-  }
-  to {
-    transform: translateY(0);
-  }
+  font-size: .8rem;
+  text-align: justify;
 }
 </style>

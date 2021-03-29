@@ -210,22 +210,18 @@ export default {
 
   .back {
     position: fixed;
-    top: 15vh;
+    top: 20vh;
     left: calc(5vw + 1rem);
     img {
-      transform: translate(-50%, -50%) rotate(180deg);
       width: 2rem;
       transition: all .5s;
       position: absolute;
+      transform: translate(-50%, -50%) rotate(180deg);
     }
     span {
       text-transform: uppercase;
       position: absolute;
       font-size: .6rem;
-    }
-    div {
-      opacity: 0;
-      transition: all .5s;
     }
     @for $i from 1 through 20 {
       span:nth-child(#{$i}) {
@@ -236,9 +232,6 @@ export default {
       cursor: pointer;
       img {
         transform: translate(-50%, -50%) rotate(180deg) scale(.7);
-      }
-      div {
-        opacity: 1;
       }
     }
   }

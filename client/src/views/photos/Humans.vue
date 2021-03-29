@@ -54,17 +54,18 @@ export default {
 }
 .humans {
   position: fixed;
-  top: 20vh;
-  left: 10vw;
+  top: 30vh;
+  left: 5vw;
   font-size: 4.5rem;
   font-weight: 300;
 }
 .text-container {
   position: fixed;
   top: 45vh;
-  right: 55vw;
-  left: 15vw;
+  right: 70vw;
+  left: 10vw;
   font-size: .8rem;
+  text-align: justify;
 }
 .text {
   animation-name: appear-up;

@@ -6,11 +6,11 @@
     :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
-    <div class="bubble u-appear-scaleup"/>
-    <div class="silent"><AppearingLine :chars="silent"/></div>
-    <div class="photography"><AppearingLine :chars="photography"/></div>
     <div class="text-container">
       <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
+    <div class="title">
+      <AppearingLine :chars="silentPhotography"/>
     </div>
   </Story>
 </template>
@@ -28,15 +28,14 @@ export default {
   data() {
     return {
       txt: covers['silent-photography'].txt,
-      silent: [
-        { html: 'S' },
-        { html: 'i' },
-        { html: 'l' },
-        { html: 'e' },
-        { html: 'n' },
-        { html: 't' },
-      ],
-      photography: [
+      silentPhotography: [
+        { html: 'S', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'l', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'e', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 'n', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: '&nbsp;' },
         { html: 'P' },
         { html: 'h' },
         { html: 'o' },
@@ -55,47 +54,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bubble {
-  position: fixed;
-  top: 18vh;
-  left: 12vw;
-  width: 25vw;
-  height: 25vw;
-  background-color: white;
-  border-radius: 50%;
-}
-.silent, .photography {
-  position: fixed;
-  font-size: 4.5rem;
-  font-weight: 300;
-}
-.silent {
-  top: 10vh;
-  left: 15vw;
-}
-.photography {
-  top: 25vh;
-  left: 5vw;
-}
 .text-container {
   position: fixed;
-  top: 60vh;
-  right: 55vw;
-  left: 15vw;
+  top: 25vh;
+  right: 75vw;
+  bottom: 45vh;
+  left: 10vw;
+  overflow: hidden;
   font-size: .8rem;
+  text-align: justify;
 }
-.text {
-  animation-name: appear-up;
-  animation-fill-mode: both;
-  animation-delay: 1.3s;
-  animation-duration: 1s;
-}
-@keyframes appear-up {
-  from {
-    transform: translateY(40vh);
-  }
-  to {
-    transform: translateY(0%)s;
-  }
+.title {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 15vh;
+  font-size: 4rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
 }
 </style>

@@ -29,11 +29,11 @@ export default {
     return {
       txt: covers['taste-of-farniente'].txt,
       tasteOfFarniente: [
-        { html: 'T', class: { 'u-underline': true } },
-        { html: 'a', class: { 'u-underline': true } },
-        { html: 's', class: { 'u-underline': true } },
-        { html: 't', class: { 'u-underline': true } },
-        { html: 'e', class: { 'u-underline': true } },
+        { html: 'T', class: {}, underline: true },
+        { html: 'a', class: {}, underline: true },
+        { html: 's', class: {}, underline: true },
+        { html: 't', class: {}, underline: true },
+        { html: 'e', class: {}, underline: true },
         { html: '&nbsp;', class: {} },
         { html: 'g', class: { 'u-font-good-glyphs': true } },
         { html: 'f', class: {} },
@@ -57,27 +57,12 @@ export default {
 .text-container {
   position: fixed;
   top: 25vh;
-  right: 70vw;
+  right: 65vw;
   bottom: 45vh;
-  left: 5vw;
+  left: 10vw;
   overflow: hidden;
   font-size: .8rem;
-}
-.text {
-  width: 100%;
-  height: 100%;
-  animation-name: text-appear;
-  animation-duration: .5s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-@keyframes text-appear {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0%);
-  }
+  text-align: justify;
 }
 .title {
   position: fixed;

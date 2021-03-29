@@ -63,24 +63,25 @@ export default {
 }
 .ocular {
   position: fixed;
-  top: 20vh;
+  top: 25vh;
   right: 10vw;
   font-size: 4.5rem;
   font-weight: 300;
 }
 .pleasure {
   position: fixed;
-  bottom: 20vh;
+  bottom: 25vh;
   right: 20vw;
   font-size: 4.5rem;
   font-weight: 300;
 }
 .text-container {
   position: fixed;
-  top: 45vh;
+  top: 40vh;
   left: 55vw;
-  right: 15vw;
+  right: 20vw;
   font-size: .8rem;
+  text-align: justify;
 }
 .text {
   animation-name: appear-up;

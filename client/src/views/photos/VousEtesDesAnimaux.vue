@@ -7,9 +7,7 @@
     picturesMode="horizontal"
   >
     <div class="text-container">
-      <div class="text u-comfort">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non expedita quibusdam omnis aliquam, voluptatum qui. Ipsa est ad ab repellat distinctio, expedita rerum veniam assumenda nobis asperiores consequuntur porro.
-      </div>
+      <p v-for="t of txt" :key="t">{{ t }}</p>
     </div>
     <div class="title">
       <AppearingLine :chars="title"/>
@@ -20,6 +18,7 @@
 <script>
 import AppearingLine from '../../components/AppearingLine.vue';
 import Story from '../../components/story/Story.vue';
+import covers from '../../content/covers.json';
 
 export default {
   components: {
@@ -28,6 +27,7 @@ export default {
   },
   data() {
     return {
+      txt: covers['vous-etes-des-animaux'].txt,
       title: [
         { html: 'V', class: {} },
         { html: 'o', class: {} },
@@ -59,19 +59,20 @@ export default {
 <style lang="scss" scoped>
 .text-container {
   position: fixed;
-  top: 20vh;
+  top: 30vh;
   right: 70vw;
   bottom: 50vh;
-  left: 5vw;
+  left: 10vw;
+  font-size: .8rem;
 }
 .title {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 10vh;
+  bottom: 15vh;
   display: flex;
   justify-content: center;
   font-weight: 300;
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 </style>

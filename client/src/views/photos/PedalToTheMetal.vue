@@ -72,7 +72,7 @@ export default {
 .pedal {
   position: fixed;
   top: 20vh;
-  right: 32vw;
+  right: 30vw;
   font-size: 4rem;
   font-weight: 300;
 }
@@ -93,23 +93,11 @@ export default {
 .text-container {
   position: fixed;
   top: 60vh;
-  right: 10vw;
+  right: 15vw;
   bottom: 10vh;
   left: 65vw;
   overflow: hidden;
-}
-.text {
-  animation-name: appear-up;
-  animation-duration: 1s;
-  animation-delay: 1.5s;
-  animation-fill-mode: both;
-}
-@keyframes appear-up {
-  from {
-    transform: translateY(30vh);
-  }
-  to {
-    transform: translateY(0);
-  }
+  font-size: .8rem;
+  text-align: justify;
 }
 </style>
