@@ -143,10 +143,12 @@ export default {
   justify-content: space-around;
 }
 .years {
+  display: flex;
   width: var(--years-width);
+  height: 80vh;
+  flex-direction: column;
   overflow-y: auto;
   scrollbar-width: none;
-  align-self: center;
   &::-webkit-scrollbar {
     display: none;
   }

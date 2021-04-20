@@ -71,7 +71,7 @@ svg {
   }
 }
 text {
-  font-size: 3rem;
+  font-size: 65px;
   fill: var(--red);
   font-weight: 300;
 }
