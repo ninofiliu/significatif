@@ -12,6 +12,16 @@ a {
 html {
   font-size: 2.4vh;
 }
+button {
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+}
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
