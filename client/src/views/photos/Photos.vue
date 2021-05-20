@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar/>
-    <div class="stories">
+    <div class="stories --desktop">
       <RouterLink
         to="/photos/self-portraits"
         class="story"
@@ -118,6 +118,105 @@
         </div>
       </div>
     </div>
+    <div class="stories --mobile">
+      <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
+        <div class="story-content">
+          <div class="mood">What's your mood today?</div>
+          <div class="pick">Pick <span class="one u-font-ogg u-italic">one</span></div>
+          <div class="arrow u-oscillate-x"><img src="../../assets/arrow-medium.svg"></div>
+        </div>
+      </div>
+      <RouterLink
+        to="/photos/humans"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['humans'].img}`">
+          <div class="title">HUMANS</div>
+          <div class="text u-comfort"><p v-for="p of covers['humans'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/ocular-pleasure"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['ocular-pleasure'].img}`">
+          <div class="title">OCULAR PLEASURE</div>
+          <div class="text u-comfort"><p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/vous-etes-des-animaux"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['vous-etes-des-animaux'].img}`">
+          <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
+          <div class="text u-comfort"><p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/ride-shoot-repeat"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['ride-shoot-repeat'].img}`">
+          <div class="title">RIDE, SHOOT, REPEAT</div>
+          <div class="text u-comfort"><p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/pedal-to-the-metal"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['pedal-to-the-metal'].img}`">
+          <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
+          <div class="text u-comfort"><p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/taste-of-farniente"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['taste-of-farniente'].img}`">
+          <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
+          <div class="text u-comfort"><p v-for="p of covers['taste-of-farniente'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/cross-the-borders"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['cross-the-borders'].img}`">
+          <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
+          <div class="text u-comfort"><p v-for="p of covers['cross-the-borders'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/silent-photography"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['silent-photography'].img}`">
+          <div class="title">SILENT PHOTOGRAPHY</div>
+          <div class="text u-comfort"><p v-for="p of covers['silent-photography'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+      <RouterLink
+        to="/photos/self-portraits"
+        class="story"
+      >
+        <div class="story-content">
+          <img :src="`${$s}${covers['self-portraits'].img}`">
+          <div class="title">AUTOPORTRAITS</div>
+          <div class="text u-comfort"><p v-for="p of covers['self-portraits'].txt" :key="p">{{p}}</p></div>
+        </div>
+      </RouterLink>
+    </div>
   </div>
 </template>
 
@@ -188,7 +287,6 @@ export default {
   bottom: 0;
   left: 0;
   display: flex;
-  flex-direction: row-reverse;
 }
 .story {
   flex-basis: 0;
@@ -208,13 +306,6 @@ export default {
   }
 }
 .story-content {
-  --unit: calc(100vw / 25); // 25 = sum of all flex grows
-  position: absolute;
-  right: var(--unit);
-  top: calc(3rem + var(--unit)); // 3rem = navbar height
-  width: calc(6 * var(--unit));
-  height: calc(100vh - 3rem - 2 * var(--unit));
-  transition: all .5s;
   img {
     max-width: 100%;
     max-height: 50vh;
@@ -229,9 +320,6 @@ export default {
   .text {
     font-size: 0.8rem;
   }
-}
-a.story:hover .story-content {
-  transform: translateY(1rem)
 }
 
 .home {
@@ -255,6 +343,44 @@ a.story:hover .story-content {
     img {
       width: 3rem;
     }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .stories.--mobile {
+    display: none;
+  }
+  .stories {
+    flex-direction: row-reverse;
+  }
+  .story-content {
+    transition: all .5s;
+    --unit: calc(100vw / 25); // 25 = sum of all flex grows
+    position: absolute;
+    right: var(--unit);
+    top: calc(3rem + var(--unit)); // 3rem = navbar height
+    width: calc(6 * var(--unit));
+    height: calc(100vh - 3rem - 2 * var(--unit));
+  }
+  a.story:hover .story-content {
+    transform: translateY(1rem)
+  }
+}
+@media screen and (max-width: 900px) {
+  .stories.--desktop {
+    display: none;
+  }
+  .stories {
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+    scroll-snap-type: x mandatory;
+  }
+  .story {
+    width: 100vw;
+    scroll-snap-align: start;
+    flex: none;
+    padding: 5rem 3rem;
   }
 }
 </style>
