@@ -67,4 +67,11 @@ export default {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 900px) {
+  .u-title {
+    bottom: auto;
+    top: 20vh;
+    font-size: 2rem;
+  }
+}
 </style>

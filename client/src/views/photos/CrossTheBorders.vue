@@ -83,4 +83,10 @@ export default {
   top: 55vh;
   right: 10vw;
 }
+@media screen and (max-width: 900px) {
+  .bubble { display: none; } // TODO
+  .cross { top: 10vh; left: 20vw; }
+  .the { top: 15vh; left: 60vw; }
+  .borders { top: 25vh; left: 40vw; }
+}
 </style>

@@ -81,3 +81,12 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 900px) {
+  .u-text-container {
+    inset: 40vh 50vw 10vh 5vw !important;
+  }
+  .u-title {
+    font-size: 3rem;
+  }
+}

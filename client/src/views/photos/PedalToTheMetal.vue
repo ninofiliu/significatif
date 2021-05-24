@@ -88,4 +88,10 @@ export default {
   bottom: 10vh;
   left: 65vw;
 }
+
+@media screen and (max-width: 900px) {
+  .pedal { top: 15vh; right: 10vw; }
+  .to-the { top: 25vh; right: 20vw; }
+  .metal { top: 30vh; right: 50vw; }
+}
 </style>

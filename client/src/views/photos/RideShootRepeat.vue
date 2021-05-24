@@ -68,23 +68,28 @@ export default {
 }
 .ride {
   position: fixed;
-  left: 60vw;
   top: 20vh;
+  left: 60vw;
 }
 .shoot {
   position: fixed;
-  left: 60vw;
   top: 30vh;
+  left: 60vw;
 }
 .repeat {
   position: fixed;
-  left: 60vw;
   top: 40vh;
+  left: 60vw;
 }
 .u-text-container {
   top: 55vh;
   left: 70vw;
   bottom: 10vh;
   right: 10vw;
+}
+@media screen and (max-width: 900px) {
+  .ride { top: 10vh; left: 20vw;  }
+  .shoot { top: 17vh; left: 20vw; }
+  .repeat { top: 24vh; left: 20vw; }
 }
 </style>

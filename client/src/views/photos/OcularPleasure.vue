@@ -88,4 +88,9 @@ export default {
     transform: translateY(0%)s;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .ocular { top: 15vh; left: 10vw; }
+  .pleasure { top: 25vh; left: 30vw; }
+}
 </style>
