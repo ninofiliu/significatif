@@ -2,6 +2,13 @@
   <div class="story" :class="{ '--home': home }">
     <NavBar/>
     <div class="background" :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"/>
+    <Pictures
+      :mode="home ? picturesMode : 'hidden'"
+      :position="home ? picturesPosition : {}"
+      :pictures="randStoryPictures"
+      :current="randCurrent"
+      @click="goPictures"
+    />
     <div class="article">
       <slot/>
     </div>
@@ -13,6 +20,9 @@
         {{ storyPictures[current].title }}
       </div>
       <div class="picture-spacer"/>
+      <div class="place">
+        {{ storyPictures[current].place }}
+      </div>
       <div class="date">
         {{ storyPictures[current].date.toLocaleString('en', { month: 'long' }) }}
         {{ storyPictures[current].date.getFullYear() }}
@@ -26,17 +36,7 @@
           <span v-for="(letter, index) of 'return to the album'.split('')" :key="index">{{ letter }}</span>
         </div>
       </div>
-      <div class="place">
-        {{ storyPictures[current].place }}
-      </div>
     </div>
-    <Pictures
-      :mode="home ? picturesMode : 'hidden'"
-      :position="home ? picturesPosition : {}"
-      :pictures="randStoryPictures"
-      :current="randCurrent"
-      @click="goPictures"
-    />
     <Footer fixed/>
   </div>
 </template>
@@ -217,8 +217,6 @@ export default {
 
   .back {
     position: fixed;
-    top: 20vh;
-    left: calc(5vw + 1rem);
     img {
       width: 2rem;
       transition: all .5s;
@@ -242,13 +240,6 @@ export default {
       }
     }
   }
-  .place {
-    position: fixed;
-    text-align: right;
-    bottom: 20vh;
-    right: 5vw;
-    transform: rotate(90deg);
-  }
 }
 
 .--home {
@@ -257,6 +248,32 @@ export default {
   }
   .details {
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .place {
+    position: fixed;
+    text-align: right;
+    bottom: 20vh;
+    right: 5vw;
+    transform: rotate(90deg);
+  }
+  .back {
+    top: 15vh;
+    left: 15vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .details {
+    top: 60vh;
+  }
+  .picture-spacer {
+    display: none;
+  }
+  .back {
+    top: 15vh;
+    left: 15vw;
   }
 }
 </style>

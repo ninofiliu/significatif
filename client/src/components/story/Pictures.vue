@@ -90,4 +90,9 @@ img {
     transform: translateX(100vw);
   }
 }
+@media screen and (max-width: 900px) {
+  .--hidden {
+    inset: 6vh 5vw;
+  }
+}
 </style>
