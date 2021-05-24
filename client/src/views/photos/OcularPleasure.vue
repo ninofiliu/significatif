@@ -7,11 +7,9 @@
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="ocular"><AppearingLine :chars="ocular" :start="-5"/></div>
-    <div class="pleasure"><AppearingLine :chars="pleasure" :start="-10"/></div>
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
+    <div class="u-title ocular"><AppearingLine :chars="ocular" :start="-5"/></div>
+    <div class="u-title pleasure"><AppearingLine :chars="pleasure" :start="-10"/></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -65,23 +63,16 @@ export default {
   position: fixed;
   top: 25vh;
   right: 10vw;
-  font-size: 4.5rem;
-  font-weight: 300;
 }
 .pleasure {
   position: fixed;
   bottom: 25vh;
   right: 20vw;
-  font-size: 4.5rem;
-  font-weight: 300;
 }
-.text-container {
-  position: fixed;
+.u-text-container {
   top: 40vh;
   left: 55vw;
   right: 20vw;
-  font-size: .8rem;
-  text-align: justify;
 }
 .text {
   animation-name: appear-up;

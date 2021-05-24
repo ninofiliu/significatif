@@ -7,12 +7,8 @@
     picturesMode="horizontal"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="humans">
-      <AppearingLine :chars="humans"/>
-    </div>
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
+    <div class="u-title"><AppearingLine :chars="humans"/></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -52,33 +48,14 @@ export default {
   background-color: white;
   border-radius: 50%;
 }
-.humans {
+.u-title {
   position: fixed;
   top: 30vh;
   left: 5vw;
-  font-size: 4.5rem;
-  font-weight: 300;
 }
-.text-container {
-  position: fixed;
+.u-text-container {
   top: 45vh;
   right: 70vw;
   left: 10vw;
-  font-size: .8rem;
-  text-align: justify;
-}
-.text {
-  animation-name: appear-up;
-  animation-fill-mode: both;
-  animation-delay: 1.3s;
-  animation-duration: 1s;
-}
-@keyframes appear-up {
-  from {
-    transform: translateY(40vh);
-  }
-  to {
-    transform: translateY(0%)s;
-  }
 }
 </style>

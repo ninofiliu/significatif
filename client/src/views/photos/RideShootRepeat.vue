@@ -7,12 +7,10 @@
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="ride"><AppearingLine :chars="ride" :start="-5"/></div>
-    <div class="shoot"><AppearingLine :chars="shoot" :start="-10"/></div>
-    <div class="repeat"><AppearingLine :chars="repeat" :start="-15"/></div>
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
+    <div class="u-title ride"><AppearingLine :chars="ride" :start="-5"/></div>
+    <div class="u-title shoot"><AppearingLine :chars="shoot" :start="-10"/></div>
+    <div class="u-title repeat"><AppearingLine :chars="repeat" :start="-15"/></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -70,33 +68,23 @@ export default {
 }
 .ride {
   position: fixed;
-  font-size: 4rem;
-  font-weight: 300;
   left: 60vw;
   top: 20vh;
 }
 .shoot {
   position: fixed;
-  font-size: 4rem;
-  font-weight: 300;
   left: 60vw;
   top: 30vh;
 }
 .repeat {
   position: fixed;
-  font-size: 4rem;
-  font-weight: 300;
   left: 60vw;
   top: 40vh;
 }
-.text-container {
-  position: fixed;
+.u-text-container {
   top: 55vh;
   left: 70vw;
   bottom: 10vh;
   right: 10vw;
-  overflow: hidden;
-  font-size: .8rem;
-  text-align: justify;
 }
 </style>

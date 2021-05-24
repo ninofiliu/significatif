@@ -7,10 +7,8 @@
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="self-portraits"><AppearingLine :chars="selfPortraits" :start="-5"/></div>
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
+    <div class="u-title"><AppearingLine :chars="selfPortraits" :start="-5"/></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -58,32 +56,14 @@ export default {
   background-color: white;
   border-radius: 50%;
 }
-.self-portraits {
+.u-title {
   position: fixed;
   top: 30vh;
   right: 10vw;
-  font-size: 4rem;
-  font-weight: 300;
 }
-.text-container {
-  position: fixed;
+.u-text-container {
   top: 45vh;
   left: 55vw;
   right: 15vw;
-  font-size: .8rem;
-}
-.text {
-  animation-name: appear-up;
-  animation-fill-mode: both;
-  animation-delay: 1.3s;
-  animation-duration: 1s;
-}
-@keyframes appear-up {
-  from {
-    transform: translateY(40vh);
-  }
-  to {
-    transform: translateY(0%)s;
-  }
 }
 </style>

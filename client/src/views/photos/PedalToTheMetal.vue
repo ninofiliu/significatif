@@ -7,12 +7,10 @@
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="pedal"><AppearingLine :chars="pedal" :start="-10"/></div>
-    <div class="to-the"><AppearingLine :chars="toThe" :start="-15"/></div>
-    <div class="metal"><AppearingLine :chars="metal" :start="-20"/></div>
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
+    <div class="u-title pedal"><AppearingLine :chars="pedal" :start="-10"/></div>
+    <div class="u-title to-the"><AppearingLine :chars="toThe" :start="-15"/></div>
+    <div class="u-title metal"><AppearingLine :chars="metal" :start="-20"/></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -73,31 +71,21 @@ export default {
   position: fixed;
   top: 20vh;
   right: 30vw;
-  font-size: 4rem;
-  font-weight: 300;
 }
 .to-the {
   position: fixed;
   top: 28vh;
   right: 15vw;
-  font-size: 4rem;
-  font-weight: 300;
 }
 .metal {
   position: fixed;
   top: 42vh;
   right: 30vw;
-  font-size: 4rem;
-  font-weight: 300;
 }
-.text-container {
-  position: fixed;
+.u-text-container {
   top: 60vh;
   right: 15vw;
   bottom: 10vh;
   left: 65vw;
-  overflow: hidden;
-  font-size: .8rem;
-  text-align: justify;
 }
 </style>

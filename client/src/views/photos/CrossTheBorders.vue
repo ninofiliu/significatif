@@ -7,12 +7,10 @@
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="cross"><AppearingLine :chars="cross" :start="-5" /></div>
-    <div class="the"><AppearingLine :chars="the" :start="-15" /></div>
-    <div class="borders"><AppearingLine :chars="borders" :start="-20" /></div>
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
+    <div class="u-title cross"><AppearingLine :chars="cross" :start="-5" /></div>
+    <div class="u-title the"><AppearingLine :chars="the" :start="-15" /></div>
+    <div class="u-title borders"><AppearingLine :chars="borders" :start="-20" /></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -65,29 +63,24 @@ export default {
   background-color: white;
   border-radius: 50%;
 }
-.cross, .the, .borders {
-  position: fixed;
-  font-size: 4.5rem;
-  font-weight: 300;
-}
 .cross {
+  position: fixed;
   top: 15vh;
   left: 65vw;
 }
 .the {
+  position: fixed;
   top: 25vh;
   left: 85vw;
 }
 .borders {
+  position: fixed;
   top: 35vh;
   left: 60vw;
 }
-.text-container {
-  position: fixed;
-  font-size: .8rem;
+.u-text-container {
   left: 70vw;
   top: 55vh;
   right: 10vw;
-  text-align: justify;
 }
 </style>

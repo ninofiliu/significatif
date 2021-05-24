@@ -6,12 +6,8 @@
     :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
-    <div class="text-container">
-      <p v-for="t of txt" :key="t">{{ t }}</p>
-    </div>
-    <div class="title">
-      <AppearingLine :chars="title"/>
-    </div>
+    <div class="u-title"><AppearingLine :chars="title"/></div>
+    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
 
@@ -57,22 +53,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.text-container {
-  position: fixed;
+.u-text-container {
   top: 30vh;
   right: 70vw;
   bottom: 50vh;
   left: 10vw;
-  font-size: .8rem;
 }
-.title {
+.u-title {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 15vh;
   display: flex;
   justify-content: center;
-  font-weight: 300;
-  font-size: 4rem;
 }
 </style>
