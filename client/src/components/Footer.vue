@@ -6,7 +6,7 @@
     <a href="https://www.instagram.com/victorair_/" target="_blank" rel="noreferrer noopener">
       instagram
     </a>
-    <div>
+    <div class="houdan">
       48°47'45.3"N 1°36'09.9"E
     </div>
   </div>
@@ -52,5 +52,11 @@ export default {
     -1px 1px 0 var(--red),
     -1px -1px 0 var(--red),
   ;
+}
+
+@media screen and (max-width: 900px) {
+  .houdan {
+    display: none;
+  }
 }
 </style>
