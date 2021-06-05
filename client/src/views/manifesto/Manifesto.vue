@@ -178,4 +178,29 @@ hr {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .landing .text {
+    font-size: 3rem;
+  }
+  @keyframes scaleup-big {
+    from {
+      transform: translateX(-225vw) translateY(-125vh) translateZ(-50px) scale(0);
+    }
+    to {
+      transform: translateX(-225vw) translateY(-125vh) translateZ(-50px) scale(1);
+    }
+  }
+  .more {
+    flex-direction: column;
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+      font-size: 1.7rem;
+      margin-top: 3rem;
+    }
+  }
+}
 </style>
