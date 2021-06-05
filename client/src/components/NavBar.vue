@@ -18,7 +18,6 @@
         <RouterLink to="/manifesto">manifesto</RouterLink>
         <RouterLink to="/contact">contact</RouterLink>
         <RouterLink to="/archives">archives</RouterLink>
-        <RouterLink to="/archives">archives</RouterLink>
         <a href="https://www.instagram.com/victorair_/" target="_blank" rel="noreferrer noopener">instagram</a>
       </div>
     </div>
