@@ -94,7 +94,7 @@ img {
   .--hidden {
     inset: 6vh 5vw;
   }
-  .pictures {
+  .pictures:not(.--hidden) {
     inset: 45vh 5vw 10vh 50vw !important;
   }
 }

@@ -12,7 +12,7 @@
     <div class="article">
       <slot/>
     </div>
-    <div class="details">
+    <div class="details" v-if="!home">
       <div class="prev">
         <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
       </div>

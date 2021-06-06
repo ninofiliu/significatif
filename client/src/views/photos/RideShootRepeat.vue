@@ -91,5 +91,6 @@ export default {
   .ride { top: 10vh; left: 20vw;  }
   .shoot { top: 17vh; left: 20vw; }
   .repeat { top: 24vh; left: 20vw; }
+  .bubble { top: -5vh; right: -40vw; }
 }
 </style>
