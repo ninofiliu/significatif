@@ -152,4 +152,29 @@ section:nth-child(4) {
 .let-s-reach-out {
   margin-bottom: 3vh;
 }
+
+@media screen and (max-width: 900px) {
+  .big-text {
+    font-size: 3rem;
+  }
+  section:nth-child(2) {
+    margin-top: 4vh;
+    div:nth-child(1) {
+      width: 20%;
+      font-size: 3rem;
+    }
+    div:nth-child(2) {
+      width: 70%;
+    }
+  }
+  section:nth-child(4) {
+    > div {
+      width: 100%;
+      margin-left: 0;
+    }
+    .links {
+      flex-direction: column;
+    }
+  }
+}
 </style>
