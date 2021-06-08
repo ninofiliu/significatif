@@ -167,6 +167,10 @@ section:nth-child(4) {
       width: 70%;
     }
   }
+  section:nth-child(3) {
+    width: initial;
+    margin: 5vw;
+  }
   section:nth-child(4) {
     > div {
       width: 100%;

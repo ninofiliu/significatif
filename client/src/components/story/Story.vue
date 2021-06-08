@@ -20,12 +20,14 @@
         {{ storyPictures[current].title }}
       </div>
       <div class="picture-spacer"/>
-      <div class="place">
-        {{ storyPictures[current].place }}
-      </div>
       <div class="date">
-        {{ storyPictures[current].date.toLocaleString('en', { month: 'long' }) }}
-        {{ storyPictures[current].date.getFullYear() }}
+        <div>
+        {{ storyPictures[current].place }}
+        </div>
+        <div>
+          {{ storyPictures[current].date.toLocaleString('en', { month: 'long' }) }}
+          {{ storyPictures[current].date.getFullYear() }}
+        </div>
       </div>
       <div class="next">
         <img @click="scrollNext" src="../../assets/arrow-small.svg"/>

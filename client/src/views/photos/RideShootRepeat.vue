@@ -60,7 +60,7 @@ export default {
 .bubble {
   position: fixed;
   top: 20vh;
-  right: 18vw;
+  right: 12vw;
   width: 45vh;
   height: 45vh;
   background-color: var(--white);

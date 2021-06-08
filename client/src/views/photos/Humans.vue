@@ -51,7 +51,7 @@ export default {
 .u-title {
   position: fixed;
   top: 30vh;
-  left: 5vw;
+  left: 10vw;
 }
 .u-text-container {
   top: 45vh;

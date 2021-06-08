@@ -79,9 +79,9 @@ export default {
   left: 60vw;
 }
 .u-text-container {
-  left: 70vw;
+  left: 60vw;
   top: 55vh;
-  right: 10vw;
+  right: 20vw;
 }
 @media screen and (max-width: 900px) {
   .cross { top: 10vh; left: 20vw; }

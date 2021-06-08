@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
 .u-text-container {
   top: 25vh;
-  right: 65vw;
+  right: 70vw;
   bottom: 45vh;
   left: 10vw;
 }

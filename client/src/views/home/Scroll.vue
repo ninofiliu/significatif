@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     onWheel(evt) {
-      this.scrolled += evt.deltaY;
+      this.scrolled += 0.1 * evt.deltaY;
     },
   },
 };
@@ -47,7 +47,6 @@ export default {
 img {
   position: fixed;
   pointer-events: none;
-  transition: all 0.5s;
   height: 45vh;
   transform: translate(-50%, -50%);
 }

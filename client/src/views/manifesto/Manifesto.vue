@@ -14,7 +14,7 @@
       <hr>
       <div class="more">
         <div class="left">
-          <div class="text u-extracomfort">
+          <div class="text u-comfort">
             {{ manifestoContent.leftText }}
           </div>
           <div class="star">
@@ -30,6 +30,7 @@
               <img :src="`${$s}${fragment.content}`" class="u-text-img">
             </span>
           </span>
+          <p>Bienvenue sur Significatif /</p>
         </div>
       </div>
     </div>

@@ -7,7 +7,8 @@
     picturesMode="spread"
   >
     <div class="bubble u-appear-scaleup"/>
-    <div class="u-title"><AppearingLine :chars="selfPortraits" :start="-5"/></div>
+    <div class="u-title self"><AppearingLine :chars="self" :start="-5"/></div>
+    <div class="u-title portraits"><AppearingLine :chars="portraits" :start="-5"/></div>
     <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
   </Story>
 </template>
@@ -25,12 +26,13 @@ export default {
   data() {
     return {
       txt: covers['self-portraits'].txt,
-      selfPortraits: [
+      self: [
         { html: 'S' },
         { html: 'e' },
         { html: 'l' },
         { html: 'f' },
-        { html: '&nbsp;' },
+      ],
+      portraits: [
         { html: 'P', class: { 'u-font-ogg': true, 'u-italic': true } },
         { html: 'o', class: { 'u-font-ogg': true, 'u-italic': true } },
         { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
@@ -56,7 +58,12 @@ export default {
   background-color: white;
   border-radius: 50%;
 }
-.u-title {
+.self {
+  position: fixed;
+  top: 20vh;
+  left: 55vw;
+}
+.portraits {
   position: fixed;
   top: 30vh;
   right: 10vw;
@@ -64,6 +71,6 @@ export default {
 .u-text-container {
   top: 45vh;
   left: 55vw;
-  right: 15vw;
+  right: 30vw;
 }
 </style>

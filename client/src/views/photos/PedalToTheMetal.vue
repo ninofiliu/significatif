@@ -70,7 +70,7 @@ export default {
 .pedal {
   position: fixed;
   top: 20vh;
-  right: 30vw;
+  left: 50vw;
 }
 .to-the {
   position: fixed;
@@ -84,9 +84,9 @@ export default {
 }
 .u-text-container {
   top: 60vh;
-  right: 15vw;
+  right: 30vw;
   bottom: 10vh;
-  left: 65vw;
+  left: 50vw;
 }
 
 @media screen and (max-width: 900px) {

@@ -18,7 +18,7 @@
         <RouterLink to="/manifesto">manifesto</RouterLink>
         <RouterLink to="/contact">contact</RouterLink>
         <RouterLink to="/archives">archives</RouterLink>
-        <a href="https://www.instagram.com/victorair_/" target="_blank" rel="noreferrer noopener">instagram</a>
+        <a href="https://www.instagram.com/significa.tif/" target="_blank" rel="noreferrer noopener">instagram</a>
       </div>
     </div>
   </div>
@@ -95,14 +95,14 @@ a {
     display: flex;
     flex-direction: column;
     transition: all .5s;
+    font-size: 2.5rem;
     &.--closed {
       transform: translateX(-100%);
     }
     a {
-      height: 3rem;
       display: flex;
       align-items: center;
-      padding: 0 5vw;
+      padding: 5vw 0 0 5vw;
     }
   }
 }

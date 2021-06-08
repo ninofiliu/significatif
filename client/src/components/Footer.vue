@@ -3,7 +3,7 @@
     <RouterLink to="/archives">
       archives
     </RouterLink>
-    <a href="https://www.instagram.com/victorair_/" target="_blank" rel="noreferrer noopener">
+    <a href="https://www.instagram.com/significa.tif/" target="_blank" rel="noreferrer noopener">
       instagram
     </a>
     <div class="houdan">

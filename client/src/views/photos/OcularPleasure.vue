@@ -67,7 +67,7 @@ export default {
 .pleasure {
   position: fixed;
   bottom: 25vh;
-  right: 20vw;
+  left: 55vw;
 }
 .u-text-container {
   top: 40vh;
