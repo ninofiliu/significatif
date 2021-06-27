@@ -16,14 +16,11 @@
       <div class="prev">
         <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
       </div>
-      <div class="title">
-        {{ storyPictures[current].title }}
-      </div>
+      <div class="desktop-title">{{ storyPictures[current].title }}</div>
       <div class="picture-spacer"/>
       <div class="date">
-        <div>
-        {{ storyPictures[current].place }}
-        </div>
+        <div class="mobile-title">{{ storyPictures[current].title }}</div>
+        <div>{{ storyPictures[current].place }}</div>
         <div>
           {{ storyPictures[current].date.toLocaleString('en', { month: 'long' }) }}
           {{ storyPictures[current].date.getFullYear() }}
@@ -184,62 +181,69 @@ export default {
   left: 5vw;
   align-items: center;
   justify-content: space-around;
+}
 
-  .prev {
-    width: 2vw;
-    img {
-      transform: translateY(.1rem) rotate(180deg);
-      &:hover {
-        cursor: pointer;
-        opacity: 0.5;
-      }
-    }
-  }
-  .title {
-    width: 15vw;
-    text-align: center;
-  }
-  .picture-spacer {
-    width: 50vw;
-  }
-  .date {
-    width: 15vw;
-    text-align: center;
-  }
-  .next {
-    width: 2vw;
-    img {
-      transform: translateY(.1rem);
-      &:hover {
-        cursor: pointer;
-        opacity: 0.5;
-      }
-    }
-  }
-
-  .back {
-    position: fixed;
-    img {
-      width: 2rem;
-      transition: all .5s;
-      position: absolute;
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
-    span {
-      text-transform: uppercase;
-      position: absolute;
-      font-size: .6rem;
-    }
-    @for $i from 1 through 20 {
-      span:nth-child(#{$i}) {
-        transform: translate(-50%, -50%) rotate(#{360 / 22 * $i}deg) translateY(-2rem);
-      }
-    }
+.prev {
+  width: 2vw;
+  img {
+    transform: translateY(.1rem) rotate(180deg);
     &:hover {
       cursor: pointer;
-      img {
-        transform: translate(-50%, -50%) rotate(180deg) scale(.7);
-      }
+      opacity: 0.5;
+    }
+  }
+}
+.desktop-title {
+  width: 15vw;
+  text-align: center;
+}
+.mobile-title {
+  display: none;
+}
+.picture-spacer {
+  width: 50vw;
+}
+.date {
+  width: 15vw;
+  text-align: center;
+}
+.next {
+  width: 2vw;
+  img {
+    transform: translateY(.1rem);
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+    }
+  }
+}
+.prev, .next {
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  position: fixed;
+  img {
+    width: 2rem;
+    transition: all .5s;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  span {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: .6rem;
+  }
+  @for $i from 1 through 20 {
+    span:nth-child(#{$i}) {
+      transform: translate(-50%, -50%) rotate(#{360 / 22 * $i}deg) translateY(-2rem);
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    img {
+      transform: translate(-50%, -50%) rotate(180deg) scale(.7);
     }
   }
 }
@@ -276,6 +280,15 @@ export default {
   .back {
     top: 15vh;
     left: 15vw;
+  }
+  .desktop-title {
+    display: none;
+  }
+  .mobile-title {
+    display: block;
+  }
+  .date {
+    width: calc(100% - 4vw);
   }
 }
 </style>
