@@ -2,7 +2,7 @@
   <div class="Archives">
     <NavBar/>
     <div class="content">
-      <div class="years">
+      <div class="years" :class="{ '--opened': yearsOpened }">
         <div
           class="year-container"
           v-for="year of years"
@@ -12,10 +12,14 @@
           <Year
             :year="year"
             :current="year === currentYear"
+            @done="yearsOpened = false"
           />
         </div>
       </div>
       <div class="data">
+        <div class="years-button" @click="yearsOpened = true">
+          {{ currentYear }} - other years...
+        </div>
         <img v-show="show" :src="`${$s}${src}`" :style="{ left: `${left}px`, top: `${top}px` }">
         <div class="table">
           <div class="row">
@@ -83,6 +87,7 @@ export default {
       searchedDate: '',
       searchedName: '',
       searchedLocation: '',
+      yearsOpened: false,
     };
   },
   computed: {
@@ -214,6 +219,38 @@ input {
   &::placeholder {
     color: var(--red);
     opacity: .5;
+  }
+}
+.years-button {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .years {
+    display: none;
+    display: block;
+    position: absolute;
+    background-color: var(--white);
+    width: 90%;
+    z-index: 10;
+    transform: translateX(-100vw);
+    transition: all .5s;
+    &.--opened {
+      transform: translateX(0);
+    }
+  }
+  .data {
+    width: 90%;
+  }
+  .row div {
+    width: 50%;
+    &:nth-child(1) {
+      display: none;
+    }
+  }
+  .years-button {
+    display: block;
+    text-transform: uppercase;
   }
 }
 </style>

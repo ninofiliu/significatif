@@ -29,6 +29,7 @@ export default {
   created() {
     const update = () => {
       if (this.isDestroyed) return;
+      if (this.current && this.progress < 1 && this.progress + 1 / 50 >= 1) this.$emit('done');
       if (this.current && this.progress < 1) this.progress += 1 / 50;
       if (!this.current && this.progress > 0) this.progress -= 1 / 50;
       requestAnimationFrame(update);
