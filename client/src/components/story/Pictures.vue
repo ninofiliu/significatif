@@ -10,12 +10,12 @@
     @click="$emit('click')"
   >
     <img
-      v-for="(picture, index) of pictures"
+      v-for="(picture, index) of [...pictures].reverse()"
       :key="picture.src"
       v-media="picture.src"
       :class="{
-        '--before': current > index,
-        '--after': current < index,
+        '--before': current > pictures.length - index - 1,
+        '--after': current < pictures.length - index - 1,
       }"
       @click.stop="$emit('click', index)"
     >
