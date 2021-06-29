@@ -89,11 +89,14 @@ export default {
       home: true,
       randCurrent: 0,
       scrolling: false,
+      xAtStart: null,
     };
   },
   created() {
     document.addEventListener('keyup', this.onkeyup);
     document.addEventListener('wheel', this.onwheel);
+    document.addEventListener('touchstart', this.ontouchstart);
+    document.addEventListener('touchend', this.ontouchend);
     if (this.$route.query.current) {
       this.randCurrent = this.randMap[+this.$route.query.current];
       this.home = false;
@@ -102,6 +105,8 @@ export default {
   destroyed() {
     document.removeEventListener('keyup', this.onkeyup);
     document.removeEventListener('wheel', this.onwheel);
+    document.removeEventListener('touchstart', this.ontouchstart);
+    document.removeEventListener('touchend', this.ontouchend);
   },
   computed: {
     current() {
@@ -140,6 +145,27 @@ export default {
       if (this.home) return;
       if (evt.deltaY > 0) this.scrollNext();
       if (evt.deltaY < 0) this.scrollPrev();
+    },
+    ontouchstart(evt) {
+      this.xAtStart = evt.touches[0].clientX;
+    },
+    ontouchend(evt) {
+      const xAtEnd = evt.changedTouches[0].clientX;
+      if (this.xAtStart < xAtEnd) {
+        if (this.home) {
+          //
+        } else {
+          this.scrollPrev();
+        }
+      }
+      if (this.xAtStart > xAtEnd) {
+        if (this.home) {
+          //
+        } else {
+          this.scrollNext();
+        }
+      }
+      this.xAtStart = null;
     },
     scrollNext() {
       this.scrollTo((this.randCurrent + 1) % this.storyPictures.length);

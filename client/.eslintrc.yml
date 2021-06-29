@@ -16,3 +16,4 @@ rules:
   no-plusplus: off
   no-restricted-syntax: off
   max-len: off
+  prefer-destructuring: off
