@@ -90,7 +90,7 @@ export default {
 }
 
 @media screen and (max-width: 900px) {
-  .pedal { top: 15vh; right: 10vw; }
+  .pedal { top: 15vh; right: 10vw; left: initial; }
   .to-the { top: 25vh; right: 20vw; }
   .metal { top: 30vh; right: 50vw; }
   .bubble { top: -5vh; right: -40vw; }
