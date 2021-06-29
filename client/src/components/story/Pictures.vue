@@ -14,8 +14,10 @@
       :key="picture.src"
       v-media="picture.src"
       :class="{
-        '--before': current > pictures.length - index - 1,
-        '--after': current < pictures.length - index - 1,
+        '--before': current > pictures.length - index,
+        '--just-before': current === pictures.length - index,
+        '--just-after': current === pictures.length - index - 2,
+        '--after': current < pictures.length - index - 2,
       }"
       @click.stop="$emit('click', index)"
     >
@@ -51,10 +53,16 @@ img {
 }
 .--hidden {
   img.--before {
+    display: none;
+  }
+  img.--just-before {
     transform: translateX(-100vw);
   }
-  img.--after {
+  img.--just-after {
     transform: translateX(100vw);
+  }
+  img.--after {
+    display: none;
   }
 }
 
@@ -65,6 +73,9 @@ img {
     }
     img:nth-last-child(2) {
       transform: rotate(5deg);
+    }
+    img:nth-last-child(1n+3) {
+      display: none;
     }
     &:hover {
       cursor: pointer;
@@ -82,6 +93,9 @@ img {
     }
     img:nth-last-child(1) {
       transform: translate(-5vw)
+    }
+    img:nth-last-child(1n+3) {
+      display: none;
     }
     &:hover {
       cursor: pointer;
