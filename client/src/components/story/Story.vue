@@ -1,38 +1,40 @@
 <template>
   <div class="story" :class="{ '--home': home }">
     <NavBar/>
-    <div class="background" :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"/>
-    <Pictures
-      :mode="home ? picturesMode : 'hidden'"
-      :position="home ? picturesPosition : {}"
-      :pictures="randStoryPictures"
-      :current="randCurrent"
-      @click="goPictures"
-    />
-    <div class="article">
-      <slot/>
-    </div>
-    <div class="details" v-if="!home">
-      <div class="prev">
-        <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
+    <div class="swipable" :class="{ '--next': shift < 0, '--prev': shift > 0 }">
+      <div class="background" :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"/>
+      <Pictures
+        :mode="home ? picturesMode : 'hidden'"
+        :position="home ? picturesPosition : {}"
+        :pictures="randStoryPictures"
+        :current="randCurrent"
+        @click="goPictures"
+      />
+      <div class="article">
+        <slot/>
       </div>
-      <div class="desktop-title">{{ randStoryPictures[randCurrent].title }}</div>
-      <div class="picture-spacer"/>
-      <div class="date">
-        <div class="mobile-title">{{ randStoryPictures[randCurrent].title }}</div>
-        <div>{{ randStoryPictures[randCurrent].place }}</div>
-        <div>
-          {{ randStoryPictures[randCurrent].date.toLocaleString('en', { month: 'long' }) }}
-          {{ randStoryPictures[randCurrent].date.getFullYear() }}
+      <div class="details" v-if="!home">
+        <div class="prev">
+          <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
         </div>
-      </div>
-      <div class="next">
-        <img @click="scrollNext" src="../../assets/arrow-small.svg"/>
-      </div>
-      <div class="back">
-        <img @click="goHome" src="../../assets/arrow-medium.svg"/>
-        <div class="u-rotate">
-          <span v-for="(letter, index) of 'return to the album'.split('')" :key="index">{{ letter }}</span>
+        <div class="desktop-title">{{ randStoryPictures[randCurrent].title }}</div>
+        <div class="picture-spacer"/>
+        <div class="date">
+          <div class="mobile-title">{{ randStoryPictures[randCurrent].title }}</div>
+          <div>{{ randStoryPictures[randCurrent].place }}</div>
+          <div>
+            {{ randStoryPictures[randCurrent].date.toLocaleString('en', { month: 'long' }) }}
+            {{ randStoryPictures[randCurrent].date.getFullYear() }}
+          </div>
+        </div>
+        <div class="next">
+          <img @click="scrollNext" src="../../assets/arrow-small.svg"/>
+        </div>
+        <div class="back">
+          <img @click="goHome" src="../../assets/arrow-medium.svg"/>
+          <div class="u-rotate">
+            <span v-for="(letter, index) of 'return to the album'.split('')" :key="index">{{ letter }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -46,6 +48,8 @@ import pictures from '../../content/pictures.json';
 import Footer from '../Footer.vue';
 import NavBar from '../NavBar.vue';
 import Pictures from './Pictures.vue';
+
+let prevShift;
 
 const createRandMap = (size) => {
   const available = new Set(Array(size).fill().map((_, i) => i));
@@ -90,6 +94,8 @@ export default {
       randCurrent: 0,
       scrolling: false,
       xAtStart: null,
+      shift: 0,
+      goingToStory: false,
     };
   },
   created() {
@@ -100,6 +106,15 @@ export default {
     if (this.$route.query.current) {
       this.randCurrent = this.randMap[+this.$route.query.current];
       this.home = false;
+    }
+    if (prevShift) {
+      this.shift = -prevShift;
+      this.goingToStory = true;
+      setTimeout(() => {
+        this.shift = 0;
+        prevShift = undefined;
+        this.goingToStory = false;
+      }, 250);
     }
   },
   destroyed() {
@@ -131,8 +146,20 @@ export default {
       this.$router.replace({ path: this.$route.path, query: {} });
     },
     onkeyup(evt) {
-      if (evt.key === 'ArrowRight') this.scrollNext();
-      if (evt.key === 'ArrowLeft') this.scrollPrev();
+      if (evt.key === 'ArrowRight') {
+        if (this.home) {
+          this.goToStory(+1);
+        } else {
+          this.scrollNext();
+        }
+      }
+      if (evt.key === 'ArrowLeft') {
+        if (this.home) {
+          this.goToStory(-1);
+        } else {
+          this.scrollPrev();
+        }
+      }
       if (evt.key === 'Escape') {
         if (this.home) {
           this.$router.go(-1);
@@ -142,25 +169,36 @@ export default {
       }
     },
     onwheel(evt) {
-      if (this.home) return;
-      if (evt.deltaX > 0) this.scrollNext();
-      if (evt.deltaX < 0) this.scrollPrev();
+      if (evt.deltaX > 0) {
+        if (this.home) {
+          this.goToStory(+1);
+        } else {
+          this.scrollNext();
+        }
+      }
+      if (evt.deltaX < 0) {
+        if (this.home) {
+          this.goToStory(-1);
+        } else {
+          this.scrollPrev();
+        }
+      }
     },
     ontouchstart(evt) {
       this.xAtStart = evt.touches[0].clientX;
     },
     ontouchend(evt) {
       const xAtEnd = evt.changedTouches[0].clientX;
-      if (this.xAtStart < xAtEnd) {
+      if (this.xAtStart < xAtEnd - window.innerWidth / 10) {
         if (this.home) {
-          //
+          this.goToStory(-1);
         } else {
           this.scrollPrev();
         }
       }
-      if (this.xAtStart > xAtEnd) {
+      if (this.xAtStart > xAtEnd + window.innerWidth / 10) {
         if (this.home) {
-          //
+          this.goToStory(+1);
         } else {
           this.scrollNext();
         }
@@ -180,18 +218,36 @@ export default {
       this.randCurrent = index;
       this.updateRoute();
     },
+    goToStory(shift) {
+      if (this.goingToStory) return;
+      this.goingToStory = true;
+      const nextIndex = (stories.length + stories.findIndex((story) => story.id === this.id) + shift) % stories.length;
+      this.shift = shift;
+      setTimeout(() => {
+        prevShift = shift;
+        this.goingToStory = false;
+        this.$router.push(`/photos/${stories[nextIndex].id}`);
+      }, 250);
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.swipable {
+  transition: all .5s;
+  height: 100vh;
+  &.--next {
+    transform: translateX(100vw);
+  }
+  &.--prev {
+    transform: translateX(-100vw);
+  }
+}
 .background {
   position: fixed;
   transition: all .5s;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0 0 0 0;
 }
 .article {
   transition: all .5s;
