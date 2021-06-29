@@ -10,13 +10,14 @@
     @click="$emit('click')"
   >
     <img
-      v-for="({ src }, index) of [...(mode === 'hidden' ? pictures : pictures.slice(0,2))].reverse()"
-      :key="src"
-      v-media="src"
+      v-for="(picture, index) of pictures"
+      :key="picture.src"
+      v-media="picture.src"
       :class="{
-        '--before': current > pictures.length - index - 1,
-        '--after': current < pictures.length - index - 1,
+        '--before': current > index,
+        '--after': current < index,
       }"
+      @click.stop="$emit('click', index)"
     >
   </div>
 </template>
@@ -48,40 +49,6 @@ img {
   position: absolute;
   transition: all .5s;
 }
-.--spread {
-  img:nth-last-child(1) {
-    transform: rotate(-5deg);
-  }
-  img:nth-last-child(2) {
-    transform: rotate(5deg);
-  }
-  &:hover {
-    cursor: pointer;
-    img:nth-last-child(1) {
-      transform: rotate(5deg);
-    }
-    img:nth-last-child(2) {
-      transform: rotate(-5deg);
-    }
-  }
-}
-.--horizontal {
-  img {
-    object-position: right top;
-  }
-  img:nth-last-child(1) {
-    transform: translate(-5vw)
-  }
-  &:hover {
-    cursor: pointer;
-    img:nth-last-child(1) {
-      transform: translate(-10vw)
-    }
-    img:nth-last-child(2) {
-      transform: translate(-3vw)
-    }
-  }
-}
 .--hidden {
   img.--before {
     transform: translateX(-100vw);
@@ -90,12 +57,59 @@ img {
     transform: translateX(100vw);
   }
 }
+
+@media screen and (min-width: 900px) {
+  .--spread {
+    img:nth-last-child(1) {
+      transform: rotate(-5deg);
+    }
+    img:nth-last-child(2) {
+      transform: rotate(5deg);
+    }
+    &:hover {
+      cursor: pointer;
+      img:nth-last-child(1) {
+        transform: rotate(5deg);
+      }
+      img:nth-last-child(2) {
+        transform: rotate(-5deg);
+      }
+    }
+  }
+  .--horizontal {
+    img {
+      object-position: right top;
+    }
+    img:nth-last-child(1) {
+      transform: translate(-5vw)
+    }
+    &:hover {
+      cursor: pointer;
+      img:nth-last-child(1) {
+        transform: translate(-10vw)
+      }
+      img:nth-last-child(2) {
+        transform: translate(-3vw)
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
   .--hidden {
     inset: 6vh 5vw;
   }
   .pictures:not(.--hidden) {
     inset: 45vh 5vw 10vh 50vw !important;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    img {
+      height: initial;
+      position: initial;
+    }
   }
 }
 </style>

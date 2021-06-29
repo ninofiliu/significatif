@@ -16,14 +16,14 @@
       <div class="prev">
         <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
       </div>
-      <div class="desktop-title">{{ storyPictures[current].title }}</div>
+      <div class="desktop-title">{{ randStoryPictures[randCurrent].title }}</div>
       <div class="picture-spacer"/>
       <div class="date">
-        <div class="mobile-title">{{ storyPictures[current].title }}</div>
-        <div>{{ storyPictures[current].place }}</div>
+        <div class="mobile-title">{{ randStoryPictures[randCurrent].title }}</div>
+        <div>{{ randStoryPictures[randCurrent].place }}</div>
         <div>
-          {{ storyPictures[current].date.toLocaleString('en', { month: 'long' }) }}
-          {{ storyPictures[current].date.getFullYear() }}
+          {{ randStoryPictures[randCurrent].date.toLocaleString('en', { month: 'long' }) }}
+          {{ randStoryPictures[randCurrent].date.getFullYear() }}
         </div>
       </div>
       <div class="next">
@@ -115,9 +115,10 @@ export default {
         query: { current: this.invertedRandMap[this.randCurrent] },
       });
     },
-    goPictures() {
+    goPictures(index) {
+      if (!this.home) return;
       this.home = false;
-      this.randCurrent = 0;
+      this.randCurrent = index;
       this.updateRoute();
     },
     goHome() {
@@ -289,6 +290,9 @@ export default {
   }
   .date {
     width: calc(100% - 4vw);
+  }
+  .background {
+    inset: 0 0 0 0 !important;
   }
 }
 </style>
