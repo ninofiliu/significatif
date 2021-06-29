@@ -5,9 +5,15 @@
     <div class="center">
       <div class="landing">
         <PicturesSnake/>
-        <div class="text">
+        <div class="text-desktop">
           <AppearingLine :chars="letMeTell"/>
           <AppearingLine :chars="youAStory" :start="-10"/>
+          <img src="../../assets/arrow-large.svg"/>
+        </div>
+        <div class="text-mobile">
+          <AppearingLine :chars="letMe"/>
+          <AppearingLine :chars="tellYou" :start="-8"/>
+          <AppearingLine :chars="aStory" :start="-16"/>
           <img src="../../assets/arrow-large.svg"/>
         </div>
       </div>
@@ -46,6 +52,41 @@ import Footer from '../../components/Footer.vue';
 import PicturesSnake from './PicturesSnake.vue';
 import manifestoContent from '../../content/manifesto.json';
 
+const words = {
+  space: { html: '&nbsp;', class: {} },
+  let: [
+    { html: 'L', class: {} },
+    { html: 'E', class: {} },
+    { html: 'T', class: {} }],
+  me: [
+    { html: 'M', class: {} },
+    { html: 'E', class: {} }],
+  tell: [
+    { html: 'T', underline: true },
+    { html: 'E', underline: true },
+    { html: 'L', underline: true },
+    { html: 'L', underline: true }],
+  you: [
+    { html: 'Y', class: {} },
+    { html: 'O', class: {} },
+    { html: 'U', class: {} }],
+  a: [
+    { html: 'A', class: {} }],
+  story: [
+    { html: 'S', class: {} },
+    { html: 'T', class: {} },
+    { html: 'm', class: { 'u-font-good-glyphs': true } },
+    { html: 'R', class: {} },
+    { html: 'Y', class: {} },
+    { html: '.', class: {} }],
+};
+
+const letMeTell = [...words.let, words.space, ...words.me, words.space, ...words.tell];
+const youAStory = [...words.you, words.space, ...words.a, words.space, ...words.story];
+const letMe = [...words.let, words.space, ...words.me];
+const tellYou = [...words.tell, words.space, ...words.you];
+const aStory = [...words.a, words.space, ...words.story];
+
 export default {
   components: {
     AppearingLine,
@@ -56,33 +97,11 @@ export default {
   data() {
     return {
       manifestoContent,
-      letMeTell: [
-        { html: 'L', class: {} },
-        { html: 'E', class: {} },
-        { html: 'T', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'M', class: {} },
-        { html: 'E', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'T', underline: true },
-        { html: 'E', underline: true },
-        { html: 'L', underline: true },
-        { html: 'L', underline: true },
-      ],
-      youAStory: [
-        { html: 'Y', class: {} },
-        { html: 'O', class: {} },
-        { html: 'U', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'A', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'S', class: {} },
-        { html: 'T', class: {} },
-        { html: 'm', class: { 'u-font-good-glyphs': true } },
-        { html: 'R', class: {} },
-        { html: 'Y', class: {} },
-        { html: '.', class: {} },
-      ],
+      letMeTell,
+      youAStory,
+      letMe,
+      tellYou,
+      aStory,
     };
   },
 };
@@ -144,14 +163,17 @@ export default {
   height: 100vh;
   align-items: center;
   position: relative;
-  .text {
-    font-size: 5.5rem;
-    pointer-events: none;
-    z-index: 100;
-  }
   img {
     transform: translateY(9rem);
   }
+}
+.text-desktop {
+  font-size: 5.5rem;
+  pointer-events: none;
+  z-index: 100;
+}
+.text-mobile {
+  display: none;
 }
 hr {
   margin-top: 0;
@@ -181,8 +203,14 @@ hr {
 }
 
 @media screen and (max-width: 900px) {
-  .landing .text {
-    font-size: 3rem;
+  .text-desktop {
+    display: none;
+  }
+  .text-mobile {
+    display: block;
+    font-size: 3.5rem;
+    pointer-events: none;
+    z-index: 100;
   }
   @keyframes scaleup-big {
     from {
