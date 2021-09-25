@@ -54,14 +54,14 @@
     "place": "Lisbon"
   },
   {
-    "src": "cross-the-borders/aout2019.Peinture-amour-fête-2.Portugal.jpg",
-    "title": "Peinture amour fête 2",
+    "src": "cross-the-borders/aout2019.Peinture-amour-fête-2.Portugal.jpg",
+    "title": "Peinture amour fête 2",
     "date": "2019-08-01",
     "place": "Portugal"
   },
   {
-    "src": "cross-the-borders/aout2019.Peinture-amour-fête.Portugal.jpg",
-    "title": "Peinture amour fête",
+    "src": "cross-the-borders/aout2019.Peinture-amour-fête.Portugal.jpg",
+    "title": "Peinture amour fête",
     "date": "2019-08-01",
     "place": "Portugal"
   },
@@ -138,16 +138,16 @@
     "place": "Peniche"
   },
   {
+    "src": "cross-the-borders/aout2020.Pêcheur.Peniche.jpg",
+    "title": "Pêcheur",
+    "date": "2020-08-01",
+    "place": "Peniche"
+  },
+  {
     "src": "cross-the-borders/aout2020.Portugal-Hills.Portugal.jpg",
     "title": "Portugal Hills",
     "date": "2020-08-01",
     "place": "Portugal"
-  },
-  {
-    "src": "cross-the-borders/aout2020.Pêcheur.Peniche.jpg",
-    "title": "Pêcheur",
-    "date": "2020-08-01",
-    "place": "Peniche"
   },
   {
     "src": "cross-the-borders/aout2020.Rocks.Portugal.jpg",
@@ -816,8 +816,8 @@
     "place": "Moscou"
   },
   {
-    "src": "humans/decembre2020.Le-Cirque-noël.Mericourt.jpg",
-    "title": "Le Cirque noël",
+    "src": "humans/decembre2020.Le-Cirque-noël.Mericourt.jpg",
+    "title": "Le Cirque noël",
     "date": "2020-12-01",
     "place": "Mericourt"
   },
@@ -844,12 +844,6 @@
     "title": "Diadie kitchen",
     "date": "2020-02-01",
     "place": "Le splendid, Paris"
-  },
-  {
-    "src": "humans/fevrier2020.Diana.Paris.jpg",
-    "title": "Diana",
-    "date": "2020-02-01",
-    "place": "Paris"
   },
   {
     "src": "humans/fevrier2020.Eqstasya-Parkingstone.Petit-bain,-Paris.jpg",
@@ -1044,10 +1038,10 @@
     "place": "Le Consulat, Paris"
   },
   {
-    "src": "humans/juin2019.Alexis-in-a-caddie-Walkman.Coignères.jpg",
+    "src": "humans/juin2019.Alexis-in-a-caddie-Walkman.Coignères.jpg",
     "title": "Alexis in a caddie Walkman",
     "date": "2019-06-01",
-    "place": "Coignères"
+    "place": "Coignères"
   },
   {
     "src": "humans/juin2019.Alexis-in-a-caddie.Coigneres.jpg",
@@ -1056,10 +1050,10 @@
     "place": "Coigneres"
   },
   {
-    "src": "humans/juin2019.Benjamin-and-Roxanne.Beaumont-du-Gâtinais.jpg",
+    "src": "humans/juin2019.Benjamin-and-Roxanne.Beaumont-du-Gâtinais.jpg",
     "title": "Benjamin and Roxanne",
     "date": "2019-06-01",
-    "place": "Beaumont du Gâtinais"
+    "place": "Beaumont du Gâtinais"
   },
   {
     "src": "humans/juin2019.Emile.Richebourg.jpg",
@@ -1206,12 +1200,6 @@
     "place": "Yvelines"
   },
   {
-    "src": "humans/mai2019.Margherita-long-arms-couch.Rue-Quincampoix,-Paris.jpg",
-    "title": "Margherita long arms couch",
-    "date": "2019-05-01",
-    "place": "Rue Quincampoix, Paris"
-  },
-  {
     "src": "humans/mai2020.Ana.Yvelines.jpg",
     "title": "Ana",
     "date": "2020-05-01",
@@ -1254,8 +1242,8 @@
     "place": "Peripate, Paris"
   },
   {
-    "src": "humans/mars2020.Café-Etienne.Paris.jpg",
-    "title": "Café Etienne",
+    "src": "humans/mars2020.Café-Etienne.Paris.jpg",
+    "title": "Café Etienne",
     "date": "2020-03-01",
     "place": "Paris"
   },
@@ -1344,8 +1332,8 @@
     "place": "Chatelet"
   },
   {
-    "src": "humans/octobre2018.Claudine-à-la-cave.Yvelines.jpg",
-    "title": "Claudine à la cave",
+    "src": "humans/octobre2018.Claudine-à-la-cave.Yvelines.jpg",
+    "title": "Claudine à la cave",
     "date": "2018-10-01",
     "place": "Yvelines"
   },
@@ -1458,10 +1446,10 @@
     "place": "Paris"
   },
   {
-    "src": "humans/septembre2019.Club-kids-Nouvelle-Vogue.Gaité-Lyrique.jpg",
+    "src": "humans/septembre2019.Club-kids-Nouvelle-Vogue.Gaité-Lyrique.jpg",
     "title": "Club kids Nouvelle Vogue",
     "date": "2019-09-01",
-    "place": "Gaité Lyrique"
+    "place": "Gaité Lyrique"
   },
   {
     "src": "ocular-pleasure/aout2018.Windmill-rose-des-vents.Albanie.jpg",
@@ -1522,12 +1510,6 @@
     "title": "Robot gun",
     "date": "2019-04-01",
     "place": "Marseille"
-  },
-  {
-    "src": "ocular-pleasure/avril2019.Sunset-orange.Trouville.jpg",
-    "title": "Sunset orange",
-    "date": "2019-04-01",
-    "place": "Trouville"
   },
   {
     "src": "ocular-pleasure/avril2020.Dancing-in-the-wind.Yvelines.jpg",
@@ -1666,6 +1648,12 @@
     "title": "concert",
     "date": "2020-02-01",
     "place": "Silencio"
+  },
+  {
+    "src": "ocular-pleasure/janvier2019.Sunset-orange.Trouville.jpg",
+    "title": "Sunset orange",
+    "date": "2019-01-01",
+    "place": "Trouville"
   },
   {
     "src": "ocular-pleasure/janvier2019.broken-window.Yvelines.jpg",
@@ -1950,8 +1938,8 @@
     "place": "Moscou"
   },
   {
-    "src": "pedal-to-the-metal/juin2020.Fête-de-la-police.Parc-de-Vincennes,-Paris.jpg",
-    "title": "Fête de la police",
+    "src": "pedal-to-the-metal/juin2020.Fête-de-la-police.Parc-de-Vincennes,-Paris.jpg",
+    "title": "Fête de la police",
     "date": "2020-06-01",
     "place": "Parc de Vincennes, Paris"
   },
@@ -2130,8 +2118,8 @@
     "place": "Parkingstone, Paris"
   },
   {
-    "src": "ride-shoot-repeat/fevrier2020.x.Xulybet.jpg",
-    "title": "x",
+    "src": "ride-shoot-repeat/fevrier2020.unknown.Xulybet.jpg",
+    "title": "unknown",
     "date": "2020-02-01",
     "place": "Xulybet"
   },
@@ -2322,12 +2310,6 @@
     "place": "Barcelone"
   },
   {
-    "src": "ride-shoot-repeat/novembre2019.les-triplettes-de-barcelone-kira.Barcelone.jpg",
-    "title": "les triplettes de barcelone kira",
-    "date": "2019-11-01",
-    "place": "Barcelone"
-  },
-  {
     "src": "ride-shoot-repeat/novembre2019.panzer-dj.Rex-paris.jpg",
     "title": "panzer dj",
     "date": "2019-11-01",
@@ -2514,8 +2496,8 @@
     "place": "Saint ouen"
   },
   {
-    "src": "self-portraits/septembre2019.Square-blackandwhite.Paris.png",
-    "title": "Square blackandwhite",
+    "src": "self-portraits/septembre2019.Square-blackandwhite-.Paris.jpg",
+    "title": "Square blackandwhite ",
     "date": "2019-09-01",
     "place": "Paris"
   },
@@ -3084,12 +3066,6 @@
     "place": "Trouville"
   },
   {
-    "src": "taste-of-farniente/aout2020.marta-beach.Portugal.jpg",
-    "title": "marta beach",
-    "date": "2020-08-01",
-    "place": "Portugal"
-  },
-  {
     "src": "taste-of-farniente/aout2020.maya.Trouville.jpg",
     "title": "maya",
     "date": "2020-08-01",
@@ -3112,12 +3088,6 @@
     "title": "hyères sunset",
     "date": "2019-04-01",
     "place": "Hyères"
-  },
-  {
-    "src": "taste-of-farniente/avril2019.lisa.Marseille.jpg",
-    "title": "lisa",
-    "date": "2019-04-01",
-    "place": "Marseille"
   },
   {
     "src": "taste-of-farniente/avril2020.lydia-sunset.Yvelines.jpg",
@@ -3230,12 +3200,6 @@
   {
     "src": "taste-of-farniente/juin2019.Pink-flamingo.Paris.jpg",
     "title": "Pink flamingo",
-    "date": "2019-06-01",
-    "place": "Paris"
-  },
-  {
-    "src": "taste-of-farniente/juin2019.fujimine.Paris.jpg",
-    "title": "fujimine",
     "date": "2019-06-01",
     "place": "Paris"
   },
@@ -3366,12 +3330,6 @@
     "place": "Lapaix, Paris"
   },
   {
-    "src": "taste-of-farniente/novembre2019.Kira-Rafeh.Barcelone.jpg",
-    "title": "Kira Rafeh",
-    "date": "2019-11-01",
-    "place": "Barcelone"
-  },
-  {
     "src": "taste-of-farniente/novembre2019.alexis-blurry.Yvelines.jpg",
     "title": "alexis blurry",
     "date": "2019-11-01",
@@ -3382,18 +3340,6 @@
     "title": "alexis cigarette",
     "date": "2019-11-01",
     "place": "Yvelines"
-  },
-  {
-    "src": "taste-of-farniente/novembre2019.darina.Paris.jpg",
-    "title": "darina",
-    "date": "2019-11-01",
-    "place": "Paris"
-  },
-  {
-    "src": "taste-of-farniente/octobre2019.kira-red.Paris.jpg",
-    "title": "kira red",
-    "date": "2019-10-01",
-    "place": "Paris"
   },
   {
     "src": "taste-of-farniente/octobre2019.womens.Paris-la-perle.jpg",
