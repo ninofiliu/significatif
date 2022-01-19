@@ -3,10 +3,16 @@ if [ $# -lt 1 ]; then echo "Usage: source scripts.sh COMMAND"; return; fi
 
 case $1 in
   pull)
-    gsutil -m rsync -d -r gs://significatif static
+    gsutil -m rsync -r gs://significatif static
+    ;;
+  pull-and-delete)
+    gsutil -m rsync -r -d gs://significatif static
     ;;
   push)
-    gsutil -m rsync -d -r static gs://significatif
+    gsutil -m rsync -r static gs://significatif
+    ;;
+  push-and-delete)
+    gsutil -m rsync -r -d static gs://significatif
     ;;
   exts)
     echo static/**/*.* | fmt -w 1 | grep -o '\.[^\.]*$' | sort | uniq -c | sort -n
