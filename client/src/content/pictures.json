@@ -234,6 +234,30 @@
     "place": "New York"
   },
   {
+    "src": "cross-the-borders/avril2021.Christine-au-Soleil.Marcellus.jpg",
+    "title": "Christine au Soleil",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "cross-the-borders/avril2021.La-Prairie-Classic.Marcellus.jpg",
+    "title": "La Prairie Classic",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "cross-the-borders/avril2021.Point-of-View.Marcellus.jpg",
+    "title": "Point of View",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "cross-the-borders/avril2021.Point-of-View1.Marcellus.jpg",
+    "title": "Point of View1",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
     "src": "cross-the-borders/decembre2018.Julien-and-Ana-Bord-de-Seine.Yvelines.jpg",
     "title": "Julien and Ana Bord de Seine",
     "date": "2018-12-01",
@@ -336,6 +360,24 @@
     "place": "Rostov, Russia"
   },
   {
+    "src": "cross-the-borders/decembre2020.Green-Patience.Barbizon.jpg",
+    "title": "Green Patience",
+    "date": "2020-12-01",
+    "place": "Barbizon"
+  },
+  {
+    "src": "cross-the-borders/fevrier2021.E--Do-Studio-Dima.Saint--Ouen.jpg",
+    "title": "E  Do Studio Dima",
+    "date": "2021-02-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "cross-the-borders/janvier2021.My-Office-my-Thoughts.Paris.jpg",
+    "title": "My Office my Thoughts",
+    "date": "2021-01-01",
+    "place": "Paris"
+  },
+  {
     "src": "cross-the-borders/juillet2018.Julien-in-Christine-eating.Slovenia.jpg",
     "title": "Julien in Christine eating",
     "date": "2018-07-01",
@@ -432,6 +474,12 @@
     "place": "Les lilas"
   },
   {
+    "src": "cross-the-borders/novembre2020.Sunset.Trouville.jpg",
+    "title": "Sunset",
+    "date": "2020-11-01",
+    "place": "Trouville"
+  },
+  {
     "src": "cross-the-borders/octobre2020.corn-seller.Porte-de-clignancourt.jpg",
     "title": "corn seller",
     "date": "2020-10-01",
@@ -492,8 +540,8 @@
     "place": "Coimbra"
   },
   {
-    "src": "humans/aout2020.Maya-Mélancolie.Normandie.jpg",
-    "title": "Maya Mélancolie",
+    "src": "humans/aout2020.Maya-Melancolie.Normandie.jpg",
+    "title": "Maya Melancolie",
     "date": "2020-08-01",
     "place": "Normandie"
   },
@@ -624,6 +672,12 @@
     "place": "Richebourg"
   },
   {
+    "src": "humans/avril2021.Julien-in-the-Shower.Marcellus.jpg",
+    "title": "Julien in the Shower",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
     "src": "humans/decembre2017.Japanese-twins.Bougival.jpg",
     "title": "Japanese twins",
     "date": "2017-12-01",
@@ -660,8 +714,8 @@
     "place": "Saint Petersbourg"
   },
   {
-    "src": "humans/decembre2019.Gérard-and-Ana.Mericourt.jpg",
-    "title": "Gérard and Ana",
+    "src": "humans/decembre2019.Gerard-and-Ana.Mericourt.jpg",
+    "title": "Gerard and Ana",
     "date": "2019-12-01",
     "place": "Mericourt"
   },
@@ -822,6 +876,12 @@
     "place": "Mericourt"
   },
   {
+    "src": "humans/decembre2020.Maya-Kitchen.Trouville.jpg",
+    "title": "Maya Kitchen",
+    "date": "2020-12-01",
+    "place": "Trouville"
+  },
+  {
     "src": "humans/fevrier2017.Julien-bonnet.Paris.jpg",
     "title": "Julien bonnet",
     "date": "2017-02-01",
@@ -886,6 +946,18 @@
     "title": "Summer Satana Parkingstone",
     "date": "2020-02-01",
     "place": "Petit bain, Paris"
+  },
+  {
+    "src": "humans/fevrier2021.Dima&Serge-du-Dessous.Saint--Ouen.jpg",
+    "title": "Dima&Serge du Dessous",
+    "date": "2021-02-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "humans/fevrier2021.Dima-&-Serge-Panneau-E--Do.Saint--Ouen.jpg",
+    "title": "Dima & Serge Panneau E  Do",
+    "date": "2021-02-01",
+    "place": "Saint  Ouen"
   },
   {
     "src": "humans/janvier2018.Ali-Antoine-Natacha-Ana-Remy.Paris.jpg",
@@ -954,6 +1026,30 @@
     "place": "Paris"
   },
   {
+    "src": "humans/janvier2021.Dima-Porte.Saint--Ouen.jpg",
+    "title": "Dima Porte",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "humans/janvier2021.Nettoyage-Connecte.Saint--Ouen.jpg",
+    "title": "Nettoyage Connecte",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "humans/janvier2021.Samuel-repare.Marcellus.jpg",
+    "title": "Samuel repare",
+    "date": "2021-01-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "humans/janvier2021.Serge-Placo.Saint--Ouen.jpg",
+    "title": "Serge Placo",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
     "src": "humans/juillet2019.1.Studiopinup.jpg",
     "title": "1",
     "date": "2019-07-01",
@@ -966,8 +1062,8 @@
     "place": "Studiopinup"
   },
   {
-    "src": "humans/juillet2019.Hervé-Punk-haircut.Paris.jpg",
-    "title": "Hervé Punk haircut",
+    "src": "humans/juillet2019.Herve-Punk-haircut.Paris.jpg",
+    "title": "Herve Punk haircut",
     "date": "2019-07-01",
     "place": "Paris"
   },
@@ -1230,6 +1326,12 @@
     "place": "Yvelines"
   },
   {
+    "src": "humans/mai2021.Auction-Sale.Marcellus.jpg",
+    "title": "Auction Sale",
+    "date": "2021-05-01",
+    "place": "Marcellus"
+  },
+  {
     "src": "humans/mars2019.Didi-love.Peripate,-Paris.jpg",
     "title": "Didi love",
     "date": "2019-03-01",
@@ -1242,8 +1344,8 @@
     "place": "Peripate, Paris"
   },
   {
-    "src": "humans/mars2020.Café-Etienne.Paris.jpg",
-    "title": "Café Etienne",
+    "src": "humans/mars2020.Cafe-Etienne.Paris.jpg",
+    "title": "Cafe Etienne",
     "date": "2020-03-01",
     "place": "Paris"
   },
@@ -1264,6 +1366,36 @@
     "title": "Katia hair",
     "date": "2020-03-01",
     "place": "Richebourg"
+  },
+  {
+    "src": "humans/mars2021.Clement-Guinamard-Chaussettes.Saint--Ouen.jpg",
+    "title": "Clement Guinamard Chaussettes",
+    "date": "2021-03-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "humans/mars2021.Jules-Pressiat.Saint--Ouen.jpg",
+    "title": "Jules Pressiat",
+    "date": "2021-03-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "humans/mars2021.Metzger-Mum.Saint--Ouen.jpg",
+    "title": "Metzger Mum",
+    "date": "2021-03-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "humans/mars2021.Sofia-Green.Paris.jpg",
+    "title": "Sofia Green",
+    "date": "2021-03-01",
+    "place": "Paris"
+  },
+  {
+    "src": "humans/mars2021.Vanille-Verloës.Saint--Ouen.jpg",
+    "title": "Vanille Verloës",
+    "date": "2021-03-01",
+    "place": "Saint  Ouen"
   },
   {
     "src": "humans/novembre2018.Alexis-Automn-fields.Yvelines.jpg",
@@ -1332,6 +1464,30 @@
     "place": "Chatelet"
   },
   {
+    "src": "humans/novembre2020.Dima-B&W.Paris.jpg",
+    "title": "Dima B&W",
+    "date": "2020-11-01",
+    "place": "Paris"
+  },
+  {
+    "src": "humans/novembre2020.Maya-Love-Plage.Trouville.jpg",
+    "title": "Maya Love Plage",
+    "date": "2020-11-01",
+    "place": "Trouville"
+  },
+  {
+    "src": "humans/novembre2020.Nino-B&W.Paris.jpg",
+    "title": "Nino B&W",
+    "date": "2020-11-01",
+    "place": "Paris"
+  },
+  {
+    "src": "humans/novembre2020.Robin-B&W.Paris-3.jpg",
+    "title": "Robin B&W",
+    "date": "2020-11-01",
+    "place": "Paris 3"
+  },
+  {
     "src": "humans/octobre2018.Claudine-à-la-cave.Yvelines.jpg",
     "title": "Claudine à la cave",
     "date": "2018-10-01",
@@ -1374,8 +1530,8 @@
     "place": "La Boule Noire, Paris"
   },
   {
-    "src": "humans/octobre2019.Fujimine-and-Salomé-Chatriot.Paris.jpg",
-    "title": "Fujimine and Salomé Chatriot",
+    "src": "humans/octobre2019.Fujimine-and-Salome-Chatriot.Paris.jpg",
+    "title": "Fujimine and Salome Chatriot",
     "date": "2019-10-01",
     "place": "Paris"
   },
@@ -1398,8 +1554,8 @@
     "place": "Paris"
   },
   {
-    "src": "humans/octobre2019.Ophélie.Saint-Denis,-Myst.jpg",
-    "title": "Ophélie",
+    "src": "humans/octobre2019.Ophelie.Saint-Denis,-Myst.jpg",
+    "title": "Ophelie",
     "date": "2019-10-01",
     "place": "Saint Denis, Myst"
   },
@@ -1434,8 +1590,8 @@
     "place": "Paris"
   },
   {
-    "src": "humans/octobre2020.Maya-télé-travaille.Paris.jpg",
-    "title": "Maya télé travaille",
+    "src": "humans/octobre2020.Maya-tele-travaille.Paris.jpg",
+    "title": "Maya tele travaille",
     "date": "2020-10-01",
     "place": "Paris"
   },
@@ -1446,10 +1602,10 @@
     "place": "Paris"
   },
   {
-    "src": "humans/septembre2019.Club-kids-Nouvelle-Vogue.Gaité-Lyrique.jpg",
+    "src": "humans/septembre2019.Club-kids-Nouvelle-Vogue.Gaite-Lyrique.jpg",
     "title": "Club kids Nouvelle Vogue",
     "date": "2019-09-01",
-    "place": "Gaité Lyrique"
+    "place": "Gaite Lyrique"
   },
   {
     "src": "ocular-pleasure/aout2018.Windmill-rose-des-vents.Albanie.jpg",
@@ -1494,6 +1650,24 @@
     "place": "Trouville"
   },
   {
+    "src": "ocular-pleasure/avril2000.Brûlure-1.Nowhere.jpg",
+    "title": "Brûlure 1",
+    "date": "2000-04-01",
+    "place": "Nowhere"
+  },
+  {
+    "src": "ocular-pleasure/avril2000.Brûlure-2.Nowhere.jpg",
+    "title": "Brûlure 2",
+    "date": "2000-04-01",
+    "place": "Nowhere"
+  },
+  {
+    "src": "ocular-pleasure/avril2000.Brûlure-3.Nowhere.jpg",
+    "title": "Brûlure 3",
+    "date": "2000-04-01",
+    "place": "Nowhere"
+  },
+  {
     "src": "ocular-pleasure/avril2018.Blurry-woman.Paris.jpg",
     "title": "Blurry woman",
     "date": "2018-04-01",
@@ -1516,6 +1690,24 @@
     "title": "Dancing in the wind",
     "date": "2020-04-01",
     "place": "Yvelines"
+  },
+  {
+    "src": "ocular-pleasure/avril2021.Dead-Tree-Acid.Marcellus.jpg",
+    "title": "Dead Tree Acid",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "ocular-pleasure/avril2021.La-Prairie-Acid.Marcellus.jpg",
+    "title": "La Prairie Acid",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "ocular-pleasure/avril2021.Pink-Orchidee.The-Road.jpg",
+    "title": "Pink Orchidee",
+    "date": "2021-04-01",
+    "place": "The Road"
   },
   {
     "src": "ocular-pleasure/decembre2019.Blurry-Samuel.Yvelines.jpg",
@@ -1614,6 +1806,18 @@
     "place": "Normandie"
   },
   {
+    "src": "ocular-pleasure/decembre2020.Purple-Sky.Trouville.jpg",
+    "title": "Purple Sky",
+    "date": "2020-12-01",
+    "place": "Trouville"
+  },
+  {
+    "src": "ocular-pleasure/decembre2020.Rainbow-sur-Mer.Trouville.jpg",
+    "title": "Rainbow sur Mer",
+    "date": "2020-12-01",
+    "place": "Trouville"
+  },
+  {
     "src": "ocular-pleasure/fevrier2020.Cigarettes-clementine-et-caniveau.Paris.jpg",
     "title": "Cigarettes clementine et caniveau",
     "date": "2020-02-01",
@@ -1648,6 +1852,12 @@
     "title": "concert",
     "date": "2020-02-01",
     "place": "Silencio"
+  },
+  {
+    "src": "ocular-pleasure/fevrier2021.Steamers.Saint--Ouen.jpg",
+    "title": "Steamers",
+    "date": "2021-02-01",
+    "place": "Saint  Ouen"
   },
   {
     "src": "ocular-pleasure/janvier2019.Sunset-orange.Trouville.jpg",
@@ -1800,8 +2010,14 @@
     "place": "Lilas"
   },
   {
-    "src": "ocular-pleasure/novembre2018.ciel-lacéré.Yvelines.jpg",
-    "title": "ciel lacéré",
+    "src": "ocular-pleasure/mars2021.Secret.Nowhere.jpg",
+    "title": "Secret",
+    "date": "2021-03-01",
+    "place": "Nowhere"
+  },
+  {
+    "src": "ocular-pleasure/novembre2018.ciel-lacere.Yvelines.jpg",
+    "title": "ciel lacere",
     "date": "2018-11-01",
     "place": "Yvelines"
   },
@@ -1810,6 +2026,12 @@
     "title": "hand and cheese",
     "date": "2019-11-01",
     "place": "Paris"
+  },
+  {
+    "src": "ocular-pleasure/novembre2020.Crazy-Sunset.Trouville.jpg",
+    "title": "Crazy Sunset",
+    "date": "2020-11-01",
+    "place": "Trouville"
   },
   {
     "src": "ocular-pleasure/octobre2019.Groove-sensuel-Charlie-Parillat.Belleville.jpg",
@@ -1900,6 +2122,24 @@
     "title": "Fuck the Police",
     "date": "2019-04-01",
     "place": "Hyères"
+  },
+  {
+    "src": "pedal-to-the-metal/avril2021.Cylo-Smart-Ladder.Saint--Ouen.jpg",
+    "title": "Cylo Smart Ladder",
+    "date": "2021-04-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "pedal-to-the-metal/avril2021.FORD.Marcellus.jpg",
+    "title": "FORD",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "pedal-to-the-metal/avril2021.Tracteur-Ford.Marcellus.jpg",
+    "title": "Tracteur Ford",
+    "date": "2021-04-01",
+    "place": "Marcellus"
   },
   {
     "src": "pedal-to-the-metal/decembre2018.Alexis-in-his-BMW.Houdan.jpg",
@@ -2004,6 +2244,12 @@
     "place": "Yvelines"
   },
   {
+    "src": "ride-shoot-repeat/avril2021.Studio-Life.Saint--Ouen.jpg",
+    "title": "Studio Life",
+    "date": "2021-04-01",
+    "place": "Saint  Ouen"
+  },
+  {
     "src": "ride-shoot-repeat/decembre2018.liam.Petit-palace-paris.jpg",
     "title": "liam",
     "date": "2018-12-01",
@@ -2050,6 +2296,18 @@
     "title": "two russians",
     "date": "2019-12-01",
     "place": "Saint petersbourg"
+  },
+  {
+    "src": "ride-shoot-repeat/decembre2020.Choux-Rave-Cassie.Les-Lilas.jpg",
+    "title": "Choux Rave Cassie",
+    "date": "2020-12-01",
+    "place": "Les Lilas"
+  },
+  {
+    "src": "ride-shoot-repeat/decembre2020.Rave-chez-Max.Les-Lilas.jpg",
+    "title": "Rave chez Max",
+    "date": "2020-12-01",
+    "place": "Les Lilas"
   },
   {
     "src": "ride-shoot-repeat/fevrier1998.cyprien-raver.Parkingstone-paris.jpg",
@@ -2118,10 +2376,10 @@
     "place": "Parkingstone, Paris"
   },
   {
-    "src": "ride-shoot-repeat/fevrier2020.unknown.Xulybet.jpg",
-    "title": "unknown",
+    "src": "ride-shoot-repeat/fevrier2020.xulybet-models0.Paris.jpg",
+    "title": "xulybet models0",
     "date": "2020-02-01",
-    "place": "Xulybet"
+    "place": "Paris"
   },
   {
     "src": "ride-shoot-repeat/janvier2019.Security.Burger-King.jpg",
@@ -2130,8 +2388,8 @@
     "place": "Burger King"
   },
   {
-    "src": "ride-shoot-repeat/janvier2020.Stas-Kalachnikov-and-Paul-Créange.Strasbourg-Saint-Denis.jpg",
-    "title": "Stas Kalachnikov and Paul Créange",
+    "src": "ride-shoot-repeat/janvier2020.Stas-Kalachnikov-and-Paul-Creange.Strasbourg-Saint-Denis.jpg",
+    "title": "Stas Kalachnikov and Paul Creange",
     "date": "2020-01-01",
     "place": "Strasbourg Saint Denis"
   },
@@ -2146,6 +2404,30 @@
     "title": "meziane and killian closing bar",
     "date": "2020-01-01",
     "place": "Strasbourg Saint Denis"
+  },
+  {
+    "src": "ride-shoot-repeat/janvier2021.Câbles.Saint--Ouen.jpg",
+    "title": "Câbles",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "ride-shoot-repeat/janvier2021.Dima-Scie-Etincelles.Saint-Ouen.jpg",
+    "title": "Dima Scie Etincelles",
+    "date": "2021-01-01",
+    "place": "Saint Ouen"
+  },
+  {
+    "src": "ride-shoot-repeat/janvier2021.Just-A-TV.Lausanne.jpg",
+    "title": "Just A TV",
+    "date": "2021-01-01",
+    "place": "Lausanne"
+  },
+  {
+    "src": "ride-shoot-repeat/janvier2021.Patience-Sanitaire.Marcellus.jpg",
+    "title": "Patience Sanitaire",
+    "date": "2021-01-01",
+    "place": "Marcellus"
   },
   {
     "src": "ride-shoot-repeat/juillet2018.birthday-in-the-woods-maïlys-julien-mathilde.Poitou.jpg",
@@ -2298,6 +2580,18 @@
     "place": "Paris"
   },
   {
+    "src": "ride-shoot-repeat/mars2021.Smile-Shot.Paris.jpg",
+    "title": "Smile Shot",
+    "date": "2021-03-01",
+    "place": "Paris"
+  },
+  {
+    "src": "ride-shoot-repeat/mars2021.Vanille-Pressiat.Saint--Ouen.jpg",
+    "title": "Vanille Pressiat",
+    "date": "2021-03-01",
+    "place": "Saint  Ouen"
+  },
+  {
     "src": "ride-shoot-repeat/novembre2019.kira-and-juan.Barcelone.jpg",
     "title": "kira and juan",
     "date": "2019-11-01",
@@ -2320,6 +2614,18 @@
     "title": "paulie jan",
     "date": "2019-11-01",
     "place": "Rex paris"
+  },
+  {
+    "src": "ride-shoot-repeat/novembre2020.Charles-PanzerDJ.Paris.jpg",
+    "title": "Charles PanzerDJ",
+    "date": "2020-11-01",
+    "place": "Paris"
+  },
+  {
+    "src": "ride-shoot-repeat/novembre2020.Max-Pegasus-DJ.Paris.jpg",
+    "title": "Max Pegasus DJ",
+    "date": "2020-11-01",
+    "place": "Paris"
   },
   {
     "src": "ride-shoot-repeat/octobre2018.alexis-rave.Saint-ouen.jpg",
@@ -2430,10 +2736,52 @@
     "place": "Paris"
   },
   {
+    "src": "self-portraits/avril2021.Fast-Snapshot.The-Road.jpg",
+    "title": "Fast Snapshot",
+    "date": "2021-04-01",
+    "place": "The Road"
+  },
+  {
+    "src": "self-portraits/avril2021.Julien-&-I.Marcellus.jpg",
+    "title": "Julien & I",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "self-portraits/decembre2020.Self-portrait-BW.Saint-Ouen.jpg",
+    "title": "Self portrait BW",
+    "date": "2020-12-01",
+    "place": "Saint Ouen"
+  },
+  {
     "src": "self-portraits/fevrier2020.SelfieWC-Cyprien.Parkingstone-Paris.jpg",
     "title": "SelfieWC Cyprien",
     "date": "2020-02-01",
     "place": "Parkingstone Paris"
+  },
+  {
+    "src": "self-portraits/janvier2021.Autoportrait_26.Paris.jpg",
+    "title": "Autoportrait_26",
+    "date": "2021-01-01",
+    "place": "Paris"
+  },
+  {
+    "src": "self-portraits/janvier2021.Autoportrait_27-Purple.Paris.jpg",
+    "title": "Autoportrait_27 Purple",
+    "date": "2021-01-01",
+    "place": "Paris"
+  },
+  {
+    "src": "self-portraits/janvier2021.Aux-Toilettes.Marcellus.jpg",
+    "title": "Aux Toilettes",
+    "date": "2021-01-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "self-portraits/janvier2021.Selfshot456.Marcellus.jpg",
+    "title": "Selfshot456",
+    "date": "2021-01-01",
+    "place": "Marcellus"
   },
   {
     "src": "self-portraits/juillet2020.Autoportrait-Grandma.Beybleu.jpg",
@@ -2476,6 +2824,24 @@
     "title": "Autoportrait Blue",
     "date": "2020-05-01",
     "place": "Mericourt"
+  },
+  {
+    "src": "self-portraits/mai2021.Acid-Autoportrait.Paris.jpg",
+    "title": "Acid Autoportrait",
+    "date": "2021-05-01",
+    "place": "Paris"
+  },
+  {
+    "src": "self-portraits/mai2021.Peignoir-Autoportrait.Paris.jpg",
+    "title": "Peignoir Autoportrait",
+    "date": "2021-05-01",
+    "place": "Paris"
+  },
+  {
+    "src": "self-portraits/mars2021.Selflou.Paris.jpg",
+    "title": "Selflou",
+    "date": "2021-03-01",
+    "place": "Paris"
   },
   {
     "src": "self-portraits/novembre2019.Otofoto.Paris.jpg",
@@ -2568,6 +2934,36 @@
     "place": "Mericourt"
   },
   {
+    "src": "silent-photography/avril2021.An-Office.Marcellus.jpg",
+    "title": "An Office",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "silent-photography/avril2021.Castle-Staircase.Marcellus.jpg",
+    "title": "Castle Staircase",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "silent-photography/avril2021.Dead-Tree-Classic.Marcellus.jpg",
+    "title": "Dead Tree Classic",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "silent-photography/avril2021.Entrance-Stone.Marcellus.jpg",
+    "title": "Entrance Stone",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "silent-photography/avril2021.Ghost-Drums.Marcellus.jpg",
+    "title": "Ghost Drums",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
     "src": "silent-photography/decembre2018.Stay-Connected.Pantin.jpg",
     "title": "Stay Connected",
     "date": "2018-12-01",
@@ -2598,10 +2994,10 @@
     "place": "Moscou"
   },
   {
-    "src": "silent-photography/decembre2019.goodbye-russia.Aéroport.jpg",
+    "src": "silent-photography/decembre2019.goodbye-russia.Aeroport.jpg",
     "title": "goodbye russia",
     "date": "2019-12-01",
-    "place": "Aéroport"
+    "place": "Aeroport"
   },
   {
     "src": "silent-photography/decembre2019.metropolis.Paris.jpg",
@@ -2658,6 +3054,42 @@
     "place": "Rostov, Russia"
   },
   {
+    "src": "silent-photography/decembre2020.Book-on-a-Table.Trouville.jpg",
+    "title": "Book on a Table",
+    "date": "2020-12-01",
+    "place": "Trouville"
+  },
+  {
+    "src": "silent-photography/decembre2020.HimAndHer.Amsterdam.jpg",
+    "title": "HimAndHer",
+    "date": "2020-12-01",
+    "place": "Amsterdam"
+  },
+  {
+    "src": "silent-photography/decembre2020.bleu-turquoise-&-jaune-moutarde.Amsterdam.jpg",
+    "title": "bleu turquoise & jaune moutarde",
+    "date": "2020-12-01",
+    "place": "Amsterdam"
+  },
+  {
+    "src": "silent-photography/decembre2020.toward-the-shy.Amsterdam.jpg",
+    "title": "toward the shy",
+    "date": "2020-12-01",
+    "place": "Amsterdam"
+  },
+  {
+    "src": "silent-photography/fevrier2021.Tuyau-Premice.Saint--Ouen.jpg",
+    "title": "Tuyau Premice",
+    "date": "2021-02-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/fevrier2021.Work-Break.Saint--Ouen.jpg",
+    "title": "Work Break",
+    "date": "2021-02-01",
+    "place": "Saint  Ouen"
+  },
+  {
     "src": "silent-photography/janvier2018.apple-store-design.Paris.jpg",
     "title": "apple store design",
     "date": "2018-01-01",
@@ -2676,8 +3108,8 @@
     "place": "Milan"
   },
   {
-    "src": "silent-photography/janvier2019.sortie-de-métro.Milan.jpg",
-    "title": "sortie de métro",
+    "src": "silent-photography/janvier2019.sortie-de-metro.Milan.jpg",
+    "title": "sortie de metro",
     "date": "2019-01-01",
     "place": "Milan"
   },
@@ -2760,16 +3192,70 @@
     "place": "Charles de gaulle"
   },
   {
+    "src": "silent-photography/janvier2021.Detail-Brutal.Saint--Ouen.jpg",
+    "title": "Detail Brutal",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/janvier2021.E--Do-first-day.Saint--Ouen.jpg",
+    "title": "E  Do first day",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/janvier2021.La-Nuit.Saint--Ouen.jpg",
+    "title": "La Nuit",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/janvier2021.Le-Grand-Salon.Marcellus.jpg",
+    "title": "Le Grand Salon",
+    "date": "2021-01-01",
+    "place": "Marcellus"
+  },
+  {
+    "src": "silent-photography/janvier2021.Matrix-Metro.Paris.jpg",
+    "title": "Matrix Metro",
+    "date": "2021-01-01",
+    "place": "Paris"
+  },
+  {
+    "src": "silent-photography/janvier2021.Metro-yellow.Saint--Ouen.jpg",
+    "title": "Metro yellow",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/janvier2021.Pelle-et-Balais.Saint--Ouen.jpg",
+    "title": "Pelle et Balais",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/janvier2021.Pixels-Lines.Saint--Ouen.jpg",
+    "title": "Pixels Lines",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
+    "src": "silent-photography/janvier2021.Sacs.Saint--Ouen.jpg",
+    "title": "Sacs",
+    "date": "2021-01-01",
+    "place": "Saint  Ouen"
+  },
+  {
     "src": "silent-photography/juillet2018.Mystical-trunks.north-Italy.jpg",
     "title": "Mystical trunks",
     "date": "2018-07-01",
     "place": "north Italy"
   },
   {
-    "src": "silent-photography/juillet2020.church-acid.Pérouges.jpg",
+    "src": "silent-photography/juillet2020.church-acid.Perouges.jpg",
     "title": "church acid",
     "date": "2020-07-01",
-    "place": "Pérouges"
+    "place": "Perouges"
   },
   {
     "src": "silent-photography/juillet2020.jourdain-church.Paris.jpg",
@@ -2784,8 +3270,8 @@
     "place": "Beybleu"
   },
   {
-    "src": "silent-photography/juillet2020.pyrénées.Paris.jpg",
-    "title": "pyrénées",
+    "src": "silent-photography/juillet2020.pyrenees.Paris.jpg",
+    "title": "pyrenees",
     "date": "2020-07-01",
     "place": "Paris"
   },
@@ -2802,8 +3288,8 @@
     "place": "Paris"
   },
   {
-    "src": "silent-photography/juin2019.sortie-de-métro.Paris.jpg",
-    "title": "sortie de métro",
+    "src": "silent-photography/juin2019.sortie-de-metro.Paris.jpg",
+    "title": "sortie de metro",
     "date": "2019-06-01",
     "place": "Paris"
   },
@@ -2850,8 +3336,8 @@
     "place": "Yvelines"
   },
   {
-    "src": "silent-photography/juin2020.nation-métro.Paris.jpg",
-    "title": "nation métro",
+    "src": "silent-photography/juin2020.nation-metro.Paris.jpg",
+    "title": "nation metro",
     "date": "2020-06-01",
     "place": "Paris"
   },
@@ -2916,8 +3402,8 @@
     "place": "Trouville"
   },
   {
-    "src": "silent-photography/novembre2018.ciel-lacéré.Yvelines.jpg",
-    "title": "ciel lacéré",
+    "src": "silent-photography/novembre2018.ciel-lacere.Yvelines.jpg",
+    "title": "ciel lacere",
     "date": "2018-11-01",
     "place": "Yvelines"
   },
@@ -2940,8 +3426,8 @@
     "place": "Marcellus"
   },
   {
-    "src": "silent-photography/novembre2019.j'écoute.Paris.jpg",
-    "title": "j'écoute",
+    "src": "silent-photography/novembre2019.j'ecoute.Paris.jpg",
+    "title": "j'ecoute",
     "date": "2019-11-01",
     "place": "Paris"
   },
@@ -2968,6 +3454,12 @@
     "title": "transilien",
     "date": "2019-11-01",
     "place": "Yvelines"
+  },
+  {
+    "src": "silent-photography/novembre2020.Office-at-Night-home.Paris.jpg",
+    "title": "Office at Night home",
+    "date": "2020-11-01",
+    "place": "Paris"
   },
   {
     "src": "silent-photography/octobre2019.isengard.Saint-denis.jpg",
@@ -3018,8 +3510,8 @@
     "place": "Paris"
   },
   {
-    "src": "silent-photography/septembre2019.méridienne.Orgerus.jpg",
-    "title": "méridienne",
+    "src": "silent-photography/septembre2019.meridienne.Orgerus.jpg",
+    "title": "meridienne",
     "date": "2019-09-01",
     "place": "Orgerus"
   },
@@ -3100,6 +3592,12 @@
     "title": "daniella and gabriella bath",
     "date": "2019-12-01",
     "place": "Trouville"
+  },
+  {
+    "src": "taste-of-farniente/decembre2020.Wine-and-Lips.Les-Lilas.jpg",
+    "title": "Wine and Lips",
+    "date": "2020-12-01",
+    "place": "Les Lilas"
   },
   {
     "src": "taste-of-farniente/janvier2020.nastya.Paris.jpg",
@@ -3294,8 +3792,8 @@
     "place": "Charentes"
   },
   {
-    "src": "taste-of-farniente/mai2018.Léa.Paris.jpg",
-    "title": "Léa",
+    "src": "taste-of-farniente/mai2018.Lea.Paris.jpg",
+    "title": "Lea",
     "date": "2018-05-01",
     "place": "Paris"
   },
@@ -3316,6 +3814,12 @@
     "title": "masha",
     "date": "2020-05-01",
     "place": "Mericourt"
+  },
+  {
+    "src": "taste-of-farniente/mai2021.Maya-Teletravaille.Paris.jpg",
+    "title": "Maya Teletravaille",
+    "date": "2021-05-01",
+    "place": "Paris"
   },
   {
     "src": "taste-of-farniente/novembre2018.Alexis-Roger.Houdan.jpg",
@@ -3348,8 +3852,8 @@
     "place": "Paris la perle"
   },
   {
-    "src": "taste-of-farniente/octobre2020.Maya-Coline-télé-travaille.Paris.jpg",
-    "title": "Maya Coline télé travaille",
+    "src": "taste-of-farniente/octobre2020.Maya-Coline-tele-travaille.Paris.jpg",
+    "title": "Maya Coline tele travaille",
     "date": "2020-10-01",
     "place": "Paris"
   },
@@ -3450,6 +3954,12 @@
     "place": "Yvelines"
   },
   {
+    "src": "vous-etes-des-animaux/avril2021.Gaby-&-Rosy.Marcellus.jpg",
+    "title": "Gaby & Rosy",
+    "date": "2021-04-01",
+    "place": "Marcellus"
+  },
+  {
     "src": "vous-etes-des-animaux/decembre2019.gaby-and-gun.Yvelines.jpg",
     "title": "gaby and gun",
     "date": "2019-12-01",
@@ -3472,6 +3982,18 @@
     "title": "puzo",
     "date": "2019-12-01",
     "place": "Moscou"
+  },
+  {
+    "src": "vous-etes-des-animaux/decembre2020.Ota-in-RVB.Paris.jpg",
+    "title": "Ota in RVB",
+    "date": "2020-12-01",
+    "place": "Paris"
+  },
+  {
+    "src": "vous-etes-des-animaux/decembre2020.Seagull-or-Mouettes.Trouville.jpg",
+    "title": "Seagull or Mouettes",
+    "date": "2020-12-01",
+    "place": "Trouville"
   },
   {
     "src": "vous-etes-des-animaux/janvier2020.agency-white-dog.Milan.jpg",
@@ -3628,6 +4150,18 @@
     "title": "paloma",
     "date": "2019-11-01",
     "place": "Saint ouen"
+  },
+  {
+    "src": "vous-etes-des-animaux/novembre2020.Mouette.Trouville.jpg",
+    "title": "Mouette",
+    "date": "2020-11-01",
+    "place": "Trouville"
+  },
+  {
+    "src": "vous-etes-des-animaux/novembre2020.Seagul-Mouettes.Trouville.jpg",
+    "title": "Seagul Mouettes",
+    "date": "2020-11-01",
+    "place": "Trouville"
   },
   {
     "src": "vous-etes-des-animaux/octobre2019.ota-blurry.Paris.jpg",
