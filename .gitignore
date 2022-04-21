@@ -1,4 +1,3 @@
-api/node_modules
-client/dist-future
-client/node_modules
+node_modules
+client.old/dist-future
 static
