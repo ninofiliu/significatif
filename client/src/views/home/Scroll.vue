@@ -4,7 +4,6 @@
       v-for="(picture, index) of pictures"
       :key="picture.src"
       v-media="picture.src"
-      :src="`${$s}${picture.src}`"
       :style="{
         left: `${(0.6 + 0.4 * picture.speed) * (50 * index - scrolled)}vw`,
         top: `${30 + 40 * picture.y}vh`,

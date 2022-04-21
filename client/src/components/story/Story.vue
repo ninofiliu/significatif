@@ -320,7 +320,7 @@ export default {
   }
   @for $i from 1 through 20 {
     span:nth-child(#{$i}) {
-      transform: translate(-50%, -50%) rotate(#{360 / 22 * $i}deg) translateY(-2rem);
+      transform: translate(-50%, -50%) rotate(#{calc(360 / 22) * $i}deg) translateY(-2rem);
     }
   }
   &:hover {

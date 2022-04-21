@@ -1,11 +1,8 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import {createStore} from 'vuex'
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
+export default createStore({
   state: {
-    cover: null,
+    cover: null as null | 'left' | 'center' | 'right',
   },
   mutations: {
     setCoverLeft(state) {

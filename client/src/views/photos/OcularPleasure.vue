@@ -85,7 +85,7 @@ export default {
     transform: translateY(40vh);
   }
   to {
-    transform: translateY(0%)s;
+    transform: translateY(0%);
   }
 }
 

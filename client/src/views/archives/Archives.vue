@@ -20,7 +20,7 @@
         <div class="years-button" @click="yearsOpened = true">
           {{ currentYear }} - other years...
         </div>
-        <img v-show="show" :src="`${$s}${src}`" :style="{ left: `${left}px`, top: `${top}px` }">
+        <img v-show="show" v-media="src" :style="{ left: `${left}px`, top: `${top}px` }">
         <div class="table">
           <div class="row">
             <div>Date</div>

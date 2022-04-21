@@ -8,7 +8,7 @@
         :style="{ 'flex-grow': flexGrows[9] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['self-portraits'].img}`">
+          <img v-media="covers['self-portraits'].img">
           <div class="title">AUTOPORTRAITS</div>
           <div class="text u-comfort"><p v-for="p of covers['self-portraits'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -20,7 +20,7 @@
         :style="{ 'flex-grow': flexGrows[8] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['silent-photography'].img}`">
+          <img v-media="covers['silent-photography'].img">
           <div class="title">SILENT PHOTOGRAPHY</div>
           <div class="text u-comfort"><p v-for="p of covers['silent-photography'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -32,7 +32,7 @@
         :style="{ 'flex-grow': flexGrows[7] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['cross-the-borders'].img}`">
+          <img v-media="covers['cross-the-borders'].img">
           <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
           <div class="text u-comfort"><p v-for="p of covers['cross-the-borders'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -44,7 +44,7 @@
         :style="{ 'flex-grow': flexGrows[6] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['taste-of-farniente'].img}`">
+          <img v-media="covers['taste-of-farniente'].img">
           <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
           <div class="text u-comfort"><p v-for="p of covers['taste-of-farniente'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -56,7 +56,7 @@
         :style="{ 'flex-grow': flexGrows[5] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['pedal-to-the-metal'].img}`">
+          <img v-media="covers['pedal-to-the-metal'].img">
           <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
           <div class="text u-comfort"><p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -68,7 +68,7 @@
         :style="{ 'flex-grow': flexGrows[4] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['ride-shoot-repeat'].img}`">
+          <img v-media="covers['ride-shoot-repeat'].img">
           <div class="title">RIDE, SHOOT, REPEAT</div>
           <div class="text u-comfort"><p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -80,7 +80,7 @@
         :style="{ 'flex-grow': flexGrows[3] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['vous-etes-des-animaux'].img}`">
+          <img v-media="covers['vous-etes-des-animaux'].img">
           <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
           <div class="text u-comfort"><p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -92,7 +92,7 @@
         :style="{ 'flex-grow': flexGrows[2] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['ocular-pleasure'].img}`">
+          <img v-media="covers['ocular-pleasure'].img">
           <div class="title">OCULAR PLEASURE</div>
           <div class="text u-comfort"><p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -104,7 +104,7 @@
         :style="{ 'flex-grow': flexGrows[1] }"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['humans'].img}`">
+          <img v-media="covers['humans'].img">
           <div class="title">HUMANS</div>
           <div class="text u-comfort"><p v-for="p of covers['humans'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -131,7 +131,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['humans'].img}`">
+          <img v-media="covers['humans'].img">
           <div class="title">HUMANS</div>
           <div class="text u-comfort"><p v-for="p of covers['humans'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -141,7 +141,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['ocular-pleasure'].img}`">
+          <img v-media="covers['ocular-pleasure'].img">
           <div class="title">OCULAR PLEASURE</div>
           <div class="text u-comfort"><p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -151,7 +151,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['vous-etes-des-animaux'].img}`">
+          <img v-media="covers['vous-etes-des-animaux'].img">
           <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
           <div class="text u-comfort"><p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -161,7 +161,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['ride-shoot-repeat'].img}`">
+          <img v-media="covers['ride-shoot-repeat'].img">
           <div class="title">RIDE, SHOOT, REPEAT</div>
           <div class="text u-comfort"><p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -171,7 +171,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['pedal-to-the-metal'].img}`">
+          <img v-media="covers['pedal-to-the-metal'].img">
           <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
           <div class="text u-comfort"><p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -181,7 +181,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['taste-of-farniente'].img}`">
+          <img v-media="covers['taste-of-farniente'].img">
           <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
           <div class="text u-comfort"><p v-for="p of covers['taste-of-farniente'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -191,7 +191,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['cross-the-borders'].img}`">
+          <img v-media="covers['cross-the-borders'].img">
           <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
           <div class="text u-comfort"><p v-for="p of covers['cross-the-borders'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -201,7 +201,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['silent-photography'].img}`">
+          <img v-media="covers['silent-photography'].img">
           <div class="title">SILENT PHOTOGRAPHY</div>
           <div class="text u-comfort"><p v-for="p of covers['silent-photography'].txt" :key="p">{{p}}</p></div>
         </div>
@@ -211,7 +211,7 @@
         class="story"
       >
         <div class="story-content">
-          <img :src="`${$s}${covers['self-portraits'].img}`">
+          <img v-media="covers['self-portraits'].img">
           <div class="title">AUTOPORTRAITS</div>
           <div class="text u-comfort"><p v-for="p of covers['self-portraits'].txt" :key="p">{{p}}</p></div>
         </div>

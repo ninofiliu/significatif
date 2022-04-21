@@ -1,5 +1,4 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import {createRouter, createWebHistory} from 'vue-router';
 import Archives from './views/archives/Archives.vue';
 import Contact from './views/contact/Contact.vue';
 import Home from './views/home/Home.vue';
@@ -14,12 +13,10 @@ import TasteOfFarniente from './views/photos/TasteOfFarniente.vue';
 import CrossTheBorders from './views/photos/CrossTheBorders.vue';
 import SilentPhotography from './views/photos/SilentPhotography.vue';
 import SelfPortraits from './views/photos/SelfPortraits.vue';
+import { ROUTER_BASE } from './globals';
 
-Vue.use(VueRouter);
-
-const router = new VueRouter({
-  mode: 'history',
-  base: ROUTER_BASE,
+const router = createRouter({
+  history: createWebHistory(ROUTER_BASE),
   routes: [
     { path: '/', component: Home },
     { path: '/contact', component: Contact },
@@ -35,7 +32,7 @@ const router = new VueRouter({
     { path: '/photos/cross-the-borders', component: CrossTheBorders },
     { path: '/photos/silent-photography', component: SilentPhotography },
     { path: '/photos/self-portraits', component: SelfPortraits },
-    { path: '*', redirect: '/' },
+    { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
 });
 

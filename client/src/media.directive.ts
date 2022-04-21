@@ -1,8 +1,9 @@
 /* eslint-disable no-param-reassign */
-import Vue from 'vue';
+import { Directive } from 'vue';
+import { STATIC_BASE } from './globals';
 
-Vue.directive('media', {
-  inserted(el, { value }) {
+const media: Directive = {
+  created(el, { value }) {
     const src = STATIC_BASE + value;
     const smallSrc = src.replace(/\.[^.]*$/, ($0) => `.small${$0}`);
     el.loading = 'lazy';
@@ -17,5 +18,7 @@ Vue.directive('media', {
       observer.unobserve(el);
     });
     observer.observe(el);
-  },
-});
+  }
+}
+
+export default media;

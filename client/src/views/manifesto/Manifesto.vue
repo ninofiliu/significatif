@@ -33,7 +33,7 @@
               {{fragment.content}}
             </span>
             <span v-if="fragment.type==='image'">
-              <img :src="`${$s}${fragment.content}`" class="u-text-img">
+              <img v-media="fragment.content" class="u-text-img">
             </span>
           </span>
           <p>Bienvenue sur Significatif /</p>
