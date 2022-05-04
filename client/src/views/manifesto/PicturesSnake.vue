@@ -3,7 +3,7 @@
     <img
       v-for="image of images"
       :key="image.key"
-      :src="$s + image.src.replace(/\.[^.]*$/, ($0) => `.small${$0}`)"
+      :src="STATIC_BASE + image.src.replace(/\.[^.]*$/, ($0) => `.small${$0}`)"
       :style="{
         left: `${image.left}px`,
         top: `${image.top}px`,
@@ -15,12 +15,14 @@
 
 <script>
 import homeContent from "../../content/home.json";
+import { STATIC_BASE } from "../../globals";
 
 export default {
   data() {
     return {
       images: [],
       step: 0,
+      STATIC_BASE,
     };
   },
   methods: {
