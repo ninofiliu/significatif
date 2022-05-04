@@ -2,19 +2,21 @@
   <Story
     id="vous-etes-des-animaux"
     color="var(--orange)"
-    :backgroundPosition="{ }"
+    :backgroundPosition="{}"
     :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
-    <div class="u-title"><AppearingLine :chars="title"/></div>
-    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
+    <div class="u-title"><AppearingLine :chars="title" /></div>
+    <div class="u-text-container">
+      <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
   </Story>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import Story from '../../components/story/Story.vue';
-import covers from '../../content/covers.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import Story from "../../components/story/Story.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -23,29 +25,57 @@ export default {
   },
   data() {
     return {
-      txt: covers['vous-etes-des-animaux'].txt,
+      txt: covers["vous-etes-des-animaux"].txt,
       title: [
-        { html: 'V', class: {} },
-        { html: 'o', class: {} },
-        { html: 'u', class: {} },
-        { html: 'G', class: { 'u-font-good-glyphs': true } },
-        { html: '&nbsp;', class: {} },
-        { html: 'ê', class: {} },
-        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'e', class: {} },
-        { html: 's', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'd', class: {} },
-        { html: 'e', class: {} },
-        { html: 's', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'n', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'm', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'u', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
-        { html: 'x', class: { 'u-font-ogg': true, 'u-italic': true }, underline: true },
+        { html: "V", class: {} },
+        { html: "o", class: {} },
+        { html: "u", class: {} },
+        { html: "G", class: { "u-font-good-glyphs": true } },
+        { html: "&nbsp;", class: {} },
+        { html: "ê", class: {} },
+        { html: "t", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "e", class: {} },
+        { html: "s", class: {} },
+        { html: "&nbsp;", class: {} },
+        { html: "d", class: {} },
+        { html: "e", class: {} },
+        { html: "s", class: {} },
+        { html: "&nbsp;", class: {} },
+        {
+          html: "a",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
+        {
+          html: "n",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
+        {
+          html: "i",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
+        {
+          html: "m",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
+        {
+          html: "a",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
+        {
+          html: "u",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
+        {
+          html: "x",
+          class: { "u-font-ogg": true, "u-italic": true },
+          underline: true,
+        },
       ],
     };
   },

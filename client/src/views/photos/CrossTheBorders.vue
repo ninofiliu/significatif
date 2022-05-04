@@ -3,21 +3,32 @@
     id="cross-the-borders"
     color="var(--orange)"
     :backgroundPosition="{ left: '50vw' }"
-    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw', bottom: '15vh' }"
+    :picturesPosition="{
+      top: '15vh',
+      right: '50vw',
+      left: '5vw',
+      bottom: '15vh',
+    }"
     picturesMode="spread"
   >
-    <div class="bubble u-appear-scaleup"/>
-    <div class="u-title cross"><AppearingLine :chars="cross" :start="-5" /></div>
+    <div class="bubble u-appear-scaleup" />
+    <div class="u-title cross">
+      <AppearingLine :chars="cross" :start="-5" />
+    </div>
     <div class="u-title the"><AppearingLine :chars="the" :start="-15" /></div>
-    <div class="u-title borders"><AppearingLine :chars="borders" :start="-20" /></div>
-    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
+    <div class="u-title borders">
+      <AppearingLine :chars="borders" :start="-20" />
+    </div>
+    <div class="u-text-container">
+      <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
   </Story>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import Story from '../../components/story/Story.vue';
-import covers from '../../content/covers.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import Story from "../../components/story/Story.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -26,27 +37,27 @@ export default {
   },
   data() {
     return {
-      txt: covers['cross-the-borders'].txt,
+      txt: covers["cross-the-borders"].txt,
       cross: [
-        { html: 'C', class: {} },
-        { html: 'r', class: {} },
-        { html: 'q', class: { 'u-font-good-glyphs': true } },
-        { html: 's', class: {} },
-        { html: 's', class: {} },
+        { html: "C", class: {} },
+        { html: "r", class: {} },
+        { html: "q", class: { "u-font-good-glyphs": true } },
+        { html: "s", class: {} },
+        { html: "s", class: {} },
       ],
       the: [
-        { html: 't', class: {} },
-        { html: 'h', class: {} },
-        { html: 'e', class: {} },
+        { html: "t", class: {} },
+        { html: "h", class: {} },
+        { html: "e", class: {} },
       ],
       borders: [
-        { html: 'b', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'o', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'd', class: {} },
-        { html: 'e', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 's', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: "b", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "o", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "r", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "d", class: {} },
+        { html: "e", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "r", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "s", class: { "u-font-ogg": true, "u-italic": true } },
       ],
     };
   },
@@ -84,8 +95,17 @@ export default {
   right: 20vw;
 }
 @media screen and (max-width: 900px) {
-  .cross { top: 10vh; left: 20vw; }
-  .the { top: 15vh; left: 60vw; }
-  .borders { top: 25vh; left: 40vw; }
+  .cross {
+    top: 10vh;
+    left: 20vw;
+  }
+  .the {
+    top: 15vh;
+    left: 60vw;
+  }
+  .borders {
+    top: 25vh;
+    left: 40vw;
+  }
 }
 </style>

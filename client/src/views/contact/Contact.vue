@@ -1,15 +1,15 @@
 <template>
   <div class="Contact">
-    <div class="left"><div class="bubble u-appear-scaleup"/></div>
-    <div class="right"><div class="bubble u-appear-scaleup"/></div>
+    <div class="left"><div class="bubble u-appear-scaleup" /></div>
+    <div class="right"><div class="bubble u-appear-scaleup" /></div>
     <div class="center">
       <section>
         <div class="big-text">
           <div>Th<span class="u-font-good-glyphs">h</span>nks for</div>
           <div>your visit!</div>
         </div>
-        <div style="transform: translateY(1.2rem);">
-          <img class="u-rotate" src="../../assets/star.svg">
+        <div style="transform: translateY(1.2rem)">
+          <img class="u-rotate" src="../../assets/star.svg" />
         </div>
       </section>
       <section>
@@ -25,27 +25,29 @@
       </section>
       <section>
         <div>
-          <hr>
+          <hr />
           <div class="big-text let-s-reach-out">
             <div>Let's</div>
             <div>reach <span class="u-font-good-glyphs">j</span>ut!</div>
           </div>
           <div class="links u-underline">
-            <a :href="`mailto:${contact.email}`">{{contact.email}}</a>
-            <a :href="`tel:${contact.tel.replace(/\s/g, '')}`">{{contact.tel}}</a>
+            <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
+            <a :href="`tel:${contact.tel.replace(/\s/g, '')}`">{{
+              contact.tel
+            }}</a>
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
-    <NavBar/>
+    <NavBar />
   </div>
 </template>
 
 <script>
-import Footer from '../../components/Footer.vue';
-import NavBar from '../../components/NavBar.vue';
-import contact from '../../content/contact.json';
+import Footer from "../../components/Footer.vue";
+import NavBar from "../../components/NavBar.vue";
+import contact from "../../content/contact.json";
 
 export default {
   components: {
@@ -91,10 +93,10 @@ export default {
   background-color: var(--white);
 }
 .left .bubble {
-  animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 .right .bubble {
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 .center {
   width: 90%;

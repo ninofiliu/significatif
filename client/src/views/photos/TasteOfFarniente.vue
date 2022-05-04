@@ -2,19 +2,21 @@
   <Story
     id="taste-of-farniente"
     color="var(--yellow)"
-    :backgroundPosition="{ }"
+    :backgroundPosition="{}"
     :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
-    <div class="u-title"><AppearingLine :chars="tasteOfFarniente"/></div>
-    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
+    <div class="u-title"><AppearingLine :chars="tasteOfFarniente" /></div>
+    <div class="u-text-container">
+      <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
   </Story>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import Story from '../../components/story/Story.vue';
-import covers from '../../content/covers.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import Story from "../../components/story/Story.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -23,26 +25,26 @@ export default {
   },
   data() {
     return {
-      txt: covers['taste-of-farniente'].txt,
+      txt: covers["taste-of-farniente"].txt,
       tasteOfFarniente: [
-        { html: 'T', class: {}, underline: true },
-        { html: 'a', class: {}, underline: true },
-        { html: 's', class: {}, underline: true },
-        { html: 't', class: {}, underline: true },
-        { html: 'e', class: {}, underline: true },
-        { html: '&nbsp;', class: {} },
-        { html: 'g', class: { 'u-font-good-glyphs': true } },
-        { html: 'f', class: {} },
-        { html: '&nbsp;', class: {} },
-        { html: 'f', class: { 'u-font-ogg': true } },
-        { html: 'a', class: { 'u-font-ogg': true } },
-        { html: 'r', class: { 'u-font-ogg': true } },
-        { html: 'n', class: { 'u-font-ogg': true } },
-        { html: 'i', class: { 'u-font-ogg': true } },
-        { html: 'e', class: { 'u-font-ogg': true } },
-        { html: 'n', class: { 'u-font-ogg': true } },
-        { html: 't', class: { 'u-font-ogg': true } },
-        { html: 'e', class: { 'u-font-ogg': true } },
+        { html: "T", class: {}, underline: true },
+        { html: "a", class: {}, underline: true },
+        { html: "s", class: {}, underline: true },
+        { html: "t", class: {}, underline: true },
+        { html: "e", class: {}, underline: true },
+        { html: "&nbsp;", class: {} },
+        { html: "g", class: { "u-font-good-glyphs": true } },
+        { html: "f", class: {} },
+        { html: "&nbsp;", class: {} },
+        { html: "f", class: { "u-font-ogg": true } },
+        { html: "a", class: { "u-font-ogg": true } },
+        { html: "r", class: { "u-font-ogg": true } },
+        { html: "n", class: { "u-font-ogg": true } },
+        { html: "i", class: { "u-font-ogg": true } },
+        { html: "e", class: { "u-font-ogg": true } },
+        { html: "n", class: { "u-font-ogg": true } },
+        { html: "t", class: { "u-font-ogg": true } },
+        { html: "e", class: { "u-font-ogg": true } },
       ],
     };
   },

@@ -6,17 +6,23 @@
     :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw' }"
     picturesMode="spread"
   >
-    <div class="bubble u-appear-scaleup"/>
-    <div class="u-title ocular"><AppearingLine :chars="ocular" :start="-5"/></div>
-    <div class="u-title pleasure"><AppearingLine :chars="pleasure" :start="-10"/></div>
-    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
+    <div class="bubble u-appear-scaleup" />
+    <div class="u-title ocular">
+      <AppearingLine :chars="ocular" :start="-5" />
+    </div>
+    <div class="u-title pleasure">
+      <AppearingLine :chars="pleasure" :start="-10" />
+    </div>
+    <div class="u-text-container">
+      <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
   </Story>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import Story from '../../components/story/Story.vue';
-import covers from '../../content/covers.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import Story from "../../components/story/Story.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -25,24 +31,24 @@ export default {
   },
   data() {
     return {
-      txt: covers['ocular-pleasure'].txt,
+      txt: covers["ocular-pleasure"].txt,
       ocular: [
-        { html: 'Z', class: { 'u-font-good-glyphs': true } },
-        { html: 'c', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'u', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'l', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: "Z", class: { "u-font-good-glyphs": true } },
+        { html: "c", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "u", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "l", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "a", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "r", class: { "u-font-ogg": true, "u-italic": true } },
       ],
       pleasure: [
-        { html: 'P' },
-        { html: 'l' },
-        { html: 'e' },
-        { html: 'a' },
-        { html: 's' },
-        { html: 'u' },
-        { html: 'r' },
-        { html: 'e' },
+        { html: "P" },
+        { html: "l" },
+        { html: "e" },
+        { html: "a" },
+        { html: "s" },
+        { html: "u" },
+        { html: "r" },
+        { html: "e" },
       ],
     };
   },
@@ -90,7 +96,14 @@ export default {
 }
 
 @media screen and (max-width: 900px) {
-  .ocular { top: 15vh; left: 10vw; }
-  .pleasure { top: 25vh; left: 30vw; bottom: initial; }
+  .ocular {
+    top: 15vh;
+    left: 10vw;
+  }
+  .pleasure {
+    top: 25vh;
+    left: 30vw;
+    bottom: initial;
+  }
 }
 </style>

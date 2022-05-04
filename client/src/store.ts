@@ -1,18 +1,18 @@
-import {createStore} from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    cover: null as null | 'left' | 'center' | 'right',
+    cover: null as null | "left" | "center" | "right",
   },
   mutations: {
     setCoverLeft(state) {
-      state.cover = 'left';
+      state.cover = "left";
     },
     setCoverCenter(state) {
-      state.cover = 'center';
+      state.cover = "center";
     },
     setCoverRight(state) {
-      state.cover = 'right';
+      state.cover = "right";
     },
   },
 });

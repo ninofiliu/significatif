@@ -1,6 +1,6 @@
 <template>
   <div class="Archives">
-    <NavBar/>
+    <NavBar />
     <div class="content">
       <div class="years" :class="{ '--opened': yearsOpened }">
         <div
@@ -20,7 +20,11 @@
         <div class="years-button" @click="yearsOpened = true">
           {{ currentYear }} - other years...
         </div>
-        <img v-show="show" v-media="src" :style="{ left: `${left}px`, top: `${top}px` }">
+        <img
+          v-show="show"
+          v-media="src"
+          :style="{ left: `${left}px`, top: `${top}px` }"
+        />
         <div class="table">
           <div class="row">
             <div>Date</div>
@@ -28,13 +32,32 @@
             <div>Location</div>
           </div>
           <div class="row">
-            <div><input v-model="searchedDate" placeholder="Filter by date"></div>
-            <div><input v-model="searchedName" placeholder="Filter by name"></div>
-            <div><input v-model="searchedLocation" placeholder="Filter by location"></div>
+            <div>
+              <input v-model="searchedDate" placeholder="Filter by date" />
+            </div>
+            <div>
+              <input v-model="searchedName" placeholder="Filter by name" />
+            </div>
+            <div>
+              <input
+                v-model="searchedLocation"
+                placeholder="Filter by location"
+              />
+            </div>
           </div>
           <div ref="tbody">
-            <div class="row" v-for="image of displayedImages" :key="image.src" @mouseenter="src = image.src">
-              <RouterLink :to="{ path: `/photos/${image.storyId}`, query: { current: image.storyIndex } }">
+            <div
+              class="row"
+              v-for="image of displayedImages"
+              :key="image.src"
+              @mouseenter="src = image.src"
+            >
+              <RouterLink
+                :to="{
+                  path: `/photos/${image.storyId}`,
+                  query: { current: image.storyIndex },
+                }"
+              >
                 <div>{{ image.readableDate }}</div>
                 <div>{{ image.name }}</div>
                 <div>{{ image.location }}</div>
@@ -44,16 +67,16 @@
         </div>
       </div>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
 <script>
-import pictures from '../../content/pictures.json';
-import stories from '../../content/stories.json';
-import Footer from '../../components/Footer.vue';
-import NavBar from '../../components/NavBar.vue';
-import Year from './Year.vue';
+import pictures from "../../content/pictures.json";
+import stories from "../../content/stories.json";
+import Footer from "../../components/Footer.vue";
+import NavBar from "../../components/NavBar.vue";
+import Year from "./Year.vue";
 
 const images = pictures.map((picture) => {
   const story = stories.find((s) => s.pictures.includes(picture.src));
@@ -66,7 +89,9 @@ const images = pictures.map((picture) => {
     storyIndex: story.pictures.indexOf(picture.src),
   };
 });
-const years = [...new Set(images.map((image) => image.date.getFullYear()))].sort().reverse();
+const years = [...new Set(images.map((image) => image.date.getFullYear()))]
+  .sort()
+  .reverse();
 const currentYear = Math.max(...years);
 
 export default {
@@ -80,24 +105,28 @@ export default {
       left: 0,
       top: 0,
       show: false,
-      src: '',
+      src: "",
       images,
       years,
       currentYear,
-      searchedDate: '',
-      searchedName: '',
-      searchedLocation: '',
+      searchedDate: "",
+      searchedName: "",
+      searchedLocation: "",
       yearsOpened: false,
     };
   },
   computed: {
     displayedImages() {
-      const matches = (str1, str2) => str1.toLowerCase().includes(str2.toLowerCase());
+      const matches = (str1, str2) =>
+        str1.toLowerCase().includes(str2.toLowerCase());
       return this.images
         .filter((image) => image.date.getFullYear() === this.currentYear)
         .map((image) => ({
           ...image,
-          readableDate: Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(image.date),
+          readableDate: Intl.DateTimeFormat("en-US", {
+            month: "long",
+            year: "numeric",
+          }).format(image.date),
         }))
         .filter((image) => matches(image.readableDate, this.searchedDate))
         .filter((image) => matches(image.name, this.searchedName))
@@ -117,16 +146,16 @@ export default {
   },
   created() {
     for (const image of this.images) {
-      (new Image()).src = image.src;
+      new Image().src = image.src;
     }
   },
   mounted() {
-    this.$refs.tbody.addEventListener('mousemove', this.onMouseMove);
-    this.$refs.tbody.addEventListener('mouseout', this.onMouseOut);
+    this.$refs.tbody.addEventListener("mousemove", this.onMouseMove);
+    this.$refs.tbody.addEventListener("mouseout", this.onMouseOut);
   },
   beforeDestroy() {
-    this.$refs.tbody.removeEventListener('mousemove', this.onMouseMove);
-    this.$refs.tbody.removeEventListener('mouseout', this.onMouseOut);
+    this.$refs.tbody.removeEventListener("mousemove", this.onMouseMove);
+    this.$refs.tbody.removeEventListener("mouseout", this.onMouseOut);
   },
 };
 </script>
@@ -139,7 +168,7 @@ export default {
   justify-content: space-between;
   overflow-y: hidden;
   height: 100vh;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 .content {
   margin-top: 10vh;
@@ -174,7 +203,7 @@ export default {
   }
 }
 @for $i from 0 to 10 {
-  .year-container:nth-child(#{$i+1}) {
+  .year-container:nth-child(#{$i + 1}) {
     animation-delay: #{0.3 * $i}s;
   }
 }
@@ -218,7 +247,7 @@ input {
   outline: none;
   &::placeholder {
     color: var(--red);
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 .years-button {
@@ -234,7 +263,7 @@ input {
     width: 90%;
     z-index: 10;
     transform: translateX(-100vw);
-    transition: all .5s;
+    transition: all 0.5s;
     &.--opened {
       transform: translateX(0);
     }

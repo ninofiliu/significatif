@@ -9,10 +9,10 @@
 
 // text
 .u-font-good-glyphs {
-  font-family: 'Good Glyphs';
+  font-family: "Good Glyphs";
 }
 .u-font-ogg {
-  font-family: 'Ogg', 'Times New Roman', Times, serif;
+  font-family: "Ogg", "Times New Roman", Times, serif;
 }
 .u-italic {
   font-style: italic;
@@ -24,7 +24,7 @@
   height: 1em;
   width: 4em;
   object-fit: cover;
-  transform: translateY(.1em);
+  transform: translateY(0.1em);
 }
 .u-comfort {
   line-height: 1.4;
@@ -34,7 +34,7 @@
 }
 .u-text-container {
   position: fixed;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: justify;
 }
 .u-title {
@@ -59,13 +59,13 @@
 }
 @keyframes u-oscillate-x {
   from {
-    transform: translateX(-.2em);
+    transform: translateX(-0.2em);
   }
   50% {
-    transform: translateX(.2em);
+    transform: translateX(0.2em);
   }
   to {
-    transform: translateX(-.2em);
+    transform: translateX(-0.2em);
   }
 }
 .u-appear-scaleup {

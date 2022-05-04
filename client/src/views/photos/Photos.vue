@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar/>
+    <NavBar />
     <div class="stories --desktop">
       <RouterLink
         to="/photos/self-portraits"
@@ -8,9 +8,11 @@
         :style="{ 'flex-grow': flexGrows[9] }"
       >
         <div class="story-content">
-          <img v-media="covers['self-portraits'].img">
+          <img v-media="covers['self-portraits'].img" />
           <div class="title">AUTOPORTRAITS</div>
-          <div class="text u-comfort"><p v-for="p of covers['self-portraits'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['self-portraits'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
 
@@ -20,9 +22,13 @@
         :style="{ 'flex-grow': flexGrows[8] }"
       >
         <div class="story-content">
-          <img v-media="covers['silent-photography'].img">
+          <img v-media="covers['silent-photography'].img" />
           <div class="title">SILENT PHOTOGRAPHY</div>
-          <div class="text u-comfort"><p v-for="p of covers['silent-photography'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['silent-photography'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
 
@@ -32,9 +38,13 @@
         :style="{ 'flex-grow': flexGrows[7] }"
       >
         <div class="story-content">
-          <img v-media="covers['cross-the-borders'].img">
-          <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
-          <div class="text u-comfort"><p v-for="p of covers['cross-the-borders'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['cross-the-borders'].img" />
+          <div class="title">
+            CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['cross-the-borders'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
 
@@ -44,9 +54,15 @@
         :style="{ 'flex-grow': flexGrows[6] }"
       >
         <div class="story-content">
-          <img v-media="covers['taste-of-farniente'].img">
-          <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
-          <div class="text u-comfort"><p v-for="p of covers['taste-of-farniente'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['taste-of-farniente'].img" />
+          <div class="title">
+            TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['taste-of-farniente'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
 
@@ -56,9 +72,15 @@
         :style="{ 'flex-grow': flexGrows[5] }"
       >
         <div class="story-content">
-          <img v-media="covers['pedal-to-the-metal'].img">
-          <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
-          <div class="text u-comfort"><p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['pedal-to-the-metal'].img" />
+          <div class="title">
+            PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
 
@@ -68,9 +90,11 @@
         :style="{ 'flex-grow': flexGrows[4] }"
       >
         <div class="story-content">
-          <img v-media="covers['ride-shoot-repeat'].img">
+          <img v-media="covers['ride-shoot-repeat'].img" />
           <div class="title">RIDE, SHOOT, REPEAT</div>
-          <div class="text u-comfort"><p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
 
@@ -80,9 +104,15 @@
         :style="{ 'flex-grow': flexGrows[3] }"
       >
         <div class="story-content">
-          <img v-media="covers['vous-etes-des-animaux'].img">
-          <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
-          <div class="text u-comfort"><p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['vous-etes-des-animaux'].img" />
+          <div class="title">
+            VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
 
@@ -92,9 +122,11 @@
         :style="{ 'flex-grow': flexGrows[2] }"
       >
         <div class="story-content">
-          <img v-media="covers['ocular-pleasure'].img">
+          <img v-media="covers['ocular-pleasure'].img" />
           <div class="title">OCULAR PLEASURE</div>
-          <div class="text u-comfort"><p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
 
@@ -104,17 +136,23 @@
         :style="{ 'flex-grow': flexGrows[1] }"
       >
         <div class="story-content">
-          <img v-media="covers['humans'].img">
+          <img v-media="covers['humans'].img" />
           <div class="title">HUMANS</div>
-          <div class="text u-comfort"><p v-for="p of covers['humans'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['humans'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
 
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
-          <div class="pick">Pick <span class="one u-font-ogg u-italic">one</span></div>
-          <div class="arrow u-oscillate-x"><img src="../../assets/arrow-medium.svg"></div>
+          <div class="pick">
+            Pick <span class="one u-font-ogg u-italic">one</span>
+          </div>
+          <div class="arrow u-oscillate-x">
+            <img src="../../assets/arrow-medium.svg" />
+          </div>
         </div>
       </div>
     </div>
@@ -122,98 +160,109 @@
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
-          <div class="pick">Pick <span class="one u-font-ogg u-italic">one</span></div>
-          <div class="arrow u-oscillate-x"><img src="../../assets/arrow-medium.svg"></div>
+          <div class="pick">
+            Pick <span class="one u-font-ogg u-italic">one</span>
+          </div>
+          <div class="arrow u-oscillate-x">
+            <img src="../../assets/arrow-medium.svg" />
+          </div>
         </div>
       </div>
-      <RouterLink
-        to="/photos/humans"
-        class="story"
-      >
+      <RouterLink to="/photos/humans" class="story">
         <div class="story-content">
-          <img v-media="covers['humans'].img">
+          <img v-media="covers['humans'].img" />
           <div class="title">HUMANS</div>
-          <div class="text u-comfort"><p v-for="p of covers['humans'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['humans'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/ocular-pleasure"
-        class="story"
-      >
+      <RouterLink to="/photos/ocular-pleasure" class="story">
         <div class="story-content">
-          <img v-media="covers['ocular-pleasure'].img">
+          <img v-media="covers['ocular-pleasure'].img" />
           <div class="title">OCULAR PLEASURE</div>
-          <div class="text u-comfort"><p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/vous-etes-des-animaux"
-        class="story"
-      >
+      <RouterLink to="/photos/vous-etes-des-animaux" class="story">
         <div class="story-content">
-          <img v-media="covers['vous-etes-des-animaux'].img">
-          <div class="title">VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX</div>
-          <div class="text u-comfort"><p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['vous-etes-des-animaux'].img" />
+          <div class="title">
+            VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/ride-shoot-repeat"
-        class="story"
-      >
+      <RouterLink to="/photos/ride-shoot-repeat" class="story">
         <div class="story-content">
-          <img v-media="covers['ride-shoot-repeat'].img">
+          <img v-media="covers['ride-shoot-repeat'].img" />
           <div class="title">RIDE, SHOOT, REPEAT</div>
-          <div class="text u-comfort"><p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/pedal-to-the-metal"
-        class="story"
-      >
+      <RouterLink to="/photos/pedal-to-the-metal" class="story">
         <div class="story-content">
-          <img v-media="covers['pedal-to-the-metal'].img">
-          <div class="title">PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL</div>
-          <div class="text u-comfort"><p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['pedal-to-the-metal'].img" />
+          <div class="title">
+            PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/taste-of-farniente"
-        class="story"
-      >
+      <RouterLink to="/photos/taste-of-farniente" class="story">
         <div class="story-content">
-          <img v-media="covers['taste-of-farniente'].img">
-          <div class="title">TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE</div>
-          <div class="text u-comfort"><p v-for="p of covers['taste-of-farniente'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['taste-of-farniente'].img" />
+          <div class="title">
+            TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['taste-of-farniente'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/cross-the-borders"
-        class="story"
-      >
+      <RouterLink to="/photos/cross-the-borders" class="story">
         <div class="story-content">
-          <img v-media="covers['cross-the-borders'].img">
-          <div class="title">CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS</div>
-          <div class="text u-comfort"><p v-for="p of covers['cross-the-borders'].txt" :key="p">{{p}}</p></div>
+          <img v-media="covers['cross-the-borders'].img" />
+          <div class="title">
+            CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS
+          </div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['cross-the-borders'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/silent-photography"
-        class="story"
-      >
+      <RouterLink to="/photos/silent-photography" class="story">
         <div class="story-content">
-          <img v-media="covers['silent-photography'].img">
+          <img v-media="covers['silent-photography'].img" />
           <div class="title">SILENT PHOTOGRAPHY</div>
-          <div class="text u-comfort"><p v-for="p of covers['silent-photography'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['silent-photography'].txt" :key="p">
+              {{ p }}
+            </p>
+          </div>
         </div>
       </RouterLink>
-      <RouterLink
-        to="/photos/self-portraits"
-        class="story"
-      >
+      <RouterLink to="/photos/self-portraits" class="story">
         <div class="story-content">
-          <img v-media="covers['self-portraits'].img">
+          <img v-media="covers['self-portraits'].img" />
           <div class="title">AUTOPORTRAITS</div>
-          <div class="text u-comfort"><p v-for="p of covers['self-portraits'].txt" :key="p">{{p}}</p></div>
+          <div class="text u-comfort">
+            <p v-for="p of covers['self-portraits'].txt" :key="p">{{ p }}</p>
+          </div>
         </div>
       </RouterLink>
     </div>
@@ -221,8 +270,8 @@
 </template>
 
 <script>
-import NavBar from '../../components/NavBar.vue';
-import covers from '../../content/covers.json';
+import NavBar from "../../components/NavBar.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -236,10 +285,10 @@ export default {
     };
   },
   created() {
-    document.addEventListener('wheel', this.onWheel);
+    document.addEventListener("wheel", this.onWheel);
   },
   beforeDestroy() {
-    document.removeEventListener('wheel', this.onWheel);
+    document.removeEventListener("wheel", this.onWheel);
   },
   computed: {
     flexGrows() {
@@ -290,18 +339,18 @@ export default {
 }
 .story {
   flex-basis: 0;
-  transition: flex-grow .5s;
+  transition: flex-grow 0.5s;
   position: relative;
-  &:nth-child(3n+1) {
+  &:nth-child(3n + 1) {
     background-color: var(--orange);
   }
-  &:nth-child(3n+2) {
+  &:nth-child(3n + 2) {
     background-color: var(--yellow);
   }
-  &:nth-child(3n+3) {
+  &:nth-child(3n + 3) {
     background-color: var(--purple);
   }
-  &:nth-child(2n+1) {
+  &:nth-child(2n + 1) {
     text-align: center;
   }
 }
@@ -336,7 +385,7 @@ export default {
   .one {
     border: 2px solid var(--red);
     border-radius: 50%;
-    padding: .15em .7em;
+    padding: 0.15em 0.7em;
   }
   .arrow {
     font-size: 4rem;
@@ -354,7 +403,7 @@ export default {
     flex-direction: row-reverse;
   }
   .story-content {
-    transition: all .5s;
+    transition: all 0.5s;
     --unit: calc(100vw / 25); // 25 = sum of all flex grows
     position: absolute;
     right: var(--unit);
@@ -363,7 +412,7 @@ export default {
     height: calc(100vh - 3rem - 2 * var(--unit));
   }
   a.story:hover .story-content {
-    transform: translateY(1rem)
+    transform: translateY(1rem);
   }
 }
 @media screen and (max-width: 900px) {

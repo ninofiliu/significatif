@@ -6,7 +6,7 @@
       :class="{
         ...char.class,
         underline: char.underline,
-        hidden: (reversed ? (chars.length - i) : i) > appeared
+        hidden: (reversed ? chars.length - i : i) > appeared,
       }"
       v-html="char.html"
     />
@@ -58,16 +58,16 @@ div {
 span {
   position: relative;
   display: inline-block;
-  transition: all .5s;
+  transition: all 0.5s;
   vertical-align: top;
   &.hidden {
     transform: translateY(200%);
   }
   &.underline::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
-    height: .04em;
+    height: 0.04em;
     top: 1.1em;
     background-color: var(--red);
     vertical-align: top;

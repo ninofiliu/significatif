@@ -1,9 +1,7 @@
 <template>
   <div>
     <div class="navbar --desktop">
-      <RouterLink to="/">
-        significa.tif
-      </RouterLink>
+      <RouterLink to="/"> significa.tif </RouterLink>
       <div>
         <RouterLink to="/photos">photos</RouterLink>
         <RouterLink to="/manifesto">manifesto</RouterLink>
@@ -18,7 +16,12 @@
         <RouterLink to="/manifesto">manifesto</RouterLink>
         <RouterLink to="/contact">contact</RouterLink>
         <RouterLink to="/archives">archives</RouterLink>
-        <a href="https://www.instagram.com/significa.tif/" target="_blank" rel="noreferrer noopener">instagram</a>
+        <a
+          href="https://www.instagram.com/significa.tif/"
+          target="_blank"
+          rel="noreferrer noopener"
+          >instagram</a
+        >
       </div>
     </div>
   </div>
@@ -55,7 +58,7 @@ export default {
 a {
   vertical-align: middle;
   &:hover {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 .router-link-exact-active:not(.close) {
@@ -94,7 +97,7 @@ a {
     color: white;
     display: flex;
     flex-direction: column;
-    transition: all .5s;
+    transition: all 0.5s;
     font-size: 2.5rem;
     &.--closed {
       transform: translateX(-100%);
@@ -106,4 +109,5 @@ a {
     }
   }
 }
-</style>>
+</style>
+>

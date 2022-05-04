@@ -2,20 +2,22 @@
   <Story
     id="humans"
     color="var(--purple)"
-    :backgroundPosition="{ }"
+    :backgroundPosition="{}"
     :picturesPosition="{ top: '0', right: '0', bottom: '35vh', left: '50vw' }"
     picturesMode="horizontal"
   >
-    <div class="bubble u-appear-scaleup"/>
-    <div class="u-title"><AppearingLine :chars="humans"/></div>
-    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
+    <div class="bubble u-appear-scaleup" />
+    <div class="u-title"><AppearingLine :chars="humans" /></div>
+    <div class="u-text-container">
+      <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
   </Story>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import Story from '../../components/story/Story.vue';
-import covers from '../../content/covers.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import Story from "../../components/story/Story.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -26,12 +28,12 @@ export default {
     return {
       txt: covers.humans.txt,
       humans: [
-        { html: 'H', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'u', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'm', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'n', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 's', class: { } },
+        { html: "H", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "u", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "m", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "a", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "n", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "s", class: {} },
       ],
     };
   },

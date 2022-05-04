@@ -1,12 +1,12 @@
 <template>
   <div class="center">
-    <AppearingLine :chars="chars0"/>
-    <AppearingLine :chars="chars1" reversed/>
+    <AppearingLine :chars="chars0" />
+    <AppearingLine :chars="chars1" reversed />
   </div>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
+import AppearingLine from "../../components/AppearingLine.vue";
 
 export default {
   components: {
@@ -15,36 +15,36 @@ export default {
   data() {
     return {
       chars0: [
-        { html: 'S', class: {} },
-        { html: 'i', class: {} },
-        { html: 'g', class: {} },
-        { html: 'n', class: {} },
-        { html: 'i', class: {} },
-        { html: 'f', class: {} },
-        { html: 'i', class: {} },
-        { html: 'c', class: {} },
-        { html: 'a', class: {} },
-        { html: '.', class: {} },
-        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'f', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: '&nbsp;', class: {} },
-        { html: 'b', class: {} },
-        { html: 'y', class: {} },
+        { html: "S", class: {} },
+        { html: "i", class: {} },
+        { html: "g", class: {} },
+        { html: "n", class: {} },
+        { html: "i", class: {} },
+        { html: "f", class: {} },
+        { html: "i", class: {} },
+        { html: "c", class: {} },
+        { html: "a", class: {} },
+        { html: ".", class: {} },
+        { html: "t", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "i", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "f", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "&nbsp;", class: {} },
+        { html: "b", class: {} },
+        { html: "y", class: {} },
       ],
       chars1: [
-        { html: 'V', underline: true },
-        { html: 'i', underline: true },
-        { html: 'c', underline: true },
-        { html: 't', underline: true },
-        { html: 'o', underline: true },
-        { html: 'r', underline: true },
-        { html: '&nbsp;', class: {} },
-        { html: 'R', class: {} },
-        { html: 'o', class: {} },
-        { html: 'g', class: {} },
-        { html: 'e', class: {} },
-        { html: 'r', class: {} },
+        { html: "V", underline: true },
+        { html: "i", underline: true },
+        { html: "c", underline: true },
+        { html: "t", underline: true },
+        { html: "o", underline: true },
+        { html: "r", underline: true },
+        { html: "&nbsp;", class: {} },
+        { html: "R", class: {} },
+        { html: "o", class: {} },
+        { html: "g", class: {} },
+        { html: "e", class: {} },
+        { html: "r", class: {} },
       ],
     };
   },

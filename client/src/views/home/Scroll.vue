@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import srcs from '../../content/home.json';
+import srcs from "../../content/home.json";
 
 const pictures = srcs.map((src) => ({
   y: Math.random(),
@@ -29,10 +29,10 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener('wheel', this.onWheel);
+    window.addEventListener("wheel", this.onWheel);
   },
   beforeDestroy() {
-    window.removeEventListener('wheel', this.onwheel);
+    window.removeEventListener("wheel", this.onwheel);
   },
   methods: {
     onWheel(evt) {

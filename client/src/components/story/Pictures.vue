@@ -20,18 +20,13 @@
         '--after': current < pictures.length - index - 2,
       }"
       @click.stop="$emit('click', index)"
-    >
+    />
   </div>
 </template>
 
 <script>
 export default {
-  props: [
-    'position',
-    'mode',
-    'pictures',
-    'current',
-  ],
+  props: ["position", "mode", "pictures", "current"],
 };
 </script>
 
@@ -42,14 +37,14 @@ export default {
   right: 25vw;
   bottom: 10vh;
   left: 25vw;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   position: absolute;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .--hidden {
   img.--before {
@@ -74,7 +69,7 @@ img {
     img:nth-last-child(2) {
       transform: rotate(5deg);
     }
-    img:nth-last-child(1n+3) {
+    img:nth-last-child(1n + 3) {
       display: none;
     }
     &:hover {
@@ -92,18 +87,18 @@ img {
       object-position: right top;
     }
     img:nth-last-child(1) {
-      transform: translate(-5vw)
+      transform: translate(-5vw);
     }
-    img:nth-last-child(1n+3) {
+    img:nth-last-child(1n + 3) {
       display: none;
     }
     &:hover {
       cursor: pointer;
       img:nth-last-child(1) {
-        transform: translate(-10vw)
+        transform: translate(-10vw);
       }
       img:nth-last-child(2) {
-        transform: translate(-3vw)
+        transform: translate(-3vw);
       }
     }
   }

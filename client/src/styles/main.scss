@@ -19,12 +19,12 @@ button {
   border: none;
   &:hover {
     cursor: pointer;
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', Helvetica, 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
   background-color: var(--white);
   color: var(--red);
   overflow-x: hidden;

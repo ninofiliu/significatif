@@ -1,8 +1,11 @@
 <template>
   <div class="story" :class="{ '--home': home }">
-    <NavBar/>
+    <NavBar />
     <div class="swipable" :class="{ '--next': shift < 0, '--prev': shift > 0 }">
-      <div class="background" :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"/>
+      <div
+        class="background"
+        :style="{ backgroundColor: color, ...(home ? backgroundPosition : {}) }"
+      />
       <Pictures
         :mode="home ? picturesMode : 'hidden'"
         :position="home ? picturesPosition : {}"
@@ -11,48 +14,64 @@
         @click="goPictures"
       />
       <div class="article">
-        <slot/>
+        <slot />
       </div>
       <div class="details" v-if="!home">
         <div class="prev">
-          <img @click="scrollPrev" src="../../assets/arrow-small.svg"/>
+          <img @click="scrollPrev" src="../../assets/arrow-small.svg" />
         </div>
-        <div class="desktop-title">{{ randStoryPictures[randCurrent].title }}</div>
-        <div class="picture-spacer"/>
+        <div class="desktop-title">
+          {{ randStoryPictures[randCurrent].title }}
+        </div>
+        <div class="picture-spacer" />
         <div class="date">
-          <div class="mobile-title">{{ randStoryPictures[randCurrent].title }}</div>
+          <div class="mobile-title">
+            {{ randStoryPictures[randCurrent].title }}
+          </div>
           <div>{{ randStoryPictures[randCurrent].place }}</div>
           <div>
-            {{ randStoryPictures[randCurrent].date.toLocaleString('en', { month: 'long' }) }}
+            {{
+              randStoryPictures[randCurrent].date.toLocaleString("en", {
+                month: "long",
+              })
+            }}
             {{ randStoryPictures[randCurrent].date.getFullYear() }}
           </div>
         </div>
         <div class="next">
-          <img @click="scrollNext" src="../../assets/arrow-small.svg"/>
+          <img @click="scrollNext" src="../../assets/arrow-small.svg" />
         </div>
         <div class="back">
-          <img @click="goHome" src="../../assets/arrow-medium.svg"/>
+          <img @click="goHome" src="../../assets/arrow-medium.svg" />
           <div class="u-rotate">
-            <span v-for="(letter, index) of 'return to the album'.split('')" :key="index">{{ letter }}</span>
+            <span
+              v-for="(letter, index) of 'return to the album'.split('')"
+              :key="index"
+              >{{ letter }}</span
+            >
           </div>
         </div>
       </div>
     </div>
-    <Footer fixed/>
+    <Footer fixed />
   </div>
 </template>
 
 <script>
-import stories from '../../content/stories.json';
-import pictures from '../../content/pictures.json';
-import Footer from '../Footer.vue';
-import NavBar from '../NavBar.vue';
-import Pictures from './Pictures.vue';
+import stories from "../../content/stories.json";
+import pictures from "../../content/pictures.json";
+import Footer from "../Footer.vue";
+import NavBar from "../NavBar.vue";
+import Pictures from "./Pictures.vue";
 
 let prevShift;
 
 const createRandMap = (size) => {
-  const available = new Set(Array(size).fill().map((_, i) => i));
+  const available = new Set(
+    Array(size)
+      .fill()
+      .map((_, i) => i)
+  );
   const randMap = {};
   for (let i = 0; i < size; i++) {
     const n = [...available][Math.floor(Math.random() * available.size)];
@@ -61,7 +80,8 @@ const createRandMap = (size) => {
   }
   return randMap;
 };
-const invertMap = (map) => Object.fromEntries(Object.entries(map).map(([key, value]) => [value, key]));
+const invertMap = (map) =>
+  Object.fromEntries(Object.entries(map).map(([key, value]) => [value, key]));
 
 export default {
   components: {
@@ -70,11 +90,11 @@ export default {
     Pictures,
   },
   props: [
-    'id',
-    'color',
-    'backgroundPosition',
-    'picturesPosition',
-    'picturesMode',
+    "id",
+    "color",
+    "backgroundPosition",
+    "picturesPosition",
+    "picturesMode",
   ],
   data() {
     const story = stories.find(({ id }) => id === this.id);
@@ -84,7 +104,9 @@ export default {
       .map((s) => ({ ...s, date: new Date(s.date) }));
     const randMap = createRandMap(storyPictures.length);
     const invertedRandMap = invertMap(randMap);
-    const randStoryPictures = Array(storyPictures.length).fill().map((_, i) => storyPictures[invertedRandMap[i]]);
+    const randStoryPictures = Array(storyPictures.length)
+      .fill()
+      .map((_, i) => storyPictures[invertedRandMap[i]]);
     return {
       storyPictures,
       randStoryPictures,
@@ -99,10 +121,10 @@ export default {
     };
   },
   created() {
-    document.addEventListener('keyup', this.onkeyup);
-    document.addEventListener('wheel', this.onwheel);
-    document.addEventListener('touchstart', this.ontouchstart);
-    document.addEventListener('touchend', this.ontouchend);
+    document.addEventListener("keyup", this.onkeyup);
+    document.addEventListener("wheel", this.onwheel);
+    document.addEventListener("touchstart", this.ontouchstart);
+    document.addEventListener("touchend", this.ontouchend);
     if (this.$route.query.current) {
       this.randCurrent = this.randMap[+this.$route.query.current];
       this.home = false;
@@ -118,10 +140,10 @@ export default {
     }
   },
   destroyed() {
-    document.removeEventListener('keyup', this.onkeyup);
-    document.removeEventListener('wheel', this.onwheel);
-    document.removeEventListener('touchstart', this.ontouchstart);
-    document.removeEventListener('touchend', this.ontouchend);
+    document.removeEventListener("keyup", this.onkeyup);
+    document.removeEventListener("wheel", this.onwheel);
+    document.removeEventListener("touchstart", this.ontouchstart);
+    document.removeEventListener("touchend", this.ontouchend);
   },
   computed: {
     current() {
@@ -146,21 +168,21 @@ export default {
       this.$router.replace({ path: this.$route.path, query: {} });
     },
     onkeyup(evt) {
-      if (evt.key === 'ArrowRight') {
+      if (evt.key === "ArrowRight") {
         if (this.home) {
           this.goToStory(+1);
         } else {
           this.scrollNext();
         }
       }
-      if (evt.key === 'ArrowLeft') {
+      if (evt.key === "ArrowLeft") {
         if (this.home) {
           this.goToStory(-1);
         } else {
           this.scrollPrev();
         }
       }
-      if (evt.key === 'Escape') {
+      if (evt.key === "Escape") {
         if (this.home) {
           this.$router.go(-1);
         } else {
@@ -209,19 +231,28 @@ export default {
       this.scrollTo((this.randCurrent + 1) % this.storyPictures.length);
     },
     scrollPrev() {
-      this.scrollTo((this.storyPictures.length + this.randCurrent - 1) % this.storyPictures.length);
+      this.scrollTo(
+        (this.storyPictures.length + this.randCurrent - 1) %
+          this.storyPictures.length
+      );
     },
     scrollTo(index) {
       if (this.scrolling) return;
       this.scrolling = true;
-      setTimeout(() => { this.scrolling = false; }, 500);
+      setTimeout(() => {
+        this.scrolling = false;
+      }, 500);
       this.randCurrent = index;
       this.updateRoute();
     },
     goToStory(shift) {
       if (this.goingToStory) return;
       this.goingToStory = true;
-      const nextIndex = (stories.length + stories.findIndex((story) => story.id === this.id) + shift) % stories.length;
+      const nextIndex =
+        (stories.length +
+          stories.findIndex((story) => story.id === this.id) +
+          shift) %
+        stories.length;
       this.shift = shift;
       setTimeout(() => {
         prevShift = shift;
@@ -235,7 +266,7 @@ export default {
 
 <style lang="scss" scoped>
 .swipable {
-  transition: all .5s;
+  transition: all 0.5s;
   height: 100vh;
   &.--next {
     transform: translateX(100vw);
@@ -246,15 +277,15 @@ export default {
 }
 .background {
   position: fixed;
-  transition: all .5s;
+  transition: all 0.5s;
   inset: 0 0 0 0;
 }
 .article {
-  transition: all .5s;
+  transition: all 0.5s;
   opacity: 0;
 }
 .details {
-  transition: all .5s;
+  transition: all 0.5s;
   opacity: 1;
   position: fixed;
   display: flex;
@@ -269,7 +300,7 @@ export default {
 .prev {
   width: 2vw;
   img {
-    transform: translateY(.1rem) rotate(180deg);
+    transform: translateY(0.1rem) rotate(180deg);
     &:hover {
       cursor: pointer;
       opacity: 0.5;
@@ -293,14 +324,15 @@ export default {
 .next {
   width: 2vw;
   img {
-    transform: translateY(.1rem);
+    transform: translateY(0.1rem);
     &:hover {
       cursor: pointer;
       opacity: 0.5;
     }
   }
 }
-.prev, .next {
+.prev,
+.next {
   display: flex;
   justify-content: center;
 }
@@ -309,24 +341,26 @@ export default {
   position: fixed;
   img {
     width: 2rem;
-    transition: all .5s;
+    transition: all 0.5s;
     position: absolute;
     transform: translate(-50%, -50%) rotate(180deg);
   }
   span {
     text-transform: uppercase;
     position: absolute;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
   @for $i from 1 through 20 {
     span:nth-child(#{$i}) {
-      transform: translate(-50%, -50%) rotate(#{calc(360 / 22) * $i}deg) translateY(-2rem);
+      transform: translate(-50%, -50%)
+        rotate(#{calc(360 / 22) * $i}deg)
+        translateY(-2rem);
     }
   }
   &:hover {
     cursor: pointer;
     img {
-      transform: translate(-50%, -50%) rotate(180deg) scale(.7);
+      transform: translate(-50%, -50%) rotate(180deg) scale(0.7);
     }
   }
 }

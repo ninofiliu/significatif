@@ -1,35 +1,35 @@
-@import './globals.scss';
-@import './main.scss';
+@import "./globals.scss";
+@import "./main.scss";
 
 @font-face {
-  font-family: 'Ogg';
-  src: url('./Ogg-Roman.otf');
+  font-family: "Ogg";
+  src: url("./Ogg-Roman.otf");
   font-style: normal;
 }
 @font-face {
-  font-family: 'Ogg';
-  src: url('./Ogg-Italic.otf');
+  font-family: "Ogg";
+  src: url("./Ogg-Italic.otf");
   font-style: italic;
 }
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./HelveticaNeue.woff');
+  font-family: "Helvetica Neue";
+  src: url("./HelveticaNeue.woff");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./HelveticaNeue-Light.woff');
+  font-family: "Helvetica Neue";
+  src: url("./HelveticaNeue-Light.woff");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./HelveticaNeue-Italic.woff');
+  font-family: "Helvetica Neue";
+  src: url("./HelveticaNeue-Italic.woff");
   font-style: italic;
   font-weight: normal;
 }
 @font-face {
-  font-family: 'Good Glyphs';
-  src: url('./GoodGlyphs.woff');
+  font-family: "Good Glyphs";
+  src: url("./GoodGlyphs.woff");
 }

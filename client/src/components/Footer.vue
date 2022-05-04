@@ -1,14 +1,14 @@
 <template>
   <div class="Footer" :class="{ '--fixed': fixed }">
-    <RouterLink to="/archives">
-      archives
-    </RouterLink>
-    <a href="https://www.instagram.com/significa.tif/" target="_blank" rel="noreferrer noopener">
+    <RouterLink to="/archives"> archives </RouterLink>
+    <a
+      href="https://www.instagram.com/significa.tif/"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
       instagram
     </a>
-    <div class="houdan">
-      48°47'45.3"N 1°36'09.9"E
-    </div>
+    <div class="houdan">48°47'45.3"N 1°36'09.9"E</div>
   </div>
 </template>
 
@@ -46,12 +46,8 @@ export default {
 }
 .RouterLink-exact-active {
   color: var(--white);
-  text-shadow:
-    1px 1px 0 var(--red),
-    1px -1px 0 var(--red),
-    -1px 1px 0 var(--red),
-    -1px -1px 0 var(--red),
-  ;
+  text-shadow: 1px 1px 0 var(--red), 1px -1px 0 var(--red),
+    -1px 1px 0 var(--red), -1px -1px 0 var(--red);
 }
 
 @media screen and (max-width: 900px) {

@@ -3,20 +3,29 @@
     id="self-portraits"
     color="var(--orange)"
     :backgroundPosition="{ left: '50vw' }"
-    :picturesPosition="{ top: '15vh', right: '50vw', left: '5vw', bottom: '15vh' }"
+    :picturesPosition="{
+      top: '15vh',
+      right: '50vw',
+      left: '5vw',
+      bottom: '15vh',
+    }"
     picturesMode="spread"
   >
-    <div class="bubble u-appear-scaleup"/>
-    <div class="u-title self"><AppearingLine :chars="self" :start="-5"/></div>
-    <div class="u-title portraits"><AppearingLine :chars="portraits" :start="-5"/></div>
-    <div class="u-text-container"><p v-for="t of txt" :key="t">{{ t }}</p></div>
+    <div class="bubble u-appear-scaleup" />
+    <div class="u-title self"><AppearingLine :chars="self" :start="-5" /></div>
+    <div class="u-title portraits">
+      <AppearingLine :chars="portraits" :start="-5" />
+    </div>
+    <div class="u-text-container">
+      <p v-for="t of txt" :key="t">{{ t }}</p>
+    </div>
   </Story>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import Story from '../../components/story/Story.vue';
-import covers from '../../content/covers.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import Story from "../../components/story/Story.vue";
+import covers from "../../content/covers.json";
 
 export default {
   components: {
@@ -25,23 +34,18 @@ export default {
   },
   data() {
     return {
-      txt: covers['self-portraits'].txt,
-      self: [
-        { html: 'S' },
-        { html: 'e' },
-        { html: 'l' },
-        { html: 'f' },
-      ],
+      txt: covers["self-portraits"].txt,
+      self: [{ html: "S" }, { html: "e" }, { html: "l" }, { html: "f" }],
       portraits: [
-        { html: 'P', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'o', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'r', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'a', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 'i', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 't', class: { 'u-font-ogg': true, 'u-italic': true } },
-        { html: 's', class: { 'u-font-ogg': true, 'u-italic': true } },
+        { html: "P", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "o", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "r", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "t", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "r", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "a", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "i", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "t", class: { "u-font-ogg": true, "u-italic": true } },
+        { html: "s", class: { "u-font-ogg": true, "u-italic": true } },
       ],
     };
   },

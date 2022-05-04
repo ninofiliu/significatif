@@ -1,88 +1,104 @@
 <template>
   <div class="Manifesto">
-    <div class="bubble big"/>
-    <div class="bubble small"/>
+    <div class="bubble big" />
+    <div class="bubble small" />
     <div class="center">
       <div class="landing">
-        <PicturesSnake/>
+        <PicturesSnake />
         <div class="text-desktop">
-          <AppearingLine :chars="letMeTell"/>
-          <AppearingLine :chars="youAStory" :start="-10"/>
-          <img src="../../assets/arrow-large.svg"/>
+          <AppearingLine :chars="letMeTell" />
+          <AppearingLine :chars="youAStory" :start="-10" />
+          <img src="../../assets/arrow-large.svg" />
         </div>
         <div class="text-mobile">
-          <AppearingLine :chars="letMe"/>
-          <AppearingLine :chars="tellYou" :start="-8"/>
-          <AppearingLine :chars="aStory" :start="-16"/>
-          <img src="../../assets/arrow-large.svg"/>
+          <AppearingLine :chars="letMe" />
+          <AppearingLine :chars="tellYou" :start="-8" />
+          <AppearingLine :chars="aStory" :start="-16" />
+          <img src="../../assets/arrow-large.svg" />
         </div>
       </div>
-      <hr>
+      <hr />
       <div class="more">
         <div class="left">
           <div class="text u-comfort">
             {{ manifestoContent.leftText }}
           </div>
           <div class="star">
-            <img class="u-rotate" src="../../assets/star.svg">
+            <img class="u-rotate" src="../../assets/star.svg" />
           </div>
         </div>
         <div class="right u-comfort">
           <span v-for="(fragment, i) of manifestoContent.rightText" :key="i">
-            <span v-if="fragment.type==='text'">
-              {{fragment.content}}
+            <span v-if="fragment.type === 'text'">
+              {{ fragment.content }}
             </span>
-            <span v-if="fragment.type==='image'">
-              <img v-media="fragment.content" class="u-text-img">
+            <span v-if="fragment.type === 'image'">
+              <img v-media="fragment.content" class="u-text-img" />
             </span>
           </span>
           <p>Bienvenue sur Significatif /</p>
         </div>
       </div>
     </div>
-    <NavBar/>
-    <Footer/>
+    <NavBar />
+    <Footer />
   </div>
 </template>
 
 <script>
-import AppearingLine from '../../components/AppearingLine.vue';
-import NavBar from '../../components/NavBar.vue';
-import Footer from '../../components/Footer.vue';
-import PicturesSnake from './PicturesSnake.vue';
-import manifestoContent from '../../content/manifesto.json';
+import AppearingLine from "../../components/AppearingLine.vue";
+import NavBar from "../../components/NavBar.vue";
+import Footer from "../../components/Footer.vue";
+import PicturesSnake from "./PicturesSnake.vue";
+import manifestoContent from "../../content/manifesto.json";
 
 const words = {
-  space: { html: '&nbsp;', class: {} },
+  space: { html: "&nbsp;", class: {} },
   let: [
-    { html: 'L', class: {} },
-    { html: 'E', class: {} },
-    { html: 'T', class: {} }],
+    { html: "L", class: {} },
+    { html: "E", class: {} },
+    { html: "T", class: {} },
+  ],
   me: [
-    { html: 'M', class: {} },
-    { html: 'E', class: {} }],
+    { html: "M", class: {} },
+    { html: "E", class: {} },
+  ],
   tell: [
-    { html: 'T', underline: true },
-    { html: 'E', underline: true },
-    { html: 'L', underline: true },
-    { html: 'L', underline: true }],
+    { html: "T", underline: true },
+    { html: "E", underline: true },
+    { html: "L", underline: true },
+    { html: "L", underline: true },
+  ],
   you: [
-    { html: 'Y', class: {} },
-    { html: 'O', class: {} },
-    { html: 'U', class: {} }],
-  a: [
-    { html: 'A', class: {} }],
+    { html: "Y", class: {} },
+    { html: "O", class: {} },
+    { html: "U", class: {} },
+  ],
+  a: [{ html: "A", class: {} }],
   story: [
-    { html: 'S', class: {} },
-    { html: 'T', class: {} },
-    { html: 'm', class: { 'u-font-good-glyphs': true } },
-    { html: 'R', class: {} },
-    { html: 'Y', class: {} },
-    { html: '.', class: {} }],
+    { html: "S", class: {} },
+    { html: "T", class: {} },
+    { html: "m", class: { "u-font-good-glyphs": true } },
+    { html: "R", class: {} },
+    { html: "Y", class: {} },
+    { html: ".", class: {} },
+  ],
 };
 
-const letMeTell = [...words.let, words.space, ...words.me, words.space, ...words.tell];
-const youAStory = [...words.you, words.space, ...words.a, words.space, ...words.story];
+const letMeTell = [
+  ...words.let,
+  words.space,
+  ...words.me,
+  words.space,
+  ...words.tell,
+];
+const youAStory = [
+  ...words.you,
+  words.space,
+  ...words.a,
+  words.space,
+  ...words.story,
+];
 const letMe = [...words.let, words.space, ...words.me];
 const tellYou = [...words.tell, words.space, ...words.you];
 const aStory = [...words.a, words.space, ...words.story];
@@ -148,7 +164,7 @@ export default {
 }
 @keyframes scaleup-small {
   from {
-    transform: translateX(50px) translateY(50px) translateZ(30px) scale(0)
+    transform: translateX(50px) translateY(50px) translateZ(30px) scale(0);
   }
   to {
     transform: translateX(50px) translateY(50px) translateZ(30px) scale(1);
@@ -214,10 +230,12 @@ hr {
   }
   @keyframes scaleup-big {
     from {
-      transform: translateX(-225vw) translateY(-125vh) translateZ(-50px) scale(0);
+      transform: translateX(-225vw) translateY(-125vh) translateZ(-50px)
+        scale(0);
     }
     to {
-      transform: translateX(-225vw) translateY(-125vh) translateZ(-50px) scale(1);
+      transform: translateX(-225vw) translateY(-125vh) translateZ(-50px)
+        scale(1);
     }
   }
   .more {

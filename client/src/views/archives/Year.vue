@@ -29,7 +29,8 @@ export default {
   created() {
     const update = () => {
       if (this.isDestroyed) return;
-      if (this.current && this.progress < 1 && this.progress + 1 / 50 >= 1) this.$emit('done');
+      if (this.current && this.progress < 1 && this.progress + 1 / 50 >= 1)
+        this.$emit("done");
       if (this.current && this.progress < 1) this.progress += 1 / 50;
       if (!this.current && this.progress > 0) this.progress -= 1 / 50;
       requestAnimationFrame(update);
@@ -54,7 +55,7 @@ export default {
     path0D() {
       return this.easedProgress < 0.5
         ? `M 120 5 A 115 50 0 0 1 ${this.endX} ${this.endY}`
-        : 'M 120 5 A 115 50 0 0 1 120 105';
+        : "M 120 5 A 115 50 0 0 1 120 105";
     },
     path1D() {
       return `M 120 105 A 115 50 0 0 1 ${this.endX} ${this.endY}`;

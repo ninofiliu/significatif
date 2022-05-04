@@ -7,14 +7,14 @@
       :style="{
         left: `${image.left}px`,
         top: `${image.top}px`,
-        opacity: image.opacity
+        opacity: image.opacity,
       }"
     />
   </div>
 </template>
 
 <script>
-import homeContent from '../../content/home.json';
+import homeContent from "../../content/home.json";
 
 export default {
   data() {
@@ -42,10 +42,10 @@ export default {
     },
   },
   mounted() {
-    this.$el.addEventListener('mousemove', this.onMouseMove);
+    this.$el.addEventListener("mousemove", this.onMouseMove);
   },
   beforeDestroy() {
-    this.$el.removeEventListener('mousemove', this.onMouseMove);
+    this.$el.removeEventListener("mousemove", this.onMouseMove);
   },
 };
 </script>
