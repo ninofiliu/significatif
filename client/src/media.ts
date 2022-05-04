@@ -1,9 +1,7 @@
-/* eslint-disable no-param-reassign */
-import { Directive } from 'vue';
-import { STATIC_BASE } from './globals';
 
-const media: Directive = {
-  created(el, { value }) {
+import { STATIC_BASE } from './globals';
+export default {
+  created(el: HTMLImageElement, { value }: {value: string}) {
     const src = STATIC_BASE + value;
     const smallSrc = src.replace(/\.[^.]*$/, ($0) => `.small${$0}`);
     el.loading = 'lazy';
@@ -20,5 +18,3 @@ const media: Directive = {
     observer.observe(el);
   }
 }
-
-export default media;
