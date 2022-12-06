@@ -10,7 +10,6 @@
   - scroll overflow
 - /photos/{serie}?current={nb}
   - ajouter un décompte, même design
-  - double tiret dans le nom d'un fichier = un seul tiret qui s'affiche
 - /manifesto
   - scroll vs snake
 - /archives

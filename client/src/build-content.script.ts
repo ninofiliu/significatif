@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const fs = require("fs");
+import fs from "node:fs";
 
 const storyIds = [
   "cross-the-borders",
@@ -13,9 +13,12 @@ const storyIds = [
   "vous-etes-des-animaux",
 ];
 
-const stories = [];
+type Story = { id: string; pictures: string[] };
+type Pictures = { src: string; title: any; date: string; place: string };
+
+const stories: Story[] = [];
 for (const storyId of storyIds) {
-  const story = { id: storyId, pictures: [] };
+  const story: Story = { id: storyId, pictures: [] };
   const storyPath = `${__dirname}/../../static/${storyId}`;
   if (fs.existsSync(storyPath)) {
     story.pictures = fs
@@ -35,7 +38,7 @@ fs.writeFileSync(
 );
 console.log("[INFO] Built stories.json");
 
-const pictures = [];
+const pictures: Pictures[] = [];
 for (const storyId of storyIds) {
   const storyPath = `${__dirname}/../../static/${storyId}`;
   if (fs.existsSync(storyPath)) {
@@ -87,8 +90,14 @@ for (const storyId of storyIds) {
         .padStart(2, "0");
 
       const date = `${year}-${month}-01`;
-      const title = rawTitle.replace(/-/g, " ");
-      const place = rawPlace.replace(/-/g, " ");
+      const title = rawTitle
+        .replace(/--/g, "HYPHEN")
+        .replace(/-/g, " ")
+        .replace(/HYPHEN/g, "-");
+      const place = rawPlace
+        .replace(/--/g, "HYPHEN")
+        .replace(/-/g, " ")
+        .replace(/HYPHEN/g, "-");
 
       pictures.push({
         src,
