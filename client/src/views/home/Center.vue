@@ -66,17 +66,12 @@ export default {
   justify-content: center;
   align-items: center;
 
-  font-size: 3.5rem;
+  font-size: min(10vw, 3rem);
   font-weight: 300;
 
   pointer-events: none;
 }
 div {
   overflow-y: hidden;
-}
-@media (max-aspect-ratio: 1/1) {
-  .center {
-    font-size: 3rem;
-  }
 }
 </style>
