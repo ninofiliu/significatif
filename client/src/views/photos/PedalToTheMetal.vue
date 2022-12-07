@@ -97,7 +97,7 @@ export default {
   left: 50vw;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .pedal {
     top: 15vh;
     right: 10vw;

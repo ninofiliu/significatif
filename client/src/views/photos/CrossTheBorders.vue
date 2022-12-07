@@ -94,7 +94,7 @@ export default {
   top: 55vh;
   right: 20vw;
 }
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .cross {
     top: 10vh;
     left: 20vw;

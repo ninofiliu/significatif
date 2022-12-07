@@ -422,7 +422,7 @@ export default {
     transform: translateY(1rem);
   }
 }
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .stories.--desktop {
     display: none;
   }

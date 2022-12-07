@@ -1,5 +1,6 @@
 # bugs
 
+- texte qui dépasse sur la home
 - iphone 11
 - menu click on current closes the stuff
 - doublons

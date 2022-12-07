@@ -74,7 +74,7 @@ export default {
 div {
   overflow-y: hidden;
 }
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .center {
     font-size: 3rem;
   }

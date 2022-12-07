@@ -82,7 +82,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .u-text-container {
     inset: 40vh 55vw 10vh 5vw !important;
   }

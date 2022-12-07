@@ -98,7 +98,7 @@ export default {
   bottom: 10vh;
   right: 10vw;
 }
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .ride {
     top: 10vh;
     left: 20vw;

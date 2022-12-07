@@ -218,7 +218,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .text-desktop {
     display: none;
   }

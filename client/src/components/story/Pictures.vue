@@ -104,7 +104,7 @@ img {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .--hidden {
     inset: 6vh 5vw;
   }

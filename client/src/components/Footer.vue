@@ -50,7 +50,7 @@ export default {
     -1px 1px 0 var(--red), -1px -1px 0 var(--red);
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .houdan {
     display: none;
   }

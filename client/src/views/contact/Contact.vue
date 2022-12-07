@@ -155,7 +155,7 @@ section:nth-child(4) {
   margin-bottom: 3vh;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .big-text {
     font-size: 3rem;
   }

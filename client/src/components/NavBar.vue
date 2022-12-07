@@ -73,7 +73,7 @@ a {
 .--mobile {
   display: none;
 }
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .--desktop {
     display: none;
   }

@@ -254,7 +254,7 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-aspect-ratio: 1/1) {
   .years {
     display: none;
     display: block;
