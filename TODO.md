@@ -22,7 +22,6 @@
 - /photos
   - ajouter un peu d'ombre
   - ajouter le nb de photos dans chaque série en bas à droite de chaque photo d'accueil
-  - pick one -> scroll and pick one
   - make arrow and "one" clickable
   - brake when right/left scrolling
 - /contact
@@ -61,4 +60,4 @@ color space: sRGB
 
 # @victor
 
-- envoyer tout en hd
+- envoyer tout en hd (jpeg 69%)

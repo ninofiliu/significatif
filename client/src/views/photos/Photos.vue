@@ -156,14 +156,14 @@
         </div>
       </div>
     </div>
-    <div class="stories --mobile">
+    <div class="stories --mobile" ref="mobileStories">
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
-          <div class="pick">
+          <div class="pick" @click="mobileNext">
             Pick <span class="one u-font-ogg u-italic">one</span>
           </div>
-          <div class="arrow u-oscillate-x">
+          <div class="arrow u-oscillate-x" @click="mobileNext">
             <img src="../../assets/arrow-medium.svg" />
           </div>
         </div>
@@ -323,6 +323,13 @@ export default {
         }, 300);
         this.current = Math.max(0, this.current - 1);
       }
+    },
+    mobileNext() {
+      this.$refs.mobileStories.scroll({
+        top: 0,
+        left: window.innerWidth,
+        behavior: "smooth",
+      });
     },
   },
 };
