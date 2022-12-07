@@ -281,14 +281,13 @@ export default {
     return {
       covers,
       current: 0,
-      scrolling: false,
     };
   },
   created() {
-    document.addEventListener("wheel", this.onWheel);
+    document.addEventListener("keydown", this.onKeyPress);
   },
   beforeDestroy() {
-    document.removeEventListener("wheel", this.onWheel);
+    document.removeEventListener("keydown", this.onKeyPress);
   },
   computed: {
     flexGrows() {
@@ -307,22 +306,19 @@ export default {
     },
   },
   methods: {
-    onWheel(evt) {
-      if (this.scrolling) return;
-      if (evt.deltaY > 0) {
-        this.scrolling = true;
-        setTimeout(() => {
-          this.scrolling = false;
-        }, 300);
-        this.current = Math.min(9, this.current + 1);
+    onKeyPress(evt) {
+      console.log(evt.key);
+      switch (evt.key) {
+        case "ArrowRight":
+          this.go(this.current + 1);
+          break;
+        case "ArrowLeft":
+          this.go(this.current - 1);
+          break;
       }
-      if (evt.deltaY < 1) {
-        this.scrolling = true;
-        setTimeout(() => {
-          this.scrolling = false;
-        }, 300);
-        this.current = Math.max(0, this.current - 1);
-      }
+    },
+    go(i) {
+      this.current = Math.max(0, Math.min(9, i));
     },
     mobileNext() {
       this.$refs.mobileStories.scroll({
