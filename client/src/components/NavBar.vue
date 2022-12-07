@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="navbar --desktop">
-      <RouterLink to="/"> significa.tif </RouterLink>
+      <RouterLink to="/">VR</RouterLink>
       <div>
         <RouterLink to="/photos">photos</RouterLink>
         <RouterLink to="/manifesto">manifesto</RouterLink>
