@@ -1,12 +1,12 @@
 # bugs
 
 - iphone 11
-- menu click on current closes the stuff
 - doublons
-- /
-  - boucle
 - /photos
   - scroll overflow
+  - no wheel
+  - click on closed = open page
+  - click on opened = go to serie
 - /photos/{serie}?current={nb}
   - ajouter un décompte, même design
 - /manifesto

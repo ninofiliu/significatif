@@ -11,7 +11,12 @@
     <div class="navbar --mobile">
       <RouterLink to="/">significa.tif</RouterLink>
       <button @click="closed = !closed">☰</button>
-      <div class="menu" :class="{ '--closed': closed }">
+      <div
+        class="menu"
+        :class="{ '--closed': closed }"
+        @click="closed = !closed"
+      >
+        <RouterLink to="/">VR</RouterLink>
         <RouterLink to="/photos">photos</RouterLink>
         <RouterLink to="/manifesto">manifesto</RouterLink>
         <RouterLink to="/contact">contact</RouterLink>
@@ -20,8 +25,9 @@
           href="https://www.instagram.com/significa.tif/"
           target="_blank"
           rel="noreferrer noopener"
-          >instagram</a
         >
+          instagram
+        </a>
       </div>
     </div>
   </div>
