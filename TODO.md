@@ -3,8 +3,6 @@
 - iphone 11
 - doublons
 - /photos
-  - scroll overflow
-  - no wheel
   - click on closed = open page
   - click on opened = go to serie
 - /photos/{serie}?current={nb}
