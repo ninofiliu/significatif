@@ -4,19 +4,32 @@ Website for my dear friend Victor
 
 # Local development
 
-- start the client: `cd client; npm run dev`
-- serve static assets: `cd static; http-server . -c-1 -p 8081`
+- [pnpm](https://pnpm.io/)
+- [serve](https://www.npmjs.com/package/serve)
+
+```sh
+# start the client
+cd client
+pnpm run dev
+# and in another terminal, serve static assets
+cd static
+serve -l 3001
+```
 
 # Deployment
 
-1. Generate a password file with `echo team:$(openssl passwd [some password]) > /etc/nginx/passwd`
-2. Pull and build
-3. Restart all the non-static services
-4. Include [nginx.prod.conf](./nginx.prod.conf) in the nginx conf's http block
+- [netlify console](https://app.netlify.com/sites/significatif/overview)
+
+```sh
+# build locally
+cd client
+pnpm run build
+ntl deploy # add --prod if you're sure of it all
+```
 
 # Media management
 
-This git repository handles the *logic* of the webite, but its *media* (images and videos) are hosted on Google Cloud Storage. Media loads faster and it's cheaper to host.
+This git repository handles the _logic_ of the webite, but its _media_ (images and videos) are hosted on Google Cloud Storage. Media loads faster and it's cheaper to host.
 
 To add or remove files, it [can be done online](https://console.cloud.google.com/storage/browser/significatif;tab=objects?project=nino-filiu), or programmatically. Open this directory in the terminal and type one of:
 
