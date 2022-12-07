@@ -1,24 +1,17 @@
 <template>
   <div class="outer" ref="outer">
     <div class="inner">
-      <img
-        v-for="picture of pictures"
-        :key="picture.src"
-        v-media="picture.src"
-        :style="{
-          left: `${25 + 25 * picture.x}%`,
-          top: `${50 * picture.y}%`,
-        }"
-      />
-      <img
-        v-for="picture of pictures"
-        :key="picture.src"
-        v-media="picture.src"
-        :style="{
-          left: `${25 + 25 * picture.x}%`,
-          top: `${50 + 50 * picture.y}%`,
-        }"
-      />
+      <template v-for="d in [0, 50]">
+        <img
+          v-for="picture of pictures"
+          :key="picture.src"
+          v-media="picture.src"
+          :style="{
+            [isPortrait ? 'left' : 'top']: `${50 * picture.u}%`,
+            [isPortrait ? 'top' : 'left']: `${d + 50 * picture.v}%`,
+          }"
+        />
+      </template>
     </div>
   </div>
 </template>
@@ -28,8 +21,8 @@ import srcs from "../../content/home.json";
 
 const pictures = srcs.map((src, i) => ({
   src,
-  x: Math.random(),
-  y: (i + Math.random()) / srcs.length,
+  u: Math.random(),
+  v: (i + Math.random()) / srcs.length,
 }));
 
 export default {
@@ -41,21 +34,43 @@ export default {
   mounted() {
     const { outer } = this.$refs;
     outer.addEventListener("scroll", this.onScroll);
-    console.log(outer.scrollTop, (outer.scrollHeight - window.innerHeight) / 2);
-    outer.scrollTop = (outer.scrollHeight - window.innerHeight) / 2;
-    console.log(outer.scrollTop);
+    if (this.isPortrait) {
+      outer.scrollTop = (outer.scrollHeight - window.innerHeight) / 2;
+    } else {
+      outer.scrollLeft = (outer.scrollWidth - window.innerWidth) / 2;
+    }
   },
   beforeDestroy() {
     this.$refts.outer.removeEventListener("scroll", this.onScroll);
   },
+  computed: {
+    isPortrait() {
+      return window.innerWidth / window.innerHeight < 1;
+    },
+  },
   methods: {
     onScroll() {
       const { outer } = this.$refs;
-      if (outer.scrollTop / (outer.scrollHeight - window.innerHeight) < 0.25) {
-        outer.scrollTop = outer.scrollTop + 0.5 * outer.scrollHeight;
-      }
-      if (outer.scrollTop / (outer.scrollHeight - window.innerHeight) > 0.75) {
-        outer.scrollTop = outer.scrollTop - 0.5 * outer.scrollHeight;
+      if (this.isPortrait) {
+        if (
+          outer.scrollTop / (outer.scrollHeight - window.innerHeight) <
+          0.25
+        ) {
+          outer.scrollTop = outer.scrollTop + 0.5 * outer.scrollHeight;
+        }
+        if (
+          outer.scrollTop / (outer.scrollHeight - window.innerHeight) >
+          0.75
+        ) {
+          outer.scrollTop = outer.scrollTop - 0.5 * outer.scrollHeight;
+        }
+      } else {
+        if (outer.scrollLeft / (outer.scrollWidth - window.innerWidth) < 0.25) {
+          outer.scrollLeft = outer.scrollLeft + 0.5 * outer.scrollWidth;
+        }
+        if (outer.scrollLeft / (outer.scrollWidth - window.innerWidth) > 0.75) {
+          outer.scrollLeft = outer.scrollLeft - 0.5 * outer.scrollWidth;
+        }
       }
     },
   },
@@ -66,20 +81,34 @@ export default {
 .outer {
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
 }
 .inner {
-  width: 100vh;
-  height: 5000vh;
   position: relative;
 }
 img {
   position: absolute;
   pointer-events: none;
-  height: 45vh;
-  transform: translate(-50%, -50%);
-  max-height: 50vh;
-  max-width: 50vw;
+  width: 50vw;
+  height: 50vh;
   object-fit: contain;
+}
+
+.outer {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.inner {
+  height: 100vh;
+  width: 5000vh;
+}
+@media (max-aspect-ratio: 1/1) {
+  .outer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .inner {
+    width: 100vh;
+    height: 5000vh;
+  }
 }
 </style>
