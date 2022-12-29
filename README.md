@@ -24,7 +24,7 @@ serve -l 3001
 # build locally
 cd client
 pnpm run build
-ntl deploy # add --prod if you're sure of it all
+ntl deploy --dir dist # add --prod if you're sure of it all
 ```
 
 # Media management

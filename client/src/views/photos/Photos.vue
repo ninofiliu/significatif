@@ -3,147 +3,21 @@
     <NavBar />
     <div class="stories --desktop">
       <RouterLink
-        to="/photos/self-portraits"
+        v-for="(cover, i) of coverArr"
+        :key="cover.name"
+        :to="cover.isLink ? `/photos/${cover.name}` : $route"
         class="story"
-        :style="{ 'flex-grow': flexGrows[9] }"
+        :style="{ 'flex-grow': cover.flexGrow }"
+        @click="current = isLink ? current : coverArr.length - i"
       >
         <div class="story-content">
-          <img v-media="covers['self-portraits'].img" />
-          <div class="title">AUTOPORTRAITS</div>
+          <img v-media="cover.img" />
+          <div class="title" v-html="cover.html" />
           <div class="text u-comfort">
-            <p v-for="p of covers['self-portraits'].txt" :key="p">{{ p }}</p>
+            <p v-for="p of cover.txt" :key="p">{{ p }}</p>
           </div>
         </div>
       </RouterLink>
-
-      <RouterLink
-        to="/photos/silent-photography"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[8] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['silent-photography'].img" />
-          <div class="title">SILENT PHOTOGRAPHY</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['silent-photography'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/cross-the-borders"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[7] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['cross-the-borders'].img" />
-          <div class="title">
-            CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['cross-the-borders'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/taste-of-farniente"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[6] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['taste-of-farniente'].img" />
-          <div class="title">
-            TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['taste-of-farniente'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/pedal-to-the-metal"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[5] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['pedal-to-the-metal'].img" />
-          <div class="title">
-            PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/ride-shoot-repeat"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[4] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['ride-shoot-repeat'].img" />
-          <div class="title">RIDE, SHOOT, REPEAT</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/vous-etes-des-animaux"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[3] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['vous-etes-des-animaux'].img" />
-          <div class="title">
-            VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/ocular-pleasure"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[2] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['ocular-pleasure'].img" />
-          <div class="title">OCULAR PLEASURE</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-
-      <RouterLink
-        to="/photos/humans"
-        class="story"
-        :style="{ 'flex-grow': flexGrows[1] }"
-      >
-        <div class="story-content">
-          <img v-media="covers['humans'].img" />
-          <div class="title">HUMANS</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['humans'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
@@ -156,6 +30,7 @@
         </div>
       </div>
     </div>
+
     <div class="stories --mobile" ref="mobileStories">
       <div class="story home" :style="{ 'flex-grow': flexGrows[0] }">
         <div class="story-content">
@@ -168,100 +43,17 @@
           </div>
         </div>
       </div>
-      <RouterLink to="/photos/humans" class="story">
+      <RouterLink
+        v-for="cover of coverArr"
+        :key="cover.name"
+        :to="`/photos/${cover.name}`"
+        class="story"
+      >
         <div class="story-content">
-          <img v-media="covers['humans'].img" />
-          <div class="title">HUMANS</div>
+          <img v-media="cover.img" />
+          <div class="title" v-html="cover.html" />
           <div class="text u-comfort">
-            <p v-for="p of covers['humans'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/ocular-pleasure" class="story">
-        <div class="story-content">
-          <img v-media="covers['ocular-pleasure'].img" />
-          <div class="title">OCULAR PLEASURE</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['ocular-pleasure'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/vous-etes-des-animaux" class="story">
-        <div class="story-content">
-          <img v-media="covers['vous-etes-des-animaux'].img" />
-          <div class="title">
-            VOU<span class="u-font-good-glyphs">G</span> ÊTES DES ANIMAUX
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['vous-etes-des-animaux'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/ride-shoot-repeat" class="story">
-        <div class="story-content">
-          <img v-media="covers['ride-shoot-repeat'].img" />
-          <div class="title">RIDE, SHOOT, REPEAT</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['ride-shoot-repeat'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/pedal-to-the-metal" class="story">
-        <div class="story-content">
-          <img v-media="covers['pedal-to-the-metal'].img" />
-          <div class="title">
-            PEDAL T<span class="u-font-good-glyphs">Y</span> THE METAL
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['pedal-to-the-metal'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/taste-of-farniente" class="story">
-        <div class="story-content">
-          <img v-media="covers['taste-of-farniente'].img" />
-          <div class="title">
-            TASTE <span class="u-font-good-glyphs">g</span>F FARNIENTE
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['taste-of-farniente'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/cross-the-borders" class="story">
-        <div class="story-content">
-          <img v-media="covers['cross-the-borders'].img" />
-          <div class="title">
-            CR<span class="u-font-good-glyphs">q</span>SS THE BORDERS
-          </div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['cross-the-borders'].txt" :key="p">{{ p }}</p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/silent-photography" class="story">
-        <div class="story-content">
-          <img v-media="covers['silent-photography'].img" />
-          <div class="title">SILENT PHOTOGRAPHY</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['silent-photography'].txt" :key="p">
-              {{ p }}
-            </p>
-          </div>
-        </div>
-      </RouterLink>
-      <RouterLink to="/photos/self-portraits" class="story">
-        <div class="story-content">
-          <img v-media="covers['self-portraits'].img" />
-          <div class="title">AUTOPORTRAITS</div>
-          <div class="text u-comfort">
-            <p v-for="p of covers['self-portraits'].txt" :key="p">{{ p }}</p>
+            <p v-for="p of cover.txt" :key="p">{{ p }}</p>
           </div>
         </div>
       </RouterLink>
@@ -279,7 +71,6 @@ export default {
   },
   data() {
     return {
-      covers,
       current: 0,
     };
   },
@@ -304,10 +95,20 @@ export default {
         [1, 1, 1, 1, 1, 1, 1, 2, 8, 8],
       ][this.current];
     },
+    coverArr() {
+      return Object.entries(covers)
+        .reverse()
+        .map(([name, cover], index) => ({
+          ...cover,
+          name,
+          flexGrow: this.flexGrows[index + 1],
+          isLink: this.flexGrows[index + 1] === Math.max(...this.flexGrows),
+        }))
+        .reverse();
+    },
   },
   methods: {
     onKeyPress(evt) {
-      console.log(evt.key);
       switch (evt.key) {
         case "ArrowRight":
           this.go(this.current + 1);
@@ -344,6 +145,7 @@ export default {
   flex-basis: 0;
   transition: flex-grow 0.5s;
   position: relative;
+  overflow-y: auto;
   &:nth-child(3n + 1) {
     background-color: var(--orange);
   }

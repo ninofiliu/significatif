@@ -3,14 +3,14 @@
 - iphone 11
 - doublons
 - /photos
-  - click on closed = open page
-  - click on opened = go to serie
+  - sanity check mobile scroll
 - /photos/{serie}?current={nb}
   - ajouter un décompte, même design
 - /manifesto
   - scroll vs snake
 - /archives
   - search with hyphens
+- use keypress events everywhere?
 
 # features
 
@@ -35,6 +35,8 @@
 # dev
 
 - rewrite readme
+- migrate to TS
+- migrate to react
 
 # chantiers
 

@@ -122,7 +122,6 @@ export default {
   },
   created() {
     document.addEventListener("keyup", this.onkeyup);
-    document.addEventListener("wheel", this.onwheel);
     document.addEventListener("touchstart", this.ontouchstart);
     document.addEventListener("touchend", this.ontouchend);
     if (this.$route.query.current) {
@@ -141,7 +140,6 @@ export default {
   },
   destroyed() {
     document.removeEventListener("keyup", this.onkeyup);
-    document.removeEventListener("wheel", this.onwheel);
     document.removeEventListener("touchstart", this.ontouchstart);
     document.removeEventListener("touchend", this.ontouchend);
   },

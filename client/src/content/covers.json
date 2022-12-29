@@ -1,5 +1,6 @@
 {
   "cross-the-borders": {
+    "html": "CR<span class=\"u-font-good-glyphs\">q</span>SS THE BORDERS",
     "img": "cross-the-borders/aout2020.thomas-to-the-moon.sagres.jpg",
     "txt": [
       "« Franchissant le portail // sur ce chemin // que personne n'emprunte ... »",
@@ -7,6 +8,7 @@
     ]
   },
   "humans": {
+    "html": "HUMANS",
     "img": "humans/juin2019.Alexis-in-a-caddie.Coigneres.jpg",
     "txt": [
       "« Tous ces visages qu'on croise // qui a raison, qui a tort, quelle importance // tous des êtres humains »",
@@ -15,6 +17,7 @@
     ]
   },
   "ocular-pleasure": {
+    "html": "OCULAR PLEASURE",
     "img": "ocular-pleasure/octobre2019.U3.Nowhere.jpg",
     "txt": [
       "« A travers mes paupières closes // l'éclair frappe mon rêve »",
@@ -22,6 +25,7 @@
     ]
   },
   "pedal-to-the-metal": {
+    "html": "PEDAL T<span class=\"u-font-good-glyphs\">Y</span> THE METAL",
     "img": "pedal-to-the-metal/avril2019.Fuck-the-Police.Hyères.jpg",
     "txt": [
       "« Auto, bolide // Gagnera la course // Si bon pilote »",
@@ -29,6 +33,7 @@
     ]
   },
   "ride-shoot-repeat": {
+    "html": "RIDE, SHOOT, REPEAT",
     "img": "ride-shoot-repeat/fevrier1998.cyprien-raver.Parkingstone-paris.jpg",
     "txt": [
       "« La nuit // les voix des gens // irriguent la rue // et mon esprit flottant »",
@@ -36,6 +41,7 @@
     ]
   },
   "self-portraits": {
+    "html": "AUTOPORTRAITS",
     "img": "self-portraits/juin2020.Autoportrait-with-chains.Paris.jpg",
     "txt": [
       "« Le papillon disparu // mon âme // me revient »",
@@ -43,6 +49,7 @@
     ]
   },
   "silent-photography": {
+    "html": "SILENT PHOTOGRAPHY",
     "img": "silent-photography/mars2020.the-green-pond.Paris.jpg",
     "txt": [
       "« Toute la journée // sans un mot // j'observe ...»",
@@ -50,6 +57,7 @@
     ]
   },
   "taste-of-farniente": {
+    "html": "TASTE <span class=\"u-font-good-glyphs\">g</span>F FARNIENTE",
     "img": "taste-of-farniente/juillet2019.masha-in-the-grass.Limousin.jpg",
     "txt": [
       "« Quel bonheur // de traverser la rivière en été // sandales en maille à la main. // Complètement ivre // ou m'assoupir ? // les lotus en fleur »",
@@ -57,6 +65,7 @@
     ]
   },
   "vous-etes-des-animaux": {
+    "html": "VOU<span class=\"u-font-good-glyphs\">G</span> ÊTES DES ANIMAUX",
     "img": "vous-etes-des-animaux/novembre2019.bishop.Pantin.jpg",
     "txt": [
       "« Un chien me fixe // la cataracte de ses yeux // la couleur des lunes »",
