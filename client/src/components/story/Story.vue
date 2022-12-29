@@ -188,22 +188,6 @@ export default {
         }
       }
     },
-    onwheel(evt) {
-      if (evt.deltaX > 0) {
-        if (this.home) {
-          this.goToStory(+1);
-        } else {
-          this.scrollNext();
-        }
-      }
-      if (evt.deltaX < 0) {
-        if (this.home) {
-          this.goToStory(-1);
-        } else {
-          this.scrollPrev();
-        }
-      }
-    },
     ontouchstart(evt) {
       this.xAtStart = evt.touches[0].clientX;
     },

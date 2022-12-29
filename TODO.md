@@ -20,7 +20,6 @@
 - /photos
   - ajouter un peu d'ombre
   - ajouter le nb de photos dans chaque série en bas à droite de chaque photo d'accueil
-  - brake when right/left scrolling
 - /manifesto
   - parallaxe
   - mobile: pop random
