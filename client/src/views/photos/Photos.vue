@@ -22,9 +22,12 @@
         <div class="story-content">
           <div class="mood">What's your mood today?</div>
           <div class="pick">
-            Pick <span class="one u-font-ogg u-italic">one</span>
+            Pick
+            <span class="one u-font-ogg u-italic" @click="current = 1"
+              >one</span
+            >
           </div>
-          <div class="arrow u-oscillate-x">
+          <div class="arrow u-oscillate-x" @click="current = 1">
             <img src="../../assets/arrow-medium.svg" />
           </div>
         </div>
