@@ -32,9 +32,6 @@
           </div>
           <div class="links u-underline">
             <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
-            <a :href="`tel:${contact.tel.replace(/\s/g, '')}`">{{
-              contact.tel
-            }}</a>
           </div>
         </div>
       </section>

@@ -22,8 +22,6 @@
   - ajouter le nb de photos dans chaque série en bas à droite de chaque photo d'accueil
   - make arrow and "one" clickable
   - brake when right/left scrolling
-- /contact
-  - remove phone number
 - /manifesto
   - parallaxe
   - mobile: pop random
