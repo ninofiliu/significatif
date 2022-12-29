@@ -234,7 +234,7 @@
     "place": "New York"
   },
   {
-    "src": "cross-the-borders/avril2021.Christine-au-Soleil.Marcellus.jpeg",
+    "src": "cross-the-borders/avril2021.Christine-au-Soleil.Marcellus.jpg",
     "title": "Christine au Soleil",
     "date": "2021-04-01",
     "place": "Marcellus"
@@ -246,7 +246,7 @@
     "place": "Marcellus"
   },
   {
-    "src": "cross-the-borders/avril2021.La-Prairie-Classic.Marcellus.jpeg",
+    "src": "cross-the-borders/avril2021.La-Prairie-Classic.Marcellus.jpg",
     "title": "La Prairie Classic",
     "date": "2021-04-01",
     "place": "Marcellus"
@@ -258,7 +258,7 @@
     "place": "Marcellus"
   },
   {
-    "src": "cross-the-borders/avril2021.Point-of-View.Marcellus.jpeg",
+    "src": "cross-the-borders/avril2021.Point-of-View.Marcellus.jpg",
     "title": "Point of View",
     "date": "2021-04-01",
     "place": "Marcellus"
@@ -270,7 +270,7 @@
     "place": "Marcellus"
   },
   {
-    "src": "cross-the-borders/avril2021.Point-of-View1.Marcellus.jpeg",
+    "src": "cross-the-borders/avril2021.Point-of-View1.Marcellus.jpg",
     "title": "Point of View1",
     "date": "2021-04-01",
     "place": "Marcellus"
@@ -384,7 +384,7 @@
     "place": "Rostov, Russia"
   },
   {
-    "src": "cross-the-borders/decembre2020.Green-Patience.Barbizon.jpeg",
+    "src": "cross-the-borders/decembre2020.Green-Patience.Barbizon.jpg",
     "title": "Green Patience",
     "date": "2020-12-01",
     "place": "Barbizon"
@@ -396,7 +396,7 @@
     "place": "Barbizon"
   },
   {
-    "src": "cross-the-borders/fevrier2021.E--Do-Studio-Dima.Saint--Ouen.jpeg",
+    "src": "cross-the-borders/fevrier2021.E--Do-Studio-Dima.Saint--Ouen.jpg",
     "title": "E  Do Studio Dima",
     "date": "2021-02-01",
     "place": "Saint  Ouen"
@@ -408,7 +408,7 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "cross-the-borders/janvier2021.My-Office-my-Thoughts.Paris.jpeg",
+    "src": "cross-the-borders/janvier2021.My-Office-my-Thoughts.Paris.jpg",
     "title": "My Office my Thoughts",
     "date": "2021-01-01",
     "place": "Paris"
@@ -516,7 +516,7 @@
     "place": "Les lilas"
   },
   {
-    "src": "cross-the-borders/novembre2020.Sunset.Trouville.jpeg",
+    "src": "cross-the-borders/novembre2020.Sunset.Trouville.jpg",
     "title": "Sunset",
     "date": "2020-11-01",
     "place": "Trouville"
@@ -720,7 +720,7 @@
     "place": "Richebourg"
   },
   {
-    "src": "humans/avril2021.Julien-in-the-Shower.Marcellus.jpeg",
+    "src": "humans/avril2021.Julien-in-the-Shower.Marcellus.jpg",
     "title": "Julien in the Shower",
     "date": "2021-04-01",
     "place": "Marcellus"
@@ -816,7 +816,7 @@
     "place": "Moscou"
   },
   {
-    "src": "humans/decembre2019.emmie-and-masha.Moscou.jpeg",
+    "src": "humans/decembre2019.emmie-and-masha.Moscou.jpg",
     "title": "emmie and masha",
     "date": "2019-12-01",
     "place": "Moscou"
@@ -930,7 +930,7 @@
     "place": "Moscou"
   },
   {
-    "src": "humans/decembre2020.Ana-Birthday.x.jpeg",
+    "src": "humans/decembre2020.Ana-Birthday.x.jpg",
     "title": "Ana Birthday",
     "date": "2020-12-01",
     "place": "x"
@@ -948,7 +948,7 @@
     "place": "Mericourt"
   },
   {
-    "src": "humans/decembre2020.Maya-Kitchen.Trouville.jpeg",
+    "src": "humans/decembre2020.Maya-Kitchen.Trouville.jpg",
     "title": "Maya Kitchen",
     "date": "2020-12-01",
     "place": "Trouville"
@@ -1038,13 +1038,13 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/fevrier2021.Dima-_-Serge-Panneau-E--Do.Saint--Ouen.jpeg",
+    "src": "humans/fevrier2021.Dima-_-Serge-Panneau-E--Do.Saint--Ouen.jpg",
     "title": "Dima _ Serge Panneau E  Do",
     "date": "2021-02-01",
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/fevrier2021.Dima_Serge-du-Dessous.Saint--Ouen.jpeg",
+    "src": "humans/fevrier2021.Dima_Serge-du-Dessous.Saint--Ouen.jpg",
     "title": "Dima_Serge du Dessous",
     "date": "2021-02-01",
     "place": "Saint  Ouen"
@@ -1116,7 +1116,7 @@
     "place": "Paris"
   },
   {
-    "src": "humans/janvier2021.Dima-Porte.Saint--Ouen.jpeg",
+    "src": "humans/janvier2021.Dima-Porte.Saint--Ouen.jpg",
     "title": "Dima Porte",
     "date": "2021-01-01",
     "place": "Saint  Ouen"
@@ -1128,7 +1128,7 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/janvier2021.Nettoyage-Connecte.Saint--Ouen.jpeg",
+    "src": "humans/janvier2021.Nettoyage-Connecte.Saint--Ouen.jpg",
     "title": "Nettoyage Connecte",
     "date": "2021-01-01",
     "place": "Saint  Ouen"
@@ -1140,7 +1140,7 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/janvier2021.Samuel-repare.Marcellus.jpeg",
+    "src": "humans/janvier2021.Samuel-repare.Marcellus.jpg",
     "title": "Samuel repare",
     "date": "2021-01-01",
     "place": "Marcellus"
@@ -1152,7 +1152,7 @@
     "place": "Marcellus"
   },
   {
-    "src": "humans/janvier2021.Serge-Placo.Saint--Ouen.jpeg",
+    "src": "humans/janvier2021.Serge-Placo.Saint--Ouen.jpg",
     "title": "Serge Placo",
     "date": "2021-01-01",
     "place": "Saint  Ouen"
@@ -1440,7 +1440,7 @@
     "place": "Yvelines"
   },
   {
-    "src": "humans/mai2021.Auction-Sale.Marcellus.jpeg",
+    "src": "humans/mai2021.Auction-Sale.Marcellus.jpg",
     "title": "Auction Sale",
     "date": "2021-05-01",
     "place": "Marcellus"
@@ -1488,7 +1488,7 @@
     "place": "Richebourg"
   },
   {
-    "src": "humans/mars2021.Clement-Guinamard-Chaussettes.Saint--Ouen.jpeg",
+    "src": "humans/mars2021.Clement-Guinamard-Chaussettes.Saint--Ouen.jpg",
     "title": "Clement Guinamard Chaussettes",
     "date": "2021-03-01",
     "place": "Saint  Ouen"
@@ -1500,7 +1500,7 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/mars2021.Jules-Pressiat.Saint--Ouen.jpeg",
+    "src": "humans/mars2021.Jules-Pressiat.Saint--Ouen.jpg",
     "title": "Jules Pressiat",
     "date": "2021-03-01",
     "place": "Saint  Ouen"
@@ -1512,7 +1512,7 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/mars2021.Metzger-Mum.Saint--Ouen.jpeg",
+    "src": "humans/mars2021.Metzger-Mum.Saint--Ouen.jpg",
     "title": "Metzger Mum",
     "date": "2021-03-01",
     "place": "Saint  Ouen"
@@ -1524,7 +1524,7 @@
     "place": "Saint  Ouen"
   },
   {
-    "src": "humans/mars2021.Sofia-Green.Paris.jpeg",
+    "src": "humans/mars2021.Sofia-Green.Paris.jpg",
     "title": "Sofia Green",
     "date": "2021-03-01",
     "place": "Paris"
@@ -1536,7 +1536,7 @@
     "place": "Paris"
   },
   {
-    "src": "humans/mars2021.Vanille-Verloës.Saint--Ouen.jpeg",
+    "src": "humans/mars2021.Vanille-Verloës.Saint--Ouen.jpg",
     "title": "Vanille Verloës",
     "date": "2021-03-01",
     "place": "Saint  Ouen"
@@ -1620,13 +1620,13 @@
     "place": "Paris"
   },
   {
-    "src": "humans/novembre2020.Dima-B_W.Paris.jpeg",
+    "src": "humans/novembre2020.Dima-B_W.Paris.jpg",
     "title": "Dima B_W",
     "date": "2020-11-01",
     "place": "Paris"
   },
   {
-    "src": "humans/novembre2020.Maya-Love-Plage.Trouville.jpeg",
+    "src": "humans/novembre2020.Maya-Love-Plage.Trouville.jpg",
     "title": "Maya Love Plage",
     "date": "2020-11-01",
     "place": "Trouville"
@@ -1644,7 +1644,7 @@
     "place": "Paris"
   },
   {
-    "src": "humans/novembre2020.Nino-B_W.Paris.jpeg",
+    "src": "humans/novembre2020.Nino-B_W.Paris.jpg",
     "title": "Nino B_W",
     "date": "2020-11-01",
     "place": "Paris"
@@ -1656,7 +1656,7 @@
     "place": "Paris 3"
   },
   {
-    "src": "humans/novembre2020.Robin-B_W.Paris-3.jpeg",
+    "src": "humans/novembre2020.Robin-B_W.Paris-3.jpg",
     "title": "Robin B_W",
     "date": "2020-11-01",
     "place": "Paris 3"
