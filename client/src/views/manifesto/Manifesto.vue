@@ -33,7 +33,11 @@
               {{ fragment.content }}
             </span>
             <span v-if="fragment.type === 'image'">
-              <img v-media="fragment.content" class="u-text-img" />
+              <img
+                loading="lazy"
+                :src="STATIC_BASE + fragment.content"
+                class="u-text-img"
+              />
             </span>
           </span>
           <p>Bienvenue sur Significatif /</p>
@@ -51,6 +55,7 @@ import NavBar from "../../components/NavBar.vue";
 import Footer from "../../components/Footer.vue";
 import PicturesSnake from "./PicturesSnake.vue";
 import manifestoContent from "../../content/manifesto.json";
+import { STATIC_BASE } from "../../globals";
 
 const words = {
   space: { html: "&nbsp;", class: {} },
@@ -118,6 +123,7 @@ export default {
       letMe,
       tellYou,
       aStory,
+      STATIC_BASE,
     };
   },
 };

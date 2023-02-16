@@ -22,7 +22,7 @@
         </div>
         <img
           v-show="show"
-          v-media="src"
+          :src="src"
           :style="{ left: `${left}px`, top: `${top}px` }"
         />
         <div class="table">
@@ -82,7 +82,7 @@ import { STATIC_BASE } from "../../globals";
 const images = pictures.map((picture) => {
   const story = stories.find((s) => s.pictures.includes(picture.src));
   return {
-    src: picture.src,
+    src: STATIC_BASE + picture.src,
     date: new Date(picture.date),
     name: picture.title,
     location: picture.place,

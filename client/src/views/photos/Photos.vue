@@ -11,7 +11,7 @@
         @click="current = isLink ? current : coverArr.length - i"
       >
         <div class="story-content">
-          <img v-media="cover.img" />
+          <img loading="lazy" :src="STATIC_BASE + cover.img" />
           <div class="title" v-html="cover.html" />
           <div class="text u-comfort">
             <p v-for="p of cover.txt" :key="p">{{ p }}</p>
@@ -53,7 +53,7 @@
         class="story"
       >
         <div class="story-content">
-          <img v-media="cover.img" />
+          <img loading="lazy" :src="STATIC_BASE + cover.img" />
           <div class="title" v-html="cover.html" />
           <div class="text u-comfort">
             <p v-for="p of cover.txt" :key="p">{{ p }}</p>
@@ -67,6 +67,7 @@
 <script>
 import NavBar from "../../components/NavBar.vue";
 import covers from "../../content/covers.json";
+import { STATIC_BASE } from "../../globals";
 
 export default {
   components: {
@@ -75,6 +76,7 @@ export default {
   data() {
     return {
       current: 0,
+      STATIC_BASE,
     };
   },
   beforeRouteEnter(to, from, next) {

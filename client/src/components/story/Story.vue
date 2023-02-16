@@ -63,6 +63,7 @@ import pictures from "../../content/pictures.json";
 import Footer from "../Footer.vue";
 import NavBar from "../NavBar.vue";
 import Pictures from "./Pictures.vue";
+import { STATIC_BASE } from "../../globals";
 
 let prevShift;
 
@@ -101,7 +102,7 @@ export default {
     const srcs = new Set(story.pictures);
     const storyPictures = pictures
       .filter(({ src }) => srcs.has(src))
-      .map((s) => ({ ...s, date: new Date(s.date) }));
+      .map((s) => ({ ...s, src: STATIC_BASE + s.src, date: new Date(s.date) }));
     const randMap = createRandMap(storyPictures.length);
     const invertedRandMap = invertMap(randMap);
     const randStoryPictures = Array(storyPictures.length)

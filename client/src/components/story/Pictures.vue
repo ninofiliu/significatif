@@ -12,7 +12,8 @@
     <img
       v-for="(picture, index) of [...pictures].reverse()"
       :key="picture.src"
-      v-media="picture.src"
+      loading="lazy"
+      :src="picture.src"
       :class="{
         '--before': current > pictures.length - index,
         '--just-before': current === pictures.length - index,
