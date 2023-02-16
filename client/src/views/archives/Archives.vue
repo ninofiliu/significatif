@@ -77,6 +77,7 @@ import stories from "../../content/stories.json";
 import Footer from "../../components/Footer.vue";
 import NavBar from "../../components/NavBar.vue";
 import Year from "./Year.vue";
+import { STATIC_BASE } from "../../globals";
 
 const images = pictures.map((picture) => {
   const story = stories.find((s) => s.pictures.includes(picture.src));
@@ -145,9 +146,9 @@ export default {
     },
   },
   created() {
-    for (const image of this.images) {
-      new Image().src = image.src;
-    }
+    // for (const image of this.images) {
+    //   new Image().src = STATIC_BASE + image.src;
+    // }
   },
   mounted() {
     this.$refs.tbody.addEventListener("mousemove", this.onMouseMove);

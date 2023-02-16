@@ -4,8 +4,9 @@
       <template v-for="d in [0, 50]">
         <img
           v-for="picture of pictures"
-          :key="picture.src"
-          v-media="picture.src"
+          :key="picture.src + d"
+          :src="picture.src"
+          loading="lazy"
           :style="{
             [isPortrait ? 'left' : 'top']: `${50 * picture.u}%`,
             [isPortrait ? 'top' : 'left']: `${d + 50 * picture.v}%`,
@@ -18,9 +19,10 @@
 
 <script>
 import srcs from "../../content/home.json";
+import { STATIC_BASE } from "../../globals";
 
 const pictures = srcs.map((src, i) => ({
-  src,
+  src: STATIC_BASE + src,
   u: Math.random(),
   v: (i + Math.random()) / srcs.length,
 }));

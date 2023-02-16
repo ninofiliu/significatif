@@ -8,5 +8,5 @@ import "./styles/index.scss";
 const app = createApp(App);
 app.use(router);
 app.use(store);
-app.directive("media", media);
+app.directive("media", media); // to remove
 app.mount("#app");
