@@ -3,7 +3,7 @@
     <img
       v-for="image of images"
       :key="image.key"
-      :src="STATIC_BASE + image.src.replace(/\.[^.]*$/, ($0) => `.small${$0}`)"
+      :src="STATIC_BASE + image.src"
       :style="{
         left: `${image.left}px`,
         top: `${image.top}px`,
