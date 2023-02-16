@@ -121,9 +121,7 @@ export default {
     };
   },
   created() {
-    document.addEventListener("keyup", this.onkeyup);
-    document.addEventListener("touchstart", this.ontouchstart);
-    document.addEventListener("touchend", this.ontouchend);
+    this.startListening();
     if (this.$route.query.current) {
       this.randCurrent = this.randMap[+this.$route.query.current];
       this.home = false;
@@ -139,9 +137,7 @@ export default {
     }
   },
   destroyed() {
-    document.removeEventListener("keyup", this.onkeyup);
-    document.removeEventListener("touchstart", this.ontouchstart);
-    document.removeEventListener("touchend", this.ontouchend);
+    this.stopListening();
   },
   computed: {
     current() {
@@ -149,6 +145,16 @@ export default {
     },
   },
   methods: {
+    startListening() {
+      document.addEventListener("keyup", this.onkeyup);
+      document.addEventListener("touchstart", this.ontouchstart);
+      document.addEventListener("touchend", this.ontouchend);
+    },
+    stopListening() {
+      document.removeEventListener("keyup", this.onkeyup);
+      document.removeEventListener("touchstart", this.ontouchstart);
+      document.removeEventListener("touchend", this.ontouchend);
+    },
     updateRoute() {
       this.$router.replace({
         path: this.$route.path,
@@ -229,6 +235,7 @@ export default {
     },
     goToStory(shift) {
       if (this.goingToStory) return;
+      this.stopListening();
       this.goingToStory = true;
       const nextIndex =
         (stories.length +

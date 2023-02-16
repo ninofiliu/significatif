@@ -77,11 +77,15 @@ export default {
       current: 0,
     };
   },
-  created() {
-    document.addEventListener("keydown", this.onKeyPress);
+  beforeRouteEnter(to, from, next) {
+    next((vm) => {
+      document.addEventListener("keydown", vm.onKeyPress);
+    });
   },
-  beforeDestroy() {
-    document.removeEventListener("keydown", this.onKeyPress);
+  beforeRouteLeave(to, from, next) {
+    next((vm) => {
+      document.removeEventListener("keydown", vm.onKeyPress);
+    });
   },
   computed: {
     flexGrows() {
