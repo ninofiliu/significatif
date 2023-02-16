@@ -51,19 +51,19 @@ for (const storyId of storyIds) {
       const splitBasename = basename.split(".");
       if (splitBasename.length !== 4)
         throw new Error(
-          `Invalid file ${storyId}/${basename}: should be formatted as DATE.NAME.PLACE.EXTENSION`
+          `Invalid file ./static/${storyId}/${basename}: should be formatted as DATE.NAME.PLACE.EXTENSION`
         );
       const [rawDate, rawTitle, rawPlace] = splitBasename;
 
       const rawDateMatch = rawDate.match(/([a-z]*)([0-9]*)/);
       if (!rawDateMatch)
         throw new Error(
-          `Invalid file ${storyId}/${basename}: DATE should look like janvier2000`
+          `Invalid file ./static/${storyId}/${basename}: DATE should look like janvier2000`
         );
       const [, rawMonth, year] = rawDateMatch;
       if (!(rawMonth && year && year.length === 4))
         throw new Error(
-          `Invalid file ${storyId}/${basename}: DATE should look like janvier2000`
+          `Invalid file ./static/${storyId}/${basename}: DATE should look like janvier2000`
         );
 
       const months = [
@@ -82,7 +82,7 @@ for (const storyId of storyIds) {
       ];
       if (!months.includes(rawMonth))
         throw new Error(
-          `Invalid file ${storyId}/${basename}: ${rawMonth} is not a valid month`
+          `Invalid file ./static/${storyId}/${basename}: ${rawMonth} is not a valid month`
         );
       const month = ["", ...months]
         .indexOf(rawMonth)
